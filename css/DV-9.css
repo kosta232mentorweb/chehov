@@ -1,0 +1,23 @@
+input{
+    width: 6mm;
+    height: 4mm;
+    text-align: right;
+}
+div{
+    display: inline;
+}
+.space{
+    margin-left: 6mm;
+}
+.weight{
+    font-weight: 700;
+}
+.square{
+    width: 190px;
+    height: 190px;
+    background: orange;
+    display: inline-block;
+    position: absolute;
+    margin-top: cm;
+    margin-left: 7.5cm;
+}
