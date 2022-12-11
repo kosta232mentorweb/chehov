@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DV-7</title>
+</head>
+
+<body>
+    <h2>7. Установите последовательность дружбы женщины и мужчины, объяснённую одним из персонажей. Кто из персонажей
+        придумал эту последовательность и что такое мнение говорит про него?</h2>
+
+    <ol>
+        <li>Жена</li>
+        <li>Друг</li>
+        <li>Незнакомка</li>
+        <li>Коллега</li>
+        <li>Враг </li>
+        <li>Любовница</li>
+        <li>Приятель</li>
+        <li>Знакомая</li>
+        <li>Одноклассница</li>
+    </ol>
+    <form action="http://activepads.com:8082/formDetector" id="friend">
+        <p>
+            <label for="Autor First Second Third"></label>
+            <input list="choice_autor" name="Autor" type="text" required>
+            <datalist id="choice_autor">
+                <option value="Михаил Иванович">Михаил Иванович</option>
+                <option value="Иван Михайлович">Иван Михайлович</option>
+                <option value="Федор Иванович">Федор Иванович</option>
+                <option value="Иван Федорович">Иван Федорович</option>
+                <option value="Александр Сергеевич">Александр Сергеевич</option>
+                <option value="Сергеевич Александр">Сергеевич Александр</option>
+            </datalist>
+            : «Женщина может быть другом мужчины только под таким условием: сначала
+            <input list="choice" name="First" type="text" required>
+            <datalist id="choice">
+                <option value="Жена">
+                <option value="Друг">
+                <option value="Незнакомка">
+                <option value="Коллега">
+                <option value="Враг">
+                <option value="Любовница">
+                <option value="Приятель">
+                <option value="Знакомая">
+                <option value="Одноклассница">
+            </datalist>
+
+            , потом
+            <input list="choice" name="Second" type="text" required>
+            , а затем уж
+            <input list="choice" name="Third" type="text" required>
+            ».
+        </p>
+
+        <input type="submit" value="Отправить" />
+    </form>
+</body>
+
+</html>
