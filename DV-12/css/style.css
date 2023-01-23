@@ -1,0 +1,17 @@
+.header {
+    display: grid;
+    grid-template-columns: 2% 3fr 2% 1fr 2fr 2fr 2% 2fr 2%;
+    grid-template-rows: 70% 30% 2% 10% 10%;
+}
+.photo {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+}
+div.cap {
+    display: block;
+    
+   width:50%;
+}
