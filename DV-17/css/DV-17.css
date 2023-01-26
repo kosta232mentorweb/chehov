@@ -18,7 +18,8 @@
     grid-row-start: 1;
     grid-row-end: 2;
 }
-.avatar{
+
+.avatar {
     border-radius: 50%;
     border: 1px solid black;
     width: 80px;
@@ -49,6 +50,7 @@
     grid-row-start: 4;
     grid-row-end: 5;
 }
+
 /* .instAdviceLike {
     grid-column-start: 2;
     grid-column-end: 2;
@@ -63,27 +65,7 @@
     grid-row-end: 6;
 }
 
-#instAdvice1 {
-    width: 90%;
-    height: 20px;
-}
-
-#instAdvice2 {
-    width: 90%;
-    height: 20px;
-}
-
-#instAdvice3 {
-    width: 90%;
-    height: 20px;
-}
-
-#instAdvice4 {
-    width: 90%;
-    height: 20px;
-}
-
-#instAdvice5 {
+.advice {
     width: 90%;
     height: 20px;
 }
