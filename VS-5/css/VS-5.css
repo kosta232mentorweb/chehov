@@ -1,0 +1,22 @@
+.avatarMessage {
+    display: flex;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.actor {
+    flex: 1 1 auto;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.actorInput {
+    width: 400px;
+    height: 200px;
+
+}
+
+.actorMessage {
+    border-left: 1px solid black;
+}
