@@ -20,3 +20,10 @@
 .actorMessage {
     border-left: 1px solid black;
 }
+
+.avatar {
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+}
