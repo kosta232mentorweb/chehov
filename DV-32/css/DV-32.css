@@ -1,0 +1,26 @@
+.main {}
+
+.memSignConteiner {
+    display: flex;
+    border: 1px solid black;
+}
+
+.mem {
+    flex: 1 1;
+    width: 400px;
+    margin: 10px;
+}
+
+.sign {
+    border-left: 1px solid #000;
+}
+
+.memImg {
+    width: 400px;
+}
+
+.signInput {
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+}
