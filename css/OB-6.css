@@ -1,0 +1,10 @@
+form[name=form-ob-6] li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+form[name=form-ob-6] .badge {
+  white-space: normal;
+  text-align: start;
+}
+
+/*# sourceMappingURL=OB-6.css.map */

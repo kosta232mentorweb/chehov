@@ -1,0 +1,11 @@
+form[name="form-ob-6"] {
+   li {
+      display: grid;
+      grid-template-columns: auto 1fr;
+   }
+
+   .badge {
+      white-space: normal;
+      text-align: start;
+   }
+}

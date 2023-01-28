@@ -1,5 +1,148 @@
-h1 {
-  font-family: sans-serif;
+@media print {
+  .screenOnly {
+    display: none;
+  }
+}
+
+@media screen {
+  .printOnly {
+    display: none;
+  }
+}
+
+@media screen {
+  body {
+    padding-top: 100px;
+  }
+}
+
+.taskNumber + hr {
+  margin-bottom: 45px;
+}
+
+.speechBubble {
+  padding: 8px 12px;
+  border-radius: 8px;
+  position: relative;
+}
+.speechBubble.withAvatar {
+  margin-left: 85px;
+}
+@media print {
+  .speechBubble {
+    border: 1px solid #bbb;
+  }
+}
+.speechBubble .speechAuthor {
+  color: #bbb;
+  position: absolute;
+  top: -22px;
+  font-size: 0.85rem;
+}
+.speechBubble .avatar {
+  position: absolute;
+  top: -45px;
+  left: -85px;
+  width: 86px;
+  height: 86px;
+  background-size: 120px 120px;
+  background-position: 50% 70%;
+  z-index: -1;
+}
+.speechBubble .avatar-0 {
+  background-image: url(../images/persons/0.jpg);
+}
+.speechBubble .avatar-1 {
+  background-image: url(../images/persons/1.jpg);
+}
+.speechBubble .avatar-2 {
+  background-image: url(../images/persons/2.jpg);
+}
+.speechBubble .avatar-3 {
+  background-image: url(../images/persons/3.jpg);
+}
+.speechBubble .avatar-4 {
+  background-image: url(../images/persons/4.jpg);
+}
+.speechBubble .avatar-5 {
+  background-image: url(../images/persons/5.jpg);
+}
+.speechBubble .avatar-6 {
+  background-image: url(../images/persons/6.jpg);
+}
+.speechBubble .avatar-7 {
+  background-image: url(../images/persons/7.jpg);
+}
+.speechBubble .avatar-8 {
+  background-image: url(../images/persons/8.jpg);
+}
+.speechBubble .avatar-9 {
+  background-image: url(../images/persons/9.jpg);
+}
+.speechBubble .avatar-10 {
+  background-image: url(../images/persons/10.jpg);
+}
+.speechBubble .avatar-11 {
+  background-image: url(../images/persons/11.jpg);
+}
+.speechBubble .avatar-12 {
+  background-image: url(../images/persons/12.jpg);
+}
+.speechBubble .avatar-13 {
+  background-image: url(../images/persons/13.jpg);
+}
+.speechBubble .avatar-14 {
+  background-image: url(../images/persons/14.jpg);
+}
+.speechBubble .avatar-15 {
+  background-image: url(../images/persons/15.jpg);
+}
+.speechBubble .avatar-16 {
+  background-image: url(../images/persons/16.jpg);
+}
+.speechBubble .avatar-17 {
+  background-image: url(../images/persons/17.jpg);
+}
+.speechBubble .avatar-18 {
+  background-image: url(../images/persons/18.jpg);
+}
+.speechBubble .avatar-19 {
+  background-image: url(../images/persons/19.jpg);
+}
+.speechBubble .avatar-20 {
+  background-image: url(../images/persons/20.jpg);
+}
+.speechBubble .avatar-21 {
+  background-image: url(../images/persons/21.jpg);
+}
+.speechBubble .avatar-22 {
+  background-image: url(../images/persons/22.jpg);
+}
+.speechBubble .avatar-23 {
+  background-image: url(../images/persons/23.jpg);
+}
+.speechBubble .avatar-24 {
+  background-image: url(../images/persons/24.jpg);
+}
+.speechBubble .avatar-25 {
+  background-image: url(../images/persons/25.jpg);
+}
+.speechBubble .avatar-26 {
+  background-image: url(../images/persons/26.jpg);
+}
+.speechBubble .avatar-27 {
+  background-image: url(../images/persons/27.jpg);
+}
+.speechBubble .avatar-28 {
+  background-image: url(../images/persons/28.jpg);
+}
+.speechBubble .avatar-29 {
+  background-image: url(../images/persons/29.jpg);
+}
+
+.question {
+  background-color: #f4cff1;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=chehov-global.css.map */

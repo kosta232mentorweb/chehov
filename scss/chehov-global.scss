@@ -1,5 +1,69 @@
 // Main SCSS-file for the Chehov tasks
 
-h1 {
-   font-family: sans-serif;
+.screenOnly {
+   @media print {
+      display: none;
+   }
+}
+
+.printOnly {
+   @media screen {
+      display: none;
+   }
+}
+
+body {
+   @media screen {
+      padding-top: 100px;
+   }
+}
+
+.taskNumber + hr {
+   // font-size: 2rem;
+   // font-weight: bold;
+   margin-bottom: 45px;
+}
+
+.speechBubble {
+   padding: 8px 12px;
+   border-radius: 8px;
+   position: relative;
+
+   &.withAvatar {
+      margin-left: 85px;
+   }
+
+   @media print {
+      border: 1px solid #bbb;
+   }
+
+   .speechAuthor {
+      color: #bbb;
+      position: absolute;
+      top: -22px;
+      font-size: 0.85rem;
+   }
+
+   .avatar {
+      position: absolute;
+      top: -45px;
+      left: -85px;
+      width: 86px;
+      height: 86px;
+      background-size: 120px 120px;
+      background-position: 50% 70%;
+      z-index: -1;
+   }
+
+   @for $i from 0 to 30 {
+      .avatar-#{$i} {
+         background-image: url(../images/persons/#{$i}.jpg);
+      }
+   }
+
+}
+
+.question {
+   background-color: rgb(244, 207, 241);
+   font-weight: bold;
 }
