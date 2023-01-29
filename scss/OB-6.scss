@@ -7,5 +7,14 @@ form[name="form-ob-6"] {
    .badge {
       white-space: normal;
       text-align: start;
+
+      display: inline-grid;
+      grid-template-columns: auto 1fr;
+      column-gap: 0.2rem;
+   }
+
+   margin-left: 90px;
+   @media (max-width: 360px) {
+      margin-left: inherit;
    }
 }

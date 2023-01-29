@@ -13,6 +13,7 @@
 @media screen {
   body {
     padding-top: 100px;
+    padding-bottom: 80px;
   }
 }
 
@@ -21,12 +22,22 @@
 }
 
 .speechBubble {
-  padding: 8px 12px;
+  padding: 8px 14px 10px;
   border-radius: 8px;
+  display: inline-block;
   position: relative;
+  font-size: 1.1rem;
+  line-height: 1.2;
 }
 .speechBubble.withAvatar {
   margin-left: 85px;
+}
+@media (max-width: 360px) {
+  .speechBubble.withAvatar {
+    margin-left: inherit;
+    display: block;
+    margin-top: 40px !important;
+  }
 }
 @media print {
   .speechBubble {
@@ -39,6 +50,11 @@
   top: -22px;
   font-size: 0.85rem;
 }
+@media (max-width: 360px) {
+  .speechBubble .speechAuthor {
+    left: 60px;
+  }
+}
 .speechBubble .avatar {
   position: absolute;
   top: -45px;
@@ -48,6 +64,16 @@
   background-size: 120px 120px;
   background-position: 50% 70%;
   z-index: -1;
+}
+@media (max-width: 360px) {
+  .speechBubble .avatar {
+    top: -52px;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    background-size: 80px 80px;
+    background-position: 50% 70%;
+  }
 }
 .speechBubble .avatar-0 {
   background-image: url(../images/persons/0.jpg);

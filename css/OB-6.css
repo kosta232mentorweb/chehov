@@ -1,3 +1,6 @@
+form[name=form-ob-6] {
+  margin-left: 90px;
+}
 form[name=form-ob-6] li {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -5,6 +8,14 @@ form[name=form-ob-6] li {
 form[name=form-ob-6] .badge {
   white-space: normal;
   text-align: start;
+  display: inline-grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.2rem;
+}
+@media (max-width: 360px) {
+  form[name=form-ob-6] {
+    margin-left: inherit;
+  }
 }
 
 /*# sourceMappingURL=OB-6.css.map */
