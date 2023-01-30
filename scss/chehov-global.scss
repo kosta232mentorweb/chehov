@@ -63,20 +63,22 @@ body {
    @for $i from 0 to 30 {
       .avatar-#{$i} {
          background-image: url(../images/persons/#{$i}-dop.jpg),
-         url(../images/persons/#{$i}.jpg);
+         url(../images/persons/#{$i}.jpg),
+         url(../images/persons/circle.jpg);
+
       }
    }
 
    .avatar {
       position: absolute;
-      top: -65px;
+      top: -71px;
       left: -105px;
       width: 120px;
       height: 120px;
-      background-size: 100%, 100%;
-      background-position: center, center;
-      background-repeat: no-repeat, no-repeat;
-      background-blend-mode: darken, normal;
+      background-size: 100%, 100%, 150%;
+      background-position: center, center, center;
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-blend-mode: darken, darken, normal;
 
       transition: all 0.7s;
       z-index: -1;
@@ -100,7 +102,8 @@ body {
          // height: 150px;
          transform-origin: 60px 60px;
          transform: scale(1.55) rotate(-6deg);
-         background-position: center, 25% 50%;
+         background-size: 110%, 100%, 120%;
+         background-position: center, center, center;
       }
 
       .speechAuthor {
