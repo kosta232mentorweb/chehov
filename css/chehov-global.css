@@ -1,5 +1,216 @@
-h1 {
-  font-family: sans-serif;
+@media print {
+  .screenOnly {
+    display: none;
+  }
+}
+
+@media screen {
+  .printOnly {
+    display: none;
+  }
+}
+
+@media screen {
+  body {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    min-width: 320px;
+  }
+}
+body nav.navbar {
+  min-width: 320px;
+}
+
+.taskNumber + hr {
+  margin-bottom: 45px;
+}
+
+.speechBubble {
+  padding: 8px 14px 10px;
+  border-radius: 8px;
+  display: inline-block;
+  position: relative;
+}
+.speechBubble.withAvatar {
+  margin-left: 85px;
+}
+@media (max-width: 420px) {
+  .speechBubble.withAvatar {
+    margin-left: inherit;
+    display: block;
+    margin-top: 40px !important;
+  }
+}
+@media print {
+  .speechBubble {
+    border: 1px solid #bbb;
+  }
+}
+.speechBubble .speechAuthor {
+  color: rgb(72, 72, 72);
+  position: absolute;
+  top: -22px;
+  font-size: 0.85rem;
+}
+@media (max-width: 420px) {
+  .speechBubble .speechAuthor {
+    left: 60px;
+  }
+}
+.speechBubble .avatar-0 {
+  background-image: url(../images/persons/0-dop.jpg), url(../images/persons/0.jpg), url(../images/persons/circle.jpg);
+}
+.speechBubble .avatar-1 {
+  background-image: url(../images/persons/1-dop.jpg), url(../images/persons/1.jpg), url(../images/persons/circle.jpg);
+}
+.speechBubble .avatar-2 {
+  background-image: url(../images/persons/2-dop.jpg), url(../images/persons/2.jpg), url(../images/persons/circle.jpg);
+}
+.speechBubble .avatar-3 {
+  background-image: url(../images/persons/3-dop.jpg), url(../images/persons/3.jpg), url(../images/persons/circle.jpg);
+}
+.speechBubble .avatar-4 {
+  background-image: url(../images/persons/4-dop.jpg), url(../images/persons/4.jpg), url(../images/persons/circle.jpg);
+}
+.speechBubble .avatar-5 {
+  background-image: url(../images/persons/5-dop.jpg), url(../images/persons/5.jpg), url(../images/persons/circle.jpg);
+}
+.speechBubble .avatar-6 {
+  background-image: url(../images/persons/6-dop.jpg), url(../images/persons/6.jpg), url(../images/persons/circle.jpg);
+}
+.speechBubble .avatar-7 {
+  background-image: url(../images/persons/7-dop.jpg), url(../images/persons/7.jpg), url(../images/persons/circle.jpg);
+}
+.speechBubble .avatar-8 {
+  background-image: url(../images/persons/8-dop.jpg), url(../images/persons/8.jpg), url(../images/persons/circle.jpg);
+}
+.speechBubble .avatar-9 {
+  background-image: url(../images/persons/9-dop.jpg), url(../images/persons/9.jpg), url(../images/persons/circle.jpg);
+}
+.speechBubble .avatar-10 {
+  background-image: url(../images/persons/10-dop.jpg), url(../images/persons/10.jpg), url(../images/persons/circle.jpg);
+}
+.speechBubble .avatar-11 {
+  background-image: url(../images/persons/11-dop.jpg), url(../images/persons/11.jpg), url(../images/persons/circle.jpg);
+}
+.speechBubble .avatar-12 {
+  background-image: url(../images/persons/12-dop.jpg), url(../images/persons/12.jpg), url(../images/persons/circle.jpg);
+}
+.speechBubble .avatar-13 {
+  background-image: url(../images/persons/13-dop.jpg), url(../images/persons/13.jpg), url(../images/persons/circle.jpg);
+}
+.speechBubble .avatar-14 {
+  background-image: url(../images/persons/14-dop.jpg), url(../images/persons/14.jpg), url(../images/persons/circle.jpg);
+}
+.speechBubble .avatar-15 {
+  background-image: url(../images/persons/15-dop.jpg), url(../images/persons/15.jpg), url(../images/persons/circle.jpg);
+}
+.speechBubble .avatar-16 {
+  background-image: url(../images/persons/16-dop.jpg), url(../images/persons/16.jpg), url(../images/persons/circle.jpg);
+}
+.speechBubble .avatar-17 {
+  background-image: url(../images/persons/17-dop.jpg), url(../images/persons/17.jpg), url(../images/persons/circle.jpg);
+}
+.speechBubble .avatar-18 {
+  background-image: url(../images/persons/18-dop.jpg), url(../images/persons/18.jpg), url(../images/persons/circle.jpg);
+}
+.speechBubble .avatar-19 {
+  background-image: url(../images/persons/19-dop.jpg), url(../images/persons/19.jpg), url(../images/persons/circle.jpg);
+}
+.speechBubble .avatar-20 {
+  background-image: url(../images/persons/20-dop.jpg), url(../images/persons/20.jpg), url(../images/persons/circle.jpg);
+}
+.speechBubble .avatar-21 {
+  background-image: url(../images/persons/21-dop.jpg), url(../images/persons/21.jpg), url(../images/persons/circle.jpg);
+}
+.speechBubble .avatar-22 {
+  background-image: url(../images/persons/22-dop.jpg), url(../images/persons/22.jpg), url(../images/persons/circle.jpg);
+}
+.speechBubble .avatar-23 {
+  background-image: url(../images/persons/23-dop.jpg), url(../images/persons/23.jpg), url(../images/persons/circle.jpg);
+}
+.speechBubble .avatar-24 {
+  background-image: url(../images/persons/24-dop.jpg), url(../images/persons/24.jpg), url(../images/persons/circle.jpg);
+}
+.speechBubble .avatar-25 {
+  background-image: url(../images/persons/25-dop.jpg), url(../images/persons/25.jpg), url(../images/persons/circle.jpg);
+}
+.speechBubble .avatar-26 {
+  background-image: url(../images/persons/26-dop.jpg), url(../images/persons/26.jpg), url(../images/persons/circle.jpg);
+}
+.speechBubble .avatar-27 {
+  background-image: url(../images/persons/27-dop.jpg), url(../images/persons/27.jpg), url(../images/persons/circle.jpg);
+}
+.speechBubble .avatar-28 {
+  background-image: url(../images/persons/28-dop.jpg), url(../images/persons/28.jpg), url(../images/persons/circle.jpg);
+}
+.speechBubble .avatar-29 {
+  background-image: url(../images/persons/29-dop.jpg), url(../images/persons/29.jpg), url(../images/persons/circle.jpg);
+}
+.speechBubble .avatar {
+  position: absolute;
+  top: -71px;
+  left: -105px;
+  width: 120px;
+  height: 120px;
+  background-size: 100%, 100%, 150%;
+  background-position: center, center, center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-blend-mode: darken, darken, normal;
+  transition: all 0.7s;
+  z-index: -1;
+}
+@media (max-width: 420px) {
+  .speechBubble .avatar {
+    top: -52px;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    background-size: 80px 80px;
+    background-position: 50% 70%;
+  }
+}
+.speechBubble:hover .avatar {
+  transform-origin: 60px 60px;
+  transform: scale(1.55) rotate(-6deg);
+  background-size: 110%, 100%, 120%;
+  background-position: center, center, center;
+}
+.speechBubble:hover .speechAuthor {
+  color: black;
+}
+
+.question {
+  background-color: rgb(234, 234, 234);
+  font-weight: bold;
+  font-size: 1.04rem;
+  line-height: 1.2;
+  transition: all 0.6s;
+}
+.question:hover {
+  background-color: rgb(210, 210, 210);
+}
+
+.chatbooklogo {
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: all 0.6s;
+}
+.chatbooklogo:hover {
+  transform: rotateZ(-6deg) scale(1.62);
+}
+
+.chehov-navbar {
+  background-color: #712cf9 !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(255, 255, 255, 0.15);
+}
+.chehov-navbar .container-fluid {
+  max-width: 640px;
+}
+
+.chehov-main-container {
+  max-width: 640px;
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=chehov-global.css.map */

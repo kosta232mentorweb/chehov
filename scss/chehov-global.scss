@@ -1,5 +1,150 @@
 // Main SCSS-file for the Chehov tasks
 
-h1 {
-   font-family: sans-serif;
+
+
+@import "variables/variables";
+
+// правила только для экранов
+@import "medias/screen";
+
+// правила только для печати
+@import "medias/print";
+
+body {
+   @media screen {
+      padding-top: 100px;
+      padding-bottom: 80px;
+      min-width: 320px;
+   }
+
+   nav.navbar {
+      min-width: 320px;
+   }
+}
+
+// полоска для разграничения номера задания при печати
+.taskNumber+hr {
+   // font-size: 2rem;
+   // font-weight: bold;
+   margin-bottom: 45px;
+}
+
+.speechBubble {
+   padding: 8px 14px 10px;
+   border-radius: 8px;
+   display: inline-block;
+   position: relative;
+
+   &.withAvatar {
+      margin-left: 85px;
+
+      @media (max-width: $mobilePhoneWidth) {
+         margin-left: inherit;
+         display: block;
+         margin-top: 40px !important;
+      }
+   }
+
+   @media print {
+      border: 1px solid #bbb;
+   }
+
+   .speechAuthor {
+      color: rgb(72, 72, 72);
+      position: absolute;
+      top: -22px;
+      font-size: 0.85rem;
+
+      @media (max-width: $mobilePhoneWidth) {
+         left: 60px;
+      }
+   }
+
+   @for $i from 0 to 30 {
+      .avatar-#{$i} {
+         background-image: url(../images/persons/#{$i}-dop.jpg),
+         url(../images/persons/#{$i}.jpg),
+         url(../images/persons/circle.jpg);
+
+      }
+   }
+
+   .avatar {
+      position: absolute;
+      top: -71px;
+      left: -105px;
+      width: 120px;
+      height: 120px;
+      background-size: 100%, 100%, 150%;
+      background-position: center, center, center;
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-blend-mode: darken, darken, normal;
+
+      transition: all 0.7s;
+      z-index: -1;
+
+      @media (max-width: $mobilePhoneWidth) {
+         top: -52px;
+         left: 0px;
+         width: 50px;
+         height: 50px;
+         background-size: 80px 80px;
+         background-position: 50% 70%;
+
+      }
+   }
+
+
+   &:hover {
+
+      .avatar {
+         // width: 150px;
+         // height: 150px;
+         transform-origin: 60px 60px;
+         transform: scale(1.55) rotate(-6deg);
+         background-size: 110%, 100%, 120%;
+         background-position: center, center, center;
+      }
+
+      .speechAuthor {
+         color: black;
+      }
+   }
+}
+
+.question {
+   background-color: rgb(234, 234, 234);
+   font-weight: bold;
+   font-size: 1.04rem;
+   line-height: 1.2;
+
+   transition: all 0.6s;
+
+   &:hover {
+      background-color: rgb(210, 210, 210);
+   }
+}
+
+.chatbooklogo {
+   margin-left: 20px;
+   margin-right: 20px;
+   transition: all 0.6s;
+
+   &:hover {
+      transform: rotateZ(-6deg) scale(1.62);
+   }
+}
+
+.chehov-navbar {
+   background-color: #712cf9 !important;
+   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(255 255 255 / 15%);
+
+   .container-fluid {
+      max-width: 640px;
+   }
+}
+
+.chehov-main-container {
+   max-width: 640px;
+   margin-top: 30px;
 }
