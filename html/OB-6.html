@@ -27,15 +27,16 @@
 <body>
 
    <!-- Navbar и боковое меню -->
-   <nav class="navbar navbar-light bg-light fixed-top screenOnly">
+   <nav class="navbar navbar-dark bg-dark fixed-top screenOnly chehov-navbar">
       <div class="container-fluid">
-         <a class="navbar-brand" href="#">Задание ОБ-6.</a>
-         <a class="navbar-brand" href="#"><img src="../images/chat-book-logo.jpg" width="40" alt="BOOKaaS logo" style="mix-blend-mode: multiply;"></a>
+         <a class="navbar-brand" href="#"><img src="../images/chatbooklogo.svg" width="48" alt="BOOKaaS logo"
+               class="chatbooklogo"></a>
+         <a class="navbar-brand" href="#">Задание ОБ-6</a>
          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLightNavbar"
             aria-controls="offcanvasLightNavbar">
             <span class="navbar-toggler-icon"></span>
          </button>
-         <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasLightNavbar"
+         <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasLightNavbar"
             aria-labelledby="offcanvasLightNavbarLabel">
             <div class="offcanvas-header">
                <h5 class="offcanvas-title" id="offcanvasLightNavbarLabel">Дополнительно</h5>
@@ -45,7 +46,7 @@
             <div class="offcanvas-body">
                <p>Задания можно распечатать на принтере. Страница адаптируется для печати на бумаге формата А4 и,
                   например, вместо ссылок появятся QR-коды. Для печати нажмите на клавиатуре Ctrl&nbsp;+&nbsp;P.</p>
-               <img src="../images/chat-book-logo.jpg" width="80" alt="BOOKaaS logo" style="mix-blend-mode: multiply;">
+               <img src="../images/chatbooklogo.svg" width="80" alt="BOOKaaS logo">
                <p>Серия основана в 2020 году К. Г. Страусовым.</p>
                <p>Ответственный за литературную и методическую часть С. C. Бородич</p>
                <p>Составители лексического и дидактического сопровождения книги:</p>
@@ -90,7 +91,7 @@
    <!-- <div class="sticky-bottom">© Константин Страусов, 2022—2023. © Лаборатория "BOOKaaS", 2022—2023</div> -->
 
    <!-- Основной контейнер задания  -->
-   <div class="container-md">
+   <div class="container chehov-main-container">
       <div class="row">
          <div class="col-12">
 
@@ -100,13 +101,19 @@
 
             <!-- Само задание -->
             <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatar avatar-0"></span>
-               <span class="speechAuthor">Чехов</span>
+               <span class="avatar avatar-3"></span>
+               <span class="speechAuthor">А. П. Чехов</span>
                Изучите мою биографию в разных современных источниках,
-               <span class="screenOnly">перейдя по ссылкам.</span>
+               <span class="screenOnly">перейдя по
+                  <a href="#links">
+                     <span class="badge bg-info" style="font-size: 16.1px; opacity: 0.8; padding: 3px 5px 5px 5px;
+                                                        line-height: 1.1;margin-top: 3px;">ссылкам</span>
+                  </a>.
+               </span>
                <span class="printOnly">сканируя QR-коды.</span>
                Отметьте верные утверждения:
             </div>
+            <div id="links"></div>
 
             <!-- Основная форма. Внимание на имя с префиксом -->
             <form name="chehov-form-ob-6" action="http://activepads.com:8082/formDetector">
