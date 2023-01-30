@@ -47,7 +47,7 @@ body nav.navbar {
   }
 }
 .speechBubble .speechAuthor {
-  color: #484848;
+  color: rgb(72, 72, 72);
   position: absolute;
   top: -22px;
   font-size: 0.85rem;
@@ -181,14 +181,14 @@ body nav.navbar {
 }
 
 .question {
-  background-color: #eaeaea;
+  background-color: rgb(234, 234, 234);
   font-weight: bold;
   font-size: 1.04rem;
   line-height: 1.2;
   transition: all 0.6s;
 }
 .question:hover {
-  background-color: #d2d2d2;
+  background-color: rgb(210, 210, 210);
 }
 
 .chatbooklogo {
