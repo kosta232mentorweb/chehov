@@ -1,19 +1,22 @@
-form[name=form-ob-6] {
+form[name=chehov-form-ob-6] {
   margin-left: 90px;
 }
-form[name=form-ob-6] li {
+form[name=chehov-form-ob-6] li {
   display: grid;
   grid-template-columns: auto 1fr;
 }
-form[name=form-ob-6] .badge {
+form[name=chehov-form-ob-6] .badge {
   white-space: normal;
   text-align: start;
   display: inline-grid;
   grid-template-columns: auto 1fr;
   column-gap: 0.2rem;
 }
-@media (max-width: 360px) {
-  form[name=form-ob-6] {
+form[name=chehov-form-ob-6] .badge:hover {
+  background-color: var(--bs-blue) !important;
+}
+@media (max-width: 420px) {
+  form[name=chehov-form-ob-6] {
     margin-left: inherit;
   }
 }

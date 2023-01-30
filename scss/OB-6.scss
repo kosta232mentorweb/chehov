@@ -1,4 +1,6 @@
-form[name="form-ob-6"] {
+@import "variables/variables";
+
+form[name="chehov-form-ob-6"] {
    li {
       display: grid;
       grid-template-columns: auto 1fr;
@@ -11,10 +13,14 @@ form[name="form-ob-6"] {
       display: inline-grid;
       grid-template-columns: auto 1fr;
       column-gap: 0.2rem;
+
+      &:hover {
+         background-color: var(--bs-blue) !important;
+      }
    }
 
    margin-left: 90px;
-   @media (max-width: 360px) {
+   @media (max-width: $mobilePhoneWidth) {
       margin-left: inherit;
    }
 }

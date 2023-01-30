@@ -1,0 +1,7 @@
+// screen only media
+
+.screenOnly {
+   @media print {
+      display: none;
+   }
+}

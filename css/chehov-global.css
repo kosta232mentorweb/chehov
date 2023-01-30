@@ -14,7 +14,11 @@
   body {
     padding-top: 100px;
     padding-bottom: 80px;
+    min-width: 320px;
   }
+}
+body nav.navbar {
+  min-width: 320px;
 }
 
 .taskNumber + hr {
@@ -26,13 +30,11 @@
   border-radius: 8px;
   display: inline-block;
   position: relative;
-  font-size: 1.1rem;
-  line-height: 1.2;
 }
 .speechBubble.withAvatar {
   margin-left: 85px;
 }
-@media (max-width: 360px) {
+@media (max-width: 420px) {
   .speechBubble.withAvatar {
     margin-left: inherit;
     display: block;
@@ -50,7 +52,7 @@
   top: -22px;
   font-size: 0.85rem;
 }
-@media (max-width: 360px) {
+@media (max-width: 420px) {
   .speechBubble .speechAuthor {
     left: 60px;
   }
@@ -65,7 +67,7 @@
   background-position: 50% 70%;
   z-index: -1;
 }
-@media (max-width: 360px) {
+@media (max-width: 420px) {
   .speechBubble .avatar {
     top: -52px;
     left: 0px;
@@ -169,6 +171,8 @@
 .question {
   background-color: #f4cff1;
   font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 1.2;
 }
 
 /*# sourceMappingURL=chehov-global.css.map */

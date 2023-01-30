@@ -1,0 +1,7 @@
+// print only media
+
+.printOnly {
+   @media screen {
+      display: none;
+   }
+}
