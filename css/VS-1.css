@@ -222,10 +222,6 @@
   top: 540px;
 }
 
-.word1 {
-  border: 1px solid #ddd;
-}
-
 .crossword {
   height: 540px;
   width: 540px;
@@ -244,7 +240,6 @@
   align-items: center;
   font-size: 20px;
   font-family: sans-serif;
-  color: green;
 }
 .crossword > div > input {
   padding: 0;
@@ -253,4 +248,4 @@
   height: 18px;
 }
 
-/*# sourceMappingURL=style-VS-1.css.map */
+/*# sourceMappingURL=VS-1.css.map */

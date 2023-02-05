@@ -10,10 +10,6 @@ $letterCounter: 27;
     }
 }
 
-.word1 {
-    border: 1px solid #ddd;
-}
-
 .crossword {
     height: $letterCounter * $w;
     width: $letterCounter * $w;
@@ -33,7 +29,6 @@ $letterCounter: 27;
         align-items: center;
         font-size: $w;
         font-family: sans-serif;
-        color: green;
         >input {
             padding: 0;
             margin: 0;
