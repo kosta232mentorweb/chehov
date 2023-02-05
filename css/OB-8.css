@@ -1,8 +1,19 @@
 .letter {
     background-image: url('../images/letter.png');
-
-    background-size: cover;
+    background-size: 100% auto;
     border: 1px solid black;
     margin-bottom: 10%;
     padding: 3%;
+    
 }
+.manuscript {
+    font-size: large;
+    font-family: cursive;
+}
+textarea {
+    width: 94%;
+    height: 150px;
+    padding: 12px 20px;
+    font-size: 16px;
+    resize: none;
+  }
