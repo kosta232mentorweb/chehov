@@ -1,19 +1,4 @@
 .main {
-    font-size: 14pt;
-    font-family: 'Times New Roman', Times, serif;
+    display: flex;
 }
 
-.names {
-    text-align: left;
-    font-weight: 700;
-    margin-left: 3cm;
-    margin-top: 4cm;
-    position: absolute;
-}
-
-.status {
-    text-align: left;
-    margin-left: 15cm;
-    margin-top: 2cm;
-    position: absolute;
-}
