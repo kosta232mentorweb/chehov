@@ -1,18 +1,13 @@
-input{
-    width: 6mm;
-    height: 4mm;
-    text-align: right;
-}
-div{
+.space {
+    margin-left: 6mm;
     display: inline;
 }
-.space{
-    margin-left: 6mm;
-}
-.weight{
+
+.weight {
     font-weight: 700;
 }
-.square{
+
+.square {
     width: 190px;
     height: 190px;
     background: orange;
@@ -21,7 +16,8 @@ div{
     margin-top: cm;
     margin-left: 7.5cm;
 }
-.sub{
+
+.sub {
     width: 2cm;
     height: 1cm;
 }

@@ -1,119 +1,231 @@
 <!DOCTYPE html>
+
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DV-9</title>
+    <!-- № задания. Чехов -->
+    <title>ДВ-9. Дядя Ваня</title>
+
+    <!-- Подключаем бутстрап стили -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Подключаем бутстрап иконки -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- Подключаем общие стили -->
+    <link rel="stylesheet" href="../css/chehov-global.css">
+
+    <!-- Подключаем ДВ-9 стили -->
     <link rel="stylesheet" href="../css/DV-9.css">
+
 </head>
+
 <body>
-    <p>
-        9. Разгадайте, под какими цифрами скрываются какие буквы, и узнайте имя персонажа по тому, как его называет дядя Ваня:
-    </p>
-    <div>
-        <input type="text" name="1" placeholder="1">
-        <input type="text" name="2" placeholder="2">
-        <input type="text" name="3" placeholder="3">
-        <input type="text" name="4" placeholder="4">
-        <input type="text" name="5" placeholder="5">
-        <input type="text" name="6" placeholder="1">
-        <input type="text" name="7" placeholder="6">
-        <input type="text" name="8" placeholder="7">
-        <input type="text" name="9" placeholder="8">
+
+    <!-- Navbar и боковое меню -->
+    <nav class="navbar navbar-dark bg-dark fixed-top screenOnly chehov-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../images/chatbooklogo.svg" width="48" alt="BOOKaaS logo"
+                    class="chatbooklogo"></a>
+            <a class="navbar-brand" href="#">Задание ДВ-9</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasLightNavbar" aria-controls="offcanvasLightNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasLightNavbar"
+                aria-labelledby="offcanvasLightNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasLightNavbarLabel">Дополнительно</h5>
+                    <button type="button" class="btn-close btn-close" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <p>Задания можно распечатать на принтере. Страница адаптируется для печати на бумаге формата А4 и,
+                        например, вместо ссылок появятся QR-коды. Для печати нажмите на клавиатуре Ctrl&nbsp;+&nbsp;P.
+                    </p>
+                    <img src="../images/chatbooklogo.svg" width="80" alt="BOOKaaS logo">
+                    <p>Серия основана в 2020 году К. Г. Страусовым.</p>
+                    <p>Ответственный за литературную и методическую часть С. C. Бородич</p>
+                    <p>Составители лексического и дидактического сопровождения книги:</p>
+                    <p>Авторские иллюстрации размещены с любезного разрешения К. И. Картель и Д. Д. Ермакович</p>
+                    <p>© 2022—2023 Константин Страусов, идея, разработка, дизайн.</p>
+                    <p>© 2022—2023 Группа авторов проекта “КНИГА-ЧАТ”, текст.</p>
+                    <p>© 2022—2023 Ксения Картель, Дарья Ермакович, Мария ..., иллюстрации.</p>
+                    <p>© 2022—2023 Ксения Картель, дизайн.</p>
+                    <p>Разрешается использование только для некоммерческих образовательных целей.</p>
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Перейти к списку заданий</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                   <a class="nav-link" href="../index.html">К списку заданий</a>
+                </li>
+                <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Dropdown
+                   </a>
+                   <ul class="dropdown-menu dropdown-menu-light">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                         <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                   </ul>
+                </li> -->
+                    </ul>
+                    <!-- <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+             </form> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Статус строка -->
+    <!-- <div class="sticky-bottom">© Константин Страусов, 2022—2023. © Лаборатория "BOOKaaS", 2022—2023</div> -->
+
+    <!-- Основной контейнер задания  -->
+    <div class="container chehov-main-container">
+        <div class="row">
+            <div class="col-12">
+
+                <!-- Заголовок только для печати -->
+                <h1 class="printOnly taskNumber">Задание ДВ-9.</h1>
+                <hr class="printOnly">
+
+                <!-- Само задание -->
+                <div class="speechBubble question withAvatar mt-3 mb-3">
+                    <span class="avatar avatar-3"></span>
+                    <span class="speechAuthor">А. П. Чехов</span>
+                    Разгадайте, под какими цифрами скрываются какие буквы, и узнайте имя персонажа по тому, как его
+                    называет дядя Ваня:
+                </div>
+
+                <!-- Основная форма. Внимание на имя с префиксом -->
+                <form name="chehov-form-dv-9" action="http://activepads.com:8082/formDetector">
+
+                    <div class="space">
+                        <input type="text" name="1" placeholder="1">
+                        <input type="text" name="2" placeholder="2">
+                        <input type="text" name="3" placeholder="3">
+                        <input type="text" name="4" placeholder="4">
+                        <input type="text" name="5" placeholder="5">
+                        <input type="text" name="6" placeholder="1">
+                        <input type="text" name="7" placeholder="6">
+                        <input type="text" name="8" placeholder="7">
+                        <input type="text" name="9" placeholder="8">
+                    </div>
+                    <div class="space">
+                        <input type="text" name="10" placeholder="9">
+                        <input type="text" name="11" placeholder="2">
+                        <input type="text" name="12" placeholder="1">
+                        <input type="text" name="13" placeholder="7">
+                        <input type="text" name="14" placeholder="10">
+                        <input type="text" name="15" placeholder="11">
+                        <input type="text" name="16" placeholder="10">
+                        <input type="text" name="17" placeholder="8">
+                        <input type="text" name="18" placeholder="12">
+                        <input type="text" name="19" placeholder="9">
+                        <input type="text" name="20" placeholder="10">
+                        <input type="text" name="21" placeholder="13">
+                    </div>
+                    <div class="space">
+                        <input type="text" name="22" placeholder="5">
+                        <input type="text" name="23" placeholder="3">
+                        <input type="text" name="24" placeholder="8">
+                        <input type="text" name="25" placeholder="3">
+                        <input type="text" name="26" placeholder="14">
+                        <input type="text" name="27" placeholder="8">
+                        <input type="text" name="28" placeholder="15">
+                        <input type="text" name="29" placeholder="16">
+                        <input type="text" name="30" placeholder="12">
+                        <input type="text" name="31" placeholder="9">
+                    </div>
+                    <br><br>
+                    <div>
+                        <input class="weight" type="text" name="32" value="у">
+                        <input type="text" name="33" placeholder="13">
+                        <input type="text" name="34" placeholder="3">
+                        <input type="text" name="35" placeholder="6">
+                        <input type="text" name="36" placeholder="1">
+                        <input type="text" name="37" placeholder="15">
+                    </div>
+                    <div class="space">
+                        <input type="text" name="38" placeholder="9">
+                        <input type="text" name="39" placeholder="12">
+                        <input type="text" name="40" placeholder="14">
+                        <input type="text" name="41" placeholder="2">
+                        <input type="text" name="42" placeholder="1">
+                    </div>
+                    <div class="square"></div>
+                    <br>
+                    <br>
+                    <div>
+                        <input type="text" name="43" placeholder="5">
+                        <input class="weight" type="text" name="44" value="ы">
+                        <input type="text" name="45" placeholder="6">
+                    </div>
+                    <div class="space">
+                        <input type="text" name="46" placeholder="7">
+                        <input class="weight" type="text" name="47" value="ь">
+                        <input type="text" name="48" placeholder="15">
+                        <input type="text" name="49" placeholder="13">
+                        <input type="text" name="50" placeholder="4">
+                        <input type="text" name="51" placeholder="1">
+                    </div>
+                    <br>
+                    <br>
+                    <div>
+                        <input class="weight" type="text" name="52" value="г">
+                        <input type="text" name="53" placeholder="3">
+                        <input type="text" name="54" placeholder="8">
+                        <input type="text" name="55" placeholder="8">
+                    </div>
+                    <div class="space">
+                        <input class="weight" type="text" name="56" value="п">
+                        <input type="text" name="57" placeholder="8">
+                        <input type="text" name="58" placeholder="12">
+                        <input class="weight" type="text" name="59" value="ф">
+                        <input type="text" name="60" placeholder="3">
+                        <input type="text" name="61" placeholder="5">
+                        <input type="text" name="62" placeholder="5">
+                        <input type="text" name="63" placeholder="12">
+                        <input type="text" name="64" placeholder="8">
+                    </div>
+                    <br>
+                    <br>
+                    <div>
+                        <input type="text" name="65" placeholder="5">
+                        <input class="weight" type="text" name="66" value="у">
+                        <input type="text" name="67" placeholder="11">
+                        <input type="text" name="68" placeholder="1">
+                        <input type="text" name="69" placeholder="5">
+                        <input class="weight" type="text" name="70" value="ш">
+                        <input type="text" name="71" placeholder="3">
+                        <input type="text" name="72" placeholder="7">
+                        <input class="weight" type="text" name="73" value="ш">
+                        <input type="text" name="74" placeholder="10">
+                        <input class="weight" type="text" name="75" value="й">
+                    </div><br><br>
+
+                    <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
+
+                </form>
+            </div>
+        </div>
     </div>
-    <div class="space">
-        <input type="text" name="10" placeholder="9">
-        <input type="text" name="11" placeholder="2">
-        <input type="text" name="12" placeholder="1">
-        <input type="text" name="13" placeholder="7">
-        <input type="text" name="14" placeholder="10">
-        <input type="text" name="15" placeholder="11">
-        <input type="text" name="16" placeholder="10">
-        <input type="text" name="17" placeholder="8">
-        <input type="text" name="18" placeholder="12">
-        <input type="text" name="19" placeholder="9">
-        <input type="text" name="20" placeholder="10">
-        <input type="text" name="21" placeholder="13">
-    </div>
-    <div class="space">
-        <input type="text" name="22" placeholder="5">   
-        <input type="text" name="23" placeholder="3">   
-        <input type="text" name="24" placeholder="8">   
-        <input type="text" name="25" placeholder="3">   
-        <input type="text" name="26" placeholder="14">   
-        <input type="text" name="27" placeholder="8">   
-        <input type="text" name="28" placeholder="15">   
-        <input type="text" name="29" placeholder="16">   
-        <input type="text" name="30" placeholder="12">   
-        <input type="text" name="31" placeholder="9">   
-    </div>
-    <br><br>
-    <div>
-        <input class="weight" type="text" name="32" value="у">
-        <input type="text" name="33" placeholder="13">
-        <input type="text" name="34" placeholder="3">
-        <input type="text" name="35" placeholder="6">
-        <input type="text" name="36" placeholder="1">
-        <input type="text" name="37" placeholder="15">
-    </div>
-    <div class="space">
-        <input type="text" name="38" placeholder="9">
-        <input type="text" name="39" placeholder="12">
-        <input type="text" name="40" placeholder="14">
-        <input type="text" name="41" placeholder="2">
-        <input type="text" name="42" placeholder="1">
-    </div>
-    <div class="square"></div>
-    <br>
-    <br>
-    <div>
-        <input type="text" name="43" placeholder="5">
-        <input class="weight" type="text" name="44" value="ы">
-        <input type="text" name="45" placeholder="6">
-    </div>
-    <div class="space">
-        <input type="text" name="46" placeholder="7">
-        <input class="weight" type="text" name="47" value="ь">
-        <input type="text" name="48" placeholder="15">       
-        <input type="text" name="49" placeholder="13">       
-        <input type="text" name="50" placeholder="4">       
-        <input type="text" name="51" placeholder="1">       
-    </div>
-    <br>
-    <br>
-    <div>
-        <input class="weight" type="text" name="52" value="г">
-        <input type="text" name="53" placeholder="3">       
-        <input type="text" name="54" placeholder="8">       
-        <input type="text" name="55" placeholder="8">  
-    </div>
-    <div class="space">
-        <input class="weight" type="text" name="56" value="п">
-        <input type="text" name="57" placeholder="8">       
-        <input type="text" name="58" placeholder="12">
-        <input class="weight" type="text" name="59" value="ф">
-        <input type="text" name="60" placeholder="3">
-        <input type="text" name="61" placeholder="5">
-        <input type="text" name="62" placeholder="5">
-        <input type="text" name="63" placeholder="12">
-        <input type="text" name="64" placeholder="8">  
-    </div>
-    <br>
-    <br>
-    <div>
-        <input type="text" name="65" placeholder="5">
-        <input class="weight" type="text" name="66" value="у">
-        <input type="text" name="67" placeholder="11">
-        <input type="text" name="68" placeholder="1">
-        <input type="text" name="69" placeholder="5">
-        <input class="weight" type="text" name="70" value="ш">
-        <input type="text" name="71" placeholder="3">
-        <input type="text" name="72" placeholder="7">
-        <input class="weight" type="text" name="73" value="ш">
-        <input type="text" name="74" placeholder="10">
-        <input class="weight" type="text" name="75" value="й"> 
-    </div><br><br>
-    <input class="sub" type="submit" name="submit" id="sub" value="Отправить">
+
+    <!-- Подключаем бутстрап скрипты -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
