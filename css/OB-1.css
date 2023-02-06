@@ -1,0 +1,10 @@
+.answerForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.answerForm .centeredText {
+  text-align: center;
+}
+
+/*# sourceMappingURL=OB-1.css.map */
