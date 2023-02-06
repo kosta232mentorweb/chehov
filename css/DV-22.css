@@ -1,12 +1,12 @@
-.psevdoAvatar{
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
+.psevdoAvatar {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
 }
-    
-    
 
+textarea {
+  width: 100%;
+}
 
-    
-    
+/*# sourceMappingURL=DV-22.css.map */
