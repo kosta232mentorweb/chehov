@@ -1,0 +1,146 @@
+.inst {
+    display: grid;
+    grid-template-columns: repeat(50px 100px 50px 50px 50px 100px);
+    grid-template-rows: repeat(6, 80px);
+
+    .instMenu {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 7;
+    }
+
+    .psevdoAvatar {
+        border-radius: 50%;
+        border: 1px solid black;
+        width: 140px;
+        height: 140px;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .instName {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .instMessage {
+        grid-column-start: 5;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .instinfo {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .instMinuPup {
+        grid-column-start: 3;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .instPost {
+        grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+    .instLike {
+        grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+}
+
+
+textarea {
+    width: 100%;
+}
+
+
+.instAdviceLike {
+    margin: 1% auto 1% auto;
+}
+
+.instComent {}
+
+// .instHead {
+// grid-column-start: 3;
+// grid-column-end: 6;
+// grid-row-start: 1;
+// grid-row-end: 3;
+// }
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// .instMain {
+// grid-column-start: 2;
+// grid-column-end: 2;
+// grid-row-start: 2;
+// grid-row-end: 3;
+// border: 1px solid black;
+// width: 500px;
+// height: 500px;
+// }
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// .instPost {
+// grid-column-start: 2;
+// grid-column-end: 2;
+// grid-row-start: 4;
+// grid-row-end: 5;
+// }
+// 
+
+
+
+
+
+
+// 
+
+
+
+
+
+
+// 
+// .advice {
+// width: 90%;
+// height: 20px;
+// }
+// 
+// #instComent {
+// width: 100%;
+// height: 250px;
+// }

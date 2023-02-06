@@ -1,0 +1,67 @@
+.inst {
+  display: grid;
+  grid-template-columns: repeat(50px 100px 50px 50px 50px 100px);
+  grid-template-rows: repeat(6, 80px);
+}
+.inst .instMenu {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 7;
+}
+.inst .psevdoAvatar {
+  border-radius: 50%;
+  border: 1px solid black;
+  width: 140px;
+  height: 140px;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.inst .instName {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.inst .instMessage {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.inst .instinfo {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.inst .instMinuPup {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.inst .instPost {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.inst .instLike {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+textarea {
+  width: 100%;
+}
+
+.instAdviceLike {
+  margin: 1% auto 1% auto;
+}
+
+/*# sourceMappingURL=DV-17.css.map */
