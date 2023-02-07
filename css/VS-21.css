@@ -1,6 +1,6 @@
 .answer-VS-21 {
   display: grid;
-  grid-template-columns: 20% 70%;
+  grid-template-columns: 20% 80%;
   grid-template-rows: 50px 50px 50px 50px 50px;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
@@ -47,4 +47,4 @@
   grid-area: answer5;
 }
 
-/*# sourceMappingURL=style-VS-21.css.map */
+/*# sourceMappingURL=VS-21.css.map */
