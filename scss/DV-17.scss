@@ -1,7 +1,7 @@
 .inst {
     display: grid;
     grid-template-columns: repeat(50px 100px 50px 50px 50px 100px);
-    grid-template-rows: repeat(6, 80px);
+    grid-template-rows: repeat(16, 100px);
 
     .instMenu {
         grid-column-start: 1;
@@ -49,11 +49,13 @@
         grid-row-end: 4;
     }
 
+    // Место для катинки поста
+
     .instPost {
         grid-column-start: 2;
         grid-column-end: 7;
-        grid-row-start: 4;
-        grid-row-end: 5;
+        grid-row-start: 5;
+        grid-row-end: 6;
     }
 
     .instLike {
@@ -62,85 +64,34 @@
         grid-row-start: 6;
         grid-row-end: 7;
     }
+
+    .instMain {
+        grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row-start: 7;
+        grid-row-end: 13;
+    }
+
+    .instAdviceLike {
+        grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row-start: 13;
+        grid-row-end: 14;
+    }
+
+    .instComments {
+        grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row-start: 14;
+        grid-row-end: 16;
+    }
 }
 
 
 textarea {
     width: 100%;
+    height: 70px;
+    padding: 12px 20px;
+    font-size: 16px;
+    resize: none;
 }
-
-
-.instAdviceLike {
-    margin: 1% auto 1% auto;
-}
-
-.instComent {}
-
-// .instHead {
-// grid-column-start: 3;
-// grid-column-end: 6;
-// grid-row-start: 1;
-// grid-row-end: 3;
-// }
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// .instMain {
-// grid-column-start: 2;
-// grid-column-end: 2;
-// grid-row-start: 2;
-// grid-row-end: 3;
-// border: 1px solid black;
-// width: 500px;
-// height: 500px;
-// }
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// .instPost {
-// grid-column-start: 2;
-// grid-column-end: 2;
-// grid-row-start: 4;
-// grid-row-end: 5;
-// }
-// 
-
-
-
-
-
-
-// 
-
-
-
-
-
-
-// 
-// .advice {
-// width: 90%;
-// height: 20px;
-// }
-// 
-// #instComent {
-// width: 100%;
-// height: 250px;
-// }

@@ -1,7 +1,7 @@
 .inst {
   display: grid;
   grid-template-columns: repeat(50px 100px 50px 50px 50px 100px);
-  grid-template-rows: repeat(6, 80px);
+  grid-template-rows: repeat(16, 100px);
 }
 .inst .instMenu {
   grid-column-start: 1;
@@ -46,8 +46,8 @@
 .inst .instPost {
   grid-column-start: 2;
   grid-column-end: 7;
-  grid-row-start: 4;
-  grid-row-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 6;
 }
 .inst .instLike {
   grid-column-start: 2;
@@ -55,13 +55,31 @@
   grid-row-start: 6;
   grid-row-end: 7;
 }
+.inst .instMain {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 7;
+  grid-row-end: 13;
+}
+.inst .instAdviceLike {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 13;
+  grid-row-end: 14;
+}
+.inst .instComments {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 14;
+  grid-row-end: 16;
+}
 
 textarea {
   width: 100%;
-}
-
-.instAdviceLike {
-  margin: 1% auto 1% auto;
+  height: 70px;
+  padding: 12px 20px;
+  font-size: 16px;
+  resize: none;
 }
 
 /*# sourceMappingURL=DV-17.css.map */
