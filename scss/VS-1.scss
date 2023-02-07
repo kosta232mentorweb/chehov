@@ -1,10 +1,11 @@
-$w: 20px;
+$w: 25px;
 $letterCounter: 27;
 
 @for $i from 0 through $letterCounter {
     .x#{$i} {
         left: $w * $i;
     }
+
     .y#{$i} {
         top: $w * $i;
     }
@@ -13,11 +14,10 @@ $letterCounter: 27;
 .crossword {
     height: $letterCounter * $w;
     width: $letterCounter * $w;
-    background-color: #eee;
-    
+
     position: relative;
-    
-    >div {
+
+    >input {
         position: absolute;
         border: 1px solid #888;
         border-radius: 2px;
@@ -29,11 +29,24 @@ $letterCounter: 27;
         align-items: center;
         font-size: $w;
         font-family: sans-serif;
-        >input {
-            padding: 0;
-            margin: 0;
-            width: 18px;
-            height: 18px;
-        }
+    }
+
+    >.number {
+        position: absolute;
+        border-radius: 2px;
+        background-color: #fff;
+        width: $w;
+        height: $w;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: $w;
+        font-family: sans-serif;
+    }
+    .question {
+        position: absolute;
+        top: 500px;
     }
 }
+
+
