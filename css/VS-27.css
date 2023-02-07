@@ -1,0 +1,11 @@
+table th, table td {
+  border: 1px solid black;
+}
+table tr {
+  height: 50px;
+}
+table td {
+  width: 200px;
+}
+
+/*# sourceMappingURL=VS-27.css.map */
