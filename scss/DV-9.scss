@@ -1,0 +1,29 @@
+.space {
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 5pt;
+
+
+    >input {
+        width: 15px;
+        height: 4mm;
+        text-align: right;
+    }
+}
+
+.weight {
+    font-weight: 700;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background: orange;
+    display: inline-block;
+    position: absolute;
+    left: 9cm;
+}
+
+.wrapper {
+    position: relative;
+}
