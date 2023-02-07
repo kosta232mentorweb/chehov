@@ -1,23 +1,29 @@
 .space {
-    margin-left: 6mm;
-    display: inline;
+  margin-left: 10px;
+  display: inline-block;
+  font-size: 5pt;
+}
+.space > input {
+  width: 15px;
+  height: 4mm;
+  text-align: right;
 }
 
 .weight {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .square {
-    width: 190px;
-    height: 190px;
-    background: orange;
-    display: inline-block;
-    position: absolute;
-    margin-top: cm;
-    margin-left: 7.5cm;
+  width: 100px;
+  height: 100px;
+  background: orange;
+  display: inline-block;
+  position: absolute;
+  left: 9cm;
 }
 
-.sub {
-    width: 2cm;
-    height: 1cm;
+.wrapper {
+  position: relative;
 }
+
+/*# sourceMappingURL=DV-9.css.map */
