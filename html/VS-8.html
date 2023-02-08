@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- № задания. Чехов -->
+    <title>ВС-8. Чехов</title>
+
+    <!-- Подключаем бутстрап стили -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Подключаем бутстрап иконки -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- Подключаем общие стили -->
+    <link rel="stylesheet" href="../css/chehov-global.css">
+
+    <!-- Подключаем ВС-8 стили -->
+    <link rel="stylesheet" href="../css/VS-8.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar и боковое меню -->
+    <nav class="navbar navbar-dark bg-dark fixed-top screenOnly chehov-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../images/chatbooklogo.svg" width="48" alt="BOOKaaS logo"
+                    class="chatbooklogo"></a>
+            <a class="navbar-brand" href="#">Задание ВС-8</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasLightNavbar" aria-controls="offcanvasLightNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasLightNavbar"
+                aria-labelledby="offcanvasLightNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasLightNavbarLabel">Дополнительно</h5>
+                    <button type="button" class="btn-close btn-close" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <p>Задания можно распечатать на принтере. Страница адаптируется для печати на бумаге формата А4 и,
+                        например, вместо ссылок появятся QR-коды. Для печати нажмите на клавиатуре Ctrl&nbsp;+&nbsp;P.
+                    </p>
+                    <img src="../images/chatbooklogo.svg" width="80" alt="BOOKaaS logo">
+                    <p>Серия основана в 2020 году К. Г. Страусовым.</p>
+                    <p>Ответственный за литературную и методическую часть С. C. Бородич</p>
+                    <p>Составители лексического и дидактического сопровождения книги:</p>
+                    <p>Авторские иллюстрации размещены с любезного разрешения К. И. Картель и Д. Д. Ермакович</p>
+                    <p>© 2022—2023 Константин Страусов, идея, разработка, дизайн.</p>
+                    <p>© 2022—2023 Группа авторов проекта “КНИГА-ЧАТ”, текст.</p>
+                    <p>© 2022—2023 Ксения Картель, Дарья Ермакович, Мария ..., иллюстрации.</p>
+                    <p>© 2022—2023 Ксения Картель, дизайн.</p>
+                    <p>Разрешается использование только для некоммерческих образовательных целей.</p>
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Перейти к списку заданий</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                   <a class="nav-link" href="../index.html">К списку заданий</a>
+                </li>
+                <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Dropdown
+                   </a>
+                   <ul class="dropdown-menu dropdown-menu-light">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                         <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                   </ul>
+                </li> -->
+                    </ul>
+                    <!-- <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+             </form> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Статус строка -->
+    <!-- <div class="sticky-bottom">© Константин Страусов, 2022—2023. © Лаборатория "BOOKaaS", 2022—2023</div> -->
+
+    <!-- Основной контейнер задания  -->
+    <div class="container chehov-main-container">
+        <div class="row">
+            <div class="col-12">
+
+                <!-- Заголовок только для печати -->
+                <h1 class="printOnly taskNumber">Задание ВС-8.</h1>
+                <hr class="printOnly">
+
+                <!-- Само задание -->
+                <div class="speechBubble question withAvatar mt-3 mb-3">
+                    <span class="avatar avatar-3"></span>
+                    <span class="speechAuthor">А. П. Чехов</span>
+                    Перечитайте внимательно Разговор Раневской и Пети Трофимова и сформулируйте основные черты поколения
+                    старшего и поколения младшего в моей пьесе.
+                </div>
+
+                <div class="wrapper">
+                    <div> <span>Любовь Андреевна.</span> Не дразните её, Петя, вы видите, она и без того в горе.</div> <br>
+                    <div> <span>Трофимов.</span> Уж очень она усердная, не в своё дело суётся. Всё лето не давала покоя ни мне, ни Ане, боялась,
+                        как
+                        бы у нас
+                        романа не вышло. Какое ей дело? И к тому же я вида не подавал, я так далёк от пошлости. Мы выше
+                        любви!
+                    </div> <br>
+                    <div> <span>Любовь Андреевна.</span>А я вот, должно быть, ниже любви. (В сильном беспокойстве.) Отчего нет Леонида? Только бы
+                        знать:
+                        продано имение
+                        или нет? Несчастье представляется мне до такой степени невероятным, что даже как-то не знаю, что
+                        думать,
+                        теряюсь… Я могу сейчас крикнуть… могу глупость сделать. Спасите меня, Петя. Говорите же
+                        что-нибудь,
+                        говорите…
+                    </div> <br>
+                    <div> <span>Трофимов.</span> Продано ли сегодня имение или не продано — не всё ли равно? С ним давно уже покончено, нет
+                        поворота
+                        назад,
+                        заросла дорожка. Успокойтесь, дорогая. Не надо обманывать себя, надо хоть раз в жизни взглянуть
+                        правде прямо в
+                        глаза.</div> <br>
+                    <div> <span>Любовь Андреевна.</span> Какой правде? Вы видите, где правда и где неправда, а я точно потеряла зрение, ничего не вижу.
+                        Вы
+                        смело решаете
+                        все важные вопросы, но скажите, голубчик, не потому ли это, что вы молоды, что вы не успели
+                        перестрадать ни
+                        одного вашего вопроса? Вы смело смотрите вперёд, и не потому ли, что не видите и не ждёте ничего
+                        страшного, так
+                        как жизнь еще скрыта от ваших молодых глаз? Вы смелее, честнее, глубже нас, но вдумайтесь,
+                        будьте
+                        великодушны
+                        хоть на кончике пальца, пощадите меня. Ведь я родилась здесь, здесь жили мои отец и мать, мой
+                        дед, я
+                        люблю этот
+                        дом, без вишневого сада я не понимаю своей жизни, и если уж так нужно продавать, то продавайте и
+                        меня вместе с
+                        садом… (Обнимает Трофимова, целует его в лоб.) Ведь мой сын утонул здесь… (Плачет.) Пожалейте
+                        меня,
+                        хороший,
+                        добрый человек.
+                    </div> <br>
+                    <div> <span>Трофимов.</span> Вы знаете, я сочувствую всей душой.</div> <br>
+                    <div> <span>Любовь Андреевна.</span> Но надо иначе, иначе это сказать… (Вынимает платок, на пол падает телеграмма.) У меня сегодня
+                        тяжело на душе,
+                        вы не можете себе представить. Здесь мне шумно, дрожит душа от каждого звука, я вся дрожу, а
+                        уйти к
+                        себе не
+                        могу, мне одной в тишине страшно. Не осуждайте меня, Петя… Я вас люблю, как родного. Я охотно бы
+                        отдала за вас
+                        Аню, клянусь вам, только, голубчик, надо же учиться, надо курс кончить. Вы ничего не делаете,
+                        только
+                        судьба
+                        бросает вас с места на место, так это странно… Не правда ли? Да? И надо же что-нибудь с бородой
+                        сделать, чтобы
+                        она росла как-нибудь… (Смеётся.) Смешной вы!</div> <br>
+                    <div> <span>Трофимов</span> (поднимает телеграмму). Я не желаю быть красавцем.</div> <br>
+                    <div> <span>Любовь Андреевна.</span> Это из Парижа телеграмма. Каждый день получаю. И вчера, и сегодня. Этот дикий человек опять
+                        заболел, опять с
+                        ним нехорошо… Он просит прощения, умоляет приехать, и по-настоящему мне следовало бы съездить в
+                        Париж, побыть
+                        возле него. У вас, Петя, строгое лицо, но что же делать, голубчик мой, что мне делать, он болен,
+                        он
+                        одинок,
+                        несчастлив, а кто там поглядит за ним, кто удержит его от ошибок, кто даст ему вовремя
+                        лекарство? И
+                        что ж тут
+                        скрывать или молчать, я люблю его, это ясно. Люблю, люблю… Это камень на моей шее, я иду с ним
+                        на
+                        дно, но я
+                        люблю этот камень и жить без него не могу. (Жмет Трофимову руку.) Не думайте дурно, Петя, не
+                        говорите мне
+                        ничего, не говорите…
+                    </div> <br>
+                    <div> <span>Трофимов</span> (сквозь слезы). Простите за откровенность, бога ради: ведь он обобрал вас!</div> <br>
+                    <div> <span>Любовь Андреевна.</span>Нет, нет, нет, не надо говорить так… (Закрывает уши.)</div> <br>
+                    <div> <span>Трофимов.</span> Ведь он негодяй, только вы одна не знаете этого! Он мелкий негодяй, ничтожество…
+                    </div> <br>
+                    <div> <span>Любовь Андреевна</span> (рассердившись, но сдержанно). Вам двадцать шесть лет или двадцать семь, а вы все ещё гимназист
+                        второго класса!
+                    </div> <br>
+                    <div> <span>Трофимов.</span> Пусть!</div> <br>
+                    <div> <span>Любовь Андреевна.</span> Надо быть мужчиной, в ваши годы надо понимать тех, кто любит. И надо самому любить… надо
+                        влюбляться! (Сердито.)
+                        Да, да! И у вас нет чистоты, а вы просто чистюлька, смешной чудак, урод…
+                    </div> <br>
+                    <div> <span>Трофимов</span> (в ужасе). Что она говорит!</div> <br>
+                    <div> <span>Любовь Андреевна.</span> Я выше любви!» Вы не выше любви, а просто, как вот говорит наш Фирс, вы недотёпа. В ваши годы
+                        не
+                        иметь
+                        любовницы!..</div> <br>
+                    <div> <span>Трофимов</span> (в ужасе). Это ужасно! Что она говорит?! (Идет быстро в зал, схватив себя за голову.) Это
+                        ужасно…
+                        Не могу, я
+                        уйду… (Уходит, но тотчас же возвращается.) Между нами всё кончено! (Уходит в переднюю.)
+                    </div> <br>
+                    <div> <span>Любовь Андреевна</span> (кричит вслед). Петя, погодите! Смешной человек, я пошутила! Петя!</div> <br>
+                </div>
+
+                <!-- Основная форма. Внимание на имя с префиксом -->
+                <form name="chehov-form-vs-8" action="http://activepads.com:8082/formDetector">
+
+                    <textarea name="VS-8" cols="30" rows="1"></textarea>
+
+                    <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключаем бутстрап скрипты -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
