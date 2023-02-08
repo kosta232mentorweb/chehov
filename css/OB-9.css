@@ -1,6 +1,10 @@
-div.block1 {
-display: inline-block; 
+.block1 {
+  display: inline-block;
 }
-div.block2 {
-display: inline-block;   margin-left: 1cm; 
+
+.block2 {
+  display: inline-block;
+  margin-left: 1cm;
 }
+
+/*# sourceMappingURL=OB-9.css.map */

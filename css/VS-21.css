@@ -1,0 +1,50 @@
+.answer-VS-21 {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 50px 50px 50px 50px 50px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-areas: "pers1 answer1" "pers2 answer2" "pers3 answer3" "pers4 answer4" "pers5 answer5";
+}
+
+#pers1 {
+  grid-area: pers1;
+}
+
+#pers2 {
+  grid-area: pers2;
+}
+
+#pers3 {
+  grid-area: pers3;
+}
+
+#pers4 {
+  grid-area: pers4;
+}
+
+#pers5 {
+  grid-area: pers5;
+}
+
+#answer1 {
+  grid-area: answer1;
+}
+
+#answer2 {
+  grid-area: answer2;
+}
+
+#answer3 {
+  grid-area: answer3;
+}
+
+#answer4 {
+  grid-area: answer4;
+}
+
+#answer5 {
+  grid-area: answer5;
+}
+
+/*# sourceMappingURL=VS-21.css.map */

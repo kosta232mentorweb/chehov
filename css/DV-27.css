@@ -1,0 +1,21 @@
+.capture {
+  display: block;
+  width: 100%;
+  margin: 2% auto 7% auto;
+}
+
+.desk {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+textarea {
+  width: 100%;
+  height: 70px;
+  padding: 12px 20px;
+  font-size: 16px;
+  resize: none;
+}
+
+/*# sourceMappingURL=DV-27.css.map */
