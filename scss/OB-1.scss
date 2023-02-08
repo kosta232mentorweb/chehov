@@ -1,0 +1,9 @@
+.answerForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .centeredText{
+            text-align: center;
+        }
+}
