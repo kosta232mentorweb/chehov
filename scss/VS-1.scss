@@ -1,0 +1,52 @@
+$w: 25px;
+$letterCounter: 27;
+
+@for $i from 0 through $letterCounter {
+    .x#{$i} {
+        left: $w * $i;
+    }
+
+    .y#{$i} {
+        top: $w * $i;
+    }
+}
+
+.crossword {
+    height: $letterCounter * $w;
+    width: $letterCounter * $w;
+
+    position: relative;
+
+    >input {
+        position: absolute;
+        border: 1px solid #888;
+        border-radius: 2px;
+        background-color: #fff;
+        width: $w;
+        height: $w;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: $w;
+        font-family: sans-serif;
+    }
+
+    >.number {
+        position: absolute;
+        border-radius: 2px;
+        background-color: #fff;
+        width: $w;
+        height: $w;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: $w;
+        font-family: sans-serif;
+    }
+    .question {
+        position: absolute;
+        top: 500px;
+    }
+}
+
+
