@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- № задания. Чехов -->
+    <title>ОБ-8. Чехов</title>
+
+    <!-- Подключаем бутстрап стили -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Подключаем бутстрап иконки -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- Подключаем общие стили -->
+    <link rel="stylesheet" href="../css/chehov-global.css">
+
+    <!-- Подключаем OB-8 стили -->
+    <link rel="stylesheet" href="../css/OB-8.css">
+
+</head>
+
+<body>
+    <!-- Navbar и боковое меню -->
+    <nav class="navbar navbar-dark bg-dark fixed-top screenOnly chehov-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../images/chatbooklogo.svg" width="48" alt="BOOKaaS logo"
+                    class="chatbooklogo"></a>
+            <a class="navbar-brand" href="#">Задание ОБ-8</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasLightNavbar" aria-controls="offcanvasLightNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasLightNavbar"
+                aria-labelledby="offcanvasLightNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasLightNavbarLabel">Дополнительно</h5>
+                    <button type="button" class="btn-close btn-close" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <p>Задания можно распечатать на принтере. Страница адаптируется для печати на бумаге формата А4 и,
+                        например, вместо ссылок появятся QR-коды. Для печати нажмите на клавиатуре Ctrl&nbsp;+&nbsp;P.
+                    </p>
+                    <img src="../images/chatbooklogo.svg" width="80" alt="BOOKaaS logo">
+                    <p>Серия основана в 2020 году К. Г. Страусовым.</p>
+                    <p>Ответственный за литературную и методическую часть С. C. Бородич</p>
+                    <p>Составители лексического и дидактического сопровождения книги:</p>
+                    <p>Авторские иллюстрации размещены с любезного разрешения К. И. Картель и Д. Д. Ермакович</p>
+                    <p>© 2022—2023 Константин Страусов, идея, разработка, дизайн.</p>
+                    <p>© 2022—2023 Группа авторов проекта “КНИГА-ЧАТ”, текст.</p>
+                    <p>© 2022—2023 Ксения Картель, Дарья Ермакович, Мария ..., иллюстрации.</p>
+                    <p>© 2022—2023 Ксения Картель, дизайн.</p>
+                    <p>Разрешается использование только для некоммерческих образовательных целей.</p>
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Перейти к списку заданий</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                   <a class="nav-link" href="../index.html">К списку заданий</a>
+                </li>
+                <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Dropdown
+                   </a>
+                   <ul class="dropdown-menu dropdown-menu-light">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                         <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                   </ul>
+                </li> -->
+                    </ul>
+                    <!-- <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+             </form> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Статус строка -->
+    <!-- <div class="sticky-bottom">© Константин Страусов, 2022—2023. © Лаборатория "BOOKaaS", 2022—2023</div> -->
+
+    <!-- Основной контейнер задания  -->
+    <div class="container chehov-main-container">
+        <div class="row">
+            <div class="col-12">
+
+                <!-- Заголовок только для печати -->
+                <h1 class="printOnly taskNumber">Задание ОБ-8.</h1>
+                <hr class="printOnly">
+
+                <!-- Само задание -->
+                <div class="speechBubble question withAvatar mt-3 mb-3">
+                    <span class="avatar avatar-3"></span>
+                    <span class="speechAuthor">Учитель</span>
+                    Прочитайте письма А.П.Чехова к его брату Александру и соиздателю газеты «Курьер», знакомому семьи
+                    Чеховых Е.З.Коновицеру
+                </div>
+                <div id="links"></div>
+
+                <!-- Письмо первое -->
+                <div class="letter">
+                    <p class="manuscript">8 марта 1896 г. Мелихово.</p>
+                    <p class="manuscript">8 март 96. Лопасня. Моск. губ.</p>
+                    <p class="manuscript">Отче Повсекакие!</p>
+                    <p class="manuscript">"Русские ведомости" имеют всюду собственных корреспондентов, особливо на
+                        съездах, - это
+                        раз; во-вторых, я с
+                        ними в натянутых отношениях, ибо редактор Соболевский в Риме, а с прочими мне трудно
+                        разговаривать. Но у
+                        меня есть идея, блестящая мысль. "Новости дня" - теперь газета богатая, платит прекрасно. Вот не
+                        хочешь ли?
+                        Спишись с Липскеровым или побывай у него проездом через Москву. Я думаю, что предложение твое
+                        они примут с
+                        удовольствием. Липскеров уже не жид, а англичанин и живет около Красных ворот в роскошном
+                        палаццо, как
+                        герцог. Tempora mutantur*, и никто не предполагал, что из нужника выйдет такой гений.</p>
+                    <p class="manuscript">Поговори с Кугелем, если хочешь, и Кугель устроит тебе союз с "Новостями дня".
+                        А Кугелю
+                        скажи, что это я
+                        направил тебя к нему.</p>
+                    <p class="manuscript">Я вожусь с пьесой. Переделываю.</p>
+                    <p class="manuscript">Весны нет. Оно как будто бы и не очень холодно, но и не тепло в то же время.
+                        Из-под
+                        энтакой штуки не выходим:
+                        и шубы, и калоши, и печи - всё по-зимнему. Щепки лежат еще покойно и не лезут друг на друга.</p>
+                    <p class="manuscript">Имение - не сбежавшая собака. Его ищут исподволь, по мере возможности, ища
+                        подходящего
+                        случая, поджидая. Пока
+                        еще подходящего случая не было.</p>
+                    <p class="manuscript">Сегодня приедет Маша, и я поговорю с ней насчет лета, а пока веди себя
+                        хорошенько, не
+                        воняй и не топчи сзади
+                        брюк! И ходи по гладкому!</p>
+                    <p class="manuscript">Твоей фамилии передай мое искреннее сожаление, что у нее такая глава.</p>
+                    <p class="manuscript">Твой благодетель</p>
+                    <p class="manuscript">А. Чехов.</p>
+                    <p class="manuscript">* Времена меняются (лат.)</p>
+                </div>
+
+                <!-- Письмо второе -->
+                <div class="letter">
+                    <p class="manuscript">6 августа 1896 г. Мелихово.</p>
+                    <p class="manuscript">Вы уже уехали в Москву? Простите, я обманул Вас. Весь день 5-го августа я
+                        чувствовал себя
+                        разбитым; болела
+                        печенка, должно быть, от водки, и в голове стоял туман. Гости разъехались только к 10-ти часам.
+                        Во всяком
+                        случае то, что я обманул Вас и Евдокию Исааковну, не ставьте мне в вину.</p>
+                    <p class="manuscript">А теперь просьба. В Москве никому не рассказывайте про освящение школы. Боюсь,
+                        как бы не
+                        напечатали
+                        чего-нибудь "Новости дня". Когда в этой милой газете я вижу свою фамилию, то у меня бывает такое
+                        чувство,
+                        будто я проглотил мокрицу. Брр!</p>
+                    <p class="manuscript">У нас Лидия Стахиевна.</p>
+                    <p class="manuscript">Скоро уезжаю. Задержка за гонораром, а то бы я давно уж уехал.</p>
+                    <p class="manuscript">Всяких благ!</p>
+                    <p class="manuscript">Ваш А. Чехов.</p>
+                    <p class="manuscript">6/VIII.</p>
+                </div>
+
+                <!-- Само задание -->
+                <div class="speechBubble question withAvatar mt-3 mb-3">
+                    <span class="avatar avatar-3"></span>
+                    <span class="speechAuthor">Учитель</span>
+                    Как относится А. Чехов к газете «Новости дня»? Используя интернет, попробуйте найти объяснение
+                    этому.
+                </div>
+                <div id="links"></div>
+
+                <!-- Основная форма. Внимание на имя с префиксом -->
+                <form name="chehov-form-ob-8" action="http://activepads.com:8082/formDetector">
+
+                    <textarea name="OB-8"></textarea>
+                    <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
+                </form>
+
+                <!-- Подключаем бутстрап скрипты -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+                    crossorigin="anonymous"></script>
+            </div>
+        </div>
+    </div>        
+</body>
+
+
+</html>
