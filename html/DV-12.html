@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="ru">
 
 <head>
@@ -6,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- № задания. Чехов -->
-    <title>ОБ-3. Чехов</title>
+    <title>ДВ-12. Чехов</title>
 
     <!-- Подключаем бутстрап стили -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -18,10 +19,11 @@
     <!-- Подключаем общие стили -->
     <link rel="stylesheet" href="../css/chehov-global.css">
 
-    <!-- Подключаем OB-3 стили -->
-    <link rel="stylesheet" href="../css/OB-3.css">
+    <!-- Подключаем DV-12 стили -->
+    <link rel="stylesheet" href="../css/DV-12.css">
 
 </head>
+
 
 <body>
     <!-- Navbar и боковое меню -->
@@ -29,7 +31,7 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="../images/chatbooklogo.svg" width="48" alt="BOOKaaS logo"
                     class="chatbooklogo"></a>
-            <a class="navbar-brand" href="#">Задание ОБ-3</a>
+            <a class="navbar-brand" href="#">Задание ДВ-12</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasLightNavbar" aria-controls="offcanvasLightNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -60,71 +62,98 @@
                             <a class="nav-link" aria-current="page" href="../index.html">Перейти к списку заданий</a>
                         </li>
                         <!-- <li class="nav-item">
-                       <a class="nav-link" href="../index.html">К списку заданий</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                          aria-expanded="false">
-                          Dropdown
-                       </a>
-                       <ul class="dropdown-menu dropdown-menu-light">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li>
-                             <hr class="dropdown-divider">
-                          </li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                       </ul>
-                    </li> -->
+                   <a class="nav-link" href="../index.html">К списку заданий</a>
+                </li>
+                <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Dropdown
+                   </a>
+                   <ul class="dropdown-menu dropdown-menu-light">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                         <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                   </ul>
+                </li> -->
                     </ul>
                     <!-- <form class="d-flex mt-3" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-success" type="submit">Search</button>
-                 </form> -->
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+             </form> -->
                 </div>
             </div>
         </div>
     </nav>
 
+    <!-- Статус строка -->
+    <!-- <div class="sticky-bottom">© Константин Страусов, 2022—2023. © Лаборатория "BOOKaaS", 2022—2023</div> -->
+
+    <!-- Основной контейнер задания  -->
     <div class="container chehov-main-container">
         <div class="row">
             <div class="col-12">
 
                 <!-- Заголовок только для печати -->
-                <h1 class="printOnly taskNumber">Задание ОБ-3.</h1>
+                <h1 class="printOnly taskNumber">Задание ДВ-12.</h1>
                 <hr class="printOnly">
 
                 <!-- Само задание -->
                 <div class="speechBubble question withAvatar mt-3 mb-3">
                     <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">Учитель</span>
-                    В чём, по-вашему, ответственность таланта? Порассуждайте на основе высказывания В.Г.Короленко.
+                    <span class="speechAuthor">А. П. Чехов</span>
+                    Создайте профиль профессора Серебрякова в социальной сети, отразив в нем следующие факты: кто как к
+                    нему
+                    относится, как к кому относится он? Напишите в ленте цитаты, отражающие отношение Серебрякова к
+                    Астрову,
+                    Елены к Серебрякову и т.д. от лица других персонажей и от лица самого Серебрякова.
                 </div>
+                <div id="links"></div>
 
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">В.Г. Короленко</span>
-                    <blockquote>
-                        «Беззаботная непосредственность роковым образом кончалась, начиналась тоже роковым образом
-                        рефлексия
-                        и тяжелое сознание ответственности таланта».
-                    </blockquote>
+                <div class="facebook">
+                    <!-- Вершнее меню -->
+                    <div class="line"><img class="cap" src="../images/line_face.jpg"></div>
+                    <!-- Фото на заднем плане -->
+                    <div class="photo">
+                        <div class="fon"><img class="fon" src="../images/dining_room_face.jpg"></div>
+                    </div>
+                    <!-- Фото автора -->
+                    <div class="userPhoto"><img class="round" src="../images/Serebriakov_2.jpg"></div>
+                    <div class="userPhotoName">
+                        <p>Серебряков<br />
+                            Друзья</p>
+                    </div>
+                    <div class="friendsMassege"><img src="../images/friends_massege.png"> </div>
+
+                    <!-- Меню публикации -->
+                    <div class="publish"><img class="publish" src="../images/publish.jpg" alt=""></div>
                 </div>
-
+             
                 <!-- Основная форма. Внимание на имя с префиксом -->
-                <form name="chehov-form-ob-3" action="http://activepads.com:8082/formDetector">
-                    <textarea name="answer-ob-3" id="answer" cols="80" rows="10"></textarea>
-                    <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
-
+                <form name="chehov-form-dv-12" action="http://activepads.com:8082/formDetector">
+                        Oтношение Серебрякова к Астрову<br />
+                        <textarea name="chehov-textarea-dv-12-1" required></textarea><br />
+                        Елены к Серебрякову<br />
+                        <textarea name="chehov-textarea-dv-12-2" required></textarea><br />
+                        от лица других персонажей<br />
+                        <textarea name="chehov-textarea-dv-12-3" required></textarea><br />
+                        и от лица самого Серебрякова<br />
+                        <textarea name="chehov-textarea-dv-12-4" required></textarea><br />
+                        <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
                 </form>
             </div>
         </div>
     </div>
 
-    <!-- Подключаем бутстрап скрипты -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+
+
+
+ <!-- Подключаем бутстрап скрипты -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+ crossorigin="anonymous"></script>
 </body>
 
 </html>
