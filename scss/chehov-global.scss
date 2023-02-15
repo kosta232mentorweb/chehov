@@ -30,70 +30,160 @@ body {
 }
 
 .speechBubble {
+   // font-family: 'Open Sans', sans-serif;
+   line-height: 1.5;
+   margin-top: 3rem;
+   // margin-bottom: 1.5rem;
+
    padding: 8px 14px 10px;
    border-radius: 8px;
    display: inline-block;
    position: relative;
 
+   word-spacing: 2px;
+
    &.withAvatar {
       margin-left: 85px;
+      margin-right: 24px;
+
+
+      &.right {
+         margin-left: 24px;
+         margin-right: 85px;
+
+         @media (max-width: $mobilePhoneWidth) {
+            // margin-left: inherit;
+            // display: block;
+            // margin-top: 50px !important;
+            margin-right: 56px;
+         }
+
+         .speechAuthor {
+            right: 16px;
+         }
+      }
+
 
       @media (max-width: $mobilePhoneWidth) {
-         margin-left: inherit;
+         // margin-left: inherit;
          display: block;
-         margin-top: 40px !important;
+         // margin-top: 50px !important;
+         margin-left: 56px;
       }
    }
 
    @media print {
-      border: 1px solid #bbb;
+      // border: 1px solid #bbb;
+      // break-inside: avoid;
    }
 
+
    .speechAuthor {
-      color: rgb(72, 72, 72);
+      color: rgb(188, 188, 188);
       position: absolute;
       top: -22px;
       font-size: 0.85rem;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      word-spacing: 3px;
+
+      transition: all 1s;
 
       @media (max-width: $mobilePhoneWidth) {
-         left: 60px;
+         // left: 60px;
       }
    }
 
-   @for $i from 0 to 30 {
+   @for $i from 0 to 40 {
       .avatar-#{$i} {
-         background-image: url(../images/persons/#{$i}-dop.jpg),
-         url(../images/persons/#{$i}.jpg),
-         url(../images/persons/circle.jpg);
+         background-image: url(../images/persons/#{$i}-dop.png),
+         url(../images/persons/#{$i}.png) // url(../images/persons/circle.png);
 
       }
    }
 
    .avatar {
+      // mix-blend-mode: darken;
       position: absolute;
       top: -71px;
       left: -105px;
       width: 120px;
       height: 120px;
-      background-size: 100%, 100%, 150%;
-      background-position: center, center, center;
-      background-repeat: no-repeat, no-repeat, no-repeat;
-      background-blend-mode: darken, darken, normal;
+      background-size: 100%, 100%;
+      background-position: center, center;
+      background-repeat: no-repeat, no-repeat;
+      // background-blend-mode: normal, normal, normal;
 
       transition: all 0.7s;
-      z-index: -1;
+      // z-index: -1;
 
       @media (max-width: $mobilePhoneWidth) {
          top: -52px;
-         left: 0px;
-         width: 50px;
-         height: 50px;
+         top: -57px;
+         left: -71px;
+         width: 85px;
+         height: 85px;
          background-size: 80px 80px;
          background-position: 50% 70%;
 
       }
+
+
    }
 
+
+   .avatarCircle {
+      position: absolute;
+      top: -40px;
+      left: -80px;
+      width: 70px;
+      height: 70px;
+      border: 2px solid #ddd;
+      border-radius: 50%;
+
+      @media (max-width: $mobilePhoneWidth) {
+         top: -39px;
+         left: -55px;
+         width: 54px;
+         height: 54px;
+      }
+
+   }
+
+   &.right {
+      align-self: flex-end;
+
+      .avatar {
+         left: inherit;
+         right: -105px;
+         transform: scaleX(-1);
+
+         @media (max-width: $mobilePhoneWidth) {
+            // top: -52px;
+            // top: -57px;
+            left: inherit;
+            right: -71px;
+            // width: 85px;
+            // height: 85px;
+            // background-size: 80px 80px;
+            // background-position: 50% 70%;
+
+         }
+      }
+
+      .avatarCircle {
+         left: inherit;
+         right: -80px;
+
+         @media (max-width: $mobilePhoneWidth) {
+            // top: -39px;
+            left: inherit;
+            right: -55px;
+            // width: 54px;
+            // height: 54px;
+         }
+      }
+   }
 
    &:hover {
 
@@ -101,27 +191,46 @@ body {
          // width: 150px;
          // height: 150px;
          transform-origin: 60px 60px;
-         transform: scale(1.55) rotate(-6deg);
-         background-size: 110%, 100%, 120%;
-         background-position: center, center, center;
+         transform: scale(1.25) rotate(-6deg);
+         background-size: 100%, 100%;
+         background-position: center, center;
+      }
+
+
+      &.right {
+         .avatar {
+            transform-origin: 60px 60px;
+            transform: scaleX(-1.25) scaleY(1.25) rotate(-6deg);
+            background-size: 100%, 100%;
+            background-position: center, center;
+
+            @media (max-width: $mobilePhoneWidth) {
+               transform-origin: 43px 60px;
+            }
+         }
+
       }
 
       .speechAuthor {
          color: black;
+
+         @media (prefers-color-scheme: dark) {
+            color: white;
+         }
       }
    }
 }
 
 .question {
-   background-color: rgb(234, 234, 234);
+   background-color: rgb(224, 249, 245);
    font-weight: bold;
    font-size: 1.04rem;
-   line-height: 1.2;
+   line-height: 1.3;
 
-   transition: all 0.6s;
+   // transition: all 0.6s;
 
    &:hover {
-      background-color: rgb(210, 210, 210);
+      background-color: rgb(236, 236, 236);
    }
 }
 
