@@ -22,6 +22,10 @@ export default
    "BRAT_CHEHOVA": 16,
    "ZHENA_CHEHOVA": 17,
    "GORKIJ": 18,
+   //
+   "UCHITEL": 19,
+   "JA": 20,
+
 
    // VS:
    "RANEVSKAJA": 21,
