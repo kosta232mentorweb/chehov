@@ -1,9 +1,90 @@
-.answerForm {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+@import "variables/variables";
 
-    .centeredText{
-            text-align: center;
-        }
+.answerForm {
+   display: flex;
+   flex-wrap: wrap;
+   // grid-template-columns: 2fr 1fr 2fr;
+   // column-gap: 12px;
+   //  flex-direction: row;
+   justify-content: space-between;
+
+
+   .caption {
+      position: relative;
+
+      &:before {
+         position: absolute;
+         top: 2px;
+         left: 4px;
+         font-weight: bold;
+         color: #aaa;
+         font-size: 70%;
+      }
+   }
+
+   .title {
+      &:before {
+         content: 'Название произведения';
+      }
+
+      flex-basis: 40%;
+   }
+
+   .personas {
+      &:before {
+         content: 'Персонажи';
+      }
+
+      flex-basis: 20%;
+   }
+
+   .characteristic {
+      &:before {
+         content: 'Цитатная характеристика';
+      }
+
+      flex-basis: 40%;
+   }
+
+
+   @media (max-width: $tabletWidth) {
+      // grid-template-columns: 2fr 1fr;
+      // grid-template-rows: 1fr 1fr;
+
+      .title {
+         flex-basis: 60%;
+      }
+
+      .personas {
+         flex-basis: 40%;
+      }
+
+      .characteristic {
+         flex-basis: 100%;
+      }
+   }
+
+   @media print {
+      // grid-template-columns: 2fr 1fr;
+      // grid-template-rows: 1fr 1fr;
+
+      .title {
+         flex-basis: 40%;
+      }
+
+      .personas {
+         flex-basis: 20%;
+      }
+
+      .characteristic {
+         flex-basis: 40%;
+      }
+   }
+
+   // grid-auto-flow: row dense;
+
+   textarea {
+      width: 100%;
+      padding-top: 20px;
+   }
 }
