@@ -102,11 +102,20 @@
             <hr class="printOnly" style=" margin-bottom: 4rem;">
 
             <!-- Само задание -->
-            <div class="speechBubble question withAvatar mt-3 mb-5">
-               <span class="avatarCircle"></span> <span class="avatar avatar-11"></span>
-               <span class="speechAuthor">А. П. Чехов</span>
-               Проведите исследование, ставят ли в нашей стране и странах-соседях мои пьесы сегодня. Составьте
-               список таких спектаклей.
+            <div style="display: flex; flex-direction: column;">
+               <div class="speechBubble question withAvatar mt-3 mb-5">
+                  <span class="avatarCircle"></span> <span class="avatar avatar-11"></span>
+                  <span class="speechAuthor">А. П. Чехов</span>
+                  Проведите исследование, ставят ли в нашей стране и странах-соседях мои пьесы сегодня. Составьте
+                  список таких спектаклей.
+               </div>
+
+               <div class="speechBubble question withAvatar mt-5 answer  right">
+                  <span class="avatarCircle"></span>
+                  <span class="avatar avatar-20"></span>
+                  <span class="speechAuthor">Я</span>
+                  Сейчас заполню таблицу:
+               </div>
             </div>
 
             <table class="printOnly mt-5">
@@ -144,26 +153,21 @@
             <!-- Основная форма. Внимание на имя с префиксом -->
             <form class="screenOnly" name="chehov-form-vs-27" action="http://activepads.com:8082/formDetector">
 
-               <!-- <label>Театр</label>
-               <label>Режиссёр</label>
-               <label>Жанр пьесы</label>
-               <label>Актёры в главных ролях</label> -->
-
                <div class="mb-3">
                   <label for="theatre" class="form-label">Театр</label>
-                  <textarea name="theatre" class="form-control" id="theatre" rows="5"></textarea>
+                  <textarea name="theatre" class="form-control" id="theatre" rows="5" placeholder="1.&#10;2.&#10;3.&#10;..."></textarea>
                </div>
                <div class="mb-3">
                   <label for="director" class="form-label">Режиссёр</label>
-                  <textarea name="director" class="form-control" id="director" rows="5"></textarea>
+                  <textarea name="director" class="form-control" id="director" rows="5" placeholder="1.&#10;2.&#10;3.&#10;..."></textarea>
                </div>
                <div class="mb-3">
                   <label for="playGenre" class="form-label">Жанр пьесы</label>
-                  <textarea name="playGenre" class="form-control" id="playGenre" rows="5"></textarea>
+                  <textarea name="playGenre" class="form-control" id="playGenre" rows="5" placeholder="1.&#10;2.&#10;3.&#10;..."></textarea>
                </div>
                <div class="mb-3">
                   <label for="actors" class="form-label">Актёры в главных ролях</label>
-                  <textarea name="actors" class="form-control" id="actors" rows="5"></textarea>
+                  <textarea name="actors" class="form-control" id="actors" rows="5" placeholder="1.&#10;2.&#10;3.&#10;..."></textarea>
                </div>
 
                <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
