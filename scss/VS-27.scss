@@ -1,13 +1,23 @@
-table{
-    th, td{
-        border: 1px solid black;
-    }
+table {
+   width: 100%;
+   border-radius: 12px;
 
-    tr{
-        height: 50px;
-    }
+   th,
+   td {
+      border: 1px solid gray;
+      padding: 8px;
+      // text-align: center;
+   }
 
-    td{
-        width: 200px;
-    }
+   tr {
+      height: 200px;
+   }
+
+   td {
+      width: 10%;
+   }
+
+   thead > tr {
+      height: 50px !important;
+   }
 }
