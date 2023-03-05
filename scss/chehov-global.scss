@@ -23,10 +23,11 @@ body {
 }
 
 // полоска для разграничения номера задания при печати
-.taskNumber+hr {
+.taskNumber~hr {
    // font-size: 2rem;
    // font-weight: bold;
-   margin-bottom: 45px;
+   // margin-bottom: 45px;
+   margin-bottom: 4rem;
 }
 
 .speechBubble {
