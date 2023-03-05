@@ -30,6 +30,7 @@ table {
 
 .textAreaShapiro {
    position: relative;
+
    &::after {
       content: 'Шапиро';
       position: absolute;
@@ -40,8 +41,10 @@ table {
       opacity: 0.3;
    }
 }
+
 .textAreaZakharov {
    position: relative;
+
    &::after {
       content: 'Захаров';
       position: absolute;
@@ -51,6 +54,12 @@ table {
       font-weight: bold;
       opacity: 0.3;
    }
+}
+
+.container.chehov-main-container fieldset {
+   border-radius: 12px;
+   background-color: #fffdca;
+   border: none !important;
 }
 
 // .answer-VS-26 {
