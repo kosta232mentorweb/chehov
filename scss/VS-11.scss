@@ -1,0 +1,10 @@
+#answer-1-VS-11 {
+    border: none;
+    width: 420px;
+}
+
+@media print {
+    #answer-1-VS-11 {
+        border-bottom: 1px solid black;
+    }
+}

@@ -97,25 +97,51 @@
 
                 <!-- Заголовок только для печати -->
                 <h1 class="printOnly taskNumber">Задание ВС-11.</h1>
-                <hr class="printOnly">
+                <h6 class="printOnly colontitul">Серия “КНИГА-ЧАТ”</h6>
+                <hr class="printOnly" style=" margin-bottom: 4rem;">
 
                 <!-- Само задание -->
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">А.П. Чехов</span>
-                    Вставьте пропущенное слово: <br>
-                    Почему Фирс это считает несчастьем?
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-3 mb-5">
+                        <span class="avatarCircle"></span> <span class="avatar avatar-11"></span>
+                        <span class="speechAuthor">А.П. Чехов</span>
+                        Вставьте пропущенное слово
+                    </div>
+                    <div class="speechBubble question withAvatar mt-3 mb-5 right">
+                        <span class="avatarCircle"></span> <span class="avatar avatar-31"></span>
+                        <span class="speechAuthor">Фирс</span>
+                        Перед несчастьем то же было: и сова кричала, и самовар гудел бесперечь.
+                    </div>
+                    <div class="speechBubble question withAvatar mt-3 mb-5">
+                        <span class="avatarCircle"></span> <span class="avatar avatar-24"></span>
+                        <span class="speechAuthor">Гаев</span>
+                        Перед каким несчастьем?
+                    </div>
                 </div>
-
                 <!-- Основная форма. Внимание на имя с префиксом -->
                 <form name="chehov-form-vs-11" action="http://activepads.com:8082/formDetector">
-                    <div>
-                        <label for="missingWord-VS-11">Фирс: Перед несчастьем то же было: и сова кричала, и самовар
-                            гудел бесперечь.
-                            <br>Гаев: Перед каким несчастьем?
-                            <br>Фирс: перед
-                        </label>
-                        <input type="text" name="missingWord-VS-11">
+                    <div class="mb-3">
+                        <div class="speechBubblesWrapper">
+                            <div class="speechBubble question withAvatar mt-3 mb-5 right answer">
+                                <span class="avatarCircle"></span> <span class="avatar avatar-31"></span>
+                                <span class="speechAuthor">Фирс</span>
+                                Перед <input type="text" name="answer-1-VS-11" id="answer-1-VS-11" placeholder="...">
+                            </div>
+                            <div class="speechBubble question withAvatar mt-3 mb-3">
+                                <span class="avatarCircle"></span> <span class="avatar avatar-11"></span>
+                                <span class="speechAuthor">А.П. Чехов</span>
+                                Почему Фирс это считает несчастьем?
+                            </div>
+                            <div class="speechBubble question withAvatar answer right">
+                                <span class="avatarCircle"></span>
+                                <span class="avatar avatar-20"></span>
+                                <span class="speechAuthor">Я</span>
+                                Сейчас отвечу на вопрос:
+                            </div>
+                            <div class="mt-3 ">
+                                <textarea name="answer-2-VS-11" id="answer" cols="80" rows="10"></textarea>
+                            </div>
+                        </div>
                     </div>
                     <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
 

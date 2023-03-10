@@ -97,58 +97,90 @@
 
                 <!-- Заголовок только для печати -->
                 <h1 class="printOnly taskNumber">Задание ВС-21.</h1>
-                <hr class="printOnly">
+                <h6 class="printOnly colontitul">Серия “КНИГА-ЧАТ”</h6>
+                <hr class="printOnly" style=" margin-bottom: 4rem;">
 
                 <!-- Само задание -->
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">К.С. Станиславский</span>
-                    <blockquote>
-                        <i>
-                            «Как-то на одной из репетиций, когда мы стали приставать к нему, чтобы он написал ещё пьесу,
-                            он стал
-                            делать
-                            кое-какие намёки на сюжет будущей пьесы.
-                            Ему чудилось раскрытое окно, с веткой белых цветущих вишен, влезающих из сада в комнату.
-                            Артём уже
-                            сделался
-                            лакеем, а потом, ни с того ни с сего, управляющим. Его хозяин, а иногда ему казалось, что
-                            это будет
-                            хозяйка,
-                            всегда без денег, и в критические минуты она обращается за помощью к своему лакею или
-                            управляющему,
-                            у
-                            которого имеются скопленные откуда-то довольно большие деньги.
-                            Потом появилась компания игроков на бильярде. Один из них, самый ярый любитель, безрукий,
-                            очень
-                            веселый и
-                            бодрый, всегда громко кричащий. В этой роли ему стал мерещиться А.Л.Вишневский. Потом
-                            появилась
-                            боскетная
-                            комната, потом она опять заменилась бильярдной».
-                        </i>
-                    </blockquote>
-                </div>
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">Учитель</span>
-                    Найдите информацию о прототипах героев Чеховской пьесы «Вишневый сад» и о том, как постепенно
-                    появлялись и прорабатывались образы. Составьте таблицу соотнесений.
-                </div>
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-3 mb-5">
+                        <span class="avatarCircle"></span> <span class="avatar avatar-12"></span>
+                        <span class="speechAuthor">К.С. Станиславский</span>
+                        <blockquote>
+                            <i>
+                                «Как-то на одной из репетиций, когда мы стали приставать к нему, чтобы он написал ещё
+                                пьесу,
+                                он стал
+                                делать
+                                кое-какие намёки на сюжет будущей пьесы.
+                                Ему чудилось раскрытое окно, с веткой белых цветущих вишен, влезающих из сада в комнату.
+                                Артём уже
+                                сделался
+                                лакеем, а потом, ни с того ни с сего, управляющим. Его хозяин, а иногда ему казалось,
+                                что
+                                это будет
+                                хозяйка,
+                                всегда без денег, и в критические минуты она обращается за помощью к своему лакею или
+                                управляющему,
+                                у
+                                которого имеются скопленные откуда-то довольно большие деньги.
+                                Потом появилась компания игроков на бильярде. Один из них, самый ярый любитель,
+                                безрукий,
+                                очень
+                                веселый и
+                                бодрый, всегда громко кричащий. В этой роли ему стал мерещиться А.Л.Вишневский. Потом
+                                появилась
+                                боскетная
+                                комната, потом она опять заменилась бильярдной».
+                            </i>
+                        </blockquote>
+                    </div>
 
+                    <div class="speechBubble question withAvatar mt-3 mb-5">
+                        <span class="avatarCircle"></span> <span class="avatar avatar-19"></span>
+                        <span class="speechAuthor">Учитель</span>
+                        Найдите информацию о прототипах героев Чеховской пьесы «Вишневый сад» и о том, как постепенно
+                        появлялись и прорабатывались образы. Составьте таблицу соотнесений.
+                    </div>
+                    <div class="speechBubble question withAvatar mt-5 answer  right">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-20"></span>
+                        <span class="speechAuthor">Я</span>
+                        Сейчас отвечу на вопрос:
+                    </div>
+                </div>
                 <!-- Основная форма. Внимание на имя с префиксом -->
                 <form name="chehov-form-vs-21" action="http://activepads.com:8082/formDetector">
-                    <div class="answer-VS-21">
-                        <textarea name="pers1-VS-21" id="pers1" cols="30" rows="10"></textarea>
-                        <textarea name="pers2-VS-21" id="pers2" cols="30" rows="10"></textarea>
-                        <textarea name="pers3-VS-21" id="pers3" cols="30" rows="10"></textarea>
-                        <textarea name="pers4-VS-21" id="pers4" cols="30" rows="10"></textarea>
-                        <textarea name="pers5-VS-21" id="pers5" cols="30" rows="10"></textarea>
-                        <textarea name="answer1-VS-21" id="answer1" cols="30" rows="10"></textarea>
-                        <textarea name="answer2-VS-21" id="answer2" cols="30" rows="10"></textarea>
-                        <textarea name="answer3-VS-21" id="answer3" cols="30" rows="10"></textarea>
-                        <textarea name="answer4-VS-21" id="answer4" cols="30" rows="10"></textarea>
-                        <textarea name="answer5-VS-21" id="answer5" cols="30" rows="10"></textarea>
+                    <div class="mt-3 mb-3">
+                        <div class="answerForm">
+                            <div class="caption personas">
+                                <textarea name="personas-vs-21" rows="2"></textarea>
+                            </div>
+                            <div class="caption characteristic">
+                                <textarea name="characteristic-vs-21" rows="2"></textarea>
+                            </div>
+                            
+                            <div class="caption personas">
+                                <textarea name="personas-vs-21" rows="2"></textarea>
+                            </div>
+                            <div class="caption characteristic">
+                                <textarea name="characteristic-vs-21" rows="2"></textarea>
+                            </div>
+                        
+                            <div class="caption personas">
+                                <textarea name="personas-vs-21" rows="2"></textarea>
+                            </div>
+                            <div class="caption characteristic">
+                                <textarea name="characteristic-vs-21" rows="2"></textarea>
+                            </div>
+                        
+                            <div class="caption personas">
+                                <textarea name="personas-vs-21" rows="2"></textarea>
+                            </div>
+                            <div class="caption characteristic">
+                                <textarea name="characteristic-vs-21" rows="2"></textarea>
+                            </div>
+                        
+                        </div>
                     </div>
                     <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
 

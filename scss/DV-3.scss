@@ -1,0 +1,55 @@
+.textAreaVoinitsky,
+.textAreaAstrov,
+.textAreaSerebryakov,
+.textAreaElenaAndreevna,
+.textAreaSonya {
+    position: relative;
+
+    &::after {
+        content: 'Войницкий';
+        position: absolute;
+        top: 28px;
+        right: -18px;
+        transform: rotate(90deg);
+        font-weight: bold;
+        opacity: 0.3;
+        width: 84px;
+        height: 30px;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+.textAreaAstrov {
+
+    &::after {
+        content: 'Астров';
+    }
+}
+
+.textAreaSerebryakov {
+
+    &::after {
+        content: 'Серебряков';
+    }
+}
+
+.textAreaElenaAndreevna {
+
+    &::after {
+        content: 'Елена Андреевна';
+    }
+}
+
+.textAreaSonya {
+
+    &::after {
+        content: 'Соня';
+    }
+}
+
+.container.chehov-main-container fieldset {
+    border-radius: 12px;
+    background-color: #fffdca;
+    border: none !important;
+}

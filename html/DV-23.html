@@ -97,28 +97,39 @@
 
                 <!-- Заголовок только для печати -->
                 <h1 class="printOnly taskNumber">Задание ДВ-23.</h1>
-                <hr class="printOnly">
+                <h6 class="printOnly colontitul">Серия “КНИГА-ЧАТ”</h6>
+                <hr class="printOnly" style=" margin-bottom: 4rem;">
 
                 <!-- Само задание -->
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">Елена Андреевна</span>
-                    «Неблагополучно в этом доме. Ваша мать ненавидит всё, кроме своих брошюр и профессора; профессор
-                    раздражён, мне не верит, вас боится; Соня злится на отца, злится на меня и не говорит со мною вот
-                    уже две недели; вы ненавидите мужа и открыто презираете свою мать; я раздражена и сегодня раз
-                    двадцать принималась плакать… Неблагополучно в этом доме. Мир погибает не от разбойников, не от
-                    пожаров, а от ненависти, вражды, от всех этих мелких дрязг…»
-                </div>
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">Учитель</span>
-                    Часто про пьесы Чехова говорят, что в них нет движения действия, а есть движение настроения,
-                    атмосферы. Приведите примеры, как создаётся «атмосфера неблагополучия» в усадьбе Серебрякова.
-
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-3 mb-5">
+                        <span class="avatarCircle"></span> <span class="avatar avatar-2"></span>
+                        <span class="speechAuthor">Елена Андреевна</span>
+                        «Неблагополучно в этом доме. Ваша мать ненавидит всё, кроме своих брошюр и профессора; профессор
+                        раздражён, мне не верит, вас боится; Соня злится на отца, злится на меня и не говорит со мною
+                        вот
+                        уже две недели; вы ненавидите мужа и открыто презираете свою мать; я раздражена и сегодня раз
+                        двадцать принималась плакать… Неблагополучно в этом доме. Мир погибает не от разбойников, не от
+                        пожаров, а от ненависти, вражды, от всех этих мелких дрязг…»
+                    </div>
+                    <div class="speechBubble question withAvatar mt-3 mb-5">
+                        <span class="avatarCircle"></span> <span class="avatar avatar-19"></span>
+                        <span class="speechAuthor">Учитель</span>
+                        Часто про пьесы Чехова говорят, что в них нет движения действия, а есть движение настроения,
+                        атмосферы. Приведите примеры, как создаётся «атмосфера неблагополучия» в усадьбе Серебрякова.
+                    </div>
+                    <div class="speechBubble question withAvatar mt-5 answer  right">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-20"></span>
+                        <span class="speechAuthor">Я</span>
+                        Сейчас отвечу на вопрос:
+                    </div>
                 </div>
                 <!-- Основная форма. Внимание на имя с префиксом -->
                 <form name="chehov-form-dv-23" action="http://activepads.com:8082/formDetector">
-                    <textarea name="yourAnswer" id="" cols="80" rows="10"></textarea>
+                    <div class="mt-3 mb-3">
+                        <textarea name="yourAnswer" id="" cols="80" rows="10"></textarea>
+                    </div>
                     <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
                 </form>
             </div>
