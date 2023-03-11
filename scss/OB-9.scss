@@ -1,8 +1,19 @@
-.block1 {
-    display: inline-block;
-}
+.ob9-form-wrapper {
 
-.block2 {
-    display: inline-block;
-    margin-left: 1cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    form {
+        margin-top: 20px;
+
+        .block1 {
+            display: inline-block;
+        }
+
+        .block2 {
+            display: inline-block;
+            margin-left: 1cm;
+        }
+    }
 }

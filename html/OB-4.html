@@ -29,7 +29,7 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="../images/chatbooklogo.svg" width="48" alt="BOOKaaS logo"
                     class="chatbooklogo"></a>
-            <a class="navbar-brand" href="#">Задание ОБ-6</a>
+            <a class="navbar-brand" href="#">Задание ОБ-4</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasLightNavbar" aria-controls="offcanvasLightNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -96,14 +96,14 @@
             <div class="col-12">
 
                 <!-- Заголовок только для печати -->
-                <h1 class="printOnly taskNumber">Задание ОБ-6.</h1>
+                <h1 class="printOnly taskNumber">Задание ОБ-4.</h1>
                 <hr class="printOnly">
 
                 <!-- Само задание -->
                 <div id="links"></div>
                 <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">Учитель</span>
+                    <span class="avatarCircle"></span> <span class="avatar avatar-3"></span>
+                    <span class="speechAuthor">Максим Горький</span>
                     Я знал Антона Павловича достаточно близко, и каждый раз в наших разговорах и переписках он был
                     неизменно
                     афористичен.<br> Предлагаю вам тест: дополните афоризмы Чехова недостающими словами, а затем
@@ -122,50 +122,80 @@
                 <!-- Основная форма. Внимание на имя с префиксом -->
                 <div>
                     <form name="chehov-form-ob-4" action="http://activepads.com:8082/formDetector">
-                        <ol>
-                            <li>В России […] – что-то вроде трубочиста, которым няньки пугают маленьких детей... </li>
-                            <input type="radio" name="q1" value="var1">Учитель
-                            <input type="radio" name="q1" value="var2">Писатель
-                            <input type="radio" name="q1" value="var3">Честный человек
-                            <input type="radio" name="q1" value="var4">Правитель
-                            <input type="radio" name="q1" value="var5">Иностранец <br><br>
-                            <li>Нужно, чтоб каждый человек говорил […]</li>
-                            <input type="radio" name="q2" value="var1">О политике
-                            <input type="radio" name="q2" value="var2">Громко
-                            <input type="radio" name="q2" value="var3">О высоком
-                            <input type="radio" name="q2" value="var4">Своим языком
-                            <input type="radio" name="q2" value="var5">Как актер <br><br>
-                            <li>[…] похожи на слепней, которые мешают лошади пахать землю</li>
-                            <input type="radio" name="q3" value="var1">Интеллигенты
-                            <input type="radio" name="q3" value="var2">Читатели
-                            <input type="radio" name="q3" value="var3">Критики
-                            <input type="radio" name="q3" value="var4">Подражатели
-                            <input type="radio" name="q3" value="var5">Литераторы <br><br>
-                            <li>Странное существо – […]! В нем, как в решете, ничего не задерживается. В юности он жадно
+                        <fieldset class="form-group border p-2 pb-1">
+                            <legend class="w-auto px-2">1. В России […] – что-то вроде трубочиста,
+                                которым няньки пугают маленьких детей...</legend>
+                            <ul>
+                                <li><input type="radio" name="q1" value="var1" checked><span>Учитель</span></li>
+                                <li><input type="radio" name="q1" value="var2"><span>Писатель</span></li>
+                                <li><input type="radio" name="q1" value="var3"><span>Честный человек</span></li>
+                                <li><input type="radio" name="q1" value="var4"><span>Правитель</span></li>
+                                <li><input type="radio" name="q1" value="var5"><span>Иностранец</span></li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="form-group border p-2 pb-1">
+                            <legend>2. Нужно, чтоб каждый человек говорил […].</legend>
+                            <ul>
+                                <li><input type="radio" name="q2" value="var1" checked><span>О политике</span></li>
+                                <li><input type="radio" name="q2" value="var2"><span>Громко</span></li>
+                                <li><input type="radio" name="q2" value="var3"><span>О высоком</span></li>
+                                <li><input type="radio" name="q2" value="var4"><span>Своим языком</span></li>
+                                <li><input type="radio" name="q2" value="var5"><span>Как актер</span></li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="form-group border p-2 pb-1">
+                            <legend>3. […] похожи на слепней, которые мешают лошади пахать землю.</legend>
+                            <ul>
+                                <li><input type="radio" name="q3" value="var1" checked><span>Интеллигенты</span></li>
+                                <li><input type="radio" name="q3" value="var2"><span>Читатели</span></li>
+                                <li><input type="radio" name="q3" value="var3"><span>Критики</span></li>
+                                <li><input type="radio" name="q3" value="var4"><span>Подражатели</span></li>
+                                <li><input type="radio" name="q3" value="var5"><span>Литераторы</span></li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="form-group border p-2 pb-1">
+                            <legend>
+                                4. Странное существо – […]! В нем, как в решете, ничего не задерживается. В юности он
+                                жадно
                                 наполняет
-                                душу всем, что под руку попало, а после тридцати лет в нем остается какой-то серый хлам
-                            </li>
-                            <input type="radio" name="q4" value="var1">Врач
-                            <input type="radio" name="q4" value="var2">Провинциальный писатель
-                            <input type="radio" name="q4" value="var3">Русский человек
-                            <input type="radio" name="q4" value="var4">Великоросский помещик <br><br>
-                            <li>Нет ничего скучнее и непоэтичнее, так сказать, как прозаическая […], отнимающая радость
+                                душу всем, что под руку попало, а после тридцати лет в нем остается какой-то серый хлам.
+                            </legend>
+                            <ul>
+                                <li><input type="radio" name="q4" value="var1" checked><span>Врач</span></li>
+                                <li><input type="radio" name="q4" value="var2"><span>Провинциальный писатель</span></li>
+                                <li><input type="radio" name="q4" value="var3"><span>Русский человек</span></li>
+                                <li><input type="radio" name="q4" value="var4"><span>Великоросский помещик</span></li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="form-group border p-2 pb-1">
+                            <legend>
+                                5. Нет ничего скучнее и непоэтичнее, так сказать, как прозаическая […], отнимающая
+                                радость
                                 жизни и
-                                вгоняющая в </li>
-                            <input type="radio" name="q5" value="var1">Непроглядная бедность
-                            <input type="radio" name="q5" value="var2">Одурманивающая пошлость
-                            <input type="radio" name="q5" value="var3">Самоуверенная бездарность
-                            <input type="radio" name="q5" value="var4">Борьба за существование
-                            <input type="radio" name="q5" value="var5">Социалистическая революция <br><br>
-                            <li>Мы привыкли жить надеждами на хорошую погоду, урожай, на приятный роман, надеждами
+                                вгоняющая в апатию.
+                            </legend>
+                            <ul>
+                                <li><input type="radio" name="q5" value="var1" checked><span>Непроглядная бедность</span></li>
+                                <li><input type="radio" name="q5" value="var2"><span>Одурманивающая пошлость</span></li>
+                                <li><input type="radio" name="q5" value="var3"><span>Самоуверенная бездарность</span></li>
+                                <li><input type="radio" name="q5" value="var4"><span>Борьба за существование</span></li>
+                                <li><input type="radio" name="q5" value="var5"><span>Социалистическая революция</span></li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="form-group border p-2 pb-1">
+                            <legend>
+                                6. Мы привыкли жить надеждами на хорошую погоду, урожай, на приятный роман, надеждами
                                 разбогатеть или
-                                получить место полицеймейстера, а вот надежды […] я не замечаю у людей.</li>
-                            <input type="radio" name="q6" value="var1">Хорошо жить
-                            <input type="radio" name="q6" value="var2">Много работать
-                            <input type="radio" name="q6" value="var3">Поумнеть
-                            <input type="radio" name="q6" value="var4">Развивать Россию
-                            <input type="radio" name="q6" value="var5">Достойно умереть
-                        </ol>
+                                получить место полицеймейстера, а вот надежды […] я не замечаю у людей.
+                            </legend>
+                            <ul>
+                                <li><input type="radio" name="q6" value="var1" checked><span>Хорошо жить</span></li>
+                                <li><input type="radio" name="q6" value="var2"><span>Много работать</span></li>
+                                <li><input type="radio" name="q6" value="var3"><span>Поумнеть</span></li>
+                                <li><input type="radio" name="q6" value="var4"><span>Развивать Россию</span></li>
+                                <li><input type="radio" name="q6" value="var5"><span>Достойно умереть</span></li>
+                            </ul>
+                        </fieldset>
                         <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
                     </form>
                 </div>
