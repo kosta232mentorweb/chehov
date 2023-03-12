@@ -1,16 +1,87 @@
-table {
-    border: 1px solid black;
+.textAreaVoinitsky,
+.textAreaAstrov,
+.textAreaSerebryakov,
+.textAreaElenaAndreevna,
+.textAreaMyAnswer {
+    position: relative;
 
-    th {
-        border: 1px solid black;
+    &::after {
+        content: 'Войницкий';
+        position: absolute;
+        top: 28px;
+        right: -18px;
+        transform: rotate(90deg);
+        font-weight: bold;
+        opacity: 0.3;
+        width: 84px;
+        height: 30px;
+        font-size: 12px;
+        text-align: center;
     }
+}
 
-    td {
-        border: 1px solid black;
-    }
+.textAreaAstrov {
 
-    tr{
-        height: 50px;
+    &::after {
+        content: 'Астров';
     }
-    margin-bottom: 30px;
+}
+
+.textAreaSerebryakov {
+
+    &::after {
+        content: 'Серебряков';
+    }
+}
+
+.textAreaMyAnswer {
+
+    &::after {
+        content: 'Мой комментарии';
+    }
+}
+
+
+
+.container.chehov-main-container fieldset {
+    border-radius: 12px;
+    background-color: #fffdca;
+    border: none !important;
+    page-break-inside: avoid;
+}
+
+.container.chehov-main-container .fieldset-example {
+
+    background-color: rgb(224, 249, 245);
+
+}
+
+.example {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    height: 84px;
+    position: relative;
+    padding: 0.375rem 0.75rem;
+
+    &::after {
+        content: 'Телегин';
+        position: absolute;
+        top: 28px;
+        right: -18px;
+        transform: rotate(90deg);
+        font-weight: bold;
+        opacity: 0.3;
+        width: 84px;
+        height: 30px;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+fielset {
+    page-break-inside: avoid !important;
 }
