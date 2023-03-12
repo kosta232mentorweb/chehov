@@ -1,6 +1,6 @@
 .textDiv{
     background-color: rgba(222, 213, 204, 0.258);
-    padding: 3px;
+    padding: 8px;
 
     background-image: url(../images/DV-26/PartOfText.PNG);
     background-size: contain;
@@ -10,6 +10,6 @@
 
 .bigForPrint {
     @media print {
-        height: 13cm;
+        height: 11cm;
     }
 }
