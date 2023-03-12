@@ -1,6 +1,14 @@
-#answer-1-VS-11 {
-    border: none;
-    width: 420px;
+.answer-1-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    #answer-1-VS-11 {
+        border: none;
+    }
+}
+.answer-1 {
+    align-self: stretch !important;
 }
 
 @media print {

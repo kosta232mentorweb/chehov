@@ -2,6 +2,7 @@ fieldset {
     border-radius: 12px;
     background-color: #fffdca;
     border: none !important;
+    page-break-inside: avoid;
 }
 
 legend {
