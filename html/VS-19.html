@@ -74,43 +74,53 @@
 
                 <!-- Заголовок только для печати -->
                 <h1 class="printOnly taskNumber">Задание ВС-19.</h1>
+                <h6 class="printOnly colontitul">Серия “КНИГА-ЧАТ”</h6>
                 <hr class="printOnly">
 
                 <!-- Само задание -->
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">Станиславский</span>
-                    Как раньше, так и на этот раз, во время репетиций "Вишневого сада", приходилось точно клещами
-                    вытягивать из Антона Павловича замечания и советы, касавшиеся его пьесы. Его ответы походили на
-                    ребусы, и надо было их разгадывать, так как Чехов убегал, чтобы спастись от приставания режиссёров.
-                    Если бы кто-нибудь увидел на репетиции Антона Павловича, скромно сидевшего где-то в задних рядах, он
-                    бы не поверил, что это был автор пьесы. Как мы ни старались пересадить его к режиссёрскому столу,
-                    ничего не выходило. А если и усадишь, то он начинал смеяться. Не поймёшь, что его смешило: то ли,
-                    что он стал режиссёром и сидел за важным столом; то ли, что он находил лишним самый режиссёрский
-                    стол; то ли, что он соображал, как нас обмануть и спрягаться в своей засаде.
-                    <br>
-                    - Я же всё написал, - говорил он тогда, - я же не режиссёр, я - доктор.
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-12"></span>
+                        <span class="speechAuthor">Станиславский</span>
+                        Как раньше, так и на этот раз, во время репетиций "Вишневого сада", приходилось точно клещами
+                        вытягивать из Антона Павловича замечания и советы, касавшиеся его пьесы. Его ответы походили на
+                        ребусы, и надо было их разгадывать, так как Чехов убегал, чтобы спастись от приставания
+                        режиссёров.
+                        Если бы кто-нибудь увидел на репетиции Антона Павловича, скромно сидевшего где-то в задних
+                        рядах, он
+                        бы не поверил, что это был автор пьесы. Как мы ни старались пересадить его к режиссёрскому
+                        столу,
+                        ничего не выходило. А если и усадишь, то он начинал смеяться. Не поймёшь, что его смешило: то
+                        ли,
+                        что он стал режиссёром и сидел за важным столом; то ли, что он находил лишним самый режиссёрский
+                        стол; то ли, что он соображал, как нас обмануть и спрягаться в своей засаде.
+                        <br>
+                        - Я же всё написал, - говорил он тогда, - я же не режиссёр, я - доктор.
+                    </div>
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-19"></span>
+                        <span class="speechAuthor">Учитель</span>
+                        Как бы вы сформулировали способы, которыми автор выражает свою позицию в пьесе «Вишневый сад»?
+                    </div>
 
                 </div>
-
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">Учитель</span>
-                    Как бы вы сформулировали способы, которыми автор выражает свою позицию в пьесе «Вишневый сад»?
-                </div>
-
+                <br>
                 <!-- Основная форма. Внимание на имя с префиксом -->
                 <form name="chehov-form-vs-19" action="http://activepads.com:8082/formDetector">
 
+                    <div class="speechBubblesWrapper avoidBreakInside">
+                        <div class="speechBubble question withAvatar mt-3 answer right">
+                            <span class="avatarCircle"></span>
+                            <span class="avatar avatar-20"></span>
+                            <span class="speechAuthor">Я</span>
+                            Сейчас сформулирую:
+                        </div>
 
-                    <label>
-                        Ответ:
-                        <textarea name="ans-VS-19" cols="70" rows="9"></textarea>
-                    </label>
+                        <textarea  class="form-control bigForPrint mt-3 mb-3" name="ans-VS-19" rows="9" required></textarea>
+                    </div>
 
-
-
-                    <br><br>
 
                     <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
 
@@ -127,4 +137,3 @@
 </body>
 
 </html>
-

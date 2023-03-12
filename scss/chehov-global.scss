@@ -10,6 +10,11 @@
 // правила только для печати
 @import "medias/print";
 
+.printPageBreak {
+   page-break-before: always;
+   margin-top: 1.5rem;
+}
+
 body {
    @media screen {
       padding-top: 100px;

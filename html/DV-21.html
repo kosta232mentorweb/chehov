@@ -74,23 +74,49 @@
 
                 <!-- Заголовок только для печати -->
                 <h1 class="printOnly taskNumber">Задание ДВ-21.</h1>
+                <h6 class="printOnly colontitul">Серия “КНИГА-ЧАТ”</h6>
                 <hr class="printOnly">
 
                 <!-- Само задание -->
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">А. П. Чехов</span>
-                    Составьте резюме Астрова для устройства в губернскую больницу (т.е. для повышения его по
-                    службе). Предварительно ознакомьтесь с особенностями жанра и <a
-                        href="https://journal.tinkoff.ru/guide/resume/">правилами составления резюме</a>
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-11"></span>
+                        <span class="speechAuthor">А. П. Чехов</span>
+                        Составьте резюме Астрова для устройства в губернскую больницу (т.е. для повышения его по
+                        службе). Предварительно ознакомьтесь с особенностями жанра и 
+                        <a class="screenOnly"
+                            href="https://journal.tinkoff.ru/guide/resume/">правилами составления резюме.
+                        </a>
+
+                        <!-- ПЕЧАТЬ -->
+                        <span class="printOnly">правилами составления резюме сканируя QR-код:</span>
+                        <div class="printOnly mt-3" style="text-align: center;">
+                            <figure class="figure">
+                                <img src="../images/DV-21/qrcode-CV.png" width="30%" class="figure-img img-fluid"
+                                   alt="Правила составления резюме">
+                                <!-- <figcaption class="figure-caption lh-1">правила составления резюме</figcaption> -->
+                             </figure>
+                        </div>
+
+
+                    </div>
+                    
                 </div>
 
                 <!-- Основная форма. Внимание на имя с префиксом -->
-                <form name="chehov-form-dv-21" action="http://activepads.com:8082/formDetector">
+                <form name="chehov-form-DV-21" action="http://activepads.com:8082/formDetector">
 
-                    <textarea name="cv-DV-21" cols="70" rows="3"></textarea>
-
-                    <br><br>
+                    <div class="speechBubblesWrapper">
+                        <div class="speechBubble question withAvatar mt-5 mb-3 answer right">
+                            <span class="avatarCircle"></span>
+                            <span class="avatar avatar-20"></span>
+                            <span class="speechAuthor">Я</span>
+                            Сейчас отвечу:
+                        </div>
+                        
+                        <textarea class="form-control mb-3 bigForPrint" name="cv-DV-21" rows="5" required></textarea>
+                    </div>
 
                     <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
 

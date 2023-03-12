@@ -1,4 +1,12 @@
-.rightDiv{
-    
-    margin-left:100px;
+.bigForPrint{
+    @media print {
+        height: 8cm;
+    }
 }
+
+.speechBubble{
+    @media print {
+        page-break-inside: avoid;
+    }
+}
+
