@@ -1,13 +1,17 @@
 .inst {
+    width: 100%;
+    overflow-x: auto;
     display: grid;
     grid-template-columns: repeat(50px 100px 50px 50px 50px 100px);
-    grid-template-rows: repeat(5, 100px);
+    grid-template-rows: repeat(3, 100px);
 
     .instMenu {
         grid-column-start: 1;
-        grid-column-end: 2;
         grid-row-start: 1;
-        grid-row-end: 7;
+        grid-row-end: 4;
+        img {
+            height: 100%;
+        }
     }
 
     .psevdoAvatar {
@@ -33,6 +37,9 @@
         grid-column-end: 7;
         grid-row-start: 1;
         grid-row-end: 2;
+        img {
+            width: 110%;
+        }
     }
 
     .instinfo {
@@ -47,6 +54,9 @@
         grid-column-end: 6;
         grid-row-start: 3;
         grid-row-end: 4;
+        img {
+            width: 100%;
+        }
     }
 
     // Место для катинки поста
@@ -65,49 +75,26 @@
         grid-row-end: 6;
     }
 
-    
+
 }
+
 .round {
     border-radius: 50%;
     width: 100%;
-    
+
 }
 
 
-table {
-    width: 100%;
-    border-radius: 12px;
- 
-    th,
-    td {
-       border: 1px solid gray;
-       padding: 8px;
-       // text-align: center;
-    }
- 
-    tr {
-       height: 250px;
-       page-break-inside: avoid;
-    }
- 
-    td {
-       width: 10%;
-    }
- 
-    thead>tr {
-       height: 50px;
-    }
- 
-    thead>tr>th,
-    tbody>tr>td {
-       width: 100px;
-    }
- }
- 
 
- 
- .container.chehov-main-container fieldset {
+.container.chehov-main-container fieldset {
     border-radius: 12px;
     background-color: #fffdca;
     border: none !important;
- }
+    page-break-inside: avoid;
+}
+
+.instAdviceLike {
+    img {
+        width: 100%;
+    }
+}

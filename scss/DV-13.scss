@@ -1,0 +1,19 @@
+.cyrilic {
+    list-style-type: none;
+}
+
+.cyrilic li:nth-child(1)::before {
+    content: 'а)';
+}
+
+.cyrilic li:nth-child(2)::before {
+    content: 'б)';
+}
+
+.cyrilic li:nth-child(3)::before {
+    content: 'в)';
+}
+.image-container {
+    width: 100%;
+    overflow-x: auto;
+}
