@@ -2,6 +2,12 @@ legend {
     font-size: 18px;
 }
 
+fieldset {
+    @media print {
+        page-break-inside: avoid;
+    }
+}
+
 ul {
     list-style: none;
 

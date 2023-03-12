@@ -8,6 +8,8 @@
     }
 
     .dv8-form-wrapper {
+        margin-top: 20px;
+        word-spacing: 5px;
 
         table {
             border: 1px solid black;
@@ -20,10 +22,19 @@
             border-bottom: 1px solid black;
             text-align: center;
             outline: none;
+            margin-left: 10px;
+
 
             &::placeholder {
                 font-style: italic;
                 text-align: center;
+                position: relative;
+
+                @media print {
+                    font-size: 30%;
+                    bottom: -5px;
+                    text-align: right;
+                }
             }
         }
     }
