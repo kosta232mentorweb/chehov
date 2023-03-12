@@ -1,0 +1,11 @@
+.bigForPrint {
+    @media print {
+        height: 4cm;
+    }
+}
+
+.avoidBreakInside{
+    @media print {
+        page-break-inside: avoid;
+    }
+}

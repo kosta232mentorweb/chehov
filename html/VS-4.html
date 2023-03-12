@@ -74,107 +74,123 @@
 
                 <!-- Заголовок только для печати -->
                 <h1 class="printOnly taskNumber">Задание ВС-4.</h1>
+                <h6 class="printOnly colontitul">Серия “КНИГА-ЧАТ”</h6>
                 <hr class="printOnly">
 
                 <!-- Само задание -->
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">А. П. Чехов</span>
-                    Кто о ком сказал эти слова?
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-11"></span>
+                        <span class="speechAuthor">А. П. Чехов</span>
+                        Кто о ком сказал эти слова?
+                    </div>
+                    <div class="speechBubble question withAvatar mt-5 mb-3 answer right">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-20"></span>
+                        <span class="speechAuthor">Я</span>
+                        Сейчас заполню таблицу:
+                    </div>
                 </div>
 
                 <!-- Основная форма. Внимание на имя с префиксом -->
                 <form name="chehov-form-vs-4" action="http://activepads.com:8082/formDetector">
 
-                    <label for="statements-VS-4-1">
-                        1. <i>«Не плачь, говорит, мужичок, до свадьбы заживёт».</i>
-                    </label>
-                    <br>
-                    <textarea name="statements-VS-4-1" id="statements-VS-4-1" cols="70" rows="3"></textarea>
+                    <div class="mb-3 avoidBreakInside">
+                        <label for="statements-VS-4-1">
+                            1. <i>«Не плачь, говорит, мужичок, до свадьбы заживёт».</i>
+                        </label>
+                        <textarea class="form-control bigForPrint" name="statements-VS-4-1" id="statements-VS-4-1"
+                            cols="70" rows="3" required></textarea>
+                    </div>
 
-                    <br>
-                    <label for="statements-VS-4-2">
-                        2. <i> «Третьего дня Пётр Сергеевич приехали».</i>
-                    </label>
-                    <br>
-                    <textarea name="statements-VS-4-2" id="statements-VS-4-2" cols="70" rows="3"></textarea>
+                    <div class="mb-3 avoidBreakInside">
+                        <label for="statements-VS-4-2">
+                            2. <i> «Третьего дня Пётр Сергеевич приехали».</i>
+                        </label>
+                        <textarea class="form-control bigForPrint" name="statements-VS-4-2" id="statements-VS-4-2" rows="3" required></textarea>
+                    </div>
 
-                    <br>
-                    <label for="statements-VS-4-3">
-                        3. <i> «У него всё дела много, ему не до меня… и внимания не обращает». </i>
-                    </label>
-                    <br>
-                    <textarea name="statements-VS-4-3" id="statements-VS-4-3" cols="70" rows="3"></textarea>
+                    <div class="mb-3 avoidBreakInside">
+                        <label for="statements-VS-4-3">
+                            3. <i> «У него всё дела много, ему не до меня… и внимания не обращает». </i>
+                        </label>
+                        <textarea class="form-control bigForPrint" name="statements-VS-4-3" id="statements-VS-4-3" rows="3" required></textarea>
+                    </div>
 
-                    <br>
-                    <label for="statements-VS-4-4">
-                        4. <i> «Они были у нас на святой, полведра огурцов скушали».</i>
-                    </label>
-                    <br>
-                    <textarea name="statements-VS-4-4" id="statements-VS-4-4" cols="70" rows="3"></textarea>
+                    <div class="mb-3 avoidBreakInside">
+                        <label for="statements-VS-4-4">
+                            4. <i> «Они были у нас на святой, полведра огурцов скушали».</i>
+                        </label>
+                        <textarea class="form-control bigForPrint" name="statements-VS-4-4" id="statements-VS-4-4" rows="3" required></textarea>
+                    </div>
 
-                    <br>
-                    <label for="statements-VS-4-5">
-                        5. <i> «Сестра не отвыкла ещё сорить деньгами».</i>
-                    </label>
-                    <br>
-                    <textarea name="statements-VS-4-5" id="statements-VS-4-5" cols="70" rows="3"></textarea>
+                    <div class="mb-3 avoidBreakInside">
+                        <label for="statements-VS-4-5">
+                            5. <i> «Сестра не отвыкла ещё сорить деньгами».</i>
+                        </label>
+                        <textarea class="form-control bigForPrint" name="statements-VS-4-5" id="statements-VS-4-5" rows="3" required></textarea>
+                    </div>
 
-                    <br>
-                    <label for="statements-VS-4-6">
-                        6. <i> «Ты очень умный человек и очень страшный; тебя должны безумно любить женщины». </i>
-                    </label>
-                    <br>
-                    <textarea name="statements-VS-4-6" id="statements-VS-4-6" cols="70" rows="3"></textarea>
+                    <div class="mb-3 avoidBreakInside">
+                        <label for="statements-VS-4-6">
+                            6. <i> «Ты очень умный человек и очень страшный; тебя должны безумно любить
+                                женщины». </i>
+                        </label>
+                        <textarea class="form-control bigForPrint" name="statements-VS-4-6" id="statements-VS-4-6" rows="3" required></textarea>
+                    </div>
 
-                    <br>
-                    <label for="statements-VS-4-7">
-                        7. <i>«Простите, таких легкомысленных людей, как вы, господа, таких неделовых, странных, я ещё
-                            не
-                            встречал».</i>
-                    </label>
-                    <br>
-                    <textarea name="statements-VS-4-7" id="statements-VS-4-7" cols="70" rows="3"></textarea>
+                    <div class="mb-3 avoidBreakInside">
+                        <label for="statements-VS-4-7">
+                            7. <i>«Простите, таких легкомысленных людей, как вы, господа, таких
+                                неделовых, странных, я ещё
+                                не
+                                встречал».</i>
+                        </label>
+                        <textarea class="form-control bigForPrint" name="statements-VS-4-7" id="statements-VS-4-7" rows="3" required></textarea>
+                    </div>
 
-                    <br>
-                    <label for="statements-VS-4-8">
-                        8. <i> «Мадам Лопахина! Мадам Лопахина!».</i>
-                    </label>
-                    <br>
-                    <textarea name="statements-VS-4-8" id="statements-VS-4-8" cols="70" rows="3"></textarea>
+                    <div class="mb-3 avoidBreakInside">
+                        <label for="statements-VS-4-8">
+                            8. <i> «Мадам Лопахина! Мадам Лопахина!».</i>
+                        </label>
+                        <textarea class="form-control bigForPrint" name="statements-VS-4-8" id="statements-VS-4-8" rows="3" required></textarea>
+                    </div>
 
-                    <br>
-                    <label for="statements-VS-4-9">
-                        9. <i> «Бросила ключи, хочет показать, что уж не хозяйка здесь». </i>
-                    </label>
-                    <br>
-                    <textarea name="statements-VS-4-9" id="statements-VS-4-9" cols="70" rows="3"></textarea>
+                    <div class="mb-3 avoidBreakInside">
+                        <label for="statements-VS-4-9">
+                            9. <i> «Бросила ключи, хочет показать, что уж не хозяйка здесь».
+                            </i>
+                        </label>
+                        <textarea class="form-control bigForPrint" name="statements-VS-4-9" id="statements-VS-4-9" rows="3" required></textarea>
+                    </div>
 
-                    <br>
-                    <label for="statements-VS-4-10">
-                        10. <i> «Сегодня в ресторане ты говорил опять много и всё некстати. О семидесятых годах, о
-                            декадентах. И
-                            кому? Половым говорить о декадентах!»</i>
-                    </label>
-                    <br>
-                    <textarea name="statements-VS-4-10" id="statements-VS-4-10" cols="70" rows="3"></textarea>
+                    <div class="mb-3 avoidBreakInside">
+                        <label for="statements-VS-4-10">
+                            10. <i> «Сегодня в ресторане ты говорил опять много и всё
+                                некстати. О семидесятых годах, о
+                                декадентах. И
+                                кому? Половым говорить о декадентах!»</i>
+                        </label>
+                        <textarea class="form-control bigForPrint" name="statements-VS-4-10" id="statements-VS-4-10" rows="3" required></textarea>
+                    </div>
 
-                    <br>
-                    <label for="statements-VS-4-11">
-                        11. <i> «Ему пятьдесят лет скоро, а он всё ещё студент». </i>
-                    </label>
-                    <br>
-                    <textarea name="statements-VS-4-11" id="statements-VS-4-11" cols="70" rows="3"></textarea>
+                    <div class="mb-3 avoidBreakInside">
+                        <label for="statements-VS-4-11">
+                            11. <i> «Ему пятьдесят лет скоро, а он всё ещё студент».
+                            </i>
+                        </label>
+                        <textarea class="form-control bigForPrint" name="statements-VS-4-11" id="statements-VS-4-11" rows="3" required></textarea>
+                    </div>
 
-                    <br>
-                    <label for="statements-VS-4-12">
-                        12. <i> «У тебя тонкие, нежные пальцы, как у артиста, у тебя тонкая, нежная душа». </i>
-                    </label>
-                    <br>
-                    <textarea name="statements-VS-4-12" id="statements-VS-4-12" cols="70" rows="3"></textarea>
+                    <div class="mb-3 avoidBreakInside">
+                        <label for="statements-VS-4-12">
+                            12. <i> «У тебя тонкие, нежные пальцы, как у артиста, у
+                                тебя тонкая, нежная душа». </i>
+                        </label>
+                        <textarea class="form-control bigForPrint" name="statements-VS-4-12" id="statements-VS-4-12" rows="3" required></textarea>
+                    </div>
 
-
-                    <br><br>
 
                     <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
 
@@ -191,5 +207,3 @@
 </body>
 
 </html>
-
-

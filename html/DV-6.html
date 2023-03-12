@@ -74,33 +74,52 @@
 
                 <!-- Заголовок только для печати -->
                 <h1 class="printOnly taskNumber">Задание ДВ-6.</h1>
+                <h6 class="printOnly colontitul">Серия “КНИГА-ЧАТ”</h6>
                 <hr class="printOnly">
 
                 <!-- Само задание -->
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">А. П. Чехов</span>
-                    Ищу художника для своей пьесы (кто рисует от руки или при помощи гаджета)! Изобразите и сравните
-                    интерьер каждого из четырёх действий «Дяди Вани» (сделайте четыре картины, максимально приближенные
-                    к моему описанию).
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-11"></span>
+                        <span class="speechAuthor">А. П. Чехов</span>
+                        Ищу художника для своей пьесы (кто рисует от руки или при помощи гаджета)! Изобразите и сравните
+                        интерьер каждого из четырёх действий «Дяди Вани» (сделайте четыре картины, максимально
+                        приближенные
+                        к моему описанию).
+                    </div>
+                    <div class="speechBubble question withAvatar mt-5 mb-3 answer right">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-20"></span>
+                        <span class="speechAuthor">Я</span>
+                        Сейчас загружу картины:
+                    </div>
                 </div>
 
                 <!-- Основная форма. Внимание на имя с префиксом -->
                 <form name="chehov-form-dv-6" action="http://activepads.com:8082/formDetector">
 
-                    <label for="interior1">Действие 1: </label>
-                    <input type="file" name="interior1-DV-6" id="interior1" accept=".png, .jpg, .jpeg">
-                    <br><br>
-                    <label for="interior2">Действие 2: </label>
-                    <input type="file" name="interior2-DV-6" id="interior2" accept=".png, .jpg, .jpeg">
-                    <br><br>
-                    <label for="interior3">Действие 3: </label>
-                    <input type="file" name="interior3-DV-6" id="interior3" accept=".png, .jpg, .jpeg">
-                    <br><br>
-                    <label for="interior4">Действие 4: </label>
-                    <input type="file" name="interior4-DV-6" id="interior4" accept=".png, .jpg, .jpeg">
 
-                    <br><br>
+                    <div class="mb-3 avoidBreakInside">
+                        <label for="interior1" class="form-label">Действие 1: </label>
+                        <input class="form-control screenOnly" type="file" name="interior1-DV-6" id="interior1" required>
+                        <textarea class="form-control printOnly" name="interior1-DV-6" rows="17"></textarea>
+                    </div>
+                    <div class="mb-3 avoidBreakInside">
+                        <label for="interior2" class="form-label">Действие 2: </label>
+                        <input class="form-control screenOnly" type="file" name="interior2-DV-6" id="interior2">
+                        <textarea class="form-control printOnly" name="interior2-DV-6" rows="17"></textarea>
+                    </div>
+                    <div class="mb-3 avoidBreakInside">
+                        <label for="interior3" class="form-label">Действие 3: </label>
+                        <input class="form-control screenOnly" type="file" name="interior3-DV-6" id="interior3">
+                        <textarea class="form-control printOnly" name="interior3-DV-6" rows="17"></textarea>
+                    </div>
+                    <div class="mb-3 avoidBreakInside">
+                        <label for="interior4" class="form-label">Действие 4: </label>
+                        <input class="form-control screenOnly" type="file" name="interior4-DV-6" id="interior4">
+                        <textarea class="form-control printOnly" name="interior4-DV-6" rows="17"></textarea>
+                    </div>
 
                     <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
 

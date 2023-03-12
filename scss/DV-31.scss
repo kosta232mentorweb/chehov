@@ -1,0 +1,25 @@
+.googleIcon{
+    width: 100%;
+    text-align: center;
+    position: relative;
+
+    textarea{
+        // border-radius: 10px;
+        padding-left: 47px;
+        padding-top: 15px;
+        line-height: 30px;
+    }
+
+    
+}
+
+.googleIcon::before{
+    content: "";
+    position: absolute;
+    top: 171px;
+    left: 9px;
+    height: 119px;
+    width: 30px;
+    background-image: url(../images/DV-31/DV-31-HistoryIcon.svg);
+    background-size: 98%;
+}
