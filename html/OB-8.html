@@ -187,9 +187,12 @@
                     </div>
                 </div>
                 <!-- Основная форма. Внимание на имя с префиксом -->
-                <form name="chehov-form-ob-8" action="http://activepads.com:8082/formDetector">
-
-                    <textarea name="OB-8"></textarea>
+                <form name="chehov-form-ob-8" class="mt-3 screenOnly" action="http://activepads.com:8082/formDetector">
+                    <fieldset class="form-group border p-2 pb-1">
+                        <div class="mb-4">
+                            <textarea class="form-control" name="Answer" type="text" required></textarea>
+                        </div>
+                    </fieldset>
                     <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
                 </form>
 
