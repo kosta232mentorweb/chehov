@@ -77,26 +77,39 @@
                 <hr class="printOnly">
 
                 <!-- Само задание -->
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">Бунин</span>
-                    …приветлив, но сдержан, говорил довольно оживленно, но еще более просто и кратко и во время
-                    разговора все думал о чём-то своем, предоставляя собеседнику самому улавливать переходы в скрытом
-                    течении своих мыслей.
-                </div>
-
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">А. П. Чехов</span>
-                    Прочитайте информацию о таком художественном приёме, как <a class="screenOnly"
-                        href="https://cyberleninka.ru/article/n/podtekst-v-hudozhestvennom-tekste-lingvisticheskie-sredstva-vyrazheniya-semanticheskie-tipy/viewer">подтекст</a>.
-                    Найдите подтекст в сцене, произошедшей между Войницким, Астровым и Еленой Андреевной, отметьте
-                    конкретные строчки в разговоре и попробуйте расшифровать этот подтекст.
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-14"></span>
+                        <span class="speechAuthor">Бунин</span>
+                        …приветлив, но сдержан, говорил довольно оживленно, но еще более просто и кратко и во время
+                        разговора все думал о чём-то своем, предоставляя собеседнику самому улавливать переходы в
+                        скрытом
+                        течении своих мыслей.
+                    </div>
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-11"></span>
+                        <span class="speechAuthor">А. П. Чехов</span>
+                        Прочитайте информацию о таком художественном приёме, как 
+                        <a class="screenOnly"
+                            href="https://cyberleninka.ru/article/n/podtekst-v-hudozhestvennom-tekste-lingvisticheskie-sredstva-vyrazheniya-semanticheskie-tipy/viewer">подтекст.</a>
+                            <span class="printOnly">подтекст по QR-коду:</span>
+                            <div class="printOnly">
+                                <figure class="figure">
+                                    <img src="../images/DV-26/qrcode_ritor_turnir.png" class="figure-img img-fluid"
+                                       alt="Подтекст">
+                                    <figcaption class="figure-caption lh-1">Подтекст</figcaption>
+                                 </figure>
+                            </div>
+                        Найдите подтекст в сцене, произошедшей между Войницким, Астровым и Еленой Андреевной, отметьте
+                        конкретные строчки в разговоре и попробуйте расшифровать этот подтекст.
+                    </div>
                 </div>
 
 
                 <div class="textDiv">
-                    <p>
+                    <!-- <p>
                         <i>В это время входит <b>Войницкий</b> с букетом роз и останавливается у двери.</i>
                     </p>
                     <p>
@@ -127,23 +140,23 @@
                         ничего себе. <i>(Свертывает картограмму в трубку.)</i> Вот только что: дни коротки стали…
                         <i>(Уходит.)</i>
 
-                    </p>
+                    </p> -->
                 </div>
-                <br><br>
+
 
                 <!-- Основная форма. Внимание на имя с префиксом -->
                 <form name="chehov-form-dv-26" action="http://activepads.com:8082/formDetector">
 
-                    <div class="speechBubble question withAvatar mt-5 answer right">
-                        <span class="avatarCircle"></span>
-                        <span class="avatar avatar-20"></span>
-                        <span class="speechAuthor">Я</span>
-                        Сейчас отвечу:
+                    <div class="speechBubblesWrapper">
+                        <div class="speechBubble question withAvatar mt-5 answer right">
+                            <span class="avatarCircle"></span>
+                            <span class="avatar avatar-20"></span>
+                            <span class="speechAuthor">Я</span>
+                            Сейчас отвечу:
+                        </div>
                     </div>
-                    
-                    <textarea name="subtext-DV-26" cols="70" rows="7"></textarea>
 
-                    <br><br>
+                    <textarea  class="form-control mt-3 mb-3 bigForPrint" name="subtext-DV-26" rows="7"></textarea>
 
                     <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
 
@@ -160,6 +173,3 @@
 </body>
 
 </html>
-
-
-

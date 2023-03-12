@@ -77,33 +77,40 @@
                 <hr class="printOnly">
 
                 <!-- Само задание -->
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">Учитель</span>
-                    Брейншторм «Спасти имение Раневской». В произведении даётся один вариант сохранения и приумножения
-                    прибыли с имения Раневской. Поучаствуйте в мозговом штурме и предложите как можно больше действенных
-                    вариантов по «спасению» имения (можно с учётом современных реалий).
-                </div>
-
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">А. П. Чехов</span>
-                    Правила брейншторма:
-                    <br>
-                    1. Продумайте цель вашего штурма (в данном случае она сформулирована в задании).
-                    <br>
-                    2. Записывайте идеи.
-                    <br>
-                    3. Не давайте идее остаться идеей. Высказывайте мысли, даже если ещё не додумали. Возможно, кто-то
-                    поможет
-                    «докрутить».
-                    <br>
-                    4. Никакой критики.
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-19"></span>
+                        <span class="speechAuthor">Учитель</span>
+                        Брейншторм «Спасти имение Раневской». В произведении даётся один вариант сохранения и
+                        приумножения
+                        прибыли с имения Раневской. Поучаствуйте в мозговом штурме и предложите как можно больше
+                        действенных
+                        вариантов по «спасению» имения (можно с учётом современных реалий).
+                    </div>
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatarCircle"></span> 
+                        <span class="avatar avatar-11"></span>
+                        <span class="speechAuthor">А. П. Чехов</span>
+                        Правила брейншторма:
+                        <br>
+                        1. Продумайте цель вашего штурма (в данном случае она сформулирована в задании).
+                        <br>
+                        2. Записывайте идеи.
+                        <br>
+                        3. Не давайте идее остаться идеей. Высказывайте мысли, даже если ещё не додумали. Возможно,
+                        кто-то
+                        поможет
+                        «докрутить».
+                        <br>
+                        4. Никакой критики.
+                    </div>
                 </div>
 
                 <!-- Основная форма. Внимание на имя с префиксом -->
                 <form name="chehov-form-vs-24" action="http://activepads.com:8082/formDetector">
 
+                    <div class="speechBubblesWrapper avoidBreakInside">
                     <div class="speechBubble question withAvatar mt-5 answer right">
                         <span class="avatarCircle"></span>
                         <span class="avatar avatar-20"></span>
@@ -111,12 +118,11 @@
                         Сейчас предложу варианты:
                     </div>
 
-                    <!-- <label>
-                        Ответ: -->
-                        <textarea name="ans-VS-24" id="ans-VS-24" cols="70" rows="9" placeholder="1.&#10;2.&#10;3.&#10;..."></textarea>
-                    <!-- </label> -->
+                    <textarea class="form-control bigForPrint mt-3 mb-3" name="ans-VS-24" id="ans-VS-24" rows="5"
+                        placeholder="1.&#10;2.&#10;3.&#10;..."></textarea>
 
-                    <br><br>
+                    </div>
+
 
                     <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
 
@@ -133,4 +139,3 @@
 </body>
 
 </html>
-

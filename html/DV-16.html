@@ -77,30 +77,33 @@
                 <hr class="printOnly">
 
                 <!-- Само задание -->
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-                    <span class="avatarCircle"></span> <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">А. П. Чехов</span>
-                    Ответьте Серебрякову от имени дяди Вани:
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-11"></span>
+                        <span class="speechAuthor">А. П. Чехов</span>
+                        Ответьте Серебрякову от имени дяди Вани:
+                    </div>
                 </div>
-                <br><br><br>
 
                 <!-- Основная форма. Внимание на имя с префиксом -->
                 <form name="chehov-form-dv-16" action="http://activepads.com:8082/formDetector">
 
-                    <div class="speechBubble question withAvatar mt-3 mb-3">
-                        <span class="avatarCircle"></span> <span class="avatar avatar-3"></span>
-                        <span class="speechAuthor">Серебряков</span>
-                        Что все-таки тогда случилось? За что ты меня возненавидел? Почему хотел застрелить?
-                    </div>
+                    <div class="speechBubblesWrapper">
+                        <div class="speechBubble question withAvatar mt-6 mb-3">
+                            <span class="avatarCircle"></span>
+                            <span class="avatar avatar-1"></span>
+                            <span class="speechAuthor">Серебряков</span>
+                            Что все-таки тогда случилось? За что ты меня возненавидел? Почему хотел застрелить?
+                        </div>
 
-                    <br><br>
-                    <div class="speechBubble question withAvatar mt-5 answer right">
-                        <span class="avatarCircle"></span> <span class="avatar avatar-3"></span>
-                        <span class="speechAuthor">Войницкий</span>
-                        <textarea name="Voinitski-answer-DV-16" cols="40" rows="2"></textarea>
+                        <div class="speechBubble question withAvatar mt-6 mb-3 answer right">
+                            <span class="avatarCircle"></span>
+                            <span class="avatar avatar-5"></span>
+                            <span class="speechAuthor">Войницкий</span>
+                            <textarea class="form-control bigForPrint" name="Voinitski-answer-DV-16" cols="80" rows="5"></textarea>
+                        </div>
                     </div>
-
-                    <br><br>
 
                     <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
 

@@ -1,4 +1,11 @@
-p {
-    color:red;
+.bigForPrint{
+    @media print {
+        height: 65mm;
+    }
 }
 
+.avoidBreakInside{
+    @media print {
+        page-break-inside: avoid;
+    }
+}
