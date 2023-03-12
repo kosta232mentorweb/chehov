@@ -101,61 +101,111 @@
 
                 <!-- Само задание -->
                 <div id="links"></div>
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-                    <span class="avatarCircle"></span> <span class="avatar avatar-19"></span>
-                    <span class="speechAuthor">Учитель</span>
-                    Какими ласковыми словами называл Чехов свою супругу в переписке? Найдите 20 слов (по материалам
-                    писем за 1904 г.)
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatarCircle"></span> <span class="avatar avatar-19"></span>
+                        <span class="speechAuthor">Учитель</span>
+                        Какими ласковыми словами называл Чехов свою супругу в переписке? Найдите 20 слов (по материалам
+                        писем за 1904 г.)
+                    </div>
+                    <div class="speechBubble question withAvatar mt-5 answer right">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-20"></span>
+                        <span class="speechAuthor">Я</span>
+                        Сейчас поищу слова:
+                     </div>
                 </div>
 
                 <!-- Основная форма. Внимание на имя с префиксом -->
                 <div class="ob9-form-wrapper">
-                    <img src="../images/letterbox.png" alt="Квадрат с буквами" width="500px">
+                    <img src="../images/OB-9/letterbox.png" alt="Квадрат с буквами" width="500px">
                     <form name="chehov-form-ob-9" action="http://activepads.com:8082/formDetector">
-                        <div class="block1">
-                            <label for="name1">&nbsp;&nbsp;1.</label>
-                            <input type="text" name="name1" id="name1" pattern="[а-яёА-ЯЁ]{2,20}"><br><br>
-                            <label for="name1">&nbsp;&nbsp;2.</label>
-                            <input type="text" name="name2" id="name2" pattern="[а-яёА-ЯЁ]{2,20}"> <br><br>
-                            <label for="name1">&nbsp;&nbsp;3.</label>
-                            <input type="text" name="name3" id="name3" pattern="[а-яёА-ЯЁ]{2,20}"> <br><br>
-                            <label for="name1">&nbsp;&nbsp;4.</label>
-                            <input type="text" name="name4" id="name4" pattern="[а-яёА-ЯЁ]{2,20}"> <br><br>
-                            <label for="name1">&nbsp;&nbsp;5.</label>
-                            <input type="text" name="name5" id="name5" pattern="[а-яёА-ЯЁ]{2,20}"> <br><br>
-                            <label for="name1">&nbsp;&nbsp;6.</label>
-                            <input type="text" name="name6" id="name6" pattern="[а-яёА-ЯЁ]{2,20}"> <br><br>
-                            <label for="name1">&nbsp;&nbsp;7.</label>
-                            <input type="text" name="name7" id="name7" pattern="[а-яёА-ЯЁ]{2,20}"> <br><br>
-                            <label for="name1">&nbsp;&nbsp;8.</label>
-                            <input type="text" name="name8" id="name8" pattern="[а-яёА-ЯЁ]{2,20}"> <br><br>
-                            <label for="name1">&nbsp;&nbsp;9.</label>
-                            <input type="text" name="name9" id="name9" pattern="[а-яёА-ЯЁ]{2,20}"> <br><br>
-                            <label for="name1">10.</label>
-                            <input type="text" name="name10" id="name10" pattern="[а-яёА-ЯЁ]{2,20}"> <br><br>
+                        <div class="ob9-blocks-wrapper">
+                            <div class="block1">
+                                <div>
+                                    <label class="form-label" for="name1">&nbsp;&nbsp;1.</label>
+                                    <input class="form-control" type="text" name="name1" id="name1" pattern="[а-яёА-ЯЁ]{2,20}" required>
+                                </div>
+                                <div>
+                                    <label class="form-label" for="name2">&nbsp;&nbsp;2.</label>
+                                    <input class="form-control" type="text" name="name2" id="name2" pattern="[а-яёА-ЯЁ]{2,20}" required>
+                                </div>
+                                <div>
+                                    <label class="form-label" for="name3">&nbsp;&nbsp;3.</label>
+                                    <input class="form-control" type="text" name="name3" id="name3" pattern="[а-яёА-ЯЁ]{2,20}" required>
+                                </div>
+                                <div>
+                                    <label class="form-label" for="name4">&nbsp;&nbsp;4.</label>
+                                    <input class="form-control" type="text" name="name4" id="name4" pattern="[а-яёА-ЯЁ]{2,20}" required>
+                                </div>
+                                <div>
+                                    <label class="form-label" for="name5">&nbsp;&nbsp;5.</label>
+                                    <input class="form-control" type="text" name="name5" id="name5" pattern="[а-яёА-ЯЁ]{2,20}" required>
+                                </div>
+                                <div>
+                                    <label class="form-label" for="name6">&nbsp;&nbsp;6.</label>
+                                    <input class="form-control" type="text" name="name6" id="name6" pattern="[а-яёА-ЯЁ]{2,20}" required>
+                                </div>
+                                <div>
+                                    <label class="form-label" for="name7">&nbsp;&nbsp;7.</label>
+                                    <input class="form-control" type="text" name="name7" id="name7" pattern="[а-яёА-ЯЁ]{2,20}" required>
+                                </div>
+                                <div>
+                                    <label class="form-label" for="name8">&nbsp;&nbsp;8.</label>
+                                    <input class="form-control" type="text" name="name8" id="name8" pattern="[а-яёА-ЯЁ]{2,20}" required>
+                                </div>
+                                <div>
+                                    <label class="form-label" for="name9">&nbsp;&nbsp;9.</label>
+                                    <input class="form-control" type="text" name="name9" id="name9" pattern="[а-яёА-ЯЁ]{2,20}" required>
+                                </div>
+                                <div>
+                                    <label class="form-label" for="name10">10.</label>
+                                    <input class="form-control" type="text" name="name10" id="name10" pattern="[а-яёА-ЯЁ]{2,20}" required>
+                                </div>
+                            </div>
+                            <div class="block2">
+                                <div>
+                                    <label class="form-label" for="name11">11.</label>
+                                    <input class="form-control" type="text" name="name11" id="name11" pattern="[а-яёА-ЯЁ]{2,20}" required>
+                                </div>
+                                <div>
+                                    <label class="form-label" for="name12">12.</label>
+                                    <input class="form-control" type="text" name="name12" id="name12" pattern="[а-яёА-ЯЁ]{2,20}" required>
+                                </div>
+                                <div>
+                                    <label class="form-label" for="name13">13.</label>
+                                    <input class="form-control" type="text" name="name13" id="name13" pattern="[а-яёА-ЯЁ]{2,20}" required>
+                                </div>
+                                <div>
+                                    <label class="form-label" for="name14">14.</label>
+                                    <input class="form-control" type="text" name="name14" id="name14" pattern="[а-яёА-ЯЁ]{2,20}" required>
+                                </div>
+                                <div>
+                                    <label class="form-label" for="name15">15.</label>
+                                    <input class="form-control" type="text" name="name15" id="name15" pattern="[а-яёА-ЯЁ]{2,20}" required>
+                                </div>
+                                <div>
+                                    <label class="form-label" for="name16">16.</label>
+                                    <input class="form-control" type="text" name="name16" id="name16" pattern="[а-яёА-ЯЁ]{2,20}" required>
+                                </div>
+                                <div>
+                                    <label class="form-label" for="name17">17.</label>
+                                    <input class="form-control" type="text" name="name17" id="name17" pattern="[а-яёА-ЯЁ]{2,20}" required>
+                                </div>
+                                <div>
+                                    <label class="form-label" for="name18">18.</label>
+                                    <input class="form-control" type="text" name="name18" id="name18" pattern="[а-яёА-ЯЁ]{2,20}" required>
+                                </div>
+                                <div>
+                                    <label class="form-label" for="name19">19.</label>
+                                    <input class="form-control" type="text" name="name19" id="name19" pattern="[а-яёА-ЯЁ]{2,20}" required>
+                                </div>
+                                <div>
+                                    <label class="form-label" for="name20">20.</label>
+                                    <input class="form-control" type="text" name="name20" id="name20" pattern="[а-яёА-ЯЁ]{2,20}" required>
+                                </div>
+                            </div>
                         </div>
-                        <div class="block2">
-                            <label for="name1">11.</label>
-                            <input type="text" name="name11" id="name11" pattern="[а-яёА-ЯЁ]{2,20}"> <br><br>
-                            <label for="name1">12.</label>
-                            <input type="text" name="name12" id="name12" pattern="[а-яёА-ЯЁ]{2,20}"> <br><br>
-                            <label for="name1">13.</label>
-                            <input type="text" name="name13" id="name13" pattern="[а-яёА-ЯЁ]{2,20}"> <br><br>
-                            <label for="name1">14.</label>
-                            <input type="text" name="name14" id="name14" pattern="[а-яёА-ЯЁ]{2,20}"> <br><br>
-                            <label for="name1">15.</label>
-                            <input type="text" name="name15" id="name15" pattern="[а-яёА-ЯЁ]{2,20}"> <br><br>
-                            <label for="name1">16.</label>
-                            <input type="text" name="name16" id="name16" pattern="[а-яёА-ЯЁ]{2,20}"> <br><br>
-                            <label for="name1">17.</label>
-                            <input type="text" name="name17" id="name17" pattern="[а-яёА-ЯЁ]{2,20}"> <br><br>
-                            <label for="name1">18.</label>
-                            <input type="text" name="name18" id="name18" pattern="[а-яёА-ЯЁ]{2,20}"> <br><br>
-                            <label for="name1">19.</label>
-                            <input type="text" name="name19" id="name19" pattern="[а-яёА-ЯЁ]{2,20}"> <br><br>
-                            <label for="name1">20.</label>
-                            <input type="text" name="name20" id="name20" pattern="[а-яёА-ЯЁ]{2,20}"> <br><br>
-                        </div><br>
                         <input type="submit" name="submitOB-9" value="Отправить"
                             class="btn btn-primary screenOnly w-100">
                     </form>

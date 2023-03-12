@@ -106,18 +106,8 @@
                     <span class="speechAuthor">А. П. Чехов</span>
                     Восстановите цитату из текста, найдя все пропавшие слова.
                 </div>
-                <div>
-                    <!-- <img src="../images/gorkiy.jfif" alt="Максим Горький"> -->
-                    <!-- <p>Я знал Антона Павловича достаточно близко, и каждый раз в наших разговорах и переписках он был
-                        неизменно
-                        афористичен.<br> Предлагаю вам тест: дополните афоризмы Чехова недостающими словами, а затем
-                        проверьте себя
-                        и убедитесь, насколько удивительным был этот человек:</p> -->
-                </div>
-
-                <!-- Основная форма. Внимание на имя с префиксом -->
                 <div class="dv8-task-wrapper">
-                    <table cellspacing="0" width=300px cellpadding=5px>
+                    <table cellspacing="0" cellpadding=5px>
                         <tr>
                             <td>р</td>
                             <td>б</td>
@@ -249,19 +239,28 @@
                             <td>д</td>
                         </tr>
                     </table>
+                    <div class="speechBubble question withAvatar mt-5 answer right">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-20"></span>
+                        <span class="speechAuthor">Я</span>
+                        Сейчас заполню пропущенные слова:
+                     </div>
+
+                <!-- Основная форма. Внимание на имя с префиксом -->
                     <div class="dv8-form-wrapper">
-                        <span>Цитата:</span>
                         <form name="chehov-form-dv-8" action="http://activepads.com:8082/formDetector">
-                            <input type="text" name="word1" id="word1" placeholder="6 букв" pattern="[а-яёА-ЯЁ]{6}"> вы
-                            не
-                            <input type="text" name="word2" id="word2" placeholder="6 букв" pattern="[а-яёА-ЯЁ]{6}">
-                            <input type="text" name="word3" id="word3" placeholder="6 букв" pattern="[а-яёА-ЯЁ]{6}">
-                            <input type="text" name="word4" id="word4" placeholder="10 букв" pattern="[а-яёА-ЯЁ]{10}">
-                            <input type="text" name="word5" id="word5" placeholder="7 букв" pattern="[а-яёА-ЯЁ]{7}">,
-                            <input type="text" name="word6" id="word6" placeholder="4 буквы" pattern="[а-яёА-ЯЁ]{4}">
-                            <input type="text" name="word7" id="word7" placeholder="3 буквы" pattern="[а-яёА-ЯЁ]{3}"> не
-                            <input type="text" name="word8" id="word8" placeholder="4 буквы" pattern="[а-яёА-ЯЁ]{4}">
-                            &nbsp; ?
+                            <fieldset class="form-group border pb-3 pt-2 mt-3 mb-3">
+                                <legend>Цитата:</legend>
+                                <input type="text" name="word1" id="word1" placeholder="6 букв" pattern="[а-яёА-ЯЁ]{6}" required> вы
+                                не
+                                <input type="text" name="word2" id="word2" placeholder="6 букв" pattern="[а-яёА-ЯЁ]{6}" required>
+                                <input type="text" name="word3" id="word3" placeholder="6 букв" pattern="[а-яёА-ЯЁ]{6}" required>
+                                <input type="text" name="word4" id="word4" placeholder="10 букв" pattern="[а-яёА-ЯЁ]{10}" required>
+                                <input type="text" name="word5" id="word5" placeholder="7 букв" pattern="[а-яёА-ЯЁ]{7}" required>,
+                                <input type="text" name="word6" id="word6" placeholder="4 буквы" pattern="[а-яёА-ЯЁ]{4}" required>
+                                <input type="text" name="word7" id="word7" placeholder="3 буквы" pattern="[а-яёА-ЯЁ]{3}" required> не
+                                <input type="text" name="word8" id="word8" placeholder="4 буквы" pattern="[а-яёА-ЯЁ]{4}" required>?
+                            </fieldset>
                             <input type="submit" name="submitDV-8" value="Отправить"
                                 class="btn btn-primary screenOnly w-100">
                         </form>

@@ -4,16 +4,62 @@
     flex-direction: column;
     align-items: center;
 
+    img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
     form {
         margin-top: 20px;
+        width: 100%;
 
-        .block1 {
-            display: inline-block;
+        >input {
+            margin-top: 20px;
         }
 
-        .block2 {
-            display: inline-block;
-            margin-left: 1cm;
+        .ob9-blocks-wrapper {
+            display: flex;
+            justify-content: space-around;
+            padding: 0px 30px;
+
+            @media (max-width: 520px) {
+                flex-direction: column;
+            }
+
+            .block1 {
+                display: inline-block;
+
+                div {
+                    label {
+                        margin-right: 5px;
+                    }
+
+                    display: flex;
+                    align-items: baseline;
+
+                    &:not(:first-child) {
+                        margin-top: 10px;
+                    }
+                }
+            }
+
+            .block2 {
+                display: inline-block;
+
+                div {
+                    label {
+                        margin-right: 5px;
+                    }
+
+                    display: flex;
+                    align-items: baseline;
+
+                    &:not(:first-child) {
+                        margin-top: 10px;
+                    }
+                }
+            }
+
         }
     }
 }

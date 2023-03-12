@@ -101,18 +101,18 @@
 
                 <!-- Само задание -->
                 <div id="links"></div>
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-11"></span>
-                    <span class="speechAuthor">А. П. Чехов</span>
-                    Придумайте персонажам моей пьесы супергеройские имена.
-                </div>
-                <div>
-                    <!-- <img src="../images/gorkiy.jfif" alt="Максим Горький"> -->
-                    <!-- <p>Я знал Антона Павловича достаточно близко, и каждый раз в наших разговорах и переписках он был
-                        неизменно
-                        афористичен.<br> Предлагаю вам тест: дополните афоризмы Чехова недостающими словами, а затем
-                        проверьте себя
-                        и убедитесь, насколько удивительным был этот человек:</p> -->
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                                   <span class="avatarCircle"></span>                    <span class="avatar avatar-11"></span>
+                        <span class="speechAuthor">А. П. Чехов</span>
+                        Придумайте персонажам моей пьесы супергеройские имена.
+                    </div>
+                    <div class="speechBubble question withAvatar mt-5 answer right">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-20"></span>
+                        <span class="speechAuthor">Я</span>
+                        Сейчас придумаю имена:
+                     </div>
                 </div>
 
                 <!-- Основная форма. Внимание на имя с префиксом -->
@@ -120,38 +120,38 @@
                     <form name="chehov-form-dv-4" action="http://activepads.com:8082/formDetector">
                         <table cellpadding="5px">
                             <tr>
-                                <td>Астров</td>
-                                <td><input type="text" name="name1"></td>
+                                <td><label class="form-label" for="name1">Астров</label></td>
+                                <td><input class="form-control" type="text" name="name1" id="name1" required></td>
                             </tr>
                             <tr>
-                                <td>Марина</td>
-                                <td><input type="text" name="name2"></td>
+                                <td><label label class="form-label" for="name2">Марина</label></td>
+                                <td><input class="form-control" type="text" name="name2" id="name2" required></td>
                             </tr>
                             <tr>
-                                <td>Телегин</td>
-                                <td><input type="text" name="name3"></td>
+                                <td><label label class="form-label" for="name3">Телегин</label></td>
+                                <td><input class="form-control" type="text" name="name3" id="name3" required></td>
                             </tr>
                             <tr>
-                                <td>Войницкий</td>
-                                <td><input type="text" name="name4"></td>
+                                <td><label label class="form-label" for="name4">Войницкий</label></td>
+                                <td><input class="form-control" type="text" name="name4" id="name4" required></td>
                             </tr>
                             <tr>
-                                <td>Серебряков</td>
-                                <td><input type="text" name="name5"></td>
+                                <td><label label class="form-label" for="name5">Серебряков</label></td>
+                                <td><input class="form-control" type="text" name="name5" id="name5" required></td>
                             </tr>
                             <tr>
-                                <td>Соня</td>
-                                <td><input type="text" name="name6"></td>
+                                <td><label label class="form-label" for="name6">Соня</label></td>
+                                <td><input class="form-control" type="text" name="name6" id="name6" required></td>
                             </tr>
                             <tr>
-                                <td>Елена Андреевна</td>
-                                <td><input type="text" name="name7"></td>
+                                <td><label label class="form-label" for="name7">Елена Андреевна</label></td>
+                                <td><input class="form-control" type="text" name="name7" id="name7" required></td>
                             </tr>
                             <tr>
-                                <td>Мария Васильевна</td>
-                                <td><input type="text" name="name8"></td>
+                                <td><label label class="form-label" for="name8">Мария Васильевна</label></td>
+                                <td><input class="form-control" type="text" name="name8" id="name8" required></td>
                             </tr>
-                        </table> <br>
+                        </table>
                         <input type="submit" name="submitDV4" value="Отправить" class="btn btn-primary screenOnly w-100">
                     </form>
                 </div>
