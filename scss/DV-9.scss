@@ -1,12 +1,12 @@
 .space {
     margin-left: 10px;
     display: inline-block;
-    font-size: 5pt;
+    font-size: 10pt;
 
 
     >input {
-        width: 15px;
-        height: 4mm;
+        width: 30px;
+        height: 8mm;
         text-align: right;
     }
 }
@@ -21,7 +21,7 @@
     background: orange;
     display: inline-block;
     position: absolute;
-    left: 9cm;
+    left: 12cm;
 }
 
 .wrapper {
