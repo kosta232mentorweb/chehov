@@ -101,15 +101,15 @@
                 <hr class="printOnly">
 
                 <!-- Само задание -->
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">Учитель</span>
-                    Прочитайте отрывки из нескольких писем Чехова:
-                </div>
-                <div id="links"></div>
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatarCircle"></span> <span class="avatar avatar-19"></span>
+                        <span class="speechAuthor">Учитель</span>
+                        Прочитайте отрывки из нескольких писем Чехова:
+                    </div>
+                    <div id="links"></div>
 
-                <!-- Основная форма. Внимание на имя с префиксом -->
-                <form name="chehov-form-vs-15" action="http://activepads.com:8082/formDetector">
+
                     а) (О.Л.Книппер, 7 марта, 1901 г.):
                     <div class="letter">
                         «Следующая пьеса, какую я напишу, будет непременно смешная, очень
@@ -133,27 +133,42 @@
                         написал, и я
                         готов дать какое угодно слово, что оба они ни разу не прочли внимательно моей пьесы».
                     </div>
-                    <p><br /></p>
-                    <p><br /></p>
-                    <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                        <span class="avatar avatar-3"></span>
-                        <span class="speechAuthor">Учитель</span>
+                    <div class="speechBubble question withAvatar mt-5 answer right">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-20"></span>
+                        <span class="speechAuthor">Я</span>
+                        Сейчас заполню таблицу:
+                    </div>
+                </div>
+                <!-- Основная форма. Внимание на имя с префиксом -->
+                <form name="chehov-form-vs-15" action="http://activepads.com:8082/formDetector">
+
+
+                    <fieldset class="form-group border p-2 pb-1">
                         <p>1. Как Вы думаете, почему сам Чехов называет пьесу «Вишневый сад» комедией? Какое
                             значение
                             вкладывается в это слово?</p>
-                        <textarea name="first" type="text" required></textarea>
-                    </div>
-                    <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                        <p>2. Найдите в пьесе элементы комедии, элементы трагедии, элементы драмы.</p>
-                        <textarea name="second" type="text" required></textarea>
-                    </div>
-                    <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <p>3. Составьте аргументированный ответ, построенный по типу рассуждения, к какому жанру можно
-                        отнести
-                        пьесу.
-                        Приведите не менее 3 аргументов в защиту собственной позиции.</p>
-                    <textarea name="third" type="text" required></textarea>
-                    </div>
+                        <div class="mb-2">
+                            <textarea class="form-control" name="first" type="text" required></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group border p-2 pb-1">
+                        <p>2. Найдите в пьесе элементы комедии, элементы трагедии, элементы драмы.</p>
+                        <div class="mb-2">
+                            <textarea class="form-control" name="second" type="text" required></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group border p-2 pb-1">
+                        <p>3. Составьте аргументированный ответ, построенный по типу рассуждения, к какому жанру
+                            можно
+                            отнести
+                            пьесу.
+                            Приведите не менее 3 аргументов в защиту собственной позиции.</p>
+                        <div class="mb-2">
+                            <textarea class="form-control" name="third" type="text" required></textarea>
+                        </div>
+                    </fieldset>
+
 
 
                     <p>* Для более убедительной аргументации найдите в дополнительных источниках такие
@@ -166,6 +181,7 @@
                 </form>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- Подключаем бутстрап скрипты -->

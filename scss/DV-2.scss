@@ -1,24 +1,56 @@
-.non{
+.non {
     list-style: none;
-    text-indent:-2%;
-    
-}
-li {
-    margin-bottom:2%;
-}
-textarea {
-    width: 100%;
-    height: 70px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    resize: none;
-  }
-//   .oval {
-//     height: 200px;
-//     width: 150px;
-//     border-radius: 50%;
-//     background-image: url(../images/chehov_brother.jpg);
-//     background-size: 100% 100%;
-//     background-repeat: no-repeat;
+    text-indent: -2%;
 
-//   }
+}
+
+li {
+    margin-bottom: 2%;
+}
+
+// textarea {
+//     width: 100%;
+//     height: 70px;
+//     padding: 12px 20px;
+//     box-sizing: border-box;
+//     resize: none;
+// }
+
+table {
+    width: 100%;
+    border-radius: 12px;
+
+    th,
+    td {
+        border: 1px solid gray;
+        padding: 8px;
+        // text-align: center;
+    }
+
+    tr {
+        height: 250px;
+        page-break-inside: avoid;
+    }
+
+    td {
+        width: 10%;
+    }
+
+    thead>tr {
+        height: 50px;
+    }
+
+    thead>tr>th,
+    tbody>tr>td {
+        width: 100px;
+    }
+}
+
+
+
+
+.container.chehov-main-container fieldset {
+    border-radius: 12px;
+    background-color: #fffdca;
+    border: none !important;
+}

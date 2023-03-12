@@ -101,57 +101,68 @@
                 <hr class="printOnly">
 
                 <!-- Само задание -->
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">А. П. Чехов</span>
-                    Распределите главных героев пьесы на три группы (на несколько групп) в
-                    зависимости от отношения к вишневому саду / в зависимости от того, что он видит в вишневом саде
-                    Сформулируйте, в чем заключается это отношение.
-                </div>
-                <div id="links"></div>
-                <!-- (дать аватары героев: Раневская, Гаев, Лопахин, Варя, Аня, Трофимов – и свободные поля). -->
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatarCircle"></span> <span class="avatar avatar-11"></span>
+                        <span class="speechAuthor">А. П. Чехов</span>
+                        Распределите главных героев пьесы на три группы (на несколько групп) в
+                        зависимости от отношения к вишневому саду / в зависимости от того, что он видит в вишневом саде
+                        Сформулируйте, в чем заключается это отношение.
+                    </div>
+                    <div id="links"></div>
+                    <!-- (дать аватары героев: Раневская, Гаев, Лопахин, Варя, Аня, Трофимов – и свободные поля). -->
 
+
+                    <div class="speechBubble question withAvatar mt-5 answer  right">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-20"></span>
+                        <span class="speechAuthor">Я</span>
+                        Сейчас заполню таблицу:
+                    </div>
+                </div>
                 <!-- Основная форма. Внимание на имя с префиксом -->
                 <form name="chehov-form-vs-5" action="http://activepads.com:8082/formDetector">
-
-
-                    <div class="speechBubble withAvatar mt-3 mb-3">
-                        <span class="avatar avatar-3"></span>
-                        <span class="speechAuthor">Раневская</span>
-                        <textarea name="Ranevskaya" type="text" required></textarea>
-
-                    </div>
-                    <div class="speechBubble withAvatar mt-3 mb-3">
-                        <span class="avatar avatar-3"></span>
-                        <span class="speechAuthor">Гаев</span>
-                        <div><textarea name="Gaev" type="text" required></textarea>
+                    
+                    <fieldset class="form-group border p-2 pb-1">
+                        <div class="speechBubble withAvatar mt-3 mb-3">
+                            <span class="avatar avatar-21"></span>
+                            <span class="speechAuthor">Раневская</span>
                         </div>
-                    </div>
-                    <div class="speechBubble withAvatar mt-3 mb-3">
-                        <span class="avatar avatar-3"></span>
-                        <span class="speechAuthor">Лопахин</span>
-                        <div><textarea name="Lopahin" type="text" required></textarea>
+                        <div class="mb-4">
+                            <textarea class="form-control" name="Ranevskaya" type="text" required></textarea>
                         </div>
-                    </div>
-                    <div class="speechBubble withAvatar mt-3 mb-3">
-                        <span class="avatar avatar-3"></span>
-                        <span class="speechAuthor">Варя</span>
-                        <div><textarea name="Varya" type="text" required></textarea>
+                        <div class="speechBubble withAvatar mt-3 mb-3">
+                            <span class="avatar avatar-24"></span>
+                            <span class="speechAuthor">Гаев</span>
                         </div>
-                    </div>
-                    <div class="speechBubble withAvatar mt-3 mb-3">
-                        <span class="avatar avatar-3"></span>
-                        <span class="speechAuthor">Аня</span>
-                        <div><textarea name="Anya" type="text" required></textarea>
+                        <div class="mb-4"><textarea class="form-control" name="Gaev" type="text" required></textarea>
                         </div>
-                    </div>
-                    <div class="speechBubble withAvatar mt-3 mb-3">
-                        <span class="avatar avatar-3"></span>
-                        <span class="speechAuthor">Трофимов</span>
-                        <div><textarea name="Trofimov" type="text" required></textarea>
+                        <div class="speechBubble withAvatar mt-3 mb-3">
+                            <span class="avatar avatar-25"></span>
+                            <span class="speechAuthor">Лопахин</span>
                         </div>
-                    </div>
-
+                        <div class="mb-4"><textarea class="form-control" name="Lopahin" type="text" required></textarea>
+                        </div>
+                        <div class="speechBubble withAvatar mt-3 mb-3">
+                            <span class="avatar avatar-23"></span>
+                            <span class="speechAuthor">Варя</span>
+                        </div>
+                        <div class="mb-4"><textarea class="form-control" name="Varya" type="text" required></textarea>
+                        </div>
+                        <div class="speechBubble withAvatar mt-3 mb-3">
+                            <span class="avatar avatar-22"></span>
+                            <span class="speechAuthor">Аня</span>
+                        </div>
+                        <div class="mb-4"><textarea class="form-control" name="Anya" type="text" required></textarea>
+                        </div>
+                        <div class="speechBubble withAvatar mt-3 mb-3">
+                            <span class="avatar avatar-26"></span>
+                            <span class="speechAuthor">Трофимов</span>
+                        </div>
+                        <div class="mb-4"><textarea class="form-control" name="Trofimov" type="text" required></textarea>
+                        </div>
+                    </fieldset>
+                    
                     <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
 
                 </form>

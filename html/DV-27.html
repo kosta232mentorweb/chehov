@@ -102,7 +102,7 @@
 
                 <!-- Само задание -->
                 <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
+                    <span class="avatarCircle"></span> <span class="avatar avatar-11"></span>
                     <span class="speechAuthor">А. П. Чехов</span>
                     Вы детектив, которому поручили решить дело о пропаже Телегина Ильи Ильича. После опроса всех
                     персонажей, которые видели его недавно, вы повесили всю запомнившуюся вам
@@ -113,39 +113,54 @@
 
                 <div class="capture"><img class="desk" src="../images/desk.jpg" alt=""></div>
                 <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
+                    <span class="avatarCircle"></span> <span class="avatar avatar-11"></span>
                     <span class="speechAuthor">А. П. Чехов</span>
                     После произведенного следствия заполните таблицу. При необходимости выпишите
                     цитаты из текста.
                 </div>
-                <div>
-                    <!-- Основная форма. Внимание на имя с префиксом -->
-                    <form name="chehov-form-dv-27" action="http://activepads.com:8082/formDetector">
-                        Как называют Телегина домочадцы?
-                        <textarea name="question1" type="text" required></textarea>
+                <div class="speechBubblesWrapper">
 
-                        За что его так прозвали?
-                        <textarea name="question2" type="text" required></textarea>
-
-                        Что он делает дома у Серебряковых?
-                        <textarea name="question3" type="text" required></textarea>
-
-                        Как остальные персонажи к нему относятся?
-                        <textarea name="question4" type="text" required></textarea>
-
-                        Что думает Телегин о верности и измене? Отличается ли его точка зрения от точки зрения
-                        Астрова и Войницкого?
-                        <textarea name="question5" type="text" required></textarea>
-
-                        Напишите минимум пять черт характера Телегина.
-                        <textarea name="question6" type="text" required></textarea>
-
-                        Стало ли имя Вафли нарицательным? Какого человека сейчас можно назвать вафлей?
-                        <textarea name="question7" type="text" required></textarea>
-
-                        <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
-                    </form>
+                    <div class="speechBubble question withAvatar mt-5 answer  right">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-20"></span>
+                        <span class="speechAuthor">Я</span>
+                        Сейчас заполню таблицу:
+                    </div>
                 </div>
+                <!-- Основная форма. Внимание на имя с префиксом -->
+                <form name="chehov-form-dv-27" action="http://activepads.com:8082/formDetector">
+                    <fieldset class="form-group border p-2 pb-1">
+                        Как называют Телегина домочадцы?
+                        <div class="mb-2">
+                            <textarea class="form-control" name="question1" type="text" required></textarea>
+                        </div>
+                        За что его так прозвали?
+                        <textarea class="form-control" name="question2" type="text" required></textarea>
+                        <div class="mb-2">
+                            Что он делает дома у Серебряковых?
+                            <textarea class="form-control" name="question3" type="text" required></textarea>
+                        </div>
+                        <div class="mb-2">
+                            Как остальные персонажи к нему относятся?
+                            <textarea class="form-control" name="question4" type="text" required></textarea>
+                        </div>
+                        <div class="mb-2">
+                            Что думает Телегин о верности и измене? Отличается ли его точка зрения от точки зрения
+                            Астрова и Войницкого?
+                        </div>
+                        <textarea class="form-control" name="question5" type="text" required></textarea>
+                        <div class="mb-2">
+                            Напишите минимум пять черт характера Телегина.
+                            <textarea class="form-control" name="question6" type="text" rows="5" placeholder="1.&#10;2.&#10;3.&#10;4.&#10;5.&#10;" required></textarea>
+                        </div>
+                        <div class="mb-2">
+                            Стало ли имя Вафли нарицательным? Какого человека сейчас можно назвать вафлей?
+                            <textarea class="form-control" name="question7" type="text" required></textarea>
+                        </div>
+                    </fieldset>
+                    <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
+                </form>
+
             </div>
         </div>
     </div>

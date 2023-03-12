@@ -103,7 +103,7 @@
 
                 <!-- Само задание -->
                 <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
+                    <span class="avatarCircle"></span> <span class="avatar avatar-11"></span>
                     <span class="speechAuthor">А. П. Чехов</span>
                     Попробуйте восстановить диалоги моих персонажей, выбрав из трёх правильный
                     вариант продолжения.
@@ -113,8 +113,17 @@
                     землю под
                     дачи или нет? Ответьте одно слово: да или нет? Только одно слово!
                 </p>
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-5 answer  right">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-20"></span>
+                        <span class="speechAuthor">Я</span>
+                        Сейчас заполню таблицу:
+                    </div>
+                </div>
                 <!-- Основная форма. Внимание на имя с префиксом -->
                 <form name="chehov-form-vs-20" action="http://activepads.com:8082/formDetector">
+                    <fieldset class="form-group border p-2 pb-1">
                     <!-- Вопрос 1 -->
                     <p><b>Диалог № 1:</b></p>
                     <p>Любовь Андреевна:</p>
@@ -153,10 +162,11 @@
                     пошло!<br />
                     <input type="radio" name="question4" value="var3" required>в) (глядит в своё портмоне). Вчера было
                     много денег, а сегодня совсем мало.
+                </fieldset>
 
                     <p><br /></p>
                     <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                        <span class="avatar avatar-3"></span>
+                        <span class="avatarCircle"></span> <span class="avatar avatar-19"></span>
                         <span class="speechAuthor">Учитель</span>
                         Найдите в тексте правильный ответ и ознакомьтесь с информацией о таком литературном приёме,
                         как «диалог глухих».
@@ -169,13 +179,22 @@
                         глухих»</a>
 
                     <p><br /></p>
+                    <div class="speechBubblesWrapper">
                     <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                        <span class="avatar avatar-3"></span>
+                        <span class="avatarCircle"></span> <span class="avatar avatar-19"></span>
                         <span class="speechAuthor">Учитель</span>
                         Подумайте, зачем это сделано.
                     </div>
-                    <textarea name="answer" required></textarea><br />
-
+                    <div class="speechBubble question withAvatar mt-5 answer  right">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-20"></span>
+                        <span class="speechAuthor">Я</span>
+                        Сейчас заполню таблицу:
+                     </div>
+                    </div>
+                    <fieldset class="form-group border p-2 pb-1 mt-3">
+                    <textarea class="form-control" name="answer" required></textarea><br />
+</fieldset> 
 
                     <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
 

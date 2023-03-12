@@ -101,7 +101,7 @@
 
                 <!-- Само задание -->
                 <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
+                    <span class="avatarCircle"></span> <span class="avatar avatar-11"></span>
                     <span class="speechAuthor">А. П. Чехов</span>
                     Используя текст пьесы, определите, как Иван Войницкий пытался флиртовать с Еленой Андреевной. Какие
                     советы он мог бы дать своим подписчикам в Instagram*?<br />
@@ -115,7 +115,7 @@
                         <img src="../images/instMenu.jpg" alt="">
                     </div>
                     <!-- Аватарка -->
-                    <div class="psevdoAvatar"></div>
+                    <div class="psevdoAvatar"><img class="round" src="../images/persons/5.png"> </div>
 
                     <div class="instName"><b>Иван Войницкий</b></div>
 
@@ -140,28 +140,63 @@
 
                     <!-- Меню картинка «Сердечко» «сообщение» «Отправить» -->
                     <div class="instLike"><img src="../images/instLike.jpg" alt=""></div>
-
-                    <div class="instMain">
-                        <!-- Основная форма. Внимание на имя с префиксом -->
-                        <form name="chehov-form-dv-17" action="http://activepads.com:8082/formDetector">
-                            1. <textarea name="instAdvice1" type="text" required></textarea><br />
-                            2. <textarea name="instAdvice2" type="text" required></textarea><br />
-                            3. <textarea name="instAdvice3" type="text" required></textarea><br />
-                            4. <textarea name="instAdvice4" type="text" required></textarea><br />
-                            5. <textarea name="instAdvice5" type="text" required></textarea><br />
-                            Уверен: мои советы Вам помогут!
-                    </div>
-
-                    <!-- Меню картинка «Сердечко» «сообщение» «Отправить» -->
-                    <div class="instAdviceLike"><img src="../images/instLike.jpg" alt=""></div>
-
-
-                    <div class="instComments">Напишите несколько комментариев к этой публикации от имени Астрова.<br />
-                        <textarea name="instComentInput" required></textarea><br />
-                        <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
-                    </div>
-                    </form>
                 </div>
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-5 answer  right">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-20"></span>
+                        <span class="speechAuthor">Я</span>
+                        Сейчас заполню таблицу:
+                    </div>
+                </div>
+                <div class="instMain">
+                    <!-- Основная форма. Внимание на имя с префиксом -->
+                    <form name="chehov-form-dv-17" action="http://activepads.com:8082/formDetector">
+                        <fieldset class="form-group border p-2 pb-1">
+                            <legend class="w-auto px-2">Пять наиболее важных советов</legend>
+                            <div class="mb-2">
+                                <textarea class="form-control" placeholder="Первый совет" name="instAdvice1" type="text"
+                                    required></textarea>
+                            </div>
+                            <div class="mb-2">
+                                <textarea class="form-control" placeholder="Второй совет" name="instAdvice2" type="text"
+                                    required></textarea>
+                            </div>
+                            <div class="mb-2">
+                                <textarea class="form-control" placeholder="Третий совет" name="instAdvice3" type="text"
+                                    required></textarea>
+                            </div>
+                            <div class="mb-2">
+                                <textarea class="form-control" placeholder="Четвертый совет" name="instAdvice4"
+                                    type="text" required></textarea>
+                            </div>
+                            <div class="mb-2">
+                                <textarea class="form-control" placeholder="Пятый совет" name="instAdvice5" type="text"
+                                    required></textarea>
+                            </div>
+                            Уверен: мои советы Вам помогут!
+                        </fieldset>
+                </div>
+
+                <!-- Меню картинка «Сердечко» «сообщение» «Отправить» -->
+                <div class="instAdviceLike"><img src="../images/instLike.jpg" alt=""></div>
+
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-5 answer  right">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-20"></span>
+                        <span class="speechAuthor">Я</span>
+                        Сейчас заполню таблицу:
+                    </div>
+                </div>
+                <fieldset class="form-group border p-2 pb-1">
+                    <legend class="w-auto px-2">Напишите несколько комментариев к этой публикации от имени Астрова.</legend>
+                                   <textarea class="form-control" name="instComentInput" required></textarea><br />
+                </fieldset>
+                                   <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
+                
+                </form>
+
             </div>
         </div>
     </div>

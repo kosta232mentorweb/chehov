@@ -102,15 +102,10 @@
 
                 <!-- Само задание -->
                 <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
+                    <span class="avatarCircle"></span> <span class="avatar avatar-11"></span>
                     <span class="speechAuthor">А. П. Чехов</span>
                     <b>Конфликт</b> – это столкновение, борьба двух или более интересов в рамках литературного
-                    произведения.
-                </div>
-                <div id="links"></div>
-
-                <!-- Описание задания -->
-                <div>
+                    произведения.<br />
                     Существует два основных типа конфликтов:
                     <ol class="non">
                         <li><b>а) Внутренний</b> конфликт. Этот конфликт в литературе возникает, когда герой борется с
@@ -138,25 +133,51 @@
                         </li>
                     </ol>
                 </div>
+                <div id="links"></div>
+
+                <!-- Описание задания -->
+                <div>
+
+                </div>
                 <!-- (ссылка на термин / сделать в виде QR-кода можно закачать словарь на гугл-диск и давать ссылку на него, -->
                 <!-- Основная форма. Внимание на имя с префиксом -->
-
-                <form name="chehov-form-dv-2" action="http://activepads.com:8082/formDetector">
-                    <div>
-                        Определите внутренние и внешние конфликты следующих персонажей:<br />
-                        Войницкий<br />
-                        <textarea name="chehov-textarea-voinckiy-dv-2" required></textarea><br />
-                        Астров<br />
-                        <textarea name="chehov-textarea-astrov-dv-2" required></textarea><br />
-                        Серебряков<br />
-                        <textarea name="chehov-textarea-serebraykov-dv-2" required></textarea><br />
-                        Елена Андреевна<br />
-                        <textarea name="chehov-textarea-elenaAndreevna-dv-2" required></textarea><br />
-                        Соня<br />
-                        <textarea name="chehov-textarea-sonya-dv-2" required></textarea>
-
-                        <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-5 answer  right">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-20"></span>
+                        <span class="speechAuthor">Я</span>
+                        Сейчас заполню таблицу:
                     </div>
+                </div>
+
+
+                <form name="chehov-form-dv-2" class="mt-3 screenOnly" action="http://activepads.com:8082/formDetector">
+                    <fieldset class="form-group border p-2 pb-1">Определите внутренние и внешние конфликты следующих
+                        персонажей:
+
+                        <div class="mb-3">
+                            <textarea class="form-control" name="chehov-textarea-voinckiy-dv-2" placeholder="Войницкий"
+                                required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" name="chehov-textarea-astrov-dv-2" placeholder="Астров"
+                                required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" name="chehov-textarea-serebraykov-dv-2"
+                                placeholder="Серебряков" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" name="chehov-textarea-elenaAndreevna-dv-2"
+                                placeholder="Елена Андреевна" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" name="chehov-textarea-sonya-dv-2" placeholder="Соня"
+                                required></textarea>
+                        </div>
+                    </fieldset>
+                    <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
+
                 </form>
 
                 <!-- Подключаем бутстрап скрипты -->
