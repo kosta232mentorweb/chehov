@@ -100,26 +100,31 @@
                 <hr class="printOnly">
 
                 <!-- Само задание -->
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">А. П. Чехов</span>
-                    Моя <s>Би</s>география. Работа с картой.
-                    <ol>
-                        <li>Найдите на карте страну, в которой Серебряков собирался купить дачу.</li>
-                        <li>Обозначьте место, где, по вашему мнению, эта дача находилась бы. Объясните свой выбор.</li>
-                    </ol>
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatarCircle"></span> <span class="avatar avatar-11"></span>
+                        <span class="speechAuthor">А. П. Чехов</span>
+                        Моя <s>Би</s>география. Работа с картой.
+                        <ol>
+                            <li>Найдите на карте страну, в которой Серебряков собирался купить дачу.</li>
+                            <li>Обозначьте место, где, по вашему мнению, эта дача находилась бы. Объясните свой выбор.
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="speechBubble question withAvatar mt-5 mb-3 answer  right">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-20"></span>
+                        <span class="speechAuthor">Я</span>
+                        Сейчас отвечу на вопрос:
+                    </div>
                 </div>
                 <!-- Основная форма. Внимание на имя с префиксом -->
                 <form name="chehov-form-dv-13" action="http://activepads.com:8082/formDetector">
-                    <div>
-                        <img src="../images/src/map.png" width="640" height="480" alt="Карта мира"
+                        <img src="../images/src/map.png" width="610" alt="Карта мира"
                             usemap="#selectCountry">
-                    </div>
-                    <div>
-                        <textarea name="yourOpinion" id="" cols="30" rows="10"
+                        <textarea name="yourOpinion" class="form-control mt-5" rows="10"
                             placeholder="Объясните свой выбор"></textarea>
-                    </div>
-                    <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
+                    <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100 mt-3">
                 </form>
             </div>
         </div>
