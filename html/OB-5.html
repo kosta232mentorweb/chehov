@@ -98,52 +98,59 @@
 
                 <!-- Заголовок только для печати -->
                 <h1 class="printOnly taskNumber">Задание ОБ-5.</h1>
-                <hr class="printOnly">
+                <h6 class="printOnly colontitul">Серия “КНИГА-ЧАТ”</h6>
+                <hr class="printOnly" style=" margin-bottom: 4rem;">
 
                 <!-- Само задание -->
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">И. А. Бунин</span>
-                    Антон Павлович очень часто и порой противоречиво высказывался о том, как должен воспитываться и в
-                    каких
-                    условиях должен жить писатель. Взгляните на две эти цитаты:
-                </div>
+                <div class="speechBubblesWrapper">
 
-                <br>
-                <blockquote>
-                    а) «Писатель должен быть нищим, должен быть в таком положении, чтобы он знал, что помрет с
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatarCircle"></span> <span class="avatar avatar-14"></span>
+                        <span class="speechAuthor">И. А. Бунин</span>
+                        Антон Павлович очень часто и порой противоречиво высказывался о том, как должен воспитываться и
+                        в
+                        каких
+                        условиях должен жить писатель. Взгляните на две эти цитаты:
+                    </div>
+                    <br>
+                    <p>
+                        а&#41; «Писатель должен быть нищим, должен быть в таком положении, чтобы он знал, что помрет с
                         голоду, если не будет писать, будет потакать своей лени. Писателей надо отдавать в арестантские
                         роты и там принуждать их писать карцерами, поркой, побоями... Ах, как я благодарен судьбе, что
                         был в молодости так беден!»
-                </blockquote>
+                    </p>
 
-                <blockquote>
-                    б) «Писатель должен быть баснословно богат, так богат, чтобы он мог в любую минуту отправиться в
+                    <p>
+                        б&#41; «Писатель должен быть баснословно богат, так богат, чтобы он мог в любую минуту
+                        отправиться в
                         путешествие вокруг света на собственной яхте, снарядить экспедицию к истокам Нила, к Южному
                         полюсу, в Тибет и Аравию, купить себе весь Кавказ или Гималаи... Толстой говорит, что человеку
                         нужно всего три аршина земли. Вздор - три аршина земли нужно мертвому, а живому нужен весь
                         земной шар. И особенно - писателю...»
-                </blockquote>
+                    </p>
+                    <p>
+                        А как считаете Вы? Ответьте мне в чате.
+                    </p>
 
-                <!-- Основная форма. Внимание на имя с префиксом -->
-                <form action="http://activepads.com:8082/formDetector" name="chehov-form-ob-5">
+                    <div class="speechBubble question withAvatar mt-5 answer  right">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-20"></span>
+                        <span class="speechAuthor">Я</span>
+                        Сейчас отвечу:
+                    </div>
 
-                <label class="form-check-label ms-2" for="bunin">
-                    А как считаете Вы? Ответьте мне в чате.
-                </label>
+                    <!-- Основная форма. Внимание на имя с префиксом -->
+                    <form action="http://activepads.com:8082/formDetector" name="chehov-form-ob-5">
 
-                <br>
-                <br>
+                        <div class="mb-3">
+                            <textarea name="OB-5" class="form-control areaMargin" id="bunin" cols="30" rows="1"
+                                required></textarea>
+                        </div>
 
-                <textarea name="chat" id="bunin" cols="30" rows="1"></textarea>
+                        <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
 
-                <br>
-                <br>
-
-                <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
-
-                </form>
-
+                    </form>
+                </div>
             </div>
         </div>
     </div>

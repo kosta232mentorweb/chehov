@@ -98,16 +98,18 @@
 
                 <!-- Заголовок только для печати -->
                 <h1 class="printOnly taskNumber">Задание ДВ-25.</h1>
-                <hr class="printOnly">
+                <h6 class="printOnly colontitul">Серия “КНИГА-ЧАТ”</h6>
+                <hr class="printOnly" style=" margin-bottom: 4rem;">
 
                 <!-- Само задание -->
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">А. П. Чехов</span>
+                <div class="speechBubblesWrapper">
 
-
-                    В течение пьесы между Еленой Андреевной и Соней произошло откровенное объяснение.
-                    Представьте его в виде приватного чата этих двух персонажей и продолжите переписки:
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatarCircle"></span> <span class="avatar avatar-11"></span>
+                        <span class="speechAuthor">А. П. Чехов</span>
+                        В течение пьесы между Еленой Андреевной и Соней произошло откровенное объяснение.
+                        Представьте его в виде приватного чата этих двух персонажей и продолжите переписки:
+                    </div>
                 </div>
 
                 <!-- Основная форма. Внимание на имя с префиксом -->
@@ -119,35 +121,39 @@
                         - Нет, а что? <br>
                         - Мне кажется, ты злишься на меня. Все точно в порядке? <br>
                     </p>
-                    <label>
+                    <div class="mb-3 dv25">
                         <span>-</span>
-                        <textarea name="area_1" id="area_1" cols="30" rows="1" placeholder="Ответ"></textarea>
-                    </label>
+                        <textarea name="area_1" class="form-control" id="area_1" cols="30" rows="1"
+                            placeholder="Ответ"></textarea>
+                    </div>
                     <p>
                         Вчера, 23:21 <br>
                         - Соня, а что происходит между тобой и Астровым? Ты так смотришь на него! <br>
                     </p>
-                    <label>
+                    <div class="mb-3 dv25">
                         <span>-</span>
-                        <textarea name="area_2" id="area_2" cols="30" rows="1" placeholder="Ответ Сони"></textarea>
-                    </label>
+                        <textarea name="area_2" class="form-control" id="area_2" cols="30" rows="1"
+                            placeholder="Ответ Сони"></textarea>
+                    </div>
                     <p>
                         Только вот я чувствую себя такой некрасивой. Тебе-то легко, а как я могу ему понравиться? <br>
                     </p>
-                    <label>
+                    <div class="mb-3 dv25">
                         <span>-</span>
-                        <textarea name="area_3" id="area_3" cols="30" rows="1" placeholder="ответ Е.А."></textarea>
-                    </label>
+                        <textarea name="area_3" class="form-control" id="area_3" cols="30" rows="1"
+                            placeholder="ответ Е.А."></textarea>
+                    </div>
                     <p>
                         - А ещё так странно... Когда мы с ним в последний раз разговаривали, я так много ему
                         сказала, так его хвалила.
                         Он ничего мне не ответил, никак не раскрылся, а я после чувствовала себя такой счастливой!
                         Господи, что со мной?
                     </p>
-                    <label>
+                    <div class="mb-3 dv25">
                         <span>-</span>
-                        <textarea name="area_4" id="area_4" cols="30" rows="1" placeholder="ответ Е.А."></textarea>
-                    </label>
+                        <textarea name="area_4" class="form-control" id="area_4" cols="30" rows="1"
+                            placeholder="ответ Е.А."></textarea>
+                    </div>
                     <p>
                         Сегодня, 1:36 <br>
                         - Ты казалась замученной и грустной. О чем ты думаешь? <br>
@@ -155,26 +161,30 @@
                         чем моя значимость. В голове теперь так и стоит: я эпизодическое лицо. <br>
                         - Это как?
                     </p>
-                    <label>
+                    <div class="mb-3 dv25">
                         <span>-</span>
-                        <textarea name="area_5" id="area_5" cols="30" rows="1" placeholder="ответ Е.А."></textarea>
-                    </label>
+                        <textarea name="area_5" class="form-control" id="area_5" cols="30" rows="1"
+                            placeholder="ответ Е.А."></textarea>
+                    </div>
                     <p>
                         Соня, что мне с этим делать?
                     </p>
-                    <label>
+                    <div class="mb-3 dv25">
                         <span>-</span>
-                        <textarea name="area_6" id="area_6" cols="30" rows="1" placeholder="ответ Сони"></textarea>
-                    </label>
+                        <textarea name="area_6" class="form-control" id="area_6" cols="30" rows="1"
+                            placeholder="ответ Сони"></textarea>
+                    </div>
                     <p>
                         Сегодня, 18:54 <br>
                         - Лена, как ты себя чувствуешь после всего, что произошло? Думаешь, у вас с моим папой всё
                         наладится?
                     </p>
-                    <label>
+                    <div class="mb-3 dv25">
                         <span>-</span>
-                        <textarea name="area_7" id="area_7" cols="30" rows="1" placeholder="ответ Е.А."></textarea>
-                    </label>
+                        <textarea name="area_7" class="form-control" id="area_7" cols="30" rows="1"
+                            placeholder="ответ Е.А."></textarea>
+                    </div>
+
                     <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
 
                 </form>
