@@ -1,4 +1,15 @@
 .textDiv{
-    background-color: rgb(230, 212, 191);
-    padding: 3px;
+    background-color: rgba(222, 213, 204, 0.258);
+    padding: 8px;
+
+    background-image: url(../images/DV-26/PartOfText.PNG);
+    background-size: contain;
+    height: 620px;
+    background-repeat: no-repeat;
+}
+
+.bigForPrint {
+    @media print {
+        height: 11cm;
+    }
 }

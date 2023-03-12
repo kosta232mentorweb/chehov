@@ -74,6 +74,7 @@
 
                 <!-- Заголовок только для печати -->
                 <h1 class="printOnly taskNumber">Задание ВС-14.</h1>
+                <h6 class="printOnly colontitul">Серия “КНИГА-ЧАТ”</h6>
                 <hr class="printOnly">
 
                 <!-- Само задание -->
@@ -81,21 +82,82 @@
                 <h1 class="logoLetsMarry"> «Давай поженимся в вишневом саду»</h1>
                 <!-- Надо оформить как логотип передачи -->
 
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">А. П. Чехов</span>
-                    Кто из мужских персонажей более состоятелен как мужчина: Гаев, Лопахин, Трофимов? Подберите по пять
-                    цитат, выдающих сильные и слабые стороны каждого из претендентов (5 на сильные, 5 на слабые).
-                    Подберите каждому мужскому персонажу, на ваш взгляд, идеальную пару из женских персонажей.
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-11"></span>
+                        <span class="speechAuthor">А. П. Чехов</span>
+                        Кто из мужских персонажей более состоятелен как мужчина: Гаев, Лопахин, Трофимов? Подберите по пять
+                        цитат, выдающих сильные и слабые стороны каждого из претендентов (5 на сильные, 5 на слабые).
+                        Подберите каждому мужскому персонажу, на ваш взгляд, идеальную пару из женских персонажей.
+                    </div>
                 </div>
 
                 <!-- Основная форма. Внимание на имя с префиксом -->
                 <form name="chehov-form-vs-14" action="http://activepads.com:8082/formDetector">
 
-                    <label>
+                    <div class="speechBubblesWrapper">
+                        <div class="speechBubble question withAvatar mt-5 answer right">
+                            <span class="avatarCircle"></span>
+                            <span class="avatar avatar-20"></span>
+                            <span class="speechAuthor">Я</span>
+                            Сейчас подберу:
+                        </div>
+                    </div>
+
+                    <fieldset class="form-group border p-2 pb-1 mt-3">
+                        <legend class="w-auto px-2">Сильные стороны</legend>
+                        <div class="mb-3 textAreaGaev">
+                            <textarea class="form-control" required placeholder="1.&#10;2.&#10;3.&#10;..."
+                                name="answer-strongSide-Gaev-VS-14" rows="5"></textarea>
+                        </div>
+                        <div class="mb-3 textAreaLopahin">
+                            <textarea class="form-control" required placeholder="1.&#10;2.&#10;3.&#10;..."
+                                name="answer-strongSide-Lopahin-VS-14" rows="5"></textarea>
+                        </div>
+                        <div class="mb-3 textAreaTrofimov">
+                            <textarea class="form-control" required placeholder="1.&#10;2.&#10;3.&#10;..."
+                                name="answer-strongSide-Trofimov-VS-14" rows="5"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-group border p-2 pb-1 mt-3">
+                        <legend class="w-auto px-2">Слабые стороны</legend>
+                        <div class="mb-3 textAreaGaev">
+                            <textarea class="form-control" required placeholder="1.&#10;2.&#10;3.&#10;..."
+                                name="answer-weakSide-Gaev-VS-14" rows="5"></textarea>
+                        </div>
+                        <div class="mb-3 textAreaLopahin">
+                            <textarea class="form-control" required placeholder="1.&#10;2.&#10;3.&#10;..."
+                                name="answer-weakSide-Lopahin-VS-14" rows="5"></textarea>
+                        </div>
+                        <div class="mb-3 textAreaTrofimov">
+                            <textarea class="form-control" required placeholder="1.&#10;2.&#10;3.&#10;..."
+                                name="answer-weakSide-Trofimov-VS-14" rows="5"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-group border p-2 pb-1 mt-3">
+                        <legend class="w-auto px-2">Идеальная пара из женских персонажей</legend>
+                        <div class="mb-3 textAreaGaev">
+                            <textarea class="form-control" required name="answer-perfectCouple-Gaev-VS-14"
+                                rows="5"></textarea>
+                        </div>
+                        <div class="mb-3 textAreaLopahin">
+                            <textarea class="form-control" required name="answer-perfectCouple-Lopahin-VS-14"
+                                rows="5"></textarea>
+                        </div>
+                        <div class="mb-3 textAreaTrofimov">
+                            <textarea class="form-control" required name="answer-perfectCouple-Trofimov-VS-14"
+                                rows="5"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <!-- <label>
                         Ответ:
+                        <br>
                         <textarea name="ans-VS-14" cols="70" rows="9"></textarea>
-                    </label>
+                    </label> -->
 
 
                     <br><br>
@@ -115,5 +177,3 @@
 </body>
 
 </html>
-
-

@@ -2,3 +2,51 @@
     margin-bottom: 40px;
     text-align: center;
 }
+
+.textAreaGaev {
+    position: relative;
+ 
+    &::after {
+       content: 'Гаев';
+       position: absolute;
+       top: 50px;
+       right: 0;
+       transform: rotate(90deg);
+       font-weight: bold;
+       opacity: 0.3;
+    }
+ }
+
+ .textAreaLopahin {
+    position: relative;
+ 
+    &::after {
+       content: 'Лопахин';
+       position: absolute;
+       top: 50px;
+       right: -18px;
+       transform: rotate(90deg);
+       font-weight: bold;
+       opacity: 0.3;
+    }
+ }
+
+ .textAreaTrofimov {
+    position: relative;
+ 
+    &::after {
+       content: 'Трофимов';
+       position: absolute;
+       top: 50px;
+       right: -26px;
+       transform: rotate(90deg);
+       font-weight: bold;
+       opacity: 0.3;
+    }
+ }
+
+ .container.chehov-main-container fieldset {
+   border-radius: 12px;
+   background-color: #fffdca;
+   border: none !important;
+}

@@ -74,43 +74,170 @@
 
                 <!-- Заголовок только для печати -->
                 <h1 class="printOnly taskNumber">Задание ДВ-36.</h1>
+                <h6 class="printOnly colontitul">Серия “КНИГА-ЧАТ”</h6>
                 <hr class="printOnly">
 
                 <!-- Само задание -->
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">А. П. Чехов</span>
-                    Напишите небольшую рецензию на мою пьесу «Дядя Ваня». Понравилось ли вам то, что Вы прочитали?
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-11"></span>
+                        <span class="speechAuthor">А. П. Чехов</span>
+                        Напишите небольшую рецензию на мою пьесу «Дядя Ваня». Понравилось ли вам то, что Вы прочитали?
+                    </div>
                 </div>
 
                 <!-- Основная форма. Внимание на имя с префиксом -->
                 <form name="chehov-form-dv-36" action="http://activepads.com:8082/formDetector">
 
+                    <div class="speechBubblesWrapper">
+                        <div class="speechBubble question withAvatar mt-5 mb-3 answer right">
+                            <span class="avatarCircle"></span>
+                            <span class="avatar avatar-20"></span>
+                            <span class="speechAuthor">Я</span>
+                            Сейчас оценю:
+                        </div>
+                    </div>
+
                     <!-- оценка звездочками -->
-                    <p>Ваша оценка пьесы:</p>
-                    <div>
-                        <input type="radio" name="mark-DV-36" id="star1-DV-36" value="1">
-                        <label for="star1-DV-36"></label>
+                    <!-- <p>Ваша оценка пьесы:</p> -->
+                    <div class="rateWithStars">
 
-                        <input type="radio" name="mark-DV-36" id="star2-DV-36" value="2">
-                        <label for="star2-DV-36"></label>
-
-                        <input type="radio" name="mark-DV-36" id="star3-DV-36" value="3">
-                        <label for="star3-DV-36"></label>
+                        <input type="radio" name="mark-DV-36" id="star5-DV-36" value="5">
+                        <label for="star5-DV-36"></label>
 
                         <input type="radio" name="mark-DV-36" id="star4-DV-36" value="4">
                         <label for="star4-DV-36"></label>
 
-                        <input type="radio" name="mark-DV-36" id="star5-DV-36" value="5">
-                        <label for="star5-DV-36"></label>
+                        <input type="radio" name="mark-DV-36" id="star3-DV-36" value="3">
+                        <label for="star3-DV-36"></label>
+
+                        <input type="radio" name="mark-DV-36" id="star2-DV-36" value="2">
+                        <label for="star2-DV-36"></label>
+
+                        <input type="radio" name="mark-DV-36" id="star1-DV-36" value="1">
+                        <label for="star1-DV-36"></label>
+
                     </div>
-                    <br>
 
-                    <label> Текст вашей рецензии:
-                        <textarea name="review-DV-36" cols="70" rows="7"></textarea>
-                    </label>
 
-                    <br><br>
+                    <div class="speechBubblesWrapper mt-8">
+                        <div class="speechBubble question withAvatar mt-5 mb-3 answer right">
+                            <span class="avatarCircle"></span>
+                            <span class="avatar avatar-20"></span>
+                            <span class="speechAuthor">Я</span>
+                            Сейчас напишу рецензию:
+                        </div>
+
+                        <!-- <label> Текст вашей рецензии: -->
+                        <textarea class="form-control mt-3 mb-3 bigForPrint" name="review-DV-36" rows="7"
+                            required></textarea>
+                        <!-- </label> -->
+                    </div>
+
+                    <!-- чужие рецензии -->
+                    <div class="printOnly printPageBreak"></div>
+
+                    <div class="speechBubblesWrapper">
+                        <div class="speechBubble question withAvatar mt-6 mb-3">
+                            <span class="avatarCircle"></span>
+                            <span class="avatar avatar-19"></span>
+                            <span class="speechAuthor">Учитель</span>
+                            Прочитайте рецензии других людей. С чем Вы согласны, а с чем нет? Напишите комментарий к
+                            одной из рецензий.
+                        </div>
+                    </div>
+
+                    <div class="screenOnly">
+                        <ul class="list-unstyled" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+                            <li class="h5">
+                                <a class="text-decoration-none"
+                                    href="https://www.livelib.ru/review/1695115-dyadya-vanya-anton-chehov" target="_blank">
+                                    <span class="badge bg-info">
+                                        <i class="bi bi-box-arrow-up-right me-1"></i>
+                                        Рецензия 1
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="h5">
+                                <a class="text-decoration-none"
+                                    href="https://www.livelib.ru/review/1172169-dyadya-vanya-ap-chehov" target="_blank">
+                                    <span class="badge bg-info">
+                                        <i class="bi bi-box-arrow-up-right me-1"></i>
+                                        Рецензия 2
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="h5">
+                                <a class="text-decoration-none"
+                                    href="https://www.livelib.ru/review/1244322-dyadya-vanya-anton-chehov" target="_blank">
+                                    <span class="badge bg-info">
+                                        <i class="bi bi-box-arrow-up-right me-1"></i>
+                                        Рецензия 3
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="h5">
+                                <a class="text-decoration-none"
+                                    href="https://www.livelib.ru/review/2724460-dyadya-vanya-anton-chehov" target="_blank">
+                                    <span class="badge bg-info">
+                                        <i class="bi bi-box-arrow-up-right me-1"></i>
+                                        Рецензия 4
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- ДЛЯ ПЕЧАТИ -->
+                    <div class="row printOnly">
+                        <div class="col-3">
+                           <figure class="figure">
+                              <img src="../images/DV-36/qrcode37-1.png" class="figure-img img-fluid"
+                                 alt="Рецензия1">
+                              <figcaption class="figure-caption lh-1" style="text-align: center;" style="text-align: center;">Рецензия 1</figcaption>
+                           </figure>
+                        </div>
+                        <div class="col-3">
+                           <figure class="figure">
+                              <img src="../images/DV-36/qrcode37-2.png" class="figure-img img-fluid"
+                                 alt="Рецензия2">
+                              <figcaption class="figure-caption lh-1" style="text-align: center;">Рецензия 2</figcaption>
+                           </figure>
+                        </div>
+      
+                        <div class="col-3">
+                           <figure class="figure">
+                              <img src="../images/DV-36/qrcode37-3.png" class="figure-img img-fluid"
+                                 alt="Рецензия3">
+                              <figcaption class="figure-caption lh-1" style="text-align: center;">Рецензия 3</figcaption>
+                           </figure>
+                        </div>
+      
+                        <div class="col-3">
+                           <figure class="figure">
+                              <img src="../images/DV-36/qrcode37-4.png" class="figure-img img-fluid"
+                                 alt="Рецензия4">
+                              <figcaption class="figure-caption lh-1" style="text-align: center;">Рецензия 4</figcaption>
+                           </figure>
+                        </div>
+                     </div>
+
+                    <div class="speechBubblesWrapper">
+                        <div class="speechBubble question withAvatar mt-5 mb-3 answer right">
+                            <span class="avatarCircle"></span>
+                            <span class="avatar avatar-20"></span>
+                            <span class="speechAuthor">Я</span>
+                            Сейчас напишу комментарий:
+                        </div>
+
+                        <textarea class="form-control mt-3 mb-3 bigForPrint" name="comment-DV-36" rows="7" required></textarea>
+                    </div>
+
+
+
+
+
 
                     <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
 
@@ -127,5 +254,3 @@
 </body>
 
 </html>
-
-

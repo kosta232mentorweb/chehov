@@ -74,29 +74,39 @@
 
                 <!-- Заголовок только для печати -->
                 <h1 class="printOnly taskNumber">Задание ДВ-31.</h1>
+                <h6 class="printOnly colontitul">Серия “КНИГА-ЧАТ”</h6>
                 <hr class="printOnly">
 
                 <!-- Само задание -->
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">А. П. Чехов</span>
-                    Выберите персонажа и представьте, как могла бы выглядеть история его запросов в Google
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-11"></span>
+                        <span class="speechAuthor">А. П. Чехов</span>
+                        Выберите персонажа и представьте, как могла бы выглядеть история его запросов в Google
+                    </div>
+                    <div class="speechBubble question withAvatar mt-5 mb-3 answer right">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-20"></span>
+                        <span class="speechAuthor">Я</span>
+                        Сейчас представлю:
+                    </div>
                 </div>
 
                 <!-- Основная форма. Внимание на имя с префиксом -->
                 <form name="chehov-form-dv-31" action="http://activepads.com:8082/formDetector">
 
-                    <div>
-                        <img src="../images/google-icon-svg-24.jpg" width="400" alt="google icon">
-                        <div>
-            
-                        </div>
-                    </div>
-            
-                    <br>
-                    <textarea name="inquiry-DV-31" cols="70" rows="7"></textarea>
+                    <div class="googleIcon mb-3">
+                        <img src="../images/DV-31/google-icon-svg-24.jpg" width="400" alt="google icon">
 
-                    <br><br>
+
+                        <textarea class="form-control mt-3" name="inquiry-DV-31" rows="7" required
+                            placeholder="запрос 1&#10;запрос 2&#10;запрос 3&#10;..."></textarea>
+    
+
+                    </div>
+
+                   
 
                     <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
 
@@ -113,5 +123,3 @@
 </body>
 
 </html>
-
-

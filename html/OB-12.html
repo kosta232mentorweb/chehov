@@ -74,37 +74,67 @@
 
                 <!-- Заголовок только для печати -->
                 <h1 class="printOnly taskNumber">Задание ОБ-12.</h1>
+                <h6 class="printOnly colontitul">Серия “КНИГА-ЧАТ”</h6>
                 <hr class="printOnly">
 
                 <!-- Само задание -->
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">Учитель</span>
-                    Чтобы перейти к непосредственному анализу пьес Чехова, попробуйте проанализировать взгляд Чехова на
-                    писательство в целом и на процесс написания пьесы в частности. Прокомментируйте следующие
-                    высказывания Антона Павловича, постаравшись в рассуждении предположить, что автор мог иметь в виду:
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-19"></span>
+                        <span class="speechAuthor">Учитель</span>
+                        Чтобы перейти к непосредственному анализу пьес Чехова, попробуйте проанализировать взгляд Чехова
+                        на
+                        писательство в целом и на процесс написания пьесы в частности. Прокомментируйте следующие
+                        высказывания Антона Павловича, постаравшись в рассуждении предположить, что автор мог иметь в
+                        виду:
+                    </div>
                 </div>
 
                 <!-- Основная форма. Внимание на имя с префиксом -->
                 <form name="chehov-form-ob-12" action="http://activepads.com:8082/formDetector">
 
-                    <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                        <span class="avatar avatar-3"></span>
-                        <span class="speechAuthor">А. П. Чехов</span>
-                        а) «Садиться писать нужно только тогда, когда чувствуешь себя холодным как лёд».
+                    <div class="speechBubblesWrapper">
+                        <div class="speechBubble question withAvatar mt-3 mb-3">
+                            <span class="avatarCircle"></span>
+                            <span class="avatar avatar-11"></span>
+                            <span class="speechAuthor">А. П. Чехов</span>
+                            а) «Садиться писать нужно только тогда, когда чувствуешь себя холодным как лёд».
+                        </div>
+                        <div class="speechBubble question withAvatar mt-5 answer right">
+                            <span class="avatarCircle"></span>
+                            <span class="avatar avatar-20"></span>
+                            <span class="speechAuthor">Я</span>
+                            Сейчас прокомментирую:
+                        </div>
                     </div>
-                    <textarea class="rightDiv" name="punktA-OB-12" cols="60" rows="5"></textarea>
 
-                    <br><br>
-                    <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                        <span class="avatar avatar-3"></span>
-                        <span class="speechAuthor">А. П. Чехов</span>
-                        б) «А чтобы пьесу написать в современном духе, или вкусе, то для этого нужно знать секрет,
-                        который я, пожалуй, открою Вам: нужно писать пьесу зажмурясь».
+                    <div class="mb-3 mt-3">
+                        <textarea class="form-control bigForPrint" name="punktA-OB-12" rows="5" required></textarea>
                     </div>
-                    <textarea class="rightDiv" name="punktB-OB-12" cols="60" rows="5"></textarea>
-                    <br><br>
 
+                    <div class="printOnly printPageBreak"></div>
+                    <div class="speechBubblesWrapper">
+                        <div class="speechBubble question withAvatar mt-6 mb-3">
+                            <span class="avatarCircle"></span>
+                            <span class="avatar avatar-11"></span>
+                            <span class="speechAuthor">А. П. Чехов</span>
+                            б) «А чтобы пьесу написать в современном духе, или вкусе, то для этого нужно знать
+                            секрет,
+                            который я, пожалуй, открою Вам: нужно писать пьесу зажмурясь».
+                        </div>
+                        <div class="speechBubble question withAvatar mt-5 answer right">
+                            <span class="avatarCircle"></span>
+                            <span class="avatar avatar-20"></span>
+                            <span class="speechAuthor">Я</span>
+                            Сейчас прокомментирую:
+                        </div>
+                    </div>
+
+                    <div class="mb-3 mt-3">
+                        <textarea class="form-control bigForPrint" name="punktB-OB-12" rows="5" required></textarea>
+                    </div>
+                    
                     <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
 
                 </form>
