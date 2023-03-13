@@ -98,55 +98,77 @@
 
                 <!-- Заголовок только для печати -->
                 <h1 class="printOnly taskNumber">Задание ДВ-15.</h1>
-                <hr class="printOnly">
+                <h6 class="printOnly colontitul">Серия “КНИГА-ЧАТ”</h6>
+                <hr class="printOnly" style=" margin-bottom: 4rem;">
 
                 <!-- Само задание -->
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">А. П. Чехов</span>
-                    Прочитайте переписку двух моих знакомых о научной деятельности Серебрякова.
-                    Дополните сообщения аргументами за и против. Какого мнения придерживаетесь вы?
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatarCircle"></span> <span class="avatar avatar-11"></span>
+                        <span class="speechAuthor">А. П. Чехов</span>
+                        Прочитайте переписку двух моих знакомых о научной деятельности Серебрякова.
+                        Дополните сообщения аргументами за и против. Какого мнения придерживаетесь вы?
+                    </div>
+
+                    <!-- Основная форма. Внимание на имя с префиксом -->
+                    <form name="chehov-form-dv-15" action="http://activepads.com:8082/formDetector">
+                        <div class="speechBubble question withAvatar mt-5 answer">
+                            <span class="avatarCircle"></span>
+                            <span class="speechAuthor"></span>
+                             — Я считаю, что Серебряков абсолютно переоценён. Большей бездарности я не встречал.
+                        </div>
+
+                        <div class="speechBubble question withAvatar mt-5 answer right">
+                            <span class="avatarCircle"></span>
+                            <span class="speechAuthor"></span>
+                             — Что плохого тебе сделал бедный дедушка?
+                        </div>
+
+                        <div class="speechBubble question withAvatar mt-5 answer">
+                            <span class="avatarCircle"></span>
+                            <span class="speechAuthor"></span>
+                            <div class="mb-3 dv15">
+                                <span> —</span>
+                                <textarea name="area_1" class="form-control" id="area_1" rows="3"
+                                    placeholder="Место для ответа" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="speechBubble question withAvatar mt-5 answer right">
+                            <span class="avatarCircle"></span>
+                            <span class="speechAuthor"></span>
+                             — Я думаю, что ты преувеличиваешь. Почему нельзя дать человеку возможность заниматься тем,
+                            чем
+                            он хочет?
+                        </div>
+
+                        <div class="speechBubble question withAvatar mt-5 answer">
+                            <span class="avatarCircle"></span>
+                            <span class="speechAuthor"></span>
+                             — Это дилетантство.
+                        </div>
+
+                        <div class="speechBubble question withAvatar mt-5 answer right" style="margin-bottom: 20px;">
+                            <span class="avatarCircle"></span>
+                            <span class="speechAuthor"></span>
+                            <div class="mb-3 dv15">
+                                <span> —</span>
+                                <textarea name="area_2" class="form-control" id="area_1" rows="3"
+                                    placeholder="Место для ответа" required></textarea>
+                            </div>
+                        </div>
+
+                        <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
+
+                    </form>
                 </div>
-                <!-- Основная форма. Внимание на имя с префиксом -->
-                <form name="chehov-form-dv-15" action="http://activepads.com:8082/formDetector">
-                    <p>
-                        - Я считаю, что Серебряков абсолютно переоценён. Большей бездарности я не встречал.
-                    </p>
-                    <p>
-                        - Что плохого тебе сделал бедный дедушка?
-                    </p>
-                    <p>
-                        <label>
-                            <span>-</span>
-                            <textarea name="area_1" id="area_1" cols="30" rows="1"></textarea>
-                        </label>
-                    </p>
-                    <p>
-                        - Я думаю, что ты преувеличиваешь. Почему нельзя дать человеку возможность заниматься тем, чем
-                        он хочет?
-                    </p>
-                    <p>
-                        – Это дилетантство.
-                    </p>
-                    <p>
-                        <label>
-                            <span>-</span>
-                            <textarea name="area_2" id="area_2" cols="30" rows="1"></textarea>
-                        </label>
-                    </p>
-
-                    <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
-
-
-                </form>
             </div>
         </div>
-    </div>
 
-    <!-- Подключаем бутстрап скрипты -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+        <!-- Подключаем бутстрап скрипты -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -98,43 +98,88 @@
 
                 <!-- Заголовок только для печати -->
                 <h1 class="printOnly taskNumber">Задание ДВ-20.</h1>
-                <hr class="printOnly">
+                <h6 class="printOnly colontitul">Серия “КНИГА-ЧАТ”</h6>
+                <hr class="printOnly" style=" margin-bottom: 4rem;">
 
                 <!-- Само задание -->
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="speechAuthor">Учитель</span>
-                    В пьесе “Дядя Ваня” Астров сравнивает себя с персонажем пьесы А.Н.Островского: “У Островского в
-                    какой-то пьесе есть человек с большими усами и малыми способностями... Так это я”.
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-19"></span>
+                        <span class="speechAuthor">Учитель</span>
+                        В пьесе «Дядя Ваня» Астров сравнивает себя с персонажем пьесы А.Н.Островского: “У Островского в
+                        какой-то пьесе есть человек с большими усами и малыми способностями... Так это я”.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;а&#41; Определите о каком персонаже идет речь и из какой он пьесы.
+                    </div>
+
+                    <div class="speechBubble question withAvatar mt-5 answer  right">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-20"></span>
+                        <span class="speechAuthor">Я</span>
+                        <textarea name="answerDV-20-1" rows="1" class="form-control areaMargin"></textarea>
+                    </div>
+
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-19"></span>
+                        <span class="speechAuthor">Учитель</span>
+                        б&#41; Ниже приведены цитаты, характеризующие этого персонажа. Порассуждайте, почему Астров
+                        сравнивает
+                        себя с ним.
+                    </div>
+
+                    <fieldset class="form-group border p-2 pb-1 mt-3">
+                        <p>
+                            «Что такое «жаль», этого я не знаю. У меня, Мокий Парменыч, ничего заветного нет; найду
+                            выгоду,
+                            так
+                            все продам, что угодно».
+                        </p>
+                    </fieldset>
+
+                    <div class="dv20quotes">
+
+                    <fieldset class="form-group border p-2 pb-1 mt-3">
+                        <p>
+                            «...духу не теряю и веселого расположения не утратил».
+                        </p>
+                    </fieldset>
+
+                    <fieldset class="form-group border p-2 pb-1 mt-3">
+                        <p>
+                            «У меня правило: никому ничего не прощать; а то страх забудут, забываться станут».
+                        </p>
+                    </fieldset>
+
+                    <fieldset class="form-group border p-2 pb-1 mt-3">
+                        <p>
+                            «Промотавшийся кутило, развратный человек...»
+                        </p>
+                    </fieldset>
+
+                    <fieldset class="form-group border p-2 pb-1 mt-3">
+                        <p>
+                            «Смотрите, я буду стрелять в девушку, которая для меня дороже всего на свете, и не
+                            побледнею»
+                        </p>
+                    </fieldset>
+
+                    </div>
+
+                    <div class="speechBubble withAvatar mt-5  right">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-20"></span>
+                        <span class="speechAuthor">Я</span>
+                    </div>
+
                 </div>
-
-                <p>
-                    а) Определите о каком персонаже идет речь и из какой он пьесы. <br>
-                    б) Ниже приведены цитаты, характеризующие этого персонажа. Порассуждайте, почему Астров
-                    сравнивает
-                    себя с ним.
-                </p>
-                <blockquote>
-                    "Что такое «жаль», этого я не знаю. У меня, Мокий Парменыч, ничего заветного нет; найду выгоду,
-                    так
-                    все продам, что угодно".
-                </blockquote>
-                <blockquote>
-                    "...духу не теряю и веселого расположения не утратил".
-                </blockquote>
-                <blockquote>
-                    “У меня правило: никому ничего не прощать; а то страх забудут, забываться станут”.
-                </blockquote>
-                <blockquote>
-                    "Промотавшийся кутило, развратный человек..."
-                </blockquote>
-                <blockquote>
-                    "Смотрите, я буду стрелять в девушку, которая для меня дороже всего на свете, и не побледнею”.
-                </blockquote>
-
                 <!-- Основная форма. Внимание на имя с префиксом -->
                 <form name="chehov-form-dv-20" action="http://activepads.com:8082/formDetector">
+                    <div class="mb-3">
 
-                    <textarea name="DV-20" cols="30" rows="1"></textarea>
+                        <textarea name="answerDV-20" rows="2" class="form-control areaMargin"></textarea>
+
+                    </div>
 
                     <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
 

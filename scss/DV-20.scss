@@ -1,0 +1,19 @@
+.areaMargin{
+    margin-top: 1rem;
+}
+
+.container.chehov-main-container fieldset {
+    border-radius: 12px;
+    background-color: #fffdca;
+    border: none !important;
+ }
+
+ .dv20quotes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+   
+    >fieldset{
+        width: 100%;
+    }
+ }

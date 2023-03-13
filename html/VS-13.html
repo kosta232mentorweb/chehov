@@ -98,46 +98,57 @@
 
                 <!-- Заголовок только для печати -->
                 <h1 class="printOnly taskNumber">Задание ВС-13.</h1>
-                <hr class="printOnly">
+                <h6 class="printOnly colontitul">Серия “КНИГА-ЧАТ”</h6>
+                <hr class="printOnly" style=" margin-bottom: 4rem;">
 
                 <!-- Само задание -->
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">А. П. Чехов</span>
-                    В пьесе несколько раз звучит слово «недотёпа». Что, по-вашему, обозначает это слово?
-                </div>
+                <div class="speechBubblesWrapper">
 
-                
-                <!-- Основная форма. Внимание на имя с префиксом -->
-                <form name="chehov-form-vs-13" action="http://activepads.com:8082/formDetector">
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatarCircle"></span> <span class="avatar avatar-11"></span>
+                        <span class="speechAuthor">А. П. Чехов</span>
+                        В пьесе несколько раз звучит слово «недотёпа». Что, по-вашему, обозначает это слово?
+                    </div>
 
-                    <label>
+                    <!-- Основная форма. Внимание на имя с префиксом -->
+                    <form name="chehov-form-vs-13" action="http://activepads.com:8082/formDetector">
 
-                        <span class="speechAuthor">Учитель</span>
-                        <p>
+                        <div class="speechBubble question withAvatar mt-3 mb-3">
+                            <span class="avatarCircle"></span>
+                            <span class="avatar avatar-19"></span>
+                            <span class="speechAuthor">Учитель</span>
                             Найдите, кто и кого называет в пьесе недотёпой.
-                        </p>
-                        <textarea name="area_1" id="area_1" cols="30" rows="1"></textarea>
-                    </label>
-                    <label>
-                        <span class="speechAuthor">Учитель</span>
+                        </div>
 
-                        <p>
+                        <textarea name="area_1" class="form-control areaMargin" id="area_1" cols="30"
+                            rows="1"></textarea>
+                        <div class="speechBubble question withAvatar mt-3 mb-3">
+                            <span class="avatarCircle"></span>
+                            <span class="avatar avatar-19"></span>
+                            <span class="speechAuthor">Учитель</span>
                             Какого человека считают недотёпой? Какие черты присущи недотёпам?
-                        </p>
-                        <textarea name="area_2" id="area_2" cols="30" rows="1"></textarea>
-                    </label>
-                    <label>
-                        <span class="speechAuthor">Учитель</span>
+                        </div>
 
-                        <p>
+                        <textarea name="area_2" class="form-control areaMargin" id="area_2" cols="30"
+                            rows="1"></textarea>
+                        <div class="speechBubble question withAvatar mt-3 mb-3">
+                            <span class="avatarCircle"></span>
+                            <span class="avatar avatar-19"></span>
+                            <span class="speechAuthor">Учитель</span>
                             Как это слово характеризует героев пьесы в целом?
-                        </p>
-                        <textarea name="area_3" id="area_3" cols="30" rows="1"></textarea>
-                    </label>
-                    <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
+                        </div>
 
-                </form>
+                        <div class="mb-3">
+
+                        <textarea name="area_3" class="form-control areaMargin" id="area_3" cols="30"
+                            rows="1"></textarea>
+
+                        </div>
+                        
+                        <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
+
+                    </form>
+                </div>
             </div>
         </div>
     </div>

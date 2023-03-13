@@ -98,45 +98,60 @@
 
                 <!-- Заголовок только для печати -->
                 <h1 class="printOnly taskNumber">Задание ОБ-11.</h1>
-                <hr class="printOnly">
+                <h6 class="printOnly colontitul">Серия “КНИГА-ЧАТ”</h6>
+                <hr class="printOnly" style=" margin-bottom: 4rem;">
 
 
                 <!-- Само задание -->
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="speechAuthor">Учитель</span>
-                    Прочитайте мнение В.Г.Короленко о периодизации творчества А.П.Чехова
+
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-19"></span>
+                        <span class="speechAuthor">Учитель</span>
+                        Прочитайте мнение В. Г. Короленко о периодизации творчества А.П.Чехова
+                    </div>
+
+                    <div class="withAvatar question speechBubble mt-3 mb-3">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-15"></span>
+                        <span class="speechAuthor">В. Г. Короленко</span>
+
+                        <p>
+                            «…в самый разгар восьмидесятых годов, когда общественная жизнь так похожа была на эту степь
+                            с ее безмолвной истомой и тоскливой песнью, он явился беззаботный, веселый, с избытком
+                            бодрости и силы…
+                            новое настроение Чехова … я назвал бы настроением второго периода.
+                            Оно совершенно определилось, и всем стала ясна неожиданная перемена: человек, еще так
+                            недавно
+                            подходивший к жизни с радостным смехом и шуткой, беззаботно веселый и остроумный,
+                            при более пристальном взгляде в глубину жизни неожиданно почувствовал себя пессимистом.
+                            К третьему периоду я бы отнес рассказы, а пожалуй, и драмы последних годов…»<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;А каково настроение Чехова третьего периода, если исходить из прочитанных пьес? Ответьте
+                            В. Г. Короленко.
+                        </p>
+
+                    </div>
+
+                    <div class="speechBubble question withAvatar mt-5 answer  right">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-20"></span>
+                        <span class="speechAuthor">Я</span>
+                        Сейчас отвечу:
+                    </div>
+
                 </div>
 
-                <div class="withAvatar speechBubble">
-                    <span class="avatar avatar-3"></span>
-                    <blockquote>
-                        «…в самый разгар восьмидесятых годов, когда общественная жизнь так похожа была на эту степь
-                        с ее безмолвной истомой и тоскливой песнью, он явился беззаботный, веселый, с избытком
-                        бодрости и силы…
-                        новое настроение Чехова … я назвал бы настроением второго периода.
-                        Оно совершенно определилось, и всем стала ясна неожиданная перемена: человек, еще так
-                        недавно
-                        подходивший к жизни с радостным смехом и шуткой, беззаботно веселый и остроумный,
-                        при более пристальном взгляде в глубину жизни неожиданно почувствовал себя пессимистом.
-                        К третьему периоду я бы отнес рассказы, а пожалуй, и драмы последних годов…»
-                    </blockquote>
+                <!-- Основная форма. Внимание на имя с префиксом -->
+                <form name="chehov-form-ob-11" action="http://activepads.com:8082/formDetector">
 
-                    <!-- Основная форма. Внимание на имя с префиксом -->
-                    <form name="chehov-form-ob-11" action="http://activepads.com:8082/formDetector">
+                    <div class="mb-3">
+                        <textarea name="answerOB-11" class="form-control areaMargin" id="answer"
+                            rows="6" required></textarea>
+                    </div>
 
-                        <label for="answer" class="form-check-label ms-2">
-                            А каково настроение Чехова третьего периода, если исходить из прочитанных пьес? Ответьте
-                            В.Г.Короленко.
-                        </label>
+                    <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
 
-                        <br>
-
-                        <textarea name="textarea" id="answer" cols="30" rows="1"></textarea>
-
-                        <br>
-
-                        <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
-                </div>
                 </form>
 
                 <!-- Подключаем бутстрап скрипты -->
