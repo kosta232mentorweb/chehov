@@ -1,0 +1,100 @@
+.inst {
+    width: 100%;
+    overflow-x: auto;
+    display: grid;
+    grid-template-columns: repeat(50px 100px 50px 50px 50px 100px);
+    grid-template-rows: repeat(3, 100px);
+
+    .instMenu {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        img {
+            height: 100%;
+        }
+    }
+
+    .psevdoAvatar {
+        border-radius: 50%;
+        border: 1px solid black;
+        width: 140px;
+        height: 140px;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .instName {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .instMessage {
+        grid-column-start: 5;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        img {
+            width: 110%;
+        }
+    }
+
+    .instinfo {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .instMinuPup {
+        grid-column-start: 3;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        img {
+            width: 100%;
+        }
+    }
+
+    // Место для катинки поста
+
+    .instPost {
+        grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+    .instLike {
+        grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+
+
+}
+
+.round {
+    border-radius: 50%;
+    width: 100%;
+
+}
+
+
+
+.container.chehov-main-container fieldset {
+    border-radius: 12px;
+    background-color: #fffdca;
+    border: none !important;
+    page-break-inside: avoid;
+}
+
+.instAdviceLike {
+    img {
+        width: 100%;
+    }
+}

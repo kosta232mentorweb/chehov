@@ -97,41 +97,59 @@
 
                 <!-- Заголовок только для печати -->
                 <h1 class="printOnly taskNumber">Задание ДВ-10.</h1>
-                <hr class="printOnly">
+                <h6 class="printOnly colontitul">Серия “КНИГА-ЧАТ”</h6>
+                <hr class="printOnly" style=" margin-bottom: 4rem;">
 
                 <!-- Само задание -->
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">А. П. Чехов</span>
-                    Кто из персонажей моей пьесы на протяжении истории хотя бы раз держал в руках пистолет?
-                    Проиллюстрируйте цитатами из текста.
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatarCircle"></span> <span class="avatar avatar-11"></span>
+                        <span class="speechAuthor">А. П. Чехов</span>
+                        Кто из персонажей моей пьесы на протяжении истории хотя бы раз держал в руках пистолет?
+                        Проиллюстрируйте цитатами из текста.
+                    </div>
+                    <div class="speechBubble question withAvatar mb-2 answer  right">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-20"></span>
+                        <span class="speechAuthor">Я</span>
+                        Сейчас отвечу на вопрос:
+                    </div>
                 </div>
                 <!-- Основная форма. Внимание на имя с префиксом -->
                 <form name="chehov-form-dv-10" action="http://activepads.com:8082/formDetector">
-                    <div>
-                        <input type="text" name="namePers" id="name1" size="31"
-                            placeholder="Введите имя первого персонажа">
-                        <br>
-                        <textarea name="charPers" id="char1" cols="30" rows="10"
-                            placeholder="Цитата из текста"></textarea>
+                    <div class="mt-3 mb-3">
+                        <div class="answerForm">
+                            <div class="caption personas">
+                                <textarea name="personas-vs-21" rows="2"></textarea>
+                            </div>
+                            <div class="caption characteristic">
+                                <textarea name="characteristic-vs-21" rows="2"></textarea>
+                            </div>
+
+                            <div class="caption personas">
+                                <textarea name="personas-vs-21" rows="2"></textarea>
+                            </div>
+                            <div class="caption characteristic">
+                                <textarea name="characteristic-vs-21" rows="2"></textarea>
+                            </div>
+
+                            <div class="caption personas">
+                                <textarea name="personas-vs-21" rows="2"></textarea>
+                            </div>
+                            <div class="caption characteristic">
+                                <textarea name="characteristic-vs-21" rows="2"></textarea>
+                            </div>
+
+                            <div class="caption personas">
+                                <textarea name="personas-vs-21" rows="2"></textarea>
+                            </div>
+                            <div class="caption characteristic">
+                                <textarea name="characteristic-vs-21" rows="2"></textarea>
+                            </div>
+                        </div>
                     </div>
-                    <hr>
-                    <div>
-                        <input type="text" name="namePers" id="name2" size="31"
-                            placeholder="Введите имя второго персонажа">
-                        <br>
-                        <textarea name="charPers" id="char2" cols="30" rows="10"
-                            placeholder="Цитата из текста"></textarea>
-                    </div>
-                    <hr>
-                    <div>
-                        <input type="text" name="namePers" id="name3" size="31"
-                            placeholder="Введите имя третьего персонажа">
-                        <br>
-                        <textarea name="charPers" id="char3" cols="30" rows="10"
-                            placeholder="Цитата из текста"></textarea>
-                    </div>
-                    <br>
+                    <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
+
                 </form>
             </div>
         </div>

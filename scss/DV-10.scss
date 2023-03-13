@@ -1,0 +1,70 @@
+@import "variables/variables";
+
+.answerForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+    .caption {
+        position: relative;
+
+        &:before {
+            position: absolute;
+            top: 2px;
+            left: 4px;
+            font-weight: bold;
+            color: #aaa;
+            font-size: 70%;
+        }
+    }
+
+    .personas {
+        &:before {
+            content: 'Имя персонажа';
+        }
+
+        flex-basis: 30%;
+    }
+
+    .characteristic {
+        &:before {
+            content: 'Цитата из текста';
+        }
+
+        flex-basis: 70%;
+    }
+
+
+    @media (max-width: $tabletWidth) {
+
+        .personas {
+            flex-basis: 100%;
+        }
+
+        .characteristic {
+            flex-basis: 100%;
+        }
+    }
+
+    @media print {
+
+        .personas {
+            flex-basis: 30%;
+        }
+
+        .characteristic {
+            flex-basis: 70%;
+        }
+        textarea {
+    
+            height: 3.7cm;
+        }
+    }
+
+    textarea {
+        width: 100%;
+        padding-top: 20px;
+    }
+}
+

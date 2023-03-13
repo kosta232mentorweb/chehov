@@ -97,64 +97,100 @@
 
                 <!-- Заголовок только для печати -->
                 <h1 class="printOnly taskNumber">Задание ДВ-33.</h1>
-                <hr class="printOnly">
+                <h6 class="printOnly colontitul">Серия “КНИГА-ЧАТ”</h6>
+                <hr class="printOnly" style=" margin-bottom: 4rem;">
 
                 <!-- Само задание -->
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">Учитель</span>
-                    Основой пьесы «Дядя Ваня» была другая пьеса – «Леший» – комедия в четырёх действиях, написанная и
-                    поставленная в 1889 году. Эти два произведения разделяет шесть лет. <br>
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-3 mb-5">
+                        <span class="avatarCircle"></span> <span class="avatar avatar-11"></span>
+                        <span class="speechAuthor">А. П. Чехов</span>
+                        <blockquote>
+                            «А леший его знает!»
+                        </blockquote>
+                    </div>
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatarCircle"></span> <span class="avatar avatar-19"></span>
+                        <span class="speechAuthor">Учитель</span>
+                        Основой пьесы «Дядя Ваня» была другая пьеса — «Леший» — комедия в четырёх действиях, написанная
+                        и
+                        поставленная в 1889 году. Эти два произведения разделяет шесть лет. <br>
 
-                    В пьесе «Леший» есть все персонажи, представленные в пьесе «Дядя Ваня», некоторые – с изменёнными
-                    именами. <br>
+                        &nbsp&nbspВ пьесе «Леший» есть все персонажи, представленные в пьесе «Дядя Ваня», некоторые — с
+                        изменёнными
+                        именами. <br>
 
-                    Установите соответствие между персонажем и тем, что о нём говорят другие персонажи в пьесе «Леший».
-                    Обратите внимание: к одному персонажу может относиться как несколько описаний, так и не относиться
-                    ни одного. <br>
-
+                        &nbsp&nbspУстановите соответствие между персонажем и тем, что о нём говорят другие персонажи в
+                        пьесе
+                        «Леший».
+                        &nbsp&nbspОбратите внимание: к одному персонажу может относиться как несколько описаний, так и
+                        не
+                        относиться
+                        ни одного. <br>
+                    </div>
+                    <div class="speechBubble question withAvatar mt-5 answer  right">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-20"></span>
+                        <span class="speechAuthor">Я</span>
+                        Сейчас отвечу на вопрос:
+                    </div>
                 </div>
-
-
+                <div class="printOnly printPageBreak"></div>
                 <!-- Основная форма. Внимание на имя с префиксом -->
                 <form name="chehov-form-dv-33" action="http://activepads.com:8082/formDetector">
-                    <p>Узкий человек. Всем позволительно говорить глупости, но я не люблю, когда их говорят с пафосом.
-                    </p>
-                    <textarea name="firstName-DV-33" cols="30" rows="10" placeholder="Введите имя персонажа"></textarea>
-                    <p>Хороший ты, душевный человек, <имя>, но что у тебя за манеры? Какие-то мармеладные слова, ногами
-                            шаркаешь, плечами дёргаешь... Если кто посторонний увидит, то подумает, что ты не человек, а
-                            чёрт
-                            знает что...
-                    </p>
-                    <textarea name="secondName-DV-33" cols="30" rows="10"
-                        placeholder="Введите имя персонажа"></textarea>
-                    <p>Не понимаю такого существования. Говорят, что древние греки бросали слабых и хилых детей в
-                        пропасть с
-                        горы Монблана. Вот таких бы надо бросать!
-                    </p>
-                    <textarea name="thirdName-DV-33" cols="30" rows="10" placeholder="Введите имя персонажа"></textarea>
-                    <p>Потом был я в Гейдельберге и не видел Гейдельберга; был в Париже и не видел Парижа: всё время
-                        сидел в
-                        четырёх стенах и работал.
-                    </p>
-                    <textarea name="fourthName-DV-33" cols="30" rows="10"
-                        placeholder="Введите имя персонажа"></textarea>
-                    <p>А может быть, я не канарейка, а вольный воробей!
-                    </p>
-                    <textarea name="fifthName-DV-33" cols="30" rows="10" placeholder="Введите имя персонажа"></textarea>
-                    <p>И почему ты говоришь таким несчастным тоном? Пожалуй, кто-нибудь подумает, что ты в самом деле
-                        несчастлив. А на земле мало таких счастливых, как ты.
-                    </p>
-                    <textarea name="sixthName-DV-33" cols="30" rows="10" placeholder="Введите имя персонажа"></textarea>
-                    <hr>
-                    <p>а) Выясните имя Войницкого в пьесе «Леший».</p>
-                    <textarea name="seventhName-DV-33" cols="30" rows="10"
-                        placeholder="Введите имя Войницкого в пьесе"></textarea>
-                    <p>б) Пофантазируйте: о чём могло быть это письмо? Напишите текст письма.</p>
-                    <textarea name=" seventhName-DV-33" cols="30" rows="10"
-                        placeholder="Напишите текст письма"></textarea>
-                    <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
-
+                    <fieldset class="form-group border p-2 pb-1 mt-3">
+                        <legend class="w-auto px-2">Узкий человек. Всем позволительно говорить глупости, но я не люблю,
+                            когда их говорят с пафосом.</legend>
+                        <div class="mb-2">
+                            <textarea class="form-control" required placeholder="Персонаж" name="answer-1-dv-33"
+                                rows="1"></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group border p-2 pb-1 mt-3">
+                        <legend class="w-auto px-2">Хороший ты, душевный человек, <имя>, но что у тебя за манеры?
+                                Какие-то мармеладные слова, ногами шаркаешь, плечами дёргаешь... Если кто посторонний
+                                увидит, то подумает, что ты не человек, а чёрт знает что...</legend>
+                        <div class="mb-2">
+                            <textarea class="form-control" required placeholder="Персонаж" name="answer-2-dv-33"
+                                rows="1"></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group border p-2 pb-1 mt-3">
+                        <legend class="w-auto px-2">Не понимаю такого существования. Говорят, что древние греки бросали
+                            слабых и хилых детей в пропасть с горы Монблана. Вот таких бы надо бросать!
+                        </legend>
+                        <div class="mb-2">
+                            <textarea class="form-control" required placeholder="Персонаж" name="answer-3-dv-33"
+                                rows="1"></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group border p-2 pb-1 mt-3">
+                        <legend class="w-auto px-2">Потом был я в Гейдельберге и не видел Гейдельберга; был в Париже и
+                            не видел Парижа: всё время сидел в четырёх стенах и работал.
+                        </legend>
+                        <div class="mb-2">
+                            <textarea class="form-control" required placeholder="Персонаж" name="answer-4-dv-33"
+                                rows="1"></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group border p-2 pb-1 mt-3">
+                        <legend class="w-auto px-2">А может быть, я не канарейка, а вольный воробей!
+                        </legend>
+                        <div class="mb-2">
+                            <textarea class="form-control" required placeholder="Персонаж" name="answer-5-dv-33"
+                                rows="1"></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group border p-2 pb-1 mt-3">
+                        <legend class="w-auto px-2">И почему ты говоришь таким несчастным тоном? Пожалуй, кто-нибудь
+                            подумает, что ты в самом деле несчастлив. А на земле мало таких счастливых, как ты.
+                        </legend>
+                        <div class="mb-2">
+                            <textarea class="form-control" required placeholder="Персонаж" name="answer-6-dv-33"
+                                rows="1"></textarea>
+                        </div>
+                    </fieldset>
+                    <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100 mt-3">
                 </form>
             </div>
         </div>

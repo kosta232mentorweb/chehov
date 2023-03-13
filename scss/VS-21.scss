@@ -1,53 +1,69 @@
-.answer-VS-21 {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: 50px 50px 50px 50px 50px;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    grid-template-areas:
-        'pers1 answer1'
-        'pers2 answer2'
-        'pers3 answer3'
-        'pers4 answer4'
-        'pers5 answer5'
-}
+@import "variables/variables";
 
-#pers1 {
-    grid-area: pers1;
-}
+.answerForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-#pers2 {
-    grid-area: pers2;
-}
 
-#pers3 {
-    grid-area: pers3;
-}
+    .caption {
+        position: relative;
 
-#pers4 {
-    grid-area: pers4;
-}
+        &:before {
+            position: absolute;
+            top: 2px;
+            left: 4px;
+            font-weight: bold;
+            color: #aaa;
+            font-size: 70%;
+        }
+    }
 
-#pers5 {
-    grid-area: pers5;
-}
+    .personas {
+        &:before {
+            content: 'Прототип героя';
+        }
 
-#answer1 {
-    grid-area: answer1;
-}
+        flex-basis: 30%;
+    }
 
-#answer2 {
-    grid-area: answer2;
-}
+    .characteristic {
+        &:before {
+            content: 'Как появлялся образ героя';
+        }
 
-#answer3 {
-    grid-area: answer3;
-}
+        flex-basis: 70%;
+    }
 
-#answer4 {
-    grid-area: answer4;
-}
 
-#answer5 {
-    grid-area: answer5;
+    @media (max-width: $tabletWidth) {
+
+        .personas {
+            flex-basis: 100%;
+        }
+
+        .characteristic {
+            flex-basis: 100%;
+        }
+    }
+
+    @media print {
+
+        .personas {
+            flex-basis: 30%;
+        }
+
+        .characteristic {
+            flex-basis: 70%;
+        }
+
+        textarea {
+            height: 3.7cm;
+        }
+    }
+
+    textarea {
+        width: 100%;
+        padding-top: 20px;
+    }
 }
