@@ -98,11 +98,13 @@
 
                 <!-- Заголовок только для печати -->
                 <h1 class="printOnly taskNumber">Задание ВС-25.</h1>
+                <h6 class="printOnly colontitul">Серия “КНИГА-ЧАТ”</h6>
                 <hr class="printOnly">
 
                 <!-- Само задание -->
+                <div class="speechBubblesWrapper">
                 <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
+               <span class="avatarCircle"></span>                    <span class="avatar avatar-11"></span>
                     <span class="speechAuthor">А. П. Чехов</span>
                     «Sims по-чеховски». Перед вами расписано сословное деление в России в начале ХХ века. Ваша
                     задача – выбрать представителя одного из сословий и «прожить» его жизнь. Для этого используйте
@@ -111,10 +113,7 @@
                 </div>
                 <div id="links"></div>
 
-
-
-
-                Сословия:</p>
+                <p>Сословия:</p>
                 <ul>
                     <li>Дворяне
                         (графы, князья, родственники императорской семьи, помещики)</li>
@@ -122,65 +121,93 @@
                     <li>Мещане</li>
                     <li>Крестьяне</li>
                 </ul>
-                <table>
-                    <tr>
-                        <td>Представитель сословия</td>
-                        <td>Имел ли землю/капитал? Как получил?</td>
-                        <td>Пути приумножения дохода</td>
-                        <td>Факторы, влияющие на развитие (от политических до личных)</td>
-                        <td>Что ждёт после 1917 г.?</td>
-                    </tr>
+                
 
-                    <tr>
-                        <td>Пример: Крестьяне</td>
-                        <td>Бедняки, середняки и богатых крестьяне. Получить землю они могли как по наследству, так и
-                            приобрести её
-                            самостоятельно.</td>
-                        <td>успешное ведение хозяйства и продажа продукции с него, удачный брак, занятие
-                            предпринимательской
-                            деятельностью, использование труда других крестьян</td>
-                        <td>уровень образованности, богатства, наличие связей, мировоззрения и т.д.</td>
-                        <td>Отдать имущество в колхоз; быть раскулаченным</td>
-                    </tr>
+                <fieldset style="background-color: aqua;" class="form-group border p-2 pb-1">
+                    <b>Представитель сословия</b><br />
+                    Пример: Крестьяне<br />
+                    Имел ли землю/капитал? Как получил?<br />
+                    <div class="mb-3">
+                    <textarea class="form-control" readonly rows="3" name="dvoryneQuestion1">Бедняки, середняки и богатых крестьяне. Получить землю они могли как по наследству, так и приобрести её самостоятельно.</textarea>
+                </div>
+                    Пути приумножения дохода<br />
+                    <div class="mb-3"><textarea readonly rows="3" class="form-control" name="dvoryneQuestion2">успешное ведение хозяйства и продажа продукции с него, удачный брак, занятие предпринимательской деятельностью, использование труда других крестьян</textarea>
+                        </div>
+                    Факторы, влияющие на развитие (от политических до личных)<br />
+                    <div class="mb-3"><textarea readonly rows="3" class="form-control" name="dvoryneQuestion3">уровень образованности, богатства, наличие связей, мировоззрения и т.д.</textarea>
+                        </div>
+                    Что ждёт после 1917 г.?<br />
+                    <div class="mb-3"><textarea readonly rows="3" class="form-control" name="dvoryneQuestion4">Отдать имущество в колхоз; быть раскулаченным</textarea>
+                        </div>
+                    </fieldset>
 
-                </table>
+
+                
+                <div class="speechBubble question withAvatar mt-5 answer  right">
+                    <span class="avatarCircle"></span>
+                    <span class="avatar avatar-20"></span>
+                    <span class="speechAuthor">Я</span>
+                    Сейчас заполню таблицу:
+                 </div>
+                </div>
+
                 <p></p>
                 <!-- Основная форма. Внимание на имя с префиксом -->
                 <form name="chehov-form-vs-25" action="http://activepads.com:8082/formDetector">
-
+                    <fieldset class="form-group border p-2 pb-1">
                     <b>Представитель сословия</b><br />
                     Дворяне (графы, князья, родственники императорской семьи, помещики)<br />
                     Имел ли землю/капитал? Как получил?<br />
-                    <textarea name="dvoryneQuestion1"></textarea>
+                    <div class="mb-3">
+                    <textarea class="form-control" name="dvoryneQuestion1"></textarea>
+                </div>
                     Пути приумножения дохода<br />
-                    <textarea name="dvoryneQuestion2"></textarea>
+                    <div class="mb-3"><textarea class="form-control" name="dvoryneQuestion2"></textarea>
+                        </div>
                     Факторы, влияющие на развитие (от политических до личных)<br />
-                    <textarea name="dvoryneQuestion3"></textarea>
+                    <div class="mb-3"><textarea class="form-control" name="dvoryneQuestion3"></textarea>
+                        </div>
                     Что ждёт после 1917 г.?<br />
-                    <textarea name="dvoryneQuestion4"></textarea>
+                    <div class="mb-3"><textarea class="form-control" name="dvoryneQuestion4"></textarea>
+                        </div>
+                    </fieldset>
+                    
                     <p></p>
+                    
+                    <fieldset class="form-group border p-2 pb-1">
                     <b>Представитель сословия</b><br />
                     Купцы<br />
                     Имел ли землю/капитал? Как получил?<br />
-                    <textarea name="kupciQuestion1"></textarea>
+                    <div class="mb-3"><textarea class="form-control" name="kupciQuestion1"></textarea>
+                        </div>
                     Пути приумножения дохода<br />
-                    <textarea name="kupciQuestion2"></textarea>
+                    <div class="mb-3"><textarea class="form-control" name="kupciQuestion2"></textarea>
+                        </div>
                     Факторы, влияющие на развитие (от политических до личных)<br />
-                    <textarea name="kupciQuestion3"></textarea>
+                    <div class="mb-3"><textarea class="form-control" name="kupciQuestion3"></textarea>
+                        </div>
                     Что ждёт после 1917 г.?<br />
-                    <textarea name="kupciQuestion4"></textarea>
+                    <div class="mb-3"><textarea class="form-control" name="kupciQuestion4"></textarea>
+                        </div>
+                    </fieldset>
+                    
                     <p></p>
+                    <fieldset class="form-group border p-2 pb-1">
                     <b>Представитель сословия</b><br />
                     Мещане<br />
                     Имел ли землю/капитал? Как получил?<br />
-                    <textarea name="mejaneQuestion1"></textarea>
+                    <div class="mb-3"><textarea class="form-control" name="mejaneQuestion1"></textarea>
+                        </div>
                     Пути приумножения дохода<br />
-                    <textarea name="mejaneQuestion2"></textarea>
+                    <div class="mb-3"><textarea class="form-control" name="mejaneQuestion2"></textarea>
+                        </div>
                     Факторы, влияющие на развитие (от политических до личных)<br />
-                    <textarea name="mejaneQuestion3"></textarea>
+                    <div class="mb-3"><textarea class="form-control" name="mejaneQuestion3"></textarea>
+                        </div>
                     Что ждёт после 1917 г.?<br />
-                    <textarea name="mejaneQuestion4"></textarea>
-
+                    <div class="mb-3"><textarea class="form-control" name="mejaneQuestion4"></textarea>
+                        </div>
+                </fieldset>
 
 
 

@@ -1,17 +1,40 @@
-.psevdoAvatar{
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
-}
-    
-textarea {
-    width: 100%;
-    height: 70px;
-    padding: 12px 20px;
-    font-size: 16px;
-    resize: none;
-  }
 
-    
+
+
+  table {
+    width: 100%;
+    border-radius: 12px;
+ 
+    th,
+    td {
+       border: 1px solid gray;
+       padding: 8px;
+       // text-align: center;
+    }
+ 
+    tr {
+       height: 250px;
+       page-break-inside: avoid;
+    }
+ 
+    td {
+       width: 10%;
+    }
+ 
+    thead>tr {
+       height: 50px;
+    }
+ 
+    thead>tr>th,
+    tbody>tr>td {
+       width: 100px;
+    }
+ }
+
+ 
+ .container.chehov-main-container fieldset {
+    border-radius: 12px;
+    background-color: #fffdca;
+    border: none !important;
+ }  
     
