@@ -97,18 +97,19 @@
 
                 <!-- Заголовок только для печати -->
                 <h1 class="printOnly taskNumber">Задание ДВ-22.</h1>
+                <h6 class="printOnly colontitul">Серия “КНИГА-ЧАТ”</h6>
                 <hr class="printOnly">
 
                 <!-- Само задание -->
                 <div class="speechBubblesWrapper">
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-                    <span class="avatarCircle"></span> <span class="avatar avatar-11"></span>
-                    <span class="speechAuthor">А. П. Чехов</span>
-                    Сообщения Войницкого и Астрова Елене отправились не до конца. Предположите, каковы были
-                    аргументы персонажей, и допишите сообщения за них:
-                </div>
-                
-                
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatarCircle"></span> <span class="avatar avatar-11"></span>
+                        <span class="speechAuthor">А. П. Чехов</span>
+                        Сообщения Войницкого и Астрова Елене отправились не до конца. Предположите, каковы были
+                        аргументы персонажей, и допишите сообщения за них:
+                    </div>
+
+
                     <div class="speechBubble question withAvatar mt-5 answer  right">
                         <span class="avatarCircle"></span>
                         <span class="avatar avatar-20"></span>
@@ -117,19 +118,42 @@
                     </div>
                     <div id="links"></div>
                 </div>
+                <!-- Для печати -->
+                <div class="row printOnly">
+                    <div class="mb-2">
+                        а) Войницкий: «Жизнь моя потеряна безвозвратно…»<br />
+                        <textarea class="form-control" rows="5" name="Voinitsky" type="text" required></textarea>
+                    </div>
+                    <div class="mb-2">
+                        б) Астров: «В вашем доме я не выжил бы одного месяца…»<br />
+                        <textarea class="form-control" rows="5" name="Astrov" type="text" required></textarea><br />
+                    </div>
+                </div>
+
+
 
                 <!-- Основная форма. Внимание на имя с префиксом -->
                 <form name="chehov-form-dv-22" class="mt-3 screenOnly" action="http://activepads.com:8082/formDetector">
-                   
+
                     <fieldset class="form-group border p-2 pb-1">
                         <div class="mb-2">
-                    а) Войницкий: «Жизнь моя потеряна безвозвратно…»<br />
-                    <textarea class="form-control" name="Voinitsky" type="text" required></textarea>
-                    </div>
-                    <div class="mb-2">
-                    б) Астров: «В вашем доме я не выжил бы одного месяца…»<br />
-                    <textarea class="form-control" name="Astrov" type="text" required></textarea><br />
-                    </div>
+                            <div class="speechBubble question withAvatar mt-5 answer  left">
+                                <span class="avatarCircle"></span>
+                                <span class="avatar avatar-5"></span>
+                                <span class="speechAuthor">Войницкий</span>
+                            </div>
+                            «Жизнь моя потеряна безвозвратно…»<br />
+                            <textarea class="form-control" rows="3" name="Voinitsky" type="text" required></textarea>
+                        </div>
+                        <div class="mb-2">
+                            <div class="speechBubble question withAvatar mt-5 answer  left">
+                                <span class="avatarCircle"></span>
+                                <span class="avatar avatar-6"></span>
+                                <span class="speechAuthor">Астров</span>
+                            </div>
+                            «В вашем доме я не выжил бы одного месяца…»<br />
+                            <textarea class="form-control" rows="3" name="Astrov" type="text" required></textarea><br />
+                        </div>
                     </fieldset>
                     <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
             </div>

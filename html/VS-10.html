@@ -98,6 +98,7 @@
 
                 <!-- Заголовок только для печати -->
                 <h1 class="printOnly taskNumber">Задание ВС-10.</h1>
+                <h6 class="printOnly colontitul">Серия “КНИГА-ЧАТ”</h6>
                 <hr class="printOnly">
 
                 <!-- Само задание -->
@@ -119,17 +120,18 @@
                         <span class="avatarCircle"></span>
                         <span class="avatar avatar-20"></span>
                         <span class="speechAuthor">Я</span>
-                        Сейчас заполню таблицу:
+
+                        <!-- Основная форма. Внимание на имя с префиксом -->
+                        <form name="chehov-form-vs-10" class="mt-3"
+                            action="http://activepads.com:8082/formDetector">
+                            <fieldset class="form-group border p-2 pb-1">
+                                <div class="mb-2">
+                                    <textarea class="form-control" cols="70" rows="10" name="Epihodov" type="text" required></textarea>
+                                </div>
+                            </fieldset>
                     </div>
                 </div>
-                <!-- Основная форма. Внимание на имя с префиксом -->
-                <form name="chehov-form-vs-10" class="mt-3 screenOnly" action="http://activepads.com:8082/formDetector">
-                    <fieldset class="form-group border p-2 pb-1">
-                        <div class="mb-2">
-                            <textarea class="form-control" name="Epihodov" type="text" required></textarea>
-                        </div>
-                    </fieldset>
-                    <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
+                <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
                 </form>
             </div>
         </div>

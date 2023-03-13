@@ -1,10 +1,25 @@
 .tic-tac-toe {
-    // width: 100%;
-    border: 1px solid black;
-    padding: 1px;
+    width: 300px;
+    // border: 1px solid black;
     margin: 1% auto 1% auto
 }
-
+.square{
+  width: 100px;
+  height: 100px;
+  padding: 0px 2px 0 2px;
+}
+.rightB{
+  border-right: 1px solid black;
+}
+.leftB{
+  border-left: 1px solid black;
+}
+.topB{
+  border-top: 1px solid black;
+}
+.bottomB{
+  border-bottom: 1px solid black;
+}
   
   
   
@@ -12,4 +27,7 @@
     border-radius: 12px;
     background-color: #fffdca;
     border: none !important;
+  }
+  .TicTacToe{
+  margin-bottom: 5px;
   }

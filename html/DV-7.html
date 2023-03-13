@@ -97,6 +97,7 @@
 
                 <!-- Заголовок только для печати -->
                 <h1 class="printOnly taskNumber">Задание ДВ-7.</h1>
+                <h6 class="printOnly colontitul">Серия “КНИГА-ЧАТ”</h6>
                 <hr class="printOnly">
 
                 <!-- Само задание -->
@@ -126,9 +127,17 @@
                         <span class="avatarCircle"></span>
                         <span class="avatar avatar-20"></span>
                         <span class="speechAuthor">Я</span>
-                        Сейчас заполню таблицу:
-                    </div>
-                </div>
+<!-- Для печати -->
+<div class="row printOnly">                        
+    «Женщина может быть другом мужчины только под таким условием: сначала
+                        <input list="choice" name="First" type="text" required>
+                        , потом
+                        <input list="choice" name="Second" type="text" required>
+                        , а затем уж
+                        <input list="choice" name="Third" type="text" required>
+                        ».
+</div>
+                    
                 <!-- Основная форма. Внимание на имя с префиксом -->
                 <form name="chehov-form-dv-7" class="mt-3 screenOnly" action="http://activepads.com:8082/formDetector">
                     <fieldset class="form-group border p-2 pb-1">
@@ -165,7 +174,8 @@
                         </datalist>
                     </div>
                 </fieldset>
-
+            </div>
+        </div>
                     <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
                 </form>
             </div>

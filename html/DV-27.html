@@ -98,6 +98,7 @@
 
                 <!-- Заголовок только для печати -->
                 <h1 class="printOnly taskNumber">Задание ДВ-27.</h1>
+                <h6 class="printOnly colontitul">Серия “КНИГА-ЧАТ”</h6>
                 <hr class="printOnly">
 
                 <!-- Само задание -->
@@ -110,20 +111,112 @@
                     (2).
                 </div>
                 <div id="links"></div>
-
-                <div class="capture"><img class="desk" src="../images/desk.jpg" alt=""></div>
+                <div class="mt-3 screenOnly">
+                    <div class="capture"><img class="desk" src="../images/desk.jpg" alt=""></div>
+                </div>
                 <div class="speechBubblesWrapper">
-
                     <div class="speechBubble question withAvatar mt-5 answer  right">
                         <span class="avatarCircle"></span>
                         <span class="avatar avatar-20"></span>
                         <span class="speechAuthor">Я</span>
-                        Сейчас заполню таблицу:
+                        Сейчас заполню досье:
                     </div>
                 </div>
+
+                <!-- Для печати -->
+                <div class="row printOnly">
+
+                    Имя
+                    <div class="mb-2">
+                        <textarea class="form-control" name="dossierName" type="text" required></textarea>
+                    </div>
+                    Прозвище
+                    <div class="mb-2">
+                        <textarea class="form-control" name="dossierNickname" type="text" required></textarea>
+                    </div>
+                    Статус
+                    <div class="mb-2">
+                        <textarea class="form-control" name="dossierStatus" type="text" required></textarea>
+                    </div>
+                    Пол
+                    <div class="mb-2">
+                        <input type="radio" name="gender" value="var1" required> M<br />
+                        <input type="radio" name="gender" value="var2" required> Ж<br />
+                    </div>
+                    Внешность
+                    <div class="mb-2">
+                        <textarea class="form-control" name="dossierAppearance" type="text" required></textarea>
+                    </div>
+                    Трудоустройство
+                    <div class="mb-2">
+                        <textarea class="form-control" name="dossierEmployment" type="text" required></textarea>
+                    </div>
+
+                    <div class="printOnly printPageBreak"></div>
+
+                    Потенциальные локации
+                    <div class="mb-2">
+                        <textarea class="form-control" name="dossierLocations" type="text" rows="5"
+                            placeholder="1.&#10;2.&#10;3.&#10;" required></textarea>
+                    </div>
+
+
+
+                    <div class="speechBubblesWrapper">
+                        <div class="speechBubble question withAvatar mt-3 mb-3">
+                            <span class="speechAuthor">А. П. Чехов</span>
+                            После произведенного следствия заполните таблицу. При необходимости выпишите
+                            цитаты из текста.
+                        </div>
+                        <div class="speechBubble question withAvatar mt-5 answer  right">
+                            <span class="avatarCircle"></span>
+                            <span class="avatar avatar-20"></span>
+                            <span class="speechAuthor">Я</span>
+                            Сейчас заполню таблицу:
+                        </div>
+                    </div>
+
+
+
+                    <div class="mb-2">
+                        Как называют Телегина домочадцы?
+                        <textarea class="form-control" name="question1" type="text" required></textarea>
+                    </div>
+                    <div class="mb-2">
+                        За что его так прозвали?
+                        <textarea class="form-control" name="question2" type="text" required></textarea>
+                    </div>
+                    <div class="mb-2">
+                        Что он делает дома у Серебряковых?
+                        <textarea class="form-control" name="question3" type="text" required></textarea>
+                    </div>
+                    <div class="mb-2">
+                        Как остальные персонажи к нему относятся?
+                        <textarea class="form-control" name="question4" type="text" required></textarea>
+                    </div>
+
+                    <div class="printOnly printPageBreak"></div>
+                    <div class="mb-2">
+                        Что думает Телегин о верности и измене? Отличается ли его точка зрения от точки зрения
+                        Астрова и Войницкого?
+                        <textarea class="form-control" name="question5" type="text" required></textarea>
+                    </div>
+                    <div class="mb-2">
+                        Напишите минимум пять черт характера Телегина.
+                        <textarea class="form-control" name="question6" type="text" rows="7" required></textarea>
+                    </div>
+                    <div class="mb-2">
+                        Стало ли имя Вафли нарицательным? Какого человека сейчас можно назвать вафлей?
+                        <textarea class="form-control" name="question7" type="text" required></textarea>
+                    </div>
+                </div>
+
+
+
+
+
                 <!-- Основная форма. Внимание на имя с префиксом -->
-                <form name="chehov-form-dv-27" class="mt-3 screenOnly"
-                    action="http://activepads.com:8082/formDetector">
+                <form name="chehov-form-dv-27" class="mt-3 screenOnly" action="http://activepads.com:8082/formDetector">
                     <fieldset class="form-group border p-2 pb-1">
                         Имя
                         <div class="mb-2">
@@ -139,8 +232,8 @@
                         </div>
                         Пол
                         <div class="mb-2">
-                            <input type="radio" name="gender" value="var1" required>M<br />
-                            <input type="radio" name="gender" value="var2" required>Ж<br />
+                            <input type="radio" name="gender" value="var1" required> M<br />
+                            <input type="radio" name="gender" value="var2" required> Ж<br />
                         </div>
                         Внешность
                         <div class="mb-2">
@@ -151,24 +244,22 @@
                             <textarea class="form-control" name="dossierEmployment" type="text" required></textarea>
                         </div>
                     </fieldset>
-                    <br/>
+                    <br />
                     <fieldset class="form-group border p-2 pb-1">
                         Потенциальные локации
                         <div class="mb-2">
                             <textarea class="form-control" name="dossierLocations" type="text" rows="5"
-                            placeholder="1.&#10;2.&#10;3.&#10;" required></textarea>
+                                placeholder="1.&#10;2.&#10;3.&#10;" required></textarea>
                         </div>
                     </fieldset>
-                    <br/><br/><br/>
+                    <br /><br /><br />
                     <div class="speechBubblesWrapper">
-                    <div class="speechBubble question withAvatar mt-3 mb-3">
-                        <span class="avatarCircle"></span> <span class="avatar avatar-11"></span>
-                        <span class="speechAuthor">А. П. Чехов</span>
-                        После произведенного следствия заполните таблицу. При необходимости выпишите
-                        цитаты из текста.
-                    </div>
-                    
-
+                        <div class="speechBubble question withAvatar mt-3 mb-3">
+                            <span class="avatarCircle"></span> <span class="avatar avatar-11"></span>
+                            <span class="speechAuthor">А. П. Чехов</span>
+                            После произведенного следствия заполните таблицу. При необходимости выпишите
+                            цитаты из текста.
+                        </div>
                         <div class="speechBubble question withAvatar mt-5 answer  right">
                             <span class="avatarCircle"></span>
                             <span class="avatar avatar-20"></span>
@@ -178,12 +269,14 @@
                     </div>
 
                     <fieldset class="form-group border p-2 pb-1">
-                        Как называют Телегина домочадцы?
                         <div class="mb-2">
+                            Как называют Телегина домочадцы?
                             <textarea class="form-control" name="question1" type="text" required></textarea>
                         </div>
-                        За что его так прозвали?
-                        <textarea class="form-control" name="question2" type="text" required></textarea>
+                        <div class="mb-2">
+                            За что его так прозвали?
+                            <textarea class="form-control" name="question2" type="text" required></textarea>
+                        </div>
                         <div class="mb-2">
                             Что он делает дома у Серебряковых?
                             <textarea class="form-control" name="question3" type="text" required></textarea>
@@ -195,11 +288,11 @@
                         <div class="mb-2">
                             Что думает Телегин о верности и измене? Отличается ли его точка зрения от точки зрения
                             Астрова и Войницкого?
+                            <textarea class="form-control" name="question5" type="text" required></textarea>
                         </div>
-                        <textarea class="form-control" name="question5" type="text" required></textarea>
                         <div class="mb-2">
                             Напишите минимум пять черт характера Телегина.
-                            <textarea class="form-control" name="question6" type="text" rows="5"
+                            <textarea class="form-control" name="question6" type="text" rows="7"
                                 placeholder="1.&#10;2.&#10;3.&#10;4.&#10;5.&#10;" required></textarea>
                         </div>
                         <div class="mb-2">
