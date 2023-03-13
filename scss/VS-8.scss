@@ -6,6 +6,18 @@
     }
 }
 
+.bigForPrint {
+    @media print {
+        height: 75mm;
+    }
+}
+
+.avoidBreakInside{
+    @media print {
+        page-break-inside: avoid;
+    }
+}
+
 .areaMargin {
     margin-top: 1rem;
 }

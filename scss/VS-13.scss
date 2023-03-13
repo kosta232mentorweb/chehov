@@ -1,3 +1,13 @@
+.bigForPrint {
+    @media print {
+        height: 75mm;
+    }
+}
 .areaMargin{
     margin-top: 1rem;
+}
+.avoidBreakInside{
+    @media print {
+        page-break-inside: avoid;
+    }
 }
