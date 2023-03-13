@@ -101,33 +101,40 @@
 
                 <!-- Само задание -->
                 <div id="links"></div>
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-               <span class="avatarCircle"></span>                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">Учитель</span>
-                    (учитель) Один из читателей не до конца понял пьесу и решил написать напрямую Антону Павловичу.
-                    Ответьте неравнодушному читателю от имени автора.
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatarCircle"></span> <span class="avatar avatar-19"></span>
+                        <span class="speechAuthor">Учитель</span>
+                        (учитель) Один из читателей не до конца понял пьесу и решил написать напрямую Антону Павловичу.
+                        Ответьте неравнодушному читателю от имени автора.
+                    </div>
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatar avatar-20"></span>
+                        <span class="speechAuthor">Читатель</span>
+                        – Антон Павлович, вот я что-то совсем не понимаю Войницкого. Вот он на протяжении всей пьесы
+                        жалуется на то, что он проворонил время, что не сделал в жизни ничего стоящего. Почему ему
+                        понадобилось именно убивать Серебрякова? И почему после всего этого он продолжил разбирать бумажки
+                        профессора? Почему он так ничего и не поменял в жизни?
+                    </div>
+                    <div class="speechBubble question withAvatar mt-5 answer right">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-11"></span>
+                        <span class="speechAuthor">А.П. Чехов</span>
+                        Отвечаю на вопрос:
+                     </div>
                 </div>
-                <div class="speechBubble withAvatar mt-3 mb-3">
-                    <span class="avatar avatar-3"></span>
-                    <span class="speechAuthor">Читатель</span>
-                    – Антон Павлович, вот я что-то совсем не понимаю Войницкого. Вот он на протяжении всей пьесы
-                    жалуется на то, что он проворонил время, что не сделал в жизни ничего стоящего. Почему ему
-                    понадобилось именно убивать Серебрякова? И почему после всего этого он продолжил разбирать бумажки
-                    профессора? Почему он так ничего и не поменял в жизни?
-                </div>
+
 
                 <!-- Основная форма. Внимание на имя с префиксом -->
                 <div>
                     <form name="chehov-form-dv-29" action="http://activepads.com:8082/formDetector">
-                        <div class="speechBubble withAvatar mt-3 mb-3">
-                            <span class="avatar avatar-3"></span>
-                            <span class="speechAuthor">А. П. Чехов</span>
-                            <textarea name="dv29_area" id="dv29_area" cols="50" rows="4" placeholder="Введите ответ от имени Чехова:"></textarea>
-                            <input type="submit" name="dv29_submit" id="dv29_submit" class="btn btn-primary screenOnly w-100" value="Отправить">
-                        </div>
+                        <textarea name="dv29_area" id="dv29_area" class="form-control" required></textarea>
+                        <input type="submit" name="dv29_submit" id="dv29_submit"
+                            class="btn btn-primary screenOnly w-100" value="Отправить">
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- Подключаем бутстрап скрипты -->

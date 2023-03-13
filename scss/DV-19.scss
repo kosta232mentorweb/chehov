@@ -1,9 +1,3 @@
-ul {
-    li {
-        list-style: none;
-    }
-}
-
 form {
     display: flex;
     flex-direction: column;
@@ -16,10 +10,10 @@ form {
         align-items: center;
         border-radius: 12px;
         background-color: #fffdca;
-        margin-left: 60px;
+        margin-left: 40px;
 
         legend {
-            margin-left: 65px;
+            margin-left: 45px;
         }
 
         textarea {
@@ -30,19 +24,4 @@ form {
             margin-bottom: 10px;
         }
     }
-}
-
-.figure-img.img-fluid {
-    width: 4cm;
-    margin-top: 20px;
-}
-
-.figure-caption.lh-1 {
-    width: 5cm;
-    font-weight: 400;
-}
-
-
-input {
-    margin-top: 20px;
 }

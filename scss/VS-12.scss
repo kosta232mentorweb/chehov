@@ -1,0 +1,27 @@
+textarea {
+    border-radius: 5px;
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.answer {
+    width: 70%;
+}
+
+select {
+    position: relative;
+    top: -20px;
+    left: 15px;
+}
+
+input {
+    margin-top: 10px;
+}
+.speechAuthor.printOnly {
+    border-top: 1px solid black;
+    width: 200px;
+    margin-top: 5px;
+    text-align: end;
+    font-size: 10px;
+}

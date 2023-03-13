@@ -1,0 +1,22 @@
+legend {
+    font-size: 18px;
+}
+
+fieldset {
+    @media print {
+        page-break-inside: avoid;
+    }
+}
+
+ul {
+    list-style: none;
+
+    li {
+        margin-top: 10px;
+
+        span {
+            margin-left: 10px;
+        }
+
+    }
+}

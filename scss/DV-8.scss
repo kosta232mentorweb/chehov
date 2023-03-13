@@ -1,3 +1,52 @@
-table {
-    border: 1px solid black;
+.dv8-task-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    table {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    span {
+        align-self: flex-start;
+    }
+
+    .dv8-form-wrapper {
+        margin-top: 20px;
+        word-spacing: 5px;
+
+        fieldset {
+            border-radius: 12px;
+            background-color: #fffdca;
+
+            legend {
+                margin-left: 20px;
+            }
+
+            input {
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: 1px solid black;
+                text-align: center;
+                outline: none;
+                margin-left: 10px;
+                background-color: #fffdca;
+
+
+                &::placeholder {
+                    font-style: italic;
+                    text-align: center;
+                    position: relative;
+
+                    @media print {
+                        font-size: 30%;
+                        bottom: -5px;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
 }

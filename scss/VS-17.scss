@@ -1,0 +1,63 @@
+form {
+    margin-top: 10px;
+
+    textarea {
+        height: 100px;
+    }
+
+    input {
+        margin-top: 10px;
+    }
+}
+
+.letter {
+    display: grid;
+    grid-template-columns: 12% 1fr;
+    grid-column-gap: 20px;
+    border: 1px solid #ddd;
+
+    .left-pane {
+        background-image: url(../images/VS-17/gmail-left-pane.JPG);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #f6f7f9;
+    }
+
+    .right-pane {
+
+        .mail-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .speechAuthor {
+                width: 80px;
+            }
+
+            .date {
+                font-size: 14px;
+                color: #777;
+                margin-right: 20px;
+            }
+        }
+
+        .recipient {
+            display: block;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .text {
+            display: flex;
+            justify-content: center;
+
+            p {
+                margin-top: 20px;
+                width: 85%;
+                font-size: 14px;
+            }
+        }
+    }
+
+}
