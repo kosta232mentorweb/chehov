@@ -4,6 +4,8 @@
     position: relative;
     margin-bottom: 60px;
 
+
+
     .speechBubble {
         position: absolute;
         top: 30px;
@@ -18,6 +20,24 @@
         border: 1px solid black;
         border-radius: 1rem;
         padding: 5px;
+    }
+}
+
+.twitter-header:before {
+    background-image: url(../images/DV-18/Twitter-Logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    width: 100%;
+    height: 80%;
+    content: '';
+    position: absolute;
+    margin-top: 3px;
+}
+@media screen and (max-width:420px) {
+    .twitter-header:before {
+        height: 50%;
+        margin-top: 15px;
     }
 }
 
@@ -56,11 +76,13 @@
             font-size: 20px;
             font-weight: 500;
         }
-@media screen and (max-width:480px) {
-    p {
-        font-size: 14px;
-    }
-}
+
+        @media screen and (max-width:480px) {
+            p {
+                font-size: 14px;
+            }
+        }
+
         :nth-child(2) {
             font-weight: 700;
             border-bottom: 4px solid #0080ff;
@@ -72,7 +94,8 @@
     .answer-Astrov {
         page-break-inside: avoid;
         box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
-        padding-bottom: 15px;
+        padding-bottom: 20px;
+
         .answer-header {
             display: flex;
 
@@ -81,13 +104,15 @@
                 font-weight: 500;
             }
         }
+
         .answer-footer {
             display: flex;
             justify-content: space-around;
             margin-top: 10px;
+
             svg {
-               width: 20px; 
-               opacity: 0.7;
+                width: 20px;
+                opacity: 0.7;
             }
         }
     }
