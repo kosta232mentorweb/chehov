@@ -1,72 +1,27 @@
 @import "variables/variables";
 
-.answerForm {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 
+table {
+    width: 100%;
 
-    .caption {
-        position: relative;
+    th,
+    td {
+        border: 1px solid gray;
+        padding: 8px;
+    }
 
-        &:before {
-            position: absolute;
-            top: 2px;
-            left: 4px;
-            font-weight: bold;
-            color: #aaa;
-            font-size: 70%;
+    thead tr {
+        height: 50px;
+    }
+
+    tr {
+        height: 100px;
+        width: 30%;
+        page-break-inside: avoid;
+
+        :first-child {
+            width: 30%;
         }
     }
 
-    .personas {
-        &:before {
-            content: 'Имя персонажа';
-        }
-
-		  margin-top: 12px;
-
-        flex-basis: 30%;
-    }
-
-    .characteristic {
-        &:before {
-            content: 'Цитата из текста';
-        }
-
-        flex-basis: 70%;
-    }
-
-
-    @media (max-width: $tabletWidth) {
-
-        .personas {
-            flex-basis: 100%;
-        }
-
-        .characteristic {
-            flex-basis: 100%;
-        }
-    }
-
-    @media print {
-
-        .personas {
-            flex-basis: 30%;
-        }
-
-        .characteristic {
-            flex-basis: 70%;
-        }
-        textarea {
-    
-            height: 3.7cm;
-        }
-    }
-
-    textarea {
-        width: 100%;
-        padding-top: 20px;
-    }
 }
-

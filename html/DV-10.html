@@ -28,8 +28,8 @@
     <!-- Navbar и боковое меню -->
     <nav class="navbar navbar-dark bg-dark fixed-top screenOnly chehov-navbar">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html#"><img src="../images/chatbooklogo.svg" width="48" alt="BOOKaaS logo"
-                    class="chatbooklogo"></a>
+            <a class="navbar-brand" href="../index.html#"><img src="../images/chatbooklogo.svg" width="48"
+                    alt="BOOKaaS logo" class="chatbooklogo"></a>
             <a class="navbar-brand" href="#">Задание ДВ-10</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasLightNavbar" aria-controls="offcanvasLightNavbar">
@@ -115,42 +115,94 @@
                         Сейчас отвечу на вопрос:
                     </div>
                 </div>
+                <table class="printOnly mt-5">
+                    <thead>
+                        <tr>
+                            <th>Имя персонажа</th>
+                            <th>Цитата из текста</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
                 <!-- Основная форма. Внимание на имя с префиксом -->
                 <form name="chehov-form-dv-10" action="http://activepads.com:8082/formDetector">
-                    <div class="mt-3 mb-3">
-                        <div class="answerForm">
-                            <div class="caption personas">
-                                <textarea name="personas-vs-21" rows="2"></textarea>
-                            </div>
-                            <div class="caption characteristic">
-                                <textarea name="characteristic-vs-21" rows="2"></textarea>
-                            </div>
-
-                            <div class="caption personas">
-                                <textarea name="personas-vs-21" rows="2"></textarea>
-                            </div>
-                            <div class="caption characteristic">
-                                <textarea name="characteristic-vs-21" rows="2"></textarea>
-                            </div>
-
-                            <div class="caption personas">
-                                <textarea name="personas-vs-21" rows="2"></textarea>
-                            </div>
-                            <div class="caption characteristic">
-                                <textarea name="characteristic-vs-21" rows="2"></textarea>
-                            </div>
-
-                            <div class="caption personas">
-                                <textarea name="personas-vs-21" rows="2"></textarea>
-                            </div>
-                            <div class="caption characteristic">
-                                <textarea name="characteristic-vs-21" rows="2"></textarea>
-                            </div>
-                        </div>
+                    <div class="mt-3 mb-3 screenOnly">
+                        <fieldset class="form-group border p-2 pb-2 answer">
+                            <legend class="w-100 px-2 pb-2">Выберите персонажа, который держал в руках пистолет.
+                            </legend>
+                            <select class="mb-2 form-select screenOnly" aria-label="Default select example" name="pers1"
+                                id="pers1" required>
+                                <option hidden disabled selected value>Выберите персонажа</option>
+                                <option value="Мария Васильевна">Мария Васильевна</option>
+                                <option value="Астров">Астров</option>
+                                <option value="Елена Андреевна">Елена Андреевна</option>
+                                <option value="Соня">Соня</option>
+                                <option value="Войницкий">Войницкий</option>
+                                <option value="Серебряков">Серебряков</option>
+                                <div class="caption personas">
+                                    <textarea name="answer-1-dv-10" class="form-control"
+                                        placeholder="Введите цитату из текста." rows="2" required></textarea>
+                                </div>
+                            </select>
+                        </fieldset>
                     </div>
-                    <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
-
+                    <div class="mb-3 screenOnly">
+                        <fieldset class="form-group border p-2 pb-2 answer">
+                            <legend class="w-100 px-2 pb-2">Выберите персонажа, который держал в руках пистолет.
+                            </legend>
+                            <select class="mb-2 form-select screenOnly" aria-label="Default select example" name="pers2"
+                                id="pers2">
+                                <option hidden disabled selected value>Выберите персонажа</option>
+                                <option value="Мария Васильевна">Мария Васильевна</option>
+                                <option value="Астров">Астров</option>
+                                <option value="Елена Андреевна">Елена Андреевна</option>
+                                <option value="Соня">Соня</option>
+                                <option value="Войницкий">Войницкий</option>
+                                <option value="Серебряков">Серебряков</option>
+                                <div class="caption personas">
+                                    <textarea name="answer-2-dv-10" class="form-control"
+                                        placeholder="Введите цитату из текста." rows="2"></textarea>
+                                </div>
+                            </select>
+                        </fieldset>
+                    </div>
+                    <div class="mb-3 screenOnly">
+                        <fieldset class="form-group border p-2 pb-2 answer">
+                            <legend class="w-100 px-2 pb-2">Выберите персонажа, который держал в руках пистолет.
+                            </legend>
+                            <select class="mb-2 form-select screenOnly" aria-label="Default select example" name="pers3"
+                                id="pers3">
+                                <option hidden disabled selected value>Выберите персонажа</option>
+                                <option value="Мария Васильевна">Мария Васильевна</option>
+                                <option value="Астров">Астров</option>
+                                <option value="Елена Андреевна">Елена Андреевна</option>
+                                <option value="Соня">Соня</option>
+                                <option value="Войницкий">Войницкий</option>
+                                <option value="Серебряков">Серебряков</option>
+                                <div class="caption personas">
+                                    <textarea name="answer-3-dv-10" class="form-control"
+                                        placeholder="Введите цитату из текста." rows="2"></textarea>
+                                </div>
+                            </select>
+                        </fieldset>
+                        <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
+                    </div>
                 </form>
+
             </div>
         </div>
     </div>
