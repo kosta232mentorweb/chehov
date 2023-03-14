@@ -3,17 +3,19 @@
 }
 
 .cyrilic li:nth-child(1)::before {
-    content: 'а)';
+    content: 'а) ';
 }
 
 .cyrilic li:nth-child(2)::before {
-    content: 'б)';
+    content: 'б) ';
 }
 
 .cyrilic li:nth-child(3)::before {
-    content: 'в)';
+    content: 'в) ';
 }
 .image-container {
     width: 100%;
     overflow-x: auto;
+	 border-radius: 12px;
+	 border: 1px solid #ddd;
 }
