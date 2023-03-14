@@ -1,36 +1,36 @@
-table {
-    width: 100%;
-    border-radius: 12px;
+// table {
+//     width: 100%;
+//     border-radius: 12px;
  
-    th,
-    td {
-       border: 1px solid gray;
-       padding: 8px;
-       // text-align: center;
-    }
+//     th,
+//     td {
+//        border: 1px solid gray;
+//        padding: 8px;
+//        // text-align: center;
+//     }
  
-    tr {
-       height: 250px;
-       page-break-inside: avoid;
-    }
+//     tr {
+//        height: 250px;
+//        page-break-inside: avoid;
+//     }
  
-    td {
-       width: 10%;
-    }
+//     td {
+//        width: 10%;
+//     }
  
-    thead>tr {
-       height: 50px;
-    }
+//     thead>tr {
+//        height: 50px;
+//     }
  
-    thead>tr>th,
-    tbody>tr>td {
-       width: 100px;
-    }
- }
+//     thead>tr>th,
+//     tbody>tr>td {
+//        width: 100px;
+//     }
+//  }
  
 
- .container.chehov-main-container fieldset {
-    border-radius: 12px;
-    background-color: #fffdca;
-    border: none !important;
- }
+//  .container.chehov-main-container fieldset {
+//     border-radius: 12px;
+//     background-color: #fffdca;
+//     border: none !important;
+//  }
