@@ -1,85 +1,97 @@
 .dv-14-form-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 10px;
 
-    div {
-        display: flex;
-        align-items: baseline;
-        justify-content: center;
+	div {
+		display: flex;
+		align-items: baseline;
+		justify-content: center;
 
-        @media (max-width: 533px) {
-            flex-direction: column;
-        }
+		@media (max-width: 533px) {
+			flex-direction: column;
+		}
 
-        div {
-            display: flex;
+		div {
+			display: flex;
 
-            @media (max-width: 533px) {
-                width: 100%;
-                flex-direction: row;
-            }
+			@media (max-width: 533px) {
+				width: 100%;
+				flex-direction: row;
+			}
 
 
-            &:nth-child(2) {
-                margin-left: 10px;
+			&:nth-child(2) {
+				margin-left: 10px;
 
-                @media (max-width: 533px) {
-                    justify-content: start;
-                }
+				@media (max-width: 533px) {
+					justify-content: start;
+				}
 
-                label {
-                    margin-left: 5px;
-                }
-            }
-        }
+				label {
+					margin-left: 5px;
+				}
+			}
+		}
 
-        &:not(:first-of-type) {
-            margin-top: 15px;
-        }
+		&:not(:first-of-type) {
+			margin-top: 15px;
+		}
 
-        &:last-of-type {
-            padding-right: 8px;
-        }
+		&:last-of-type {
+			padding-right: 8px;
+		}
 
-        label {
-            &:nth-of-type(1) {
-                margin-right: 10px;
-            }
+		label {
+			&:nth-of-type(1) {
+				margin-right: 10px;
+			}
 
-            &:nth-of-type(2) {
-                margin-left: 5px;
-            }
-        }
+			&:nth-of-type(2) {
+				margin-left: 5px;
+			}
+		}
 
-        input {
+		input {
 
-            &:nth-of-type(2) {
-                margin-left: 20px;
-            }
-        }
-    }
+			&:nth-of-type(2) {
+				margin-left: 20px;
+			}
+		}
+	}
 
-    fieldset {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-radius: 12px;
-        background-color: #fffdca;
+	fieldset {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border-radius: 12px;
+		background-color: #fffdca;
 
-        legend {
-            text-align: start;
-            margin-left: 40px;
-        }
+		legend {
+			text-align: start;
+			margin-left: 40px;
+		}
 
-        textarea {
-            border-radius: 5px;
-            padding: 12px 20px;
-            resize: none;
-            border: 1px solid #ddd;
+		textarea {
+			border-radius: 5px;
+			padding: 12px 20px;
+			resize: none;
+			border: 1px solid #ddd;
 
-        }
-    }
+		}
+	}
 
+}
+
+[name="chehov-form-dv-14"] {
+	div div .form-control {
+		width: 90%;
+		display: inline;
+	}
+
+	fieldset {
+		border-radius: 12px;
+		background-color: #fffdca;
+	}
 }
