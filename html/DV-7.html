@@ -120,7 +120,7 @@
 								<li>Знакомая</li>
 								<li>Одноклассница</li>
 							</ol>
-						</div> 
+						</div>
 					</div>
 					<!-- <div id="links"></div> -->
 					<div class="speechBubble question withAvatar mt-5 answer right">
@@ -135,9 +135,8 @@
 						</div>
 
 						<!-- Основная форма. Внимание на имя с префиксом -->
-						<form name="chehov-form-dv-7" class="mt-3 screenOnly"
-							action="http://activepads.com:8082/formDetector">
-							<fieldset class="form-group px-2 pt-0 pb-3">
+						<form name="chehov-form-dv-7" class="mt-3 " action="http://activepads.com:8082/formDetector">
+							<fieldset class="form-group px-2 pt-0 pb-3 screenOnly">
 								<!-- <div> -->
 								«Женщина может быть другом мужчины только под таким условием: сначала
 								<select name="first-dv-7" required>
@@ -178,18 +177,20 @@
 								</select>».
 								<!-- </div> -->
 								<!-- <div class="mt-3"> -->
-								Последовательность придумал
-								<select name="author-dv-7" required>
-									<option hidden disabled selected value>Выберите:</option>
-									<option value="Михаил Иванович">Михаил Иванович</option>
-									<option value="Иван Михайлович">Иван Михайлович</option>
-									<option value="Федор Иванович">Федор Иванович</option>
-									<option value="Иван Федорович">Иван Федорович</option>
-									<option value="Александр Сергеевич">Александр Сергеевич</option>
-									<option value="Сергеевич Александр">Сергеевич Александр</option>
-								</select>
-								<!-- </div> -->
 							</fieldset>
+							<div class="mt-3">
+								<label for="author-dv-7" class="form-label">
+									Последовательность придумал:
+								</label>
+								<input class="form-control" name="author-dv-7" id="author-dv-7" required>
+							</div>
+							<div class="mt-3">
+								<label for="opinion-dv-7" class="form-label">
+									Мнение:
+								</label>
+								<textarea class="form-control" name="opinion-dv-7" id="opinion-dv-7" required></textarea>
+							</div>
+							<!-- </div> -->
 					</div>
 				</div>
 				<input type="submit" value="Отправить результаты" class="mt-3 btn btn-primary screenOnly w-100">
