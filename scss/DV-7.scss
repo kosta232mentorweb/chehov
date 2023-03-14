@@ -1,36 +1,22 @@
-// table {
-//     width: 100%;
-//     border-radius: 12px;
- 
-//     th,
-//     td {
-//        border: 1px solid gray;
-//        padding: 8px;
-//        // text-align: center;
-//     }
- 
-//     tr {
-//        height: 250px;
-//        page-break-inside: avoid;
-//     }
- 
-//     td {
-//        width: 10%;
-//     }
- 
-//     thead>tr {
-//        height: 50px;
-//     }
- 
-//     thead>tr>th,
-//     tbody>tr>td {
-//        width: 100px;
-//     }
-//  }
- 
+select {
+	padding: 2px 4px;
+	border-radius: 4px;
+	font-weight: 600;
 
-//  .container.chehov-main-container fieldset {
-//     border-radius: 12px;
-//     background-color: #fffdca;
-//     border: none !important;
-//  }
+	outline: none;
+
+	border: 1px solid lightgrey;
+
+	option {
+		font-weight: 600;
+	}
+}
+
+fieldset {
+	line-height: 2;
+}
+
+.printOnly input {
+	width: 5cm !important;
+	height: 0.7cm !important;
+}

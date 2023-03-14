@@ -108,90 +108,87 @@
 						Установите последовательность дружбы женщины и мужчины, объяснённую одним из персонажей. Кто из
 						персонажей
 						придумал эту последовательность и что такое мнение говорит про него?
+						<div class="printOnly">
+							<ol>
+								<li>Жена</li>
+								<li>Друг</li>
+								<li>Незнакомка</li>
+								<li>Коллега</li>
+								<li>Враг</li>
+								<li>Любовница</li>
+								<li>Приятель</li>
+								<li>Знакомая</li>
+								<li>Одноклассница</li>
+							</ol>
+						</div> 
 					</div>
 					<!-- <div id="links"></div> -->
-					<!-- <div>
-						<ol>
-							<li>Жена</li>
-							<li>Друг</li>
-							<li>Незнакомка</li>
-							<li>Коллега</li>
-							<li>Враг</li>
-							<li>Любовница</li>
-							<li>Приятель</li>
-							<li>Знакомая</li>
-							<li>Одноклассница</li>
-						</ol>
-					</div> -->
 					<div class="speechBubble question withAvatar mt-5 answer right">
 						<span class="avatarCircle"></span>
 						<span class="avatar avatar-20"></span>
 						<span class="speechAuthor">Я</span>
 						<!-- Для печати -->
-						<div class="row printOnly">
-							«Женщина может быть другом мужчины только под таким условием: сначала
-							<input list="choice" name="First" type="text" required>
-							, потом
-							<input list="choice" name="Second" type="text" required>
-							, а затем уж
-							<input list="choice" name="Third" type="text" required>
-							».
+						<div class="printOnly px-2 py-4" style="line-height: 2;">
+							«Женщина может быть другом мужчины только под таким условием: сначала <input type="text">, потом
+							<input type="text">, а затем уж <input type="text">».<br>
+							Последовательность придумал <input type="text">.
 						</div>
 
 						<!-- Основная форма. Внимание на имя с префиксом -->
 						<form name="chehov-form-dv-7" class="mt-3 screenOnly"
 							action="http://activepads.com:8082/formDetector">
 							<fieldset class="form-group px-2 pt-0 pb-3">
-								<div style="line-height: 2;">
-									«Женщина может быть другом мужчины только под таким условием: сначала
-									<select name="first-dv-7" required>
-										<option hidden disabled selected value>Выберите:</option>
-										<option value="жена">жена</option>
-										<option value="друг">друг</option>
-										<option value="незнакомка">незнакомка</option>
-										<option value="коллега">коллега</option>
-										<option value="враг">враг</option>
-										<option value="любовница">любовница</option>
-										<option value="приятель">приятель</option>
-										<option value="знакомая">знакомая</option>
-										<option value="одноклассница">одноклассница</option>
-									</select>, потом
-									<select name="second-dv-7" required>
-										<option hidden disabled selected value>Выберите:</option>
-										<option value="жена">жена</option>
-										<option value="друг">друг</option>
-										<option value="незнакомка">незнакомка</option>
-										<option value="коллега">коллега</option>
-										<option value="враг">враг</option>
-										<option value="любовница">любовница</option>
-										<option value="приятель">приятель</option>
-										<option value="знакомая">знакомая</option>
-										<option value="одноклассница">одноклассница</option>
-									</select>, а затем уж
-									<select name="third-dv-7" required>
-										<option hidden disabled selected value>Выберите:</option>
-										<option value="жена">жена</option>
-										<option value="друг">друг</option>
-										<option value="незнакомка">незнакомка</option>
-										<option value="коллега">коллега</option>
-										<option value="враг">враг</option>
-										<option value="любовница">любовница</option>
-										<option value="приятель">приятель</option>
-										<option value="знакомая">знакомая</option>
-										<option value="одноклассница">одноклассница</option>
-									</select>».
-								</div>
-								<div class="mt-3">Последовательность придумал 
-									<select name="author-dv-7" required>
-										<option hidden disabled selected value>Выберите:</option>
-										<option value="Михаил Иванович">Михаил Иванович</option>
-										<option value="Иван Михайлович">Иван Михайлович</option>
-										<option value="Федор Иванович">Федор Иванович</option>
-										<option value="Иван Федорович">Иван Федорович</option>
-										<option value="Александр Сергеевич">Александр Сергеевич</option>
-										<option value="Сергеевич Александр">Сергеевич Александр</option>
-									</select>
-								</div>
+								<!-- <div> -->
+								«Женщина может быть другом мужчины только под таким условием: сначала
+								<select name="first-dv-7" required>
+									<option hidden disabled selected value>Выберите:</option>
+									<option value="жена">жена</option>
+									<option value="друг">друг</option>
+									<option value="незнакомка">незнакомка</option>
+									<option value="коллега">коллега</option>
+									<option value="враг">враг</option>
+									<option value="любовница">любовница</option>
+									<option value="приятель">приятель</option>
+									<option value="знакомая">знакомая</option>
+									<option value="одноклассница">одноклассница</option>
+								</select>, потом
+								<select name="second-dv-7" required>
+									<option hidden disabled selected value>Выберите:</option>
+									<option value="жена">жена</option>
+									<option value="друг">друг</option>
+									<option value="незнакомка">незнакомка</option>
+									<option value="коллега">коллега</option>
+									<option value="враг">враг</option>
+									<option value="любовница">любовница</option>
+									<option value="приятель">приятель</option>
+									<option value="знакомая">знакомая</option>
+									<option value="одноклассница">одноклассница</option>
+								</select>, а затем уж
+								<select name="third-dv-7" required>
+									<option hidden disabled selected value>Выберите:</option>
+									<option value="жена">жена</option>
+									<option value="друг">друг</option>
+									<option value="незнакомка">незнакомка</option>
+									<option value="коллега">коллега</option>
+									<option value="враг">враг</option>
+									<option value="любовница">любовница</option>
+									<option value="приятель">приятель</option>
+									<option value="знакомая">знакомая</option>
+									<option value="одноклассница">одноклассница</option>
+								</select>».
+								<!-- </div> -->
+								<!-- <div class="mt-3"> -->
+								Последовательность придумал
+								<select name="author-dv-7" required>
+									<option hidden disabled selected value>Выберите:</option>
+									<option value="Михаил Иванович">Михаил Иванович</option>
+									<option value="Иван Михайлович">Иван Михайлович</option>
+									<option value="Федор Иванович">Федор Иванович</option>
+									<option value="Иван Федорович">Иван Федорович</option>
+									<option value="Александр Сергеевич">Александр Сергеевич</option>
+									<option value="Сергеевич Александр">Сергеевич Александр</option>
+								</select>
+								<!-- </div> -->
 							</fieldset>
 					</div>
 				</div>
