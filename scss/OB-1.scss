@@ -1,12 +1,15 @@
 @import "variables/variables";
 
 .answerForm {
-   display: flex;
-   flex-wrap: wrap;
-   // grid-template-columns: 2fr 1fr 2fr;
-   // column-gap: 12px;
-   //  flex-direction: row;
-   justify-content: space-between;
+	
+	> div {
+		display: flex;
+		flex-wrap: wrap;
+		// grid-template-columns: 2fr 1fr 2fr;
+		// column-gap: 12px;
+		//  flex-direction: row;
+		justify-content: space-between;
+	}
 
 
    .caption {
