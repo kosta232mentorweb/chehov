@@ -68,12 +68,15 @@
       // grid-template-columns: 2fr 1fr;
       // grid-template-rows: 1fr 1fr;
 
+      textarea{
+         height: 67mm;
+      }
       .title {
-         flex-basis: 40%;
+         flex-basis: 30%;
       }
 
       .personas {
-         flex-basis: 20%;
+         flex-basis: 30%;
       }
 
       .characteristic {
