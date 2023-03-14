@@ -1,57 +1,92 @@
 .letter {
-    background-image: url('../images/letter.png');
-    background-size: 100% auto;
-    border: 1px solid black;
-    margin-bottom: 5%;
-    padding: 3%;
-    
-}
-.manuscript {
-    font-size: large;
-    font-family: cursive;
- 
-}
-.right{
-    text-align: right;
+   display: block;
+   position: relative;
+   margin-bottom: 5%;
+   padding: 3%;
+   border: 1px solid black;
+
 
 }
-.link{
-    margin-top: -5%;
+
+.letter::after {
+   content: "";
+   background-image: url('../images/letter.png');
+   opacity: 0.5;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   position: absolute;
+   z-index: -1;
+   background-size: 100% auto;
+
+
+
 }
+
+.manuscript {
+   font-size: large;
+   font-family: cursive;
+
+}
+
+.right {
+   text-align: right;
+
+}
+
+.link {
+   margin-top: -5%;
+}
+
 table {
-    width: 100%;
-    border-radius: 12px;
-  
-    th,
-    td {
-       border: 1px solid gray;
-       padding: 8px;
-       // text-align: center;
-    }
-  
-    tr {
-       height: 250px;
-       page-break-inside: avoid;
-    }
-  
-    td {
-       width: 10%;
-    }
-  
-    thead>tr {
-       height: 50px;
-    }
-  
-    thead>tr>th,
-    tbody>tr>td {
-       width: 100px;
-    }
-  }
-  
-  
-  
-  .container.chehov-main-container fieldset {
-    border-radius: 12px;
-    background-color: #fffdca;
-    border: none !important;
-  }
+   width: 100%;
+   border-radius: 12px;
+
+   th,
+   td {
+      border: 1px solid gray;
+      padding: 8px;
+      // text-align: center;
+   }
+
+   tr {
+      height: 250px;
+      page-break-inside: avoid;
+   }
+
+   td {
+      width: 10%;
+   }
+
+   thead>tr {
+      height: 50px;
+   }
+
+   thead>tr>th,
+   tbody>tr>td {
+      width: 100px;
+   }
+}
+
+
+
+.container.chehov-main-container fieldset {
+   border-radius: 12px;
+   background-color: #fffdca;
+   border: none !important;
+}
+
+.smallTextLetter {
+   font-size: 70%;
+}
+
+.AnswerUserLetter {
+  border: 1px solid #ddd;
+   width: 500px;
+   height: 400px;
+   margin-left:auto;
+   margin-right: auto;
+
+
+}

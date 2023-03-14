@@ -1,33 +1,93 @@
 .tic-tac-toe {
-    width: 300px;
-    // border: 1px solid black;
-    margin: 1% auto 1% auto
+  width: 300px;
+  // border: 1px solid black;
+  margin: 1% auto 1% auto
 }
-.square{
+
+.square {
   width: 100px;
   height: 100px;
   padding: 0px 2px 0 2px;
 }
-.rightB{
+
+.rightB {
   border-right: 1px solid black;
 }
-.leftB{
+
+.leftB {
   border-left: 1px solid black;
 }
-.topB{
+
+.topB {
   border-top: 1px solid black;
 }
-.bottomB{
+
+.bottomB {
   border-bottom: 1px solid black;
 }
-  
-  
-  
-  .container.chehov-main-container fieldset {
-    border-radius: 12px;
-    background-color: #fffdca;
-    border: none !important;
-  }
-  .TicTacToe{
+
+
+
+.container.chehov-main-container fieldset {
+  border-radius: 12px;
+  background-color: #fffdca;
+  border: none !important;
+}
+
+.TicTacToe {
   margin-bottom: 5px;
-  }
+}
+
+.form_radio_btn {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.form_radio_btn input[type=radio] {
+  display: none;
+}
+
+.form_radio_btn label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0px 15px;
+  line-height: 34px;
+  border: 1px solid #fffdca;
+  border-radius: 6px;
+  user-select: none;
+  /* background-image: url(x.png); */
+}
+
+/* Checked */
+.form_radio_btn input[type=radio]:checked+label {
+  background: #ffe0a6;
+}
+
+/* Hover */
+.form_radio_btn label:hover {
+  color: #666;
+  border: 1px solid #999;
+}
+
+/* Disabled */
+.form_radio_btn input[type=radio]:disabled+label {
+  background: #efefef;
+  color: #666;
+}
+
+.leftBtn {
+  margin-left: 50%;
+}
+
+ol>li {
+  list-style-type: none;
+  counter-increment: item;
+  text-indent: -20px;
+}
+
+ol>li:before {
+  content: counter(item) ". ";
+  font-weight: bold;
+
+
+}
