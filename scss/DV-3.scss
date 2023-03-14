@@ -59,6 +59,8 @@
 
     background-color: rgb(224, 249, 245);
 
+   //  font-size:70%;
+
 }
 
 .example {
@@ -89,4 +91,9 @@
 
 fielset {
     page-break-inside: avoid !important;
+}
+
+
+legend {
+   font-size: 110%;
 }
