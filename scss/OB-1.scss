@@ -1,12 +1,15 @@
 @import "variables/variables";
 
 .answerForm {
-   display: flex;
-   flex-wrap: wrap;
-   // grid-template-columns: 2fr 1fr 2fr;
-   // column-gap: 12px;
-   //  flex-direction: row;
-   justify-content: space-between;
+	
+	> div {
+		display: flex;
+		flex-wrap: wrap;
+		// grid-template-columns: 2fr 1fr 2fr;
+		// column-gap: 12px;
+		//  flex-direction: row;
+		justify-content: space-between;
+	}
 
 
    .caption {
@@ -68,12 +71,15 @@
       // grid-template-columns: 2fr 1fr;
       // grid-template-rows: 1fr 1fr;
 
+      textarea{
+         height: 67mm;
+      }
       .title {
-         flex-basis: 40%;
+         flex-basis: 30%;
       }
 
       .personas {
-         flex-basis: 20%;
+         flex-basis: 30%;
       }
 
       .characteristic {
