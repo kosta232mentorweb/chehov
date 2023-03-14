@@ -138,4 +138,14 @@ table {
     border-radius: 12px;
     background-color: #fffdca;
     border: none !important;
+
+	 & > div {
+		page-break-inside: avoid;
+	 }
+
+	 textarea {
+		@media print {
+			height: 5cm;
+		}
+	 }
  }
