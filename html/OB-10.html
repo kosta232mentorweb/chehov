@@ -26,8 +26,8 @@
     <!-- Navbar и боковое меню -->
     <nav class="navbar navbar-dark bg-dark fixed-top screenOnly chehov-navbar">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html#"><img src="../images/chatbooklogo.svg" width="48" alt="BOOKaaS logo"
-                    class="chatbooklogo"></a>
+            <a class="navbar-brand" href="../index.html#"><img src="../images/chatbooklogo.svg" width="48"
+                    alt="BOOKaaS logo" class="chatbooklogo"></a>
             <a class="navbar-brand" href="#">Задание ОБ-10</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasLightNavbar" aria-controls="offcanvasLightNavbar">
@@ -120,9 +120,9 @@
                                 <div class="pic pic-8"></div>
                             </div>
                             <div class="mail-text">
-                                от: А. П. Чехова
-                                <br> кому: Ольге Книппер-Чеховой
-                                <br>Дата и место 10 апреля 1902 г. Ялта. <br> <br>
+                                <span>от:</span> А. П. Чехова
+                                <br> <span>кому:</span> Ольге Книппер&#8209;Чеховой
+                                <br><span>Дата и место:</span> 10 апреля 1902 г. Ялта. <br> <br>
                                 Приехал Немирович. Акушерку бери до Севастополя, приезжай одна, телеграфируй. Жду
                                 нетерпением.
                                 <br>
@@ -133,32 +133,33 @@
                             </div>
                         </div>
                     </div>
-                    <div class="speechBubble question withAvatar mt-5 answer  right">
-                        <span class="avatarCircle"></span>
-                        <span class="avatar avatar-20"></span>
-                        <span class="speechAuthor">Я</span>
-                        Сейчас отвечу на вопрос:
-                    </div>
+
                 </div>
                 <!-- Основная форма. Внимание на имя с префиксом -->
-
-                <form name="chehov-form-ob-10" action="http://activepads.com:8082/formDetector">
-                    <div class="mt-3 mb-3">
-
-                        <textarea name="answer-ob-10" id="answer" class="form-control" rows="10"></textarea>
-                        <div class="mail-pics answer-ob-10-container">
-                            <div class="pic pic-1"></div>
-                            <div class="pic pic-2"></div>
-                            <div class="pic pic-3"></div>
-                            <div class="pic pic-4"></div>
-                            <div class="pic pic-5"></div>
-                            <div class="pic pic-6"></div>
-                            <div class="pic pic-7"></div>
-                            <div class="pic pic-8"></div>
-                        </div>
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-5 answer right">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-17"></span>
+                        <span class="speechAuthor">О. Л. Книппер&#8209;Чехова</span>
+                        <form name="chehov-form-ob-10" action="http://activepads.com:8082/formDetector">
+                            <div class="mt-3 mb-3">
+                                <textarea name="answer-ob-10" id="answer" class="form-control" rows="10"
+                                    required>от: О. Л. Книппер-Чеховой&#10;кому: А. П. Чехову&#10;&#10; </textarea>
+                                <div class="mail-pics answer-ob-10-container">
+                                    <div class="pic pic-1"></div>
+                                    <div class="pic pic-2"></div>
+                                    <div class="pic pic-3"></div>
+                                    <div class="pic pic-4"></div>
+                                    <div class="pic pic-5"></div>
+                                    <div class="pic pic-6"></div>
+                                    <div class="pic pic-7"></div>
+                                    <div class="pic pic-8"></div>
+                                </div>
+                            </div>
+                            <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
+                        </form>
                     </div>
-                    <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
-                </form>
+                </div>
             </div>
         </div>
     </div>

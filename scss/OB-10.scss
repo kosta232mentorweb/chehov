@@ -1,7 +1,11 @@
 @media print {
     textarea {
-        height: 12cm;
+        height: 8cm;
     }
+}
+
+.speechBubble.right {
+    align-self: stretch;
 }
 
 .pic {
@@ -12,38 +16,39 @@
     width: 30px;
     height: 30px;
     margin-right: 10px;
+    opacity: .5;
 }
 
 .pic-1 {
-    background-image: url(//ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/format_color_text_baseline_nv700_20dp.png);
+    background-image: url(../images/OB-10/format_color_text_baseline_nv700_20dp.png);
 }
 
 .pic-2 {
-    background-image: url(//ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/attach_file_baseline_nv700_20dp.png);
+    background-image: url(../images/OB-10/attach_file_baseline_nv700_20dp.png);
 }
 
 .pic-3 {
-    background-image: url(//ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/link_baseline_nv700_20dp.png);
+    background-image: url(../images/OB-10/link_baseline_nv700_20dp.png);
 }
 
 .pic-4 {
-    background-image: url(//ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/mood_baseline_nv700_20dp.png);
+    background-image: url(../images/OB-10/mood_baseline_nv700_20dp.png);
 }
 
 .pic-5 {
-    background-image: url(//ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/drive_baseline_nv700_20dp.png);
+    background-image: url(../images/OB-10/drive_baseline_nv700_20dp.png);
 }
 
 .pic-6 {
-    background-image: url(//ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/image_baseline_nv700_20dp.png);
+    background-image: url(../images/OB-10/image_baseline_nv700_20dp.png);
 }
 
 .pic-7 {
-    background-image: url(//ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/lock_clock_baseline_nv700_20dp.png);
+    background-image: url(../images/OB-10/lock_clock_baseline_nv700_20dp.png);
 }
 
 .pic-8 {
-    background-image: url(//ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/ink_pen_baseline_nv700_20dp.png);
+    background-image: url(../images/OB-10/ink_pen_baseline_nv700_20dp.png);
 }
 
 .mail-container {
@@ -52,4 +57,8 @@
 
 .answer-ob-10-container {
     display: flex;
+}
+
+.mail-text span {
+    opacity: 0.5;
 }
