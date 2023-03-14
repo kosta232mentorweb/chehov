@@ -1,6 +1,6 @@
 @media print {
     textarea {
-        height: 12cm;
+        height: 8cm;
     }
 }
 
@@ -12,6 +12,7 @@
     width: 30px;
     height: 30px;
     margin-right: 10px;
+    opacity: .5;
 }
 
 .pic-1 {
@@ -52,4 +53,8 @@
 
 .answer-ob-10-container {
     display: flex;
+}
+
+.mail-text span {
+    opacity: 0.5;
 }
