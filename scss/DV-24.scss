@@ -25,15 +25,19 @@ form {
         textarea {
             border-radius: 5px;
             padding: 12px 20px;
-            resize: none;
+            // resize: none;
             border: 1px solid #ddd;
             margin-bottom: 10px;
+
+				@media print {
+					height: 7cm;
+				}
         }
     }
 }
 
 .figure-img.img-fluid {
-    width: 4cm;
+    width: 3cm;
     margin-top: 20px;
 }
 
