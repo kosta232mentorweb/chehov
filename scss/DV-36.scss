@@ -1,13 +1,14 @@
-
 .rateWithStars {
 	width: 270px;
 	height: 40px;
 	margin-right: 70px;
 }
-.rateWithStars:not(:checked) > input {
+
+.rateWithStars:not(:checked)>input {
 	display: none;
 }
-.rateWithStars:not(:checked) > label {
+
+.rateWithStars:not(:checked)>label {
 	float: right;
 	width: 42px;
 	padding: 0;
@@ -17,16 +18,17 @@
 	color: lightgrey;
 	text-shadow: 1px 1px #bbb;
 }
-.rateWithStars:not(:checked) > label:before {
+
+.rateWithStars:not(:checked)>label:before {
 	content: '★';
 }
 
-.rateWithStars > input:checked ~ label {
+.rateWithStars>input:checked~label {
 	color: gold;
 }
 
 .bigForPrint {
-    @media print {
-        height: 9cm;
-    }
+	@media print {
+		height: 9cm;
+	}
 }
