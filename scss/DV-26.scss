@@ -13,3 +13,10 @@
         height: 11cm;
     }
 }
+
+.playText {
+	width: 100%;
+	@media print {
+		width: 12cm;
+	}
+}
