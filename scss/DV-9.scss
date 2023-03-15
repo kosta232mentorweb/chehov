@@ -3,7 +3,6 @@
 	//  display: inline-block;
 	font-size: 10pt;
 	margin-top: 10px;
-
 	display: flex;
 
 	div {
@@ -47,10 +46,14 @@
 
 		border: 1px solid #7f7f7f;
 	}
-}
 
-.weight {
-	font-weight: 700;
+	.weight {
+		opacity: 1;
+	}
+
+	.opacityZero{
+		opacity: 0;
+	}
 }
 
 .square {
@@ -65,8 +68,16 @@
 	right: 0;
 	top: 30%;
 	z-index: -1;
+
+@media screen and (max-width: 500px) {
+	opacity: 0.3;
+}	
 }
 
 .wrapper {
 	position: relative;
+}
+
+.wordsToOneString{
+	display: inline-flex;
 }

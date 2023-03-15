@@ -32,8 +32,8 @@
 			<a class="navbar-brand" href="../index.html#"><img src="../images/chatbooklogo.svg" width="48"
 					alt="BOOKaaS logo" class="chatbooklogo"></a>
 			<a class="navbar-brand" href="#">Задание ДВ-9</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLightNavbar"
-				aria-controls="offcanvasLightNavbar">
+			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+				data-bs-target="#offcanvasLightNavbar" aria-controls="offcanvasLightNavbar">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasLightNavbar"
@@ -121,7 +121,8 @@
 				<!-- Основная форма. Внимание на имя с префиксом -->
 				<form name="chehov-form-dv-9" action="http://activepads.com:8082/formDetector">
 
-					<div class="wrapper">
+					<div class="wrapper" style="width: 100%;
+					overflow-x: auto;">
 						<div class="space">
 							<div><label for="n1">1</label><input type="text" name="n1" id="n1" autocomplete="off"></div>
 							<div><label for="n2">2</label><input type="text" name="n2" id="n2" autocomplete="off"></div>
@@ -133,102 +134,176 @@
 							<div><label for="n8">7</label><input type="text" name="n8" id="n8" autocomplete="off"></div>
 							<div><label for="n9">8</label><input type="text" name="n9" id="n9" autocomplete="off"></div>
 						</div>
+
 						<div class="space">
-							<input type="text" name="10" placeholder="9">
-							<input type="text" name="11" placeholder="2">
-							<input type="text" name="12" placeholder="1">
-							<input type="text" name="13" placeholder="7">
-							<input type="text" name="14" placeholder="10">
-							<input type="text" name="15" placeholder="11">
-							<input type="text" name="16" placeholder="10">
-							<input type="text" name="17" placeholder="8">
-							<input type="text" name="18" placeholder="12">
-							<input type="text" name="19" placeholder="9">
-							<input type="text" name="20" placeholder="10">
-							<input type="text" name="21" placeholder="13">
+							<div><label for="n10">9</label><input type="text" name="n10" id="n10" autocomplete="off">
+							</div>
+							<div><label for="n11">1</label><input type="text" name="n11" id="n11" autocomplete="off">
+							</div>
+							<div><label for="n12">1</label><input type="text" name="n12" id="n12" autocomplete="off">
+							</div>
+							<div><label for="n13">7</label><input type="text" name="n13" id="n13" autocomplete="off">
+							</div>
+							<div><label for="n14">10</label><input type="text" name="n14" id="n14" autocomplete="off">
+							</div>
+							<div><label for="n15">11</label><input type="text" name="n15" id="n15" autocomplete="off">
+							</div>
+							<div><label for="n16">10</label><input type="text" name="n16" id="n16" autocomplete="off">
+							</div>
+							<div><label for="n17">8</label><input type="text" name="n17" id="n17" autocomplete="off">
+							</div>
+							<div><label for="n18">12</label><input type="text" name="n18" id="n18" autocomplete="off">
+							</div>
+							<div><label for="n19">9</label><input type="text" name="n19" id="n19" autocomplete="off">
+							</div>
+							<div><label for="n20">10</label><input type="text" name="n20" id="n20" autocomplete="off">
+							</div>
+							<div><label for="n21">13</label><input type="text" name="n21" id="n21" autocomplete="off">
+							</div>
 						</div>
+
 						<div class="space">
-							<input type="text" name="22" placeholder="5">
-							<input type="text" name="23" placeholder="3">
-							<input type="text" name="24" placeholder="8">
-							<input type="text" name="25" placeholder="3">
-							<input type="text" name="26" placeholder="14">
-							<input type="text" name="27" placeholder="8">
-							<input type="text" name="28" placeholder="15">
-							<input type="text" name="29" placeholder="16">
-							<input type="text" name="30" placeholder="12">
-							<input type="text" name="31" placeholder="9">
+							<div><label for="n22">5</label><input type="text" name="n22" id="n22" autocomplete="off" required>
+							</div>
+							<div><label for="n23">3</label><input type="text" name="n23" id="n23" autocomplete="off" required>
+							</div>
+							<div><label for="n24">8</label><input type="text" name="n24" id="n24" autocomplete="off" required>
+							</div>
+							<div><label for="n25">3</label><input type="text" name="n25" id="n25" autocomplete="off" required>
+							</div>
+							<div><label for="n26">14</label><input type="text" name="n26" id="n26" autocomplete="off" required>
+							</div>
+							<div><label for="n27">8</label><input type="text" name="n27" id="n27" autocomplete="off" required>
+							</div>
+							<div><label for="n28">15</label><input type="text" name="n28" id="n28" autocomplete="off" required>
+							</div>
+							<div><label for="n29">16</label><input type="text" name="n29" id="n29" autocomplete="off" required>
+							</div>
+							<div><label for="n30">12</label><input type="text" name="n30" id="n30" autocomplete="off" required>
+							</div>
+							<div><label for="n31">9</label><input type="text" name="n31" id="n31" autocomplete="off" required>
+							</div>
 						</div>
+
 						<div class="space">
-							<input class="weight" type="text" name="32" value="у" readonly>
-							<input type="text" name="33" placeholder="13">
-							<input type="text" name="34" placeholder="3">
-							<input type="text" name="35" placeholder="6">
-							<input type="text" name="36" placeholder="1">
-							<input type="text" name="37" placeholder="15">
+							<div class="weight"><label for="n32" class="opacityZero">0</label><input type="text"
+									name="n32" value="у" readonly></div>
+							<div><label for="n33">13</label><input type="text" name="n33" id="n33" autocomplete="off" required>
+							</div>
+							<div><label for="n34">3</label><input type="text" name="n34" id="n34" autocomplete="off" required>
+							</div>
+							<div><label for="n35">6</label><input type="text" name="n35" id="n35" autocomplete="off" required>
+							</div>
+							<div><label for="n36">1</label><input type="text" name="n36" id="n36" autocomplete="off" required>
+							</div>
+							<div><label for="n37">15</label><input type="text" name="n37" id="n37" autocomplete="off" required>
+							</div>
 						</div>
-						<div class="space">
-							<input type="text" name="38" placeholder="9">
-							<input type="text" name="39" placeholder="12">
-							<input type="text" name="40" placeholder="14">
-							<input type="text" name="41" placeholder="2">
-							<input type="text" name="42" placeholder="1">
+
+						<div class="space wordsToOneString">
+							<div><label for="n38">9</label><input type="text" name="n38" id="n38" autocomplete="off" required>
+							</div>
+							<div><label for="n39">12</label><input type="text" name="n39" id="n39" autocomplete="off" required>
+							</div>
+							<div><label for="n40">14</label><input type="text" name="n40" id="n40" autocomplete="off" required>
+							</div>
+							<div><label for="n41">2</label><input type="text" name="n41" id="n41" autocomplete="off" required>
+							</div>
+							<div><label for="n42">1</label><input type="text" name="n42" id="n42" autocomplete="off" required>
+							</div>
 						</div>
+
 						<div class="square"></div>
-						<div class="space">
-							<input type="text" name="43" placeholder="5">
-							<input class="weight" type="text" name="44" value="ы">
-							<input type="text" name="45" placeholder="6">
-						</div>
-						<div class="space">
-							<input type="text" name="46" placeholder="7">
-							<input class="weight" type="text" name="47" value="ь">
-							<input type="text" name="48" placeholder="15">
-							<input type="text" name="49" placeholder="13">
-							<input type="text" name="50" placeholder="4">
-							<input type="text" name="51" placeholder="1">
-						</div>
-						<div class="space">
-							<input class="weight" type="text" name="52" value="г">
-							<input type="text" name="53" placeholder="3">
-							<input type="text" name="54" placeholder="8">
-							<input type="text" name="55" placeholder="8">
-						</div>
-						<div class="space">
-							<input class="weight" type="text" name="56" value="п">
-							<input type="text" name="57" placeholder="8">
-							<input type="text" name="58" placeholder="12">
-							<input class="weight" type="text" name="59" value="ф">
-							<input type="text" name="60" placeholder="3">
-							<input type="text" name="61" placeholder="5">
-							<input type="text" name="62" placeholder="5">
-							<input type="text" name="63" placeholder="12">
-							<input type="text" name="64" placeholder="8">
-						</div>
-						<div class="space">
-							<input type="text" name="65" placeholder="5">
-							<input class="weight" type="text" name="66" value="у">
-							<input type="text" name="67" placeholder="11">
-							<input type="text" name="68" placeholder="1">
-							<input type="text" name="69" placeholder="5">
-							<input class="weight" type="text" name="70" value="ш">
-							<input type="text" name="71" placeholder="3">
-							<input type="text" name="72" placeholder="7">
-							<input class="weight" type="text" name="73" value="ш">
-							<input type="text" name="74" placeholder="10">
-							<input class="weight" type="text" name="75" value="й">
-						</div>
-					</div>
 
-					<div class="mt-3">
-						<label for="personByDV" class="form-label">
-							Имя персонажа:
-						</label>
-						<input class="form-control" name="personByDV" id="personByDV" required autocomplete="off">
-					</div>
+						<div class="space wordsToOneString">
+							<div><label for="n43">5</label><input type="text" name="n43" id="n43" autocomplete="off" required>
+							</div>
+							<div class="weight"><label for="n44" class="opacityZero">0</label><input class="weight"
+									type="text" name="n44" value="ы" readonly></div>
+							<div><label for="n45">6</label><input type="text" name="n45" id="n45" autocomplete="off" required>
+							</div>
+						</div>
 
+						<div class="space">
+							<div><label for="n46">7</label><input type="text" name="n46" id="n46" autocomplete="off" required>
+							</div>
+							<div class="weight"><label for="n47" class="opacityZero">0</label><input class="weight"
+									type="text" name="n47" value="ь" readonly></div>
+							<div><label for="n48">15</label><input type="text" name="n48" id="n48" autocomplete="off" required>
+							</div>
+							<div><label for="n49">13</label><input type="text" name="n49" id="n49" autocomplete="off" required>
+							</div>
+							<div><label for="n50">4</label><input type="text" name="n50" id="n50" autocomplete="off" required>
+							</div>
+							<div><label for="n51">1</label><input type="text" name="n51" id="n51" autocomplete="off" required>
+							</div>
+						</div>
 
-					<input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100 mt-3">
+						<div class="space">
+							<div class="weight"><label for="n52" class="opacityZero">0</label><input class="weight"
+									type="text" name="n52" value="г" readonly></div>
+							<div><label for="n53">3</label><input type="text" name="n53" id="n53" autocomplete="off" required>
+							</div>
+							<div><label for="n54">8</label><input type="text" name="n54" id="n54" autocomplete="off" required>
+							</div>
+							<div><label for="n55">8</label><input type="text" name="n55" id="n55" autocomplete="off" required>
+							</div>
+						</div>
+
+						<div class="space">
+							<div class="weight"><label for="n56" class="opacityZero">0</label><input class="weight"
+									type="text" name="n56" value="п" readonly></div>
+							<div><label for="n57">8</label><input type="text" name="n57" id="n57" autocomplete="off" required>
+							</div>
+							<div><label for="n58">12</label><input type="text" name="n58" id="n58" autocomplete="off" required>
+							</div>
+							<div class="weight"><label for="n59" class="opacityZero">0</label><input class="weight"
+									type="text" name="n59" value="ф" readonly></div>
+							<div><label for="n60">3</label><input type="text" name="n60" id="n60" autocomplete="off" required>
+							</div>
+							<div><label for="n61">5</label><input type="text" name="n61" id="n61" autocomplete="off" required>
+							</div>
+							<div><label for="n62">5</label><input type="text" name="n62" id="n62" autocomplete="off" required>
+							</div>
+							<div><label for="n63">12</label><input type="text" name="n63" id="n63" autocomplete="off" required>
+							</div>
+							<div><label for="n64">8</label><input type="text" name="n64" id="n64" autocomplete="off" required>
+							</div>
+						</div>
+
+						<div class="space">
+							<div><label for="n65">5</label><input type="text" name="n65" id="n65" autocomplete="off" required>
+							</div>
+							<div class="weight"><label for="n66" class="opacityZero">0</label><input class="weight"
+									type="text" name="n66" value="у" readonly></div>
+							<div><label for="n67">11</label><input type="text" name="n67" id="n67" autocomplete="off" required>
+							</div>
+							<div><label for="n68">1</label><input type="text" name="n68" id="n68" autocomplete="off" required>
+							</div>
+							<div><label for="n69">5</label><input type="text" name="n69" id="n69" autocomplete="off" required>
+							</div>
+							<div class="weight"><label for="n70" class="opacityZero">0</label><input class="weight"
+									type="text" name="n70" value="ш" readonly></div>
+							<div><label for="n71">3</label><input type="text" name="n71" id="n71" autocomplete="off" required>
+							</div>
+							<div><label for="n72">7</label><input type="text" name="n72" id="n72" autocomplete="off" required>
+							</div>
+							<div class="weight"><label for="n73" class="opacityZero">0</label><input class="weight"
+									type="text" name="n73" value="ш" readonly></div>
+							<div><label for="n74">10</label><input type="text" name="n74" id="n74" autocomplete="off" required>
+							</div>
+							<div class="weight"><label for="n75" class="opacityZero">0</label><input class="weight"
+									type="text" name="n75" value="й" readonly></div>
+						</div>
+
+						<div class="mt-3">
+							<label for="personByDV" class="form-label">
+								Имя персонажа:
+							</label>
+							<input class="form-control" name="personByDV" id="personByDV" required autocomplete="off">
+						</div>
+
+						<input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100 mt-3">
 
 				</form>
 			</div>
