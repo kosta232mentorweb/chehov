@@ -101,94 +101,103 @@
 
                 <!-- Само задание -->
                 <div id="links"></div>
-                <div class="speechBubble question withAvatar mt-3 mb-3">
-                    <span class="avatarCircle"></span> <span class="avatar avatar-18"></span>
-                    <span class="speechAuthor">Максим Горький</span>
-                    Я знал Антона Павловича достаточно близко, и каждый раз в наших разговорах и переписках он был
-                    неизменно
-                    афористичен.<br> Предлагаю вам тест: дополните афоризмы Чехова недостающими словами, а затем
-                    проверьте себя
-                    и убедитесь, насколько удивительным был этот человек:
+                <div class="speechBubblesWrapper">
+                    <div class="speechBubble question withAvatar mt-3 mb-3">
+                        <span class="avatarCircle"></span> <span class="avatar avatar-18"></span>
+                        <span class="speechAuthor">Максим Горький</span>
+                            Я знал Антона Павловича достаточно близко, и каждый раз в наших разговорах и переписках он был
+                            неизменно
+                            афористичен. <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Предлагаю вам тест: <span class="big red">дополните афоризмы Чехова</span> недостающими словами, а затем
+                            проверьте себя
+                            и убедитесь, насколько удивительным был этот человек:
+                    </div>
+                    <div class="speechBubble question withAvatar mt-5 answer  right">
+                        <span class="avatarCircle"></span>
+                        <span class="avatar avatar-20"></span>
+                        <span class="speechAuthor">Я</span>
+                        Сейчас дополню:
+                    </div>
                 </div>
 
                 <!-- Основная форма. Внимание на имя с префиксом -->
-                <div>
+                <div class="mt-4">
                     <form name="chehov-form-ob-4" action="http://activepads.com:8082/formDetector">
-                        <fieldset class="form-group border p-2 pb-1">
-                            <legend class="w-auto px-2">1. В России […] – что-то вроде трубочиста,
+                        <fieldset class="form-group answer border p-2 pb-1">
+                            <legend class="w-auto px-2">1. В России <span class="badge bg-warning">[…]</span> – что-то вроде трубочиста,
                                 которым няньки пугают маленьких детей...</legend>
                             <ul>
-                                <li><input type="radio" name="q1" value="var1" required><span>Учитель</span></li>
-                                <li><input type="radio" name="q1" value="var2" required><span>Писатель</span></li>
-                                <li><input type="radio" name="q1" value="var3" required><span>Честный человек</span></li>
-                                <li><input type="radio" name="q1" value="var4" required><span>Правитель</span></li>
-                                <li><input type="radio" name="q1" value="var5" required><span>Иностранец</span></li>
+                                <li><input type="radio" class="form-check-input" name="q1" value="var1" id="var1.1" required><label class="form-label" for="var1.1">&nbsp; Учитель</label></li>
+                                <li><input type="radio" class="form-check-input" name="q1" value="var2" id="var1.2" required><label class="form-label" for="var1.2">&nbsp; Писатель</label></li>
+                                <li><input type="radio" class="form-check-input" name="q1" value="var3" id="var1.3" required><label class="form-label" for="var1.3">&nbsp; Честный человек</label></li>
+                                <li><input type="radio" class="form-check-input" name="q1" value="var4" id="var1.4" required><label class="form-label" for="var1.4">&nbsp; Правитель</label></li>
+                                <li><input type="radio" class="form-check-input" name="q1" value="var5" id="var1.5" required><label class="form-label" for="var1.5">&nbsp; Иностранец</label></li>
                             </ul>
                         </fieldset>
-                        <fieldset class="form-group border p-2 pb-1">
-                            <legend>2. Нужно, чтоб каждый человек говорил […].</legend>
+                        <fieldset class="form-group answer mt-2 border p-2 pb-1">
+                            <legend>2. Нужно, чтоб каждый человек говорил <span class="badge bg-warning">[…]</span>.</legend>
                             <ul>
-                                <li><input type="radio" name="q2" value="var1" required><span>О политике</span></li>
-                                <li><input type="radio" name="q2" value="var2" required><span>Громко</span></li>
-                                <li><input type="radio" name="q2" value="var3" required><span>О высоком</span></li>
-                                <li><input type="radio" name="q2" value="var4" required><span>Своим языком</span></li>
-                                <li><input type="radio" name="q2" value="var5" required><span>Как актер</span></li>
+                                <li><input type="radio" class="form-check-input" name="q2" value="var1" id="var2.1" required><label class="form-label" for="var2.1">&nbsp; О политике</label></li>
+                                <li><input type="radio" class="form-check-input" name="q2" value="var2" id="var2.2" required><label class="form-label" for="var2.2">&nbsp; Громко</label></li>
+                                <li><input type="radio" class="form-check-input" name="q2" value="var3" id="var2.3" required><label class="form-label" for="var2.3">&nbsp; О высоком</label></li>
+                                <li><input type="radio" class="form-check-input" name="q2" value="var4" id="var2.4" required><label class="form-label" for="var2.4">&nbsp; Своим языком</label></li>
+                                <li><input type="radio" class="form-check-input" name="q2" value="var5" id="var2.5" required><label class="form-label" for="var2.5">&nbsp; Как актер</label></li>
                             </ul>
                         </fieldset>
-                        <fieldset class="form-group border p-2 pb-1">
-                            <legend>3. […] похожи на слепней, которые мешают лошади пахать землю.</legend>
+                        <fieldset class="form-group answer mt-2 border p-2 pb-1">
+                            <legend>3. <span class="badge bg-warning">[…]</span> похожи на слепней, которые мешают лошади пахать землю.</legend>
                             <ul>
-                                <li><input type="radio" name="q3" value="var1" required><span>Интеллигенты</span></li>
-                                <li><input type="radio" name="q3" value="var2" required><span>Читатели</span></li>
-                                <li><input type="radio" name="q3" value="var3" required><span>Критики</span></li>
-                                <li><input type="radio" name="q3" value="var4" required><span>Подражатели</span></li>
-                                <li><input type="radio" name="q3" value="var5" required><span>Литераторы</span></li>
+                                <li><input type="radio" class="form-check-input" name="q3" value="var1" id="var3.1" required><label class="form-label" for="var3.1">&nbsp; Интеллигенты</label></li>
+                                <li><input type="radio" class="form-check-input" name="q3" value="var2" id="var3.2" required><label class="form-label" for="var3.2">&nbsp; Читатели</label></li>
+                                <li><input type="radio" class="form-check-input" name="q3" value="var3" id="var3.3" required><label class="form-label" for="var3.3">&nbsp; Критики</label></li>
+                                <li><input type="radio" class="form-check-input" name="q3" value="var4" id="var3.4" required><label class="form-label" for="var3.4">&nbsp; Подражатели</label></li>
+                                <li><input type="radio" class="form-check-input" name="q3" value="var5" id="var3.5" required><label class="form-label" for="var3.5">&nbsp; Литераторы</label></li>
                             </ul>
                         </fieldset>
-                        <fieldset class="form-group border p-2 pb-1">
+                        <fieldset class="form-group answer mt-2 border p-2 pb-1">
                             <legend>
-                                4. Странное существо – […]! В нем, как в решете, ничего не задерживается. В юности он
+                                4. Странное существо – <span class="badge bg-warning">[…]</span>! В нем, как в решете, ничего не задерживается. В юности он
                                 жадно
                                 наполняет
                                 душу всем, что под руку попало, а после тридцати лет в нем остается какой-то серый хлам.
                             </legend>
                             <ul>
-                                <li><input type="radio" name="q4" value="var1" required><span>Врач</span></li>
-                                <li><input type="radio" name="q4" value="var2" required><span>Провинциальный писатель</span></li>
-                                <li><input type="radio" name="q4" value="var3" required><span>Русский человек</span></li>
-                                <li><input type="radio" name="q4" value="var4" required><span>Великоросский помещик</span></li>
+                                <li><input type="radio" class="form-check-input" name="q4" value="var1" id="var4.1" required><label class="form-label" for="var4.1">&nbsp; Врач</label></li>
+                                <li><input type="radio" class="form-check-input" name="q4" value="var2" id="var4.2" required><label class="form-label" for="var4.2">&nbsp; Провинциальный писатель</label></li>
+                                <li><input type="radio" class="form-check-input" name="q4" value="var3" id="var4.3" required><label class="form-label" for="var4.3">&nbsp; Русский человек</label></li>
+                                <li><input type="radio" class="form-check-input" name="q4" value="var4" id="var4.4" required><label class="form-label" for="var4.4">&nbsp; Великоросский помещик</label></li>
                             </ul>
                         </fieldset>
-                        <fieldset class="form-group border p-2 pb-1">
+                        <fieldset class="form-group answer mt-2 border p-2 pb-1">
                             <legend>
-                                5. Нет ничего скучнее и непоэтичнее, так сказать, как прозаическая […], отнимающая
+                                5. Нет ничего скучнее и непоэтичнее, так сказать, как прозаическая<span class="badge bg-warning">[…]</span>, отнимающая
                                 радость
                                 жизни и
                                 вгоняющая в апатию.
                             </legend>
                             <ul>
-                                <li><input type="radio" name="q5" value="var1" required><span>Непроглядная бедность</span></li>
-                                <li><input type="radio" name="q5" value="var2" required><span>Одурманивающая пошлость</span></li>
-                                <li><input type="radio" name="q5" value="var3" required><span>Самоуверенная бездарность</span></li>
-                                <li><input type="radio" name="q5" value="var4" required><span>Борьба за существование</span></li>
-                                <li><input type="radio" name="q5" value="var5" required><span>Социалистическая революция</span></li>
+                                <li><input type="radio" class="form-check-input" name="q5" value="var1" id="var5.1" required><label class="form-label" for="var5.1">&nbsp; Непроглядная бедность</label></li>
+                                <li><input type="radio" class="form-check-input" name="q5" value="var2" id="var5.2" required><label class="form-label" for="var5.2">&nbsp; Одурманивающая пошлость</label></li>
+                                <li><input type="radio" class="form-check-input" name="q5" value="var3" id="var5.3" required><label class="form-label" for="var5.3">&nbsp; Самоуверенная бездарность</label></li>
+                                <li><input type="radio" class="form-check-input" name="q5" value="var4" id="var5.4" required><label class="form-label" for="var5.4">&nbsp; Борьба за существование</label></li>
+                                <li><input type="radio" class="form-check-input" name="q5" value="var5" id="var5.5" required><label class="form-label" for="var5.5">&nbsp; Социалистическая революция</label></li>
                             </ul>
                         </fieldset>
-                        <fieldset class="form-group border p-2 pb-1">
+                        <fieldset class="form-group answer mt-2 border p-2 pb-1">
                             <legend>
                                 6. Мы привыкли жить надеждами на хорошую погоду, урожай, на приятный роман, надеждами
                                 разбогатеть или
-                                получить место полицеймейстера, а вот надежды […] я не замечаю у людей.
+                                получить место полицеймейстера, а вот надежды <span class="badge bg-warning">[…]</span> я не замечаю у людей.
                             </legend>
                             <ul>
-                                <li><input type="radio" name="q6" value="var1" required><span>Хорошо жить</span></li>
-                                <li><input type="radio" name="q6" value="var2" required><span>Много работать</span></li>
-                                <li><input type="radio" name="q6" value="var3" required><span>Поумнеть</span></li>
-                                <li><input type="radio" name="q6" value="var4" required><span>Развивать Россию</span></li>
-                                <li><input type="radio" name="q6" value="var5" required><span>Достойно умереть</span></li>
+                                <li><input type="radio" class="form-check-input" name="q6" value="var1" id="var6.1" required><label class="form-label" for="var6.1">&nbsp; Хорошо жить</label></li>
+                                <li><input type="radio" class="form-check-input" name="q6" value="var2" id="var6.2" required><label class="form-label" for="var6.2">&nbsp; Много работать</label></li>
+                                <li><input type="radio" class="form-check-input" name="q6" value="var3" id="var6.3" required><label class="form-label" for="var6.3">&nbsp; Поумнеть</label></li>
+                                <li><input type="radio" class="form-check-input" name="q6" value="var4" id="var6.4" required><label class="form-label" for="var6.4">&nbsp; Развивать Россию</label></li>
+                                <li><input type="radio" class="form-check-input" name="q6" value="var5" id="var6.5" required><label class="form-label" for="var6.5">&nbsp; Достойно умереть</label></li>
                             </ul>
                         </fieldset>
-                        <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100">
+                        <input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100 mt-3">
                     </form>
                 </div>
             </div>

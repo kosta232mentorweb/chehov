@@ -36,6 +36,10 @@
                 flex-direction: column;
             }
 
+            .form-control {
+                margin-top: 10px;
+            }
+
             .block1 {
                 display: inline-block;
 
@@ -55,6 +59,10 @@
 
             .block2 {
                 display: inline-block;
+
+                @media (max-width: 520px) {
+                    margin-top: 10px;
+                }
 
                 div {
                     label {
