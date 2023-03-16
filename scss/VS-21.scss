@@ -11,8 +11,8 @@
 
         &:before {
             position: absolute;
-            top: 2px;
-            left: 4px;
+            top: 3px;
+            left: 6px;
             font-weight: bold;
             color: #aaa;
             font-size: 70%;
@@ -40,6 +40,7 @@
 
         .personas {
             flex-basis: 100%;
+				margin-top: 24px;
         }
 
         .characteristic {
@@ -65,5 +66,18 @@
     textarea {
         width: 100%;
         padding-top: 20px;
+		  padding-left: 6px;
     }
+}
+
+
+
+p {
+	text-indent: 1.5rem;
+	margin-top: 0;
+	margin-bottom: 0;
+
+	&:first-of-type {
+		text-indent: inherit;
+	}
 }
