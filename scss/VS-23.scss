@@ -28,7 +28,7 @@
 
 .cont {
 	display: grid;
-	grid-template-columns: 2fr 4fr 8fr;
-	grid-gap: 8px;
-	align-items: center;
+	grid-template-columns: auto 8fr 4fr;
+	grid-gap: 12px;
+	// align-items: center;
 }
