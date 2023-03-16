@@ -1,36 +1,66 @@
 table {
-    width: 100%;
-    border-radius: 12px;
- 
-    th,
-    td {
-       border: 1px solid gray;
-       padding: 8px;
-       // text-align: center;
-    }
- 
-    tr {
-       height: 250px;
-       page-break-inside: avoid;
-    }
- 
-    td {
-       width: 10%;
-    }
- 
-    thead>tr {
-       height: 50px;
-    }
- 
-    thead>tr>th,
-    tbody>tr>td {
-       width: 100px;
-    }
- }
+	width: 100%;
+	border-radius: 12px;
 
- 
- .container.chehov-main-container fieldset {
-    border-radius: 12px;
-    background-color: #fffdca;
-    border: none !important;
- }
+	th,
+	td {
+		border: 1px solid gray;
+		padding: 8px;
+		// text-align: center;
+	}
+
+	tr {
+		height: 250px;
+		page-break-inside: avoid;
+	}
+
+	td {
+		width: 10%;
+	}
+
+	thead>tr {
+		height: 50px;
+	}
+
+	thead>tr>th,
+	tbody>tr>td {
+		width: 100px;
+	}
+}
+
+
+.container.chehov-main-container fieldset {
+	border-radius: 12px;
+	background-color: #fffdca;
+	border: none !important;
+}
+
+.dialogTitle {
+	text-align: center;
+	margin-top: 3rem;
+	font-weight: bold;
+}
+
+.speechBubble {
+	label {
+		display: inline;
+	}
+
+	.ital {
+		font-weight: normal;
+		font-style: italic;
+		font-size: 70%;
+	}
+}
+
+.list-unstyled {
+	margin-left: 85px;
+
+	@media (max-width:420px) {
+		margin-left: 16px;
+	}
+}
+
+.printOnly img {
+	width: 3cm;
+}
