@@ -1,75 +1,85 @@
 .ob9-form-wrapper {
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
-    .img-wrapper {
-        width: 100%;
-        @media (max-width: 520px) {
-            overflow-x: auto;
-        }
-        text-align: center;
+	.img-wrapper {
+		width: 100%;
 
-        img {
-            width: 500px;
-            margin-top: 20px;
+		@media (max-width: 520px) {
+			overflow-x: auto;
+		}
+
+		text-align: center;
+
+		img {
+			width: 500px;
+			margin-top: 20px;
 
 
-        }
-    }
+		}
+	}
 
-    form {
-        margin-top: 20px;
-        width: 100%;
+	form {
+		margin-top: 20px;
+		width: 100%;
 
-        >input {
-            margin-top: 20px;
-        }
+		>input {
+			margin-top: 20px;
+		}
 
-        .ob9-blocks-wrapper {
-            display: flex;
-            justify-content: space-around;
-            padding: 0px 30px;
+		.ob9-blocks-wrapper {
+			display: flex;
+			justify-content: space-around;
+			padding: 0px 30px;
 
-            @media (max-width: 520px) {
-                flex-direction: column;
-            }
+			@media (max-width: 520px) {
+				flex-direction: column;
+			}
 
-            .block1 {
-                display: inline-block;
+			.form-control {
+				margin-top: 10px;
+			}
 
-                div {
-                    label {
-                        margin-right: 5px;
-                    }
+			.block1 {
+				display: inline-block;
 
-                    display: flex;
-                    align-items: baseline;
+				div {
+					label {
+						margin-right: 5px;
+					}
 
-                    &:not(:first-child) {
-                        margin-top: 10px;
-                    }
-                }
-            }
+					display: flex;
+					align-items: baseline;
 
-            .block2 {
-                display: inline-block;
+					&:not(:first-child) {
+						margin-top: 10px;
+					}
+				}
+			}
 
-                div {
-                    label {
-                        margin-right: 5px;
-                    }
+			.block2 {
+				display: inline-block;
 
-                    display: flex;
-                    align-items: baseline;
+				@media (max-width: 520px) {
+					margin-top: 10px;
+				}
 
-                    &:not(:first-child) {
-                        margin-top: 10px;
-                    }
-                }
-            }
+				div {
+					label {
+						margin-right: 5px;
+					}
 
-        }
-    }
+					display: flex;
+					align-items: baseline;
+
+					&:not(:first-child) {
+						margin-top: 10px;
+					}
+				}
+			}
+
+		}
+	}
 }
