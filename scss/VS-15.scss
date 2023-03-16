@@ -1,53 +1,74 @@
+.gmail {
+	float: left;
+	margin-right: 5px;
 
-
-  
-
-.gmail{
-   float: left;
-   margin-right: 5px;
-   
-  }
+}
 
 .letter {
-   border: 1px solid black;
-   margin-left: 15%;
-   margin-bottom: 25px;
-   padding: 5px;
+	border: 1px solid black;
+	margin-left: 15%;
+	margin-bottom: 25px;
+	padding: 5px;
 }
+
 table {
-    width: 100%;
-    border-radius: 12px;
-  
-    th,
-    td {
-       border: 1px solid gray;
-       padding: 8px;
-       // text-align: center;
-    }
-  
-    tr {
-       height: 250px;
-       page-break-inside: avoid;
-    }
-  
-    td {
-       width: 10%;
-    }
-  
-    thead>tr {
-       height: 50px;
-    }
-  
-    thead>tr>th,
-    tbody>tr>td {
-       width: 100px;
-    }
-  }
- 
-  
-  
-  .container.chehov-main-container fieldset {
-    border-radius: 12px;
-    background-color: #fffdca;
-    border: none !important;
-  }
+	width: 100%;
+	border-radius: 12px;
+
+	th,
+	td {
+		border: 1px solid gray;
+		padding: 8px;
+		// text-align: center;
+	}
+
+	tr {
+		height: 250px;
+		page-break-inside: avoid;
+	}
+
+	td {
+		width: 10%;
+	}
+
+	thead>tr {
+		height: 50px;
+	}
+
+	thead>tr>th,
+	tbody>tr>td {
+		width: 100px;
+	}
+}
+
+
+
+.container.chehov-main-container fieldset {
+	border-radius: 12px;
+	background-color: #fffdca;
+	border: none !important;
+}
+
+
+.k-letter {
+	margin-top: 20px;
+	padding-left: 85px;
+	display: grid;
+	grid-template-columns: 1fr 11fr;
+	grid-gap: 20px;
+
+	@media (max-width:420px) {
+		padding-left: 16px;
+	}
+
+	>div:first-child {
+		background-image: url(../images/VS-15/gmail.jpg);
+		background-size: 100%;
+		border-radius: 4px;
+	}
+
+	.grey {
+		font-weight: bold;
+		opacity: 0.35;
+	}
+}
