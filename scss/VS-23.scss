@@ -2,3 +2,14 @@
     width: 100%;
     margin-bottom: 50px;
 }
+
+
+.circle {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: red;
+	border-radius: 50%;
+	z-index: 1;
+	opacity: 0.8;
+}
