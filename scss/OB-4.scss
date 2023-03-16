@@ -1,24 +1,23 @@
 legend {
-    font-size: 18px;
+	font-size: 18px;
 }
 
 fieldset {
-    @media print {
-        page-break-inside: avoid;
-    }
+	border-radius: 12px;
+	border: none;
+	@media print {
+		page-break-inside: avoid;
+	}
 }
 
 ul {
-    list-style: none;
+	list-style: none;
 
-    li {
+	li {
 
-        span {
-            margin-left: 10px;
-        }
+		span {
+			margin-left: 10px;
+		}
 
-    }
+	}
 }
-
-
-
