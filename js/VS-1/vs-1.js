@@ -2,14 +2,25 @@
 
 console.log( 'vs-1' );
 
-document.forms[ 0 ].querySelectorAll( 'input[type="text"]' ).forEach( el => el.addEventListener( 'input', event => {
-	event.target.value = event.target.value.at( -1 );
-} )
-)
+document.forms[ 0 ].querySelectorAll( 'input[type="text"]' )
+	.forEach( el => el.addEventListener( 'click', event => el.select() ) );
+
+
+
+document.forms[ 0 ].querySelectorAll( 'input[type="text"]' )
+	.forEach( el =>
+		el.addEventListener( 'input', event => {
+			event.target.value = event.target.value.at( -1 )?.toUpperCase() ?? '';
+
+			saveInputs();
+
+		} )
+	);
+
+
+
 
 document.forms[ 0 ].addEventListener( 'submit', event => {
-	console.log( 'submit' );
-
 	event.preventDefault();
 
 	const NUMBER_OF_WORDS = 15;
@@ -21,16 +32,12 @@ document.forms[ 0 ].addEventListener( 'submit', event => {
 		const className = 'word' + String( i ).padStart( 2, '0' );
 		const words = document.querySelectorAll( '[class*="' + className + '"]' );
 
-		// console.log( '.word' + String( i ).padStart( 2, '0' ), words );
-
-		const result = [ ...words ].reduce( ( acc, el ) => {
-			// const wIdx = Number( el.className.split( 'word' )[ 1 ].split( '-' )[ 0 ] );
-			const lIdx = parseInt( el.className.split( className )[ 1 ].split( '-' )[ 1 ] );
-			// console.log( wIdx, lIdx );
-			// if ( !acc[ wIdx ] ) acc[ wIdx ] = [];
-			acc[ lIdx ] = lIdx;
-			return acc;
-		}, [] )
+		const result = [ ...words ].reduce(
+			( acc, el ) => {
+				const lIdx = parseInt( el.className.split( className )[ 1 ].split( '-' )[ 1 ] );
+				acc[ lIdx ] = lIdx;
+				return acc;
+			}, [] )
 
 		res.push( result );
 	}
@@ -49,13 +56,21 @@ document.forms[ 0 ].addEventListener( 'submit', event => {
 
 	console.log( resWords );
 
-	// for ( let i = 1; i <= NUMBER_OF_WORDS; i++ ) {
-	// 	for (let )
-	// }
+	const formData = new FormData();
+	formData.append( 'words', JSON.stringify( resWords ) );
 
+	// console.log( formData );
+	// console.log( [ ...new URLSearchParams( formData ).entries() ] );
+	// console.log( new URLSearchParams( formData ).toString() );
 
+	fetch( 'http://activepads.com:8082/formDetector?' + new URLSearchParams( formData ).toString(), {
+		headers: {
+			"Content-Type": "application/x-www-form-urlencoded",
+		},
+		method: "get",
+	} )
+		.then( data => data.text() )
+		.then( data => console.log( data ) );
 
-	// 	const w = document.querySelectorAll( '[class*="word' + i + '"]' );
-	// 	console.log( w );
-	// }
-} )
+} );
+
