@@ -94,3 +94,13 @@
       padding-top: 20px;
    }
 }
+
+p {
+	text-indent: 1.5rem;
+	margin-top: 0;
+	margin-bottom: 0;
+
+	&:first-of-type {
+		text-indent: inherit;
+	}
+}
