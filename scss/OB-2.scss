@@ -1,33 +1,125 @@
 .tic-tac-toe {
-    width: 300px;
-    // border: 1px solid black;
-    margin: 1% auto 1% auto
+	width: 300px;
+	// border: 1px solid black;
+	margin: 1% auto 1% auto
 }
-.square{
-  width: 100px;
-  height: 100px;
-  padding: 0px 2px 0 2px;
+
+.square {
+	width: 100px;
+	height: 100px;
+	padding: 0px 2px 0 2px;
 }
-.rightB{
-  border-right: 1px solid black;
+
+.rightB {
+	border-right: 1px solid black;
 }
-.leftB{
-  border-left: 1px solid black;
+
+.leftB {
+	border-left: 1px solid black;
 }
-.topB{
-  border-top: 1px solid black;
+
+.topB {
+	border-top: 1px solid black;
 }
-.bottomB{
-  border-bottom: 1px solid black;
+
+.bottomB {
+	border-bottom: 1px solid black;
 }
-  
-  
-  
-  .container.chehov-main-container fieldset {
-    border-radius: 12px;
-    background-color: #fffdca;
-    border: none !important;
-  }
-  .TicTacToe{
-  margin-bottom: 5px;
-  }
+
+
+
+.container.chehov-main-container fieldset {
+	border-radius: 12px;
+	background-color: #fffdca;
+	border: none !important;
+}
+
+.TicTacToe {
+	margin-bottom: 5px;
+}
+
+.facts {
+	li {
+		margin-top: 1.5rem;
+	}
+
+	p {
+		text-indent: 1.5rem;
+		margin-top: 0;
+		margin-bottom: 0;
+
+		&:first-of-type {
+			text-indent: inherit;
+		}
+	}
+
+}
+
+.chehov-main-container {
+	padding-bottom: 300px;
+}
+
+.result {
+	position: fixed;
+	bottom: 0;
+	width: 300px;
+	border: 1px solid black;
+	height: 300px;
+	background-color: #fff;
+}
+
+.result {
+	// right: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+
+	.r {
+		background-color: #fff;
+		background-position: center;
+		background-repeat: no-repeat;
+
+	}
+
+	.r-true {
+		// background-color: green;
+		background-image: url(../images/OB-2/cross.svg);
+	}
+
+	.r-false {
+		// background-color: yellow;
+		background-image: url(../images/OB-2/circle.svg);
+	}
+
+	// position: relative;
+
+	.x {
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		z-index: 1;
+		background-color: gray;
+		left: 0;
+		top: 100px;
+
+		+.x {
+			top: 200px;
+			// background-color: red;
+		}
+	}
+
+	.y {
+		position: absolute;
+		width: 2px;
+		height: 100%;
+		z-index: 1;
+		background-color: gray;
+		left: 100px;
+		top: 0;
+
+		+.y {
+			left: 200px;
+			// background-color: red;
+		}
+	}
+}
