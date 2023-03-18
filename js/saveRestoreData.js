@@ -9,9 +9,7 @@ function saveInputs() {
 	// console.log( store );
 
 	localStorage.setItem( 'inputsValues' + htmlSuffix, JSON.stringify( store ) );
-
 }
-
 
 let store = {};
 
@@ -25,7 +23,7 @@ document.forms[ 0 ]?.querySelectorAll( 'input[type="text"], textarea' ).forEach(
 
 	el.addEventListener( 'input', event => {
 		saveInputs();
-	} )
-} )
+	} );
+} );
 
 // console.log( store );

@@ -2,70 +2,71 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- № задания. Чехов -->
-    <title>ДВ-28. Чехов</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- № задания. Чехов -->
+	<title>ДВ-28. Чехов</title>
 
-    <!-- Подключаем бутстрап стили -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<!-- Подключаем бутстрап стили -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-    <!-- Подключаем бутстрап иконки -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	<!-- Подключаем бутстрап иконки -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
-    <!-- Подключаем общие стили -->
-    <link rel="stylesheet" href="../css/chehov-global.css">
+	<!-- Подключаем общие стили -->
+	<link rel="stylesheet" href="../css/chehov-global.css">
 
-    <!-- Подключаем DV-28 стили -->
-    <link rel="stylesheet" href="../css/DV-28.css">
+	<!-- Подключаем DV-28 стили -->
+	<link rel="stylesheet" href="../css/DV-28.css">
 
 </head>
 
 <body>
 
-    <!-- Navbar и боковое меню -->
-    <nav class="navbar navbar-dark bg-dark fixed-top screenOnly chehov-navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html#"><img src="../images/chatbooklogo.svg" width="48" alt="BOOKaaS logo"
-                    class="chatbooklogo"></a>
-            <a class="navbar-brand" href="#">Задание ДВ-28</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasLightNavbar" aria-controls="offcanvasLightNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasLightNavbar"
-                aria-labelledby="offcanvasLightNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasLightNavbarLabel">Дополнительно</h5>
-                    <button type="button" class="btn-close btn-close" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
+	<!-- Navbar и боковое меню -->
+	<nav class="navbar navbar-dark bg-dark fixed-top screenOnly chehov-navbar">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="../index.html#"><img src="../images/chatbooklogo.svg" width="48"
+					alt="BOOKaaS logo" class="chatbooklogo"></a>
+			<a class="navbar-brand" href="#">Задание ДВ-28</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLightNavbar"
+				aria-controls="offcanvasLightNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasLightNavbar"
+				aria-labelledby="offcanvasLightNavbarLabel">
+				<div class="offcanvas-header">
+					<h5 class="offcanvas-title" id="offcanvasLightNavbarLabel">Дополнительно</h5>
+					<button type="button" class="btn-close btn-close" data-bs-dismiss="offcanvas"
+						aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body">
 					<div class="mt-3 mb-3">
-						<label class="form-label" for="BookAASKey">Введите персональный ключ:</label>
+						<label class="form-label" for="BookAASKey">Ваш персональный ключ:</label>
 						<input class="form-control" type="text" id="BookAASKey" placeholder="ваш ключ">
 					</div>
 
-                    <p>Задания можно распечатать на принтере. Страница адаптируется для печати на бумаге формата А4 и,
-                        например, вместо ссылок появятся QR-коды. Для печати нажмите на клавиатуре Ctrl&nbsp;+&nbsp;P.
-                    </p>
-                    <img src="../images/chatbooklogo-black.svg" width="80" alt="BOOKaaS logo">
-                    <p>Серия основана в 2020 году К. Г. Страусовым.</p>
-                    <p>Ответственный за литературную и методическую часть С. C. Бородич</p>
-                    <p>Составители лексического и дидактического сопровождения книги:</p>
-                    <p>Авторские иллюстрации размещены с любезного разрешения Д. Д. Ермакович, М. Д. Шурим и К. И. Картель.</p>
-                    <p>© 2022—2023 Константин Страусов, идея, разработка, дизайн.</p>
-                    <p>© 2022—2023 Группа авторов проекта “КНИГА-ЧАТ”, текст.</p>
-                    <p>© 2022—2023 Ксения Картель, Дарья Ермакович, Мария Шурим, иллюстрации.</p>
-                    <p>© 2022—2023 Ксения Картель, дизайн.</p>
-                    <p>Разрешается использование только для некоммерческих образовательных целей.</p>
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../index.html">Перейти к списку заданий</a>
-                        </li>
-                        <!-- <li class="nav-item">
+					<p>Задания можно распечатать на принтере. Страница адаптируется для печати на бумаге формата А4 и,
+						например, вместо ссылок появятся QR-коды. Для печати нажмите на клавиатуре Ctrl&nbsp;+&nbsp;P.
+					</p>
+					<img src="../images/chatbooklogo-black.svg" width="80" alt="BOOKaaS logo">
+					<p>Серия основана в 2020 году К. Г. Страусовым.</p>
+					<p>Ответственный за литературную и методическую часть С. C. Бородич</p>
+					<p>Составители лексического и дидактического сопровождения книги:</p>
+					<p>Авторские иллюстрации размещены с любезного разрешения Д. Д. Ермакович, М. Д. Шурим и К. И. Картель.
+					</p>
+					<p>© 2022—2023 Константин Страусов, идея, разработка, дизайн.</p>
+					<p>© 2022—2023 Группа авторов проекта “КНИГА-ЧАТ”, текст.</p>
+					<p>© 2022—2023 Ксения Картель, Дарья Ермакович, Мария Шурим, иллюстрации.</p>
+					<p>© 2022—2023 Ксения Картель, дизайн.</p>
+					<p>Разрешается использование только для некоммерческих образовательных целей.</p>
+					<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="../index.html">Перейти к списку заданий</a>
+						</li>
+						<!-- <li class="nav-item">
                        <a class="nav-link" href="../index.html">К списку заданий</a>
                     </li>
                     <li class="nav-item dropdown">
@@ -82,213 +83,212 @@
                           <li><a class="dropdown-item" href="#">Something else here</a></li>
                        </ul>
                     </li> -->
-                    </ul>
-                    <!-- <form class="d-flex mt-3" role="search">
+					</ul>
+					<!-- <form class="d-flex mt-3" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-success" type="submit">Search</button>
                  </form> -->
-                </div>
-            </div>
-        </div>
-    </nav>
+				</div>
+			</div>
+		</div>
+	</nav>
 
-    <!-- Статус строка -->
-    <!-- <div class="sticky-bottom">© Константин Страусов, 2022—2023. © Лаборатория "BOOKaaS", 2022—2023</div> -->
+	<!-- Статус строка -->
+	<!-- <div class="sticky-bottom">© Константин Страусов, 2022—2023. © Лаборатория "BOOKaaS", 2022—2023</div> -->
 
-    <!-- Основной контейнер задания  -->
-    <div class="container chehov-main-container">
-        <div class="row">
-            <div class="col-12">
+	<!-- Основной контейнер задания  -->
+	<div class="container chehov-main-container">
+		<div class="row">
+			<div class="col-12">
 
-                <!-- Заголовок только для печати -->
-                <h1 class="printOnly taskNumber">Задание ДВ-28.</h1>
-                <h6 class="printOnly colontitul">Серия “КНИГА-ЧАТ”</h6>
-                <hr class="printOnly" style=" margin-bottom: 4rem;">
+				<!-- Заголовок только для печати -->
+				<h1 class="printOnly taskNumber">Задание ДВ-28.</h1>
+				<h6 class="printOnly colontitul">Серия “КНИГА-ЧАТ”</h6>
+				<hr class="printOnly" style=" margin-bottom: 4rem;">
 
-                <!-- Само задание -->
-                <div class="speechBubblesWrapper">
-                    <div class="speechBubble question withAvatar mt-3 mb-3">
-                        <span class="avatarCircle"></span> <span class="avatar avatar-11"></span>
-                        <span class="speechAuthor">А. П. Чехов</span>
-                        Что могло бы быть на инстаграм-странице* няньки Марины? Продумайте 10 публикаций (фото + текст),
-                        опираясь на её реплики по ходу пьесы. <br>
-                        * Запрещён в 2022 году в РФ.
-                    </div>
-                    <div id="links"></div>
-                    <div class="inst">
-                        <div class="instMenu">
-                            <img src="../images/instMenu.jpg" alt="">
-                        </div>
-                        <!-- Аватарка -->
-                        <div class="psevdoAvatar"><img class="round" src="../images/persons/8.png"> </div>
+				<!-- Само задание -->
+				<div class="speechBubblesWrapper">
+					<div class="speechBubble question withAvatar mt-3 mb-3">
+						<span class="avatarCircle"></span> <span class="avatar avatar-11"></span>
+						<span class="speechAuthor">А. П. Чехов</span>
+						Что могло бы быть на инстаграм-странице* няньки Марины? Продумайте 10 публикаций (фото + текст),
+						опираясь на её реплики по ходу пьесы. <br>
+						* Запрещён в 2022 году в РФ.
+					</div>
+					<div id="links"></div>
+					<div class="inst">
+						<div class="instMenu">
+							<img src="../images/instMenu.jpg" alt="">
+						</div>
+						<!-- Аватарка -->
+						<div class="psevdoAvatar"><img class="round" src="../images/persons/8.png"> </div>
 
-                        <div class="instName"><b>Нянька Марина</b></div>
+						<div class="instName"><b>Нянька Марина</b></div>
 
-                        <!-- Меню картинка «Подписки» «Отправить сообщения» -->
-                        <div class="instMessage"><img src="../images/instMessege.jpg" alt="">
-                        </div>
+						<!-- Меню картинка «Подписки» «Отправить сообщения» -->
+						<div class="instMessage"><img src="../images/instMessege.jpg" alt="">
+						</div>
 
-                        <div class="instInfo">Личный блог. Посижу с вашим ребенком.
-                        </div>
+						<div class="instInfo">Личный блог. Посижу с вашим ребенком.
+						</div>
 
-                        <!-- Меню картинка «ПУБЛИКАЦИИ» «REELS» «Отметки» -->
-                        <div class="instMinuPup"><img src="../images/instPup.jpg" alt=""></div>
+						<!-- Меню картинка «ПУБЛИКАЦИИ» «REELS» «Отметки» -->
+						<div class="instMinuPup"><img src="../images/instPup.jpg" alt=""></div>
 
 
-                    </div>
-                    <div class="speechBubblesWrapper">
-                        <div class="speechBubble question withAvatar mt-5 answer  right">
-                            <span class="avatarCircle"></span>
-                            <span class="avatar avatar-20"></span>
-                            <span class="speechAuthor">Я</span>
-                            Сейчас заполню таблицу:
-                        </div>
-                    </div>
-                    <div class="printOnly printPageBreak"></div>
-                    <div class="instMain">
-                        <!-- Основная форма. Внимание на имя с префиксом -->
-                        <form name="chehov-form-dv-28" class="mt-3" action="http://activepads.com:8082/formDetector">
-                            <fieldset class="form-group border p-2 pb-1">
-                                <legend class="w-auto px-2">Первый пост</legend>
-                                <div class="mb-2">
-                                    <textarea class="form-control" placeholder="Первый совет" name="instAdvice1"
-                                        type="text" required></textarea>
-                                </div>
-                                <div class="mb-3 screenOnly">
-                                    <label for="formFile" class="form-label">Загрузить изображение</label>
-                                    <input class="form-control" type="file" id="formFile">
-                                </div>
-                            </fieldset>
-                            <!-- Меню картинка «Сердечко» «сообщение» «Отправить» -->
-                            <div class="instAdviceLike"><img src="../images/instLike.jpg" alt=""></div>
-                            <fieldset class="form-group border p-2 pb-1 mt-3">
-                                <legend class="w-auto px-2">Второй пост</legend>
-                                <div class="mb-2">
-                                    <textarea class="form-control" placeholder="Второй совет" name="instAdvice1"
-                                        type="text" required></textarea>
-                                </div>
-                                <div class="mb-3 screenOnly">
-                                    <label for="formFile" class="form-label">Загрузить изображение</label>
-                                    <input class="form-control" type="file" id="formFile">
-                                </div>
-                            </fieldset>
-                            <!-- Меню картинка «Сердечко» «сообщение» «Отправить» -->
-                            <div class="instAdviceLike"><img src="../images/instLike.jpg" alt=""></div>
-                            <fieldset class="form-group border p-2 pb-1 mt-3">
-                                <legend class="w-auto px-2">Третий пост</legend>
-                                <div class="mb-2">
-                                    <textarea class="form-control" placeholder="Третий совет" name="instAdvice1"
-                                        type="text" required></textarea>
-                                </div>
-                                <div class="mb-3 screenOnly">
-                                    <label for="formFile" class="form-label">Загрузить изображение</label>
-                                    <input class="form-control" type="file" id="formFile">
-                                </div>
-                            </fieldset>
-                            <!-- Меню картинка «Сердечко» «сообщение» «Отправить» -->
-                            <div class="instAdviceLike"><img src="../images/instLike.jpg" alt=""></div>
-                            <fieldset class="form-group border p-2 pb-1 mt-3">
-                                <legend class="w-auto px-2">Четвертый пост</legend>
-                                <div class="mb-2">
-                                    <textarea class="form-control" placeholder="Четвертый совет" name="instAdvice1"
-                                        type="text" required></textarea>
-                                </div>
-                                <div class="mb-3 screenOnly">
-                                    <label for="formFile" class="form-label">Загрузить изображение</label>
-                                    <input class="form-control" type="file" id="formFile">
-                                </div>
-                            </fieldset>
-                            <!-- Меню картинка «Сердечко» «сообщение» «Отправить» -->
-                            <div class="instAdviceLike"><img src="../images/instLike.jpg" alt=""></div>
-                            <fieldset class="form-group border p-2 pb-1 mt-3">
-                                <legend class="w-auto px-2">Пятый пост</legend>
-                                <div class="mb-2">
-                                    <textarea class="form-control" placeholder="Пятый совет" name="instAdvice1"
-                                        type="text" required></textarea>
-                                </div>
-                                <div class="mb-3 screenOnly">
-                                    <label for="formFile" class="form-label">Загрузить изображение</label>
-                                    <input class="form-control" type="file" id="formFile">
-                                </div>
-                            </fieldset>
-                            <!-- Меню картинка «Сердечко» «сообщение» «Отправить» -->
-                            <div class="instAdviceLike"><img src="../images/instLike.jpg" alt=""></div>
-                            <fieldset class="form-group border p-2 pb-1 mt-3">
-                                <legend class="w-auto px-2">Шестой пост</legend>
-                                <div class="mb-2">
-                                    <textarea class="form-control" placeholder="Шестой совет" name="instAdvice1"
-                                        type="text" required></textarea>
-                                </div>
-                                <div class="mb-3 screenOnly">
-                                    <label for="formFile" class="form-label">Загрузить изображение</label>
-                                    <input class="form-control" type="file" id="formFile">
-                                </div>
-                            </fieldset>
-                            <!-- Меню картинка «Сердечко» «сообщение» «Отправить» -->
-                            <div class="instAdviceLike"><img src="../images/instLike.jpg" alt=""></div>
-                            <fieldset class="form-group border p-2 pb-1 mt-3">
-                                <legend class="w-auto px-2">Седьмой пост</legend>
-                                <div class="mb-2">
-                                    <textarea class="form-control" placeholder="Седьмой совет" name="instAdvice1"
-                                        type="text" required></textarea>
-                                </div>
-                                <div class="mb-3 screenOnly">
-                                    <label for="formFile" class="form-label">Загрузить изображение</label>
-                                    <input class="form-control" type="file" id="formFile">
-                                </div>
-                            </fieldset>
-                            <!-- Меню картинка «Сердечко» «сообщение» «Отправить» -->
-                            <div class="instAdviceLike"><img src="../images/instLike.jpg" alt=""></div>
-                            <fieldset class="form-group border p-2 pb-1 mt-3">
-                                <legend class="w-auto px-2">Восьмой пост</legend>
-                                <div class="mb-2">
-                                    <textarea class="form-control" placeholder="Восьмой совет" name="instAdvice1"
-                                        type="text" required></textarea>
-                                </div>
-                                <div class="mb-3 screenOnly">
-                                    <label for="formFile" class="form-label">Загрузить изображение</label>
-                                    <input class="form-control" type="file" id="formFile">
-                                </div>
-                            </fieldset>
-                            <!-- Меню картинка «Сердечко» «сообщение» «Отправить» -->
-                            <div class="instAdviceLike"><img src="../images/instLike.jpg" alt=""></div>
-                            <fieldset class="form-group border p-2 pb-1 mt-3">
-                                <legend class="w-auto px-2">Девятый пост</legend>
-                                <div class="mb-2">
-                                    <textarea class="form-control" placeholder="Девятый совет" name="instAdvice1"
-                                        type="text" required></textarea>
-                                </div>
-                                <div class="mb-3 screenOnly">
-                                    <label for="formFile" class="form-label">Загрузить изображение</label>
-                                    <input class="form-control" type="file" id="formFile">
-                                </div>
-                            </fieldset>
-                            <div class="instAdviceLike"><img src="../images/instLike.jpg" alt=""></div>
-                            <fieldset class="form-group border p-2 pb-1 mt-3">
-                                <legend class="w-auto px-2">Десятый пост</legend>
-                                <div class="mb-2">
-                                    <textarea class="form-control" placeholder="Десятый совет" name="instAdvice1"
-                                        type="text" required></textarea>
-                                </div>
-                                <div class="mb-3 screenOnly">
-                                    <label for="formFile" class="form-label">Загрузить изображение</label>
-                                    <input class="form-control" type="file" id="formFile">
-                                </div>
-                            </fieldset>
-                            <!-- Меню картинка «Сердечко» «сообщение» «Отправить» -->
-                            <div class="instAdviceLike"><img src="../images/instLike.jpg" alt=""></div>
-                            <input type="submit" value="Отправить результаты"
-                                class="btn btn-primary screenOnly w-100 mt-3">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+					</div>
+					<div class="speechBubblesWrapper">
+						<div class="speechBubble question withAvatar mt-5 answer  right">
+							<span class="avatarCircle"></span>
+							<span class="avatar avatar-20"></span>
+							<span class="speechAuthor">Я</span>
+							Сейчас заполню таблицу:
+						</div>
+					</div>
+					<div class="printOnly printPageBreak"></div>
+					<div class="instMain">
+						<!-- Основная форма. Внимание на имя с префиксом -->
+						<form name="chehov-form-dv-28" class="mt-3" action="http://activepads.com:8082/formDetector">
+							<fieldset class="form-group border p-2 pb-1">
+								<legend class="w-auto px-2">Первый пост</legend>
+								<div class="mb-2">
+									<textarea class="form-control" placeholder="Первый совет" name="instAdvice1" type="text"
+										required></textarea>
+								</div>
+								<div class="mb-3 screenOnly">
+									<label for="formFile" class="form-label">Загрузить изображение</label>
+									<input class="form-control" type="file" id="formFile">
+								</div>
+							</fieldset>
+							<!-- Меню картинка «Сердечко» «сообщение» «Отправить» -->
+							<div class="instAdviceLike"><img src="../images/instLike.jpg" alt=""></div>
+							<fieldset class="form-group border p-2 pb-1 mt-3">
+								<legend class="w-auto px-2">Второй пост</legend>
+								<div class="mb-2">
+									<textarea class="form-control" placeholder="Второй совет" name="instAdvice1" type="text"
+										required></textarea>
+								</div>
+								<div class="mb-3 screenOnly">
+									<label for="formFile" class="form-label">Загрузить изображение</label>
+									<input class="form-control" type="file" id="formFile">
+								</div>
+							</fieldset>
+							<!-- Меню картинка «Сердечко» «сообщение» «Отправить» -->
+							<div class="instAdviceLike"><img src="../images/instLike.jpg" alt=""></div>
+							<fieldset class="form-group border p-2 pb-1 mt-3">
+								<legend class="w-auto px-2">Третий пост</legend>
+								<div class="mb-2">
+									<textarea class="form-control" placeholder="Третий совет" name="instAdvice1" type="text"
+										required></textarea>
+								</div>
+								<div class="mb-3 screenOnly">
+									<label for="formFile" class="form-label">Загрузить изображение</label>
+									<input class="form-control" type="file" id="formFile">
+								</div>
+							</fieldset>
+							<!-- Меню картинка «Сердечко» «сообщение» «Отправить» -->
+							<div class="instAdviceLike"><img src="../images/instLike.jpg" alt=""></div>
+							<fieldset class="form-group border p-2 pb-1 mt-3">
+								<legend class="w-auto px-2">Четвертый пост</legend>
+								<div class="mb-2">
+									<textarea class="form-control" placeholder="Четвертый совет" name="instAdvice1" type="text"
+										required></textarea>
+								</div>
+								<div class="mb-3 screenOnly">
+									<label for="formFile" class="form-label">Загрузить изображение</label>
+									<input class="form-control" type="file" id="formFile">
+								</div>
+							</fieldset>
+							<!-- Меню картинка «Сердечко» «сообщение» «Отправить» -->
+							<div class="instAdviceLike"><img src="../images/instLike.jpg" alt=""></div>
+							<fieldset class="form-group border p-2 pb-1 mt-3">
+								<legend class="w-auto px-2">Пятый пост</legend>
+								<div class="mb-2">
+									<textarea class="form-control" placeholder="Пятый совет" name="instAdvice1" type="text"
+										required></textarea>
+								</div>
+								<div class="mb-3 screenOnly">
+									<label for="formFile" class="form-label">Загрузить изображение</label>
+									<input class="form-control" type="file" id="formFile">
+								</div>
+							</fieldset>
+							<!-- Меню картинка «Сердечко» «сообщение» «Отправить» -->
+							<div class="instAdviceLike"><img src="../images/instLike.jpg" alt=""></div>
+							<fieldset class="form-group border p-2 pb-1 mt-3">
+								<legend class="w-auto px-2">Шестой пост</legend>
+								<div class="mb-2">
+									<textarea class="form-control" placeholder="Шестой совет" name="instAdvice1" type="text"
+										required></textarea>
+								</div>
+								<div class="mb-3 screenOnly">
+									<label for="formFile" class="form-label">Загрузить изображение</label>
+									<input class="form-control" type="file" id="formFile">
+								</div>
+							</fieldset>
+							<!-- Меню картинка «Сердечко» «сообщение» «Отправить» -->
+							<div class="instAdviceLike"><img src="../images/instLike.jpg" alt=""></div>
+							<fieldset class="form-group border p-2 pb-1 mt-3">
+								<legend class="w-auto px-2">Седьмой пост</legend>
+								<div class="mb-2">
+									<textarea class="form-control" placeholder="Седьмой совет" name="instAdvice1" type="text"
+										required></textarea>
+								</div>
+								<div class="mb-3 screenOnly">
+									<label for="formFile" class="form-label">Загрузить изображение</label>
+									<input class="form-control" type="file" id="formFile">
+								</div>
+							</fieldset>
+							<!-- Меню картинка «Сердечко» «сообщение» «Отправить» -->
+							<div class="instAdviceLike"><img src="../images/instLike.jpg" alt=""></div>
+							<fieldset class="form-group border p-2 pb-1 mt-3">
+								<legend class="w-auto px-2">Восьмой пост</legend>
+								<div class="mb-2">
+									<textarea class="form-control" placeholder="Восьмой совет" name="instAdvice1" type="text"
+										required></textarea>
+								</div>
+								<div class="mb-3 screenOnly">
+									<label for="formFile" class="form-label">Загрузить изображение</label>
+									<input class="form-control" type="file" id="formFile">
+								</div>
+							</fieldset>
+							<!-- Меню картинка «Сердечко» «сообщение» «Отправить» -->
+							<div class="instAdviceLike"><img src="../images/instLike.jpg" alt=""></div>
+							<fieldset class="form-group border p-2 pb-1 mt-3">
+								<legend class="w-auto px-2">Девятый пост</legend>
+								<div class="mb-2">
+									<textarea class="form-control" placeholder="Девятый совет" name="instAdvice1" type="text"
+										required></textarea>
+								</div>
+								<div class="mb-3 screenOnly">
+									<label for="formFile" class="form-label">Загрузить изображение</label>
+									<input class="form-control" type="file" id="formFile">
+								</div>
+							</fieldset>
+							<div class="instAdviceLike"><img src="../images/instLike.jpg" alt=""></div>
+							<fieldset class="form-group border p-2 pb-1 mt-3">
+								<legend class="w-auto px-2">Десятый пост</legend>
+								<div class="mb-2">
+									<textarea class="form-control" placeholder="Десятый совет" name="instAdvice1" type="text"
+										required></textarea>
+								</div>
+								<div class="mb-3 screenOnly">
+									<label for="formFile" class="form-label">Загрузить изображение</label>
+									<input class="form-control" type="file" id="formFile">
+								</div>
+							</fieldset>
+							<!-- Меню картинка «Сердечко» «сообщение» «Отправить» -->
+							<div class="instAdviceLike"><img src="../images/instLike.jpg" alt=""></div>
+							<input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100 mt-3">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        <!-- Подключаем бутстрап скрипты -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-            crossorigin="anonymous"></script>
+		<!-- Подключаем бутстрап скрипты -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+			crossorigin="anonymous"></script>
 
 		<script src="../js/getDomPath.js"></script>
 		<script src="../js/saveRestoreData.js"></script>
