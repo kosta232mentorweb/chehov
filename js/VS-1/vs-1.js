@@ -10,7 +10,7 @@ document.forms[ 0 ].querySelectorAll( 'input[type="text"]' )
 document.forms[ 0 ].querySelectorAll( 'input[type="text"]' )
 	.forEach( el =>
 		el.addEventListener( 'input', event => {
-			event.target.value = event.target.value.at( -1 )?.toUpperCase() ?? '';
+			event.target.value = event.target.value.slice( -1 )?.toUpperCase() ?? '';
 
 			saveInputs();
 
