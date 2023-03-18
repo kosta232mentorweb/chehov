@@ -54,11 +54,16 @@
 	}
 
 }
+
 $cellSize: 50px;
 
 .chehov-main-container {
 	padding-top: 3 * $cellSize;
 	// position: relative;
+
+	@media (min-width:940px) {
+		padding-top: 0;
+	}
 }
 
 
@@ -66,13 +71,13 @@ $cellSize: 50px;
 	position: fixed;
 	top: 78px;
 	right: 24px;
+
+
 	width: 3 * $cellSize + 4;
 	border: 1px solid black;
 	height: 3 * $cellSize + 4;
 	background-color: #fff;
-}
 
-.result {
 	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(255, 255, 255, 0.15);
 	// right: 0;
 	display: grid;
