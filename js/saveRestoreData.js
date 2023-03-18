@@ -1,7 +1,7 @@
 const htmlSuffix = location.pathname.split( '/' ).slice( -1 )[ 0 ];
 
 function saveInputs() {
-	const store = [ ...document.forms[ 0 ].querySelectorAll( 'input[type="text"], textarea' ) ].reduce( ( acc, el ) => {
+	const store = [ ...document.forms[ 0 ]?.querySelectorAll( 'input[type="text"], textarea' ) ].reduce( ( acc, el ) => {
 		acc[ getDomPath( el ) ] = el.value;
 		return acc;
 	}, {} );
@@ -20,8 +20,12 @@ if ( storeString ) store = JSON.parse( storeString );
 
 // console.log( store );
 
-document.forms[ 0 ].querySelectorAll( 'input[type="text"], textarea' ).forEach( el => {
+document.forms[ 0 ]?.querySelectorAll( 'input[type="text"], textarea' ).forEach( el => {
 	el.value = store[ getDomPath( el ) ] ?? '';
+
+	el.addEventListener( 'input', event => {
+		saveInputs();
+	} )
 } )
 
 // console.log( store );
