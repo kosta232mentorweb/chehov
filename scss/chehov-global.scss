@@ -228,7 +228,7 @@ body {
 }
 
 .question {
-	background-color: rgb(224, 249, 245);
+	background-color: #918D4F55;
 	font-weight: bold;
 	font-size: 1.04rem;
 	line-height: 1.3;
@@ -236,12 +236,12 @@ body {
 	// transition: all 0.6s;
 
 	&:hover {
-		background-color: rgb(236, 236, 236);
+		// background-color: rgb(236, 236, 236);
 	}
 }
 
 .answer {
-	background-color: rgb(255, 253, 202);
+	background-color: #914F5355;
 }
 
 
@@ -257,7 +257,7 @@ body {
 }
 
 .chehov-navbar {
-	background-color: #712cf9 !important;
+	background-color: #916c4f !important;
 	box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(255 255 255 / 15%);
 
 	.container-fluid {
@@ -265,6 +265,10 @@ body {
 	}
 }
 
+input[type="submit"] {
+	background-color: #916c4f !important;
+	border: none;
+}
 
 
 .chehov-main-container {
@@ -317,4 +321,28 @@ legend {
 #BookAASKeyGlaz {
 	cursor: pointer;
 	transition: all 600ms;
+}
+
+.container.chehov-main-container fieldset {
+	background-color: #914F5333 !important;
+}
+
+.bg-ira1 {
+	background-color: #4F918D77 !important;
+}
+
+.bg-ira11 {
+	background-color: #8EA35C !important;
+}
+
+.bg-ira12 {
+	background-color: #715CA3 !important;
+}
+
+.bg-ira13 {
+	background-color: #5CA395 !important;
+}
+
+.bg-ira14 {
+	background-color: #A35C6A !important;
 }
