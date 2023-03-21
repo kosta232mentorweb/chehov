@@ -102,129 +102,131 @@ body {
 
 	@for $i from 0 to 40 {
 		.avatar-#{$i} {
-			background-image: url(../images/persons/#{$i}-dop.png),
-			url(../images/persons/#{$i}.png) // url(../images/persons/circle.png);
+			background-image: url(../images/persons/#{$i}-dop.png?kkey=#{ random(1000000)
+		}),
+		url(../images/persons/#{$i}.png?kkey=#{ random(1000000)
+	}) // url(../images/persons/circle.png);
 
-		}
+}
+}
+
+.avatar {
+	// mix-blend-mode: darken;
+	position: absolute;
+	top: -71px;
+	left: -105px;
+	width: 120px;
+	height: 120px;
+	background-size: 100%, 100%;
+	background-position: center, center;
+	background-repeat: no-repeat, no-repeat;
+	// background-blend-mode: normal, normal, normal;
+
+	transition: all 0.7s;
+	// z-index: -1;
+
+	@media (max-width: $mobilePhoneWidth) {
+		top: -52px;
+		top: -57px;
+		left: -71px;
+		width: 85px;
+		height: 85px;
+		background-size: 80px 80px;
+		background-position: 50% 70%;
+
 	}
+
+
+}
+
+
+.avatarCircle {
+	position: absolute;
+	top: -40px;
+	left: -80px;
+	width: 70px;
+	height: 70px;
+	border: 2px solid #ddd;
+	border-radius: 50%;
+
+	@media (max-width: $mobilePhoneWidth) {
+		top: -39px;
+		left: -55px;
+		width: 54px;
+		height: 54px;
+	}
+
+}
+
+&.right {
+	align-self: flex-end;
 
 	.avatar {
-		// mix-blend-mode: darken;
-		position: absolute;
-		top: -71px;
-		left: -105px;
-		width: 120px;
-		height: 120px;
-		background-size: 100%, 100%;
-		background-position: center, center;
-		background-repeat: no-repeat, no-repeat;
-		// background-blend-mode: normal, normal, normal;
-
-		transition: all 0.7s;
-		// z-index: -1;
+		left: inherit;
+		right: -105px;
+		transform: scaleX(-1);
 
 		@media (max-width: $mobilePhoneWidth) {
-			top: -52px;
-			top: -57px;
-			left: -71px;
-			width: 85px;
-			height: 85px;
-			background-size: 80px 80px;
-			background-position: 50% 70%;
+			// top: -52px;
+			// top: -57px;
+			left: inherit;
+			right: -71px;
+			// width: 85px;
+			// height: 85px;
+			// background-size: 80px 80px;
+			// background-position: 50% 70%;
 
 		}
-
-
 	}
-
 
 	.avatarCircle {
-		position: absolute;
-		top: -40px;
-		left: -80px;
-		width: 70px;
-		height: 70px;
-		border: 2px solid #ddd;
-		border-radius: 50%;
+		left: inherit;
+		right: -80px;
 
 		@media (max-width: $mobilePhoneWidth) {
-			top: -39px;
-			left: -55px;
-			width: 54px;
-			height: 54px;
+			// top: -39px;
+			left: inherit;
+			right: -55px;
+			// width: 54px;
+			// height: 54px;
 		}
-
 	}
+}
+
+&:hover {
+
+	.avatar {
+		// width: 150px;
+		// height: 150px;
+		transform-origin: 60px 60px;
+		transform: scale(1.25) rotate(-6deg);
+		background-size: 100%, 100%;
+		background-position: center, center;
+	}
+
 
 	&.right {
-		align-self: flex-end;
-
 		.avatar {
-			left: inherit;
-			right: -105px;
-			transform: scaleX(-1);
-
-			@media (max-width: $mobilePhoneWidth) {
-				// top: -52px;
-				// top: -57px;
-				left: inherit;
-				right: -71px;
-				// width: 85px;
-				// height: 85px;
-				// background-size: 80px 80px;
-				// background-position: 50% 70%;
-
-			}
-		}
-
-		.avatarCircle {
-			left: inherit;
-			right: -80px;
-
-			@media (max-width: $mobilePhoneWidth) {
-				// top: -39px;
-				left: inherit;
-				right: -55px;
-				// width: 54px;
-				// height: 54px;
-			}
-		}
-	}
-
-	&:hover {
-
-		.avatar {
-			// width: 150px;
-			// height: 150px;
 			transform-origin: 60px 60px;
-			transform: scale(1.25) rotate(-6deg);
+			transform: scaleX(-1.25) scaleY(1.25) rotate(-6deg);
 			background-size: 100%, 100%;
 			background-position: center, center;
+
+			@media (max-width: $mobilePhoneWidth) {
+				transform-origin: 43px 60px;
+			}
 		}
 
+	}
 
-		&.right {
-			.avatar {
-				transform-origin: 60px 60px;
-				transform: scaleX(-1.25) scaleY(1.25) rotate(-6deg);
-				background-size: 100%, 100%;
-				background-position: center, center;
+	.speechAuthor {
+		color: black;
 
-				@media (max-width: $mobilePhoneWidth) {
-					transform-origin: 43px 60px;
-				}
-			}
-
-		}
-
-		.speechAuthor {
-			color: black;
-
-			@media (prefers-color-scheme: dark) {
-				color: white;
-			}
+		@media (prefers-color-scheme: dark) {
+			color: white;
 		}
 	}
+}
 }
 
 .question {
