@@ -346,3 +346,19 @@ legend {
 .bg-ira14 {
 	background-color: #A35C6A !important;
 }
+
+#makePrint {
+	cursor: pointer;
+	display: inline-flex;
+	background-color: #69e9f2;
+	color: white;
+	border-radius: 6px;
+	padding: 4px 10px;
+	font-weight: bold;
+	// position: relative;
+	margin-top: 4px;
+}
+
+.offcanvas-body {
+	overflow-y: auto;
+}
