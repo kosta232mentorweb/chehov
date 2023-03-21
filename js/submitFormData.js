@@ -2,7 +2,9 @@ console.log( 'submit form script' );
 
 const chehovFormElement = document.forms[ 0 ];
 
-const baseURL = 'http://localhost:3009'
+const baseURL = location.hostname === 'learn.bookaas.com' || location.hostname === 'che.bookaas.com'
+	? 'https://che-server.bookaas.com'
+	: 'http://localhost:3009';
 
 document.querySelector( 'form' ).addEventListener( 'submit', event => {
 	event.preventDefault();
@@ -19,7 +21,10 @@ document.querySelector( 'form' ).addEventListener( 'submit', event => {
 		} ).then( data => data.json() )
 			.then( data => {
 				console.log( data );
+				alert( 'Ответ отправлен. Смотри сообщения бота.' )
 				// location.reload();
+			} ).catch( e => {
+				alert( 'Ошибка отправки!' )
 			} )
 
 	}
