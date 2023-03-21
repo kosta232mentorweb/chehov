@@ -17,5 +17,8 @@
    "bugs": {
       "url": "https://github.com/kosta232mentorweb/chehov/issues"
    },
-   "homepage": "https://github.com/kosta232mentorweb/chehov#readme"
+   "homepage": "https://github.com/kosta232mentorweb/chehov#readme",
+   "dependencies": {
+      "ncp": "^2.0.0"
+   }
 }

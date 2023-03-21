@@ -1,6 +1,13 @@
 const fs = require( 'fs' );
 
 console.log( 'start' );
+try {
+	fs.rmSync( './distr', { recursive: true } );
+} catch ( err ) {
+	console.log( err );
+}
+fs.mkdirSync( './distr' );
+fs.mkdirSync( './distr/html' );
 
 const htmlDir = fs.readdirSync( 'html' );
 
@@ -40,4 +47,29 @@ function update( path, fileName ) {
 	fs.writeFileSync( './distr/' + path + fileName, text );
 }
 
-update( '', 'index.html' )
+update( '', 'index.html' );
+
+const cssDir = fs.readdirSync( 'css' );
+const jsDir = fs.readdirSync( 'js' );
+
+console.log( cssDir );
+console.log( jsDir );
+
+
+var ncp = require( 'ncp' ).ncp;
+
+ncp.limit = 16;
+
+ncp( './css', './distr/css', function ( err ) {
+	if ( err ) {
+		return console.error( err );
+	}
+	console.log( 'done!' );
+} );
+
+ncp( './js', './distr/js', function ( err ) {
+	if ( err ) {
+		return console.error( err );
+	}
+	console.log( 'done!' );
+} );
