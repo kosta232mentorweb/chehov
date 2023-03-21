@@ -10,7 +10,12 @@ htmlDir.forEach( htmlFile => {
 
 	let text = fs.readFileSync( './html/' + htmlFile, { encoding: 'utf8' } );
 
-	const repl = text.match( /(?<=src=")(.+?)(?=")/g ).filter( el => ( el.includes( '../js/' ) || el.includes( 'images' ) ) );
+	const repl1 = text.match( /(?<=src=")(.+?)(?=")/g ).filter( el => ( el.includes( '../js/' ) || el.includes( 'images' ) ) );
+
+	const repl2 = text.match( /(?<=href=")(.+?)(?=")/g ).filter( el => ( el.includes( '../css/' ) || el.includes( 'html' ) ) );
+
+	const repl = [ ...repl1, ...repl2 ];
+
 	console.log( repl );
 
 	const r = {};
