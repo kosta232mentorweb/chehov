@@ -351,14 +351,21 @@ legend {
 	cursor: pointer;
 	display: inline-flex;
 	background-color: #69e9f2;
-	color: white;
+	// color: white;
 	border-radius: 6px;
 	padding: 4px 10px;
 	font-weight: bold;
 	// position: relative;
-	margin-top: 4px;
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
 
 .offcanvas-body {
 	overflow-y: auto;
+
+	p {
+		text-indent: inherit;
+		margin-top: 1rem !important;
+		margin-bottom: 1rem !important;
+	}
 }
