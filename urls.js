@@ -1,5 +1,7 @@
 const fs = require( 'fs' );
 
+const UglifyJS = require( "uglify-js" );
+
 console.log( 'start' );
 try {
 	fs.rmSync( './distr', { recursive: true } );
@@ -73,3 +75,28 @@ ncp( './js', './distr/js', function ( err ) {
 	}
 	console.log( 'done!' );
 } );
+
+
+
+
+
+setTimeout( () => {
+	const jsFiles = fs.readdirSync( './distr/js' );
+	console.log( jsFiles );
+
+	jsFiles.forEach( jsFile => {
+		console.log( '------------------------------------------------' );
+		console.log( jsFile );
+
+		if ( jsFile.slice( -2 ) !== 'js' ) return;
+
+		const text = fs.readFileSync( './distr/js/' + jsFile, { encoding: 'utf8' } );
+
+		const uText = UglifyJS.minify( text );
+
+		fs.writeFileSync( './distr/js/' + jsFile, uText.code );
+
+	} );
+
+
+}, 1000 )

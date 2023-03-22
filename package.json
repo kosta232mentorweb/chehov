@@ -19,6 +19,7 @@
    },
    "homepage": "https://github.com/kosta232mentorweb/chehov#readme",
    "dependencies": {
-      "ncp": "^2.0.0"
+      "ncp": "^2.0.0",
+      "uglify-js": "^3.17.4"
    }
 }

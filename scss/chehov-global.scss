@@ -230,7 +230,7 @@ body {
 }
 
 .question {
-	background-color: #918D4F55;
+	background-color: #914F5322;
 	font-weight: bold;
 	font-size: 1.04rem;
 	line-height: 1.3;
@@ -243,7 +243,7 @@ body {
 }
 
 .answer {
-	background-color: #914F5355;
+	background-color: #918D4F22;
 }
 
 
@@ -259,7 +259,7 @@ body {
 }
 
 .chehov-navbar {
-	background-color: #916c4f !important;
+	background-color: #ae937e !important; // #916c4fbb !important;
 	box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(255 255 255 / 15%);
 
 	.container-fluid {
@@ -328,7 +328,7 @@ legend {
 }
 
 .container.chehov-main-container fieldset {
-	background-color: #914F5333 !important;
+	background-color: #918D4F22 !important;
 }
 
 .bg-ira1 {
@@ -372,4 +372,37 @@ legend {
 		margin-top: 1rem !important;
 		margin-bottom: 1rem !important;
 	}
+}
+
+.prevTask,
+.nextTask {
+	position: fixed;
+	z-index: 1;
+	width: 64px;
+	height: 48px;
+	border-radius: 4px;
+	background-color: #916c4f;
+	bottom: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	opacity: 0.2;
+	cursor: pointer;
+	// font-weight: bold;
+	font-weight: 100;
+	font-size: 160%;
+	transition: all 0.7s;
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.prevTask {
+	left: 20px;
+}
+
+.nextTask {
+	right: 20px;
 }
