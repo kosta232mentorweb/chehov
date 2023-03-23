@@ -351,10 +351,15 @@ legend {
 	background-color: #A35C6A !important;
 }
 
+.bg-ira-main {
+	background-color: #916c4f !important;
+	color: white;
+}
+
 #makePrint {
 	cursor: pointer;
 	display: inline-flex;
-	background-color: #69e9f2;
+	// background-color: #916c4f;
 	// color: white;
 	border-radius: 6px;
 	padding: 4px 10px;
@@ -393,6 +398,10 @@ legend {
 	font-weight: 100;
 	font-size: 160%;
 	transition: all 0.7s;
+
+	@media print {
+		display: none;
+	}
 
 	&:hover {
 		opacity: 1;

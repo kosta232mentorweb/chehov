@@ -102,15 +102,17 @@ function changeTask( delta ) {
 	location.href = location.href.replace( tasksList[ idx ], tasksList[ newIdx ] )
 }
 
-const prevTask = document.createElement( 'div' );
-prevTask.innerHTML = '<';
-prevTask.classList.add( 'prevTask' );
-// document.querySelector( '.chehov-main-container' ).append( prevTask );
-document.body.append( prevTask );
-prevTask.addEventListener( 'click', event => changeTask( -1 ) );
+if ( location.pathname.split( '/' ).at( -1 ) !== 'index.html' ) {
+	const prevTask = document.createElement( 'div' );
+	prevTask.innerHTML = '<';
+	prevTask.classList.add( 'prevTask' );
+	// document.querySelector( '.chehov-main-container' ).append( prevTask );
+	document.body.append( prevTask );
+	prevTask.addEventListener( 'click', event => changeTask( -1 ) );
 
-const nextTask = document.createElement( 'div' );
-nextTask.innerHTML = '>';
-nextTask.classList.add( 'nextTask' );
-document.body.append( nextTask );
-nextTask.addEventListener( 'click', event => changeTask( 1 ) );
+	const nextTask = document.createElement( 'div' );
+	nextTask.innerHTML = '>';
+	nextTask.classList.add( 'nextTask' );
+	document.body.append( nextTask );
+	nextTask.addEventListener( 'click', event => changeTask( 1 ) );
+}
