@@ -1,14 +1,18 @@
 const fs = require( 'fs' );
+const fse = require( 'fs-extra' );
 
 const UglifyJS = require( "uglify-js" );
 
 console.log( 'start' );
-try {
-	fs.rmSync( './distr', { recursive: true } );
-} catch ( err ) {
-	console.log( err );
-}
-fs.mkdirSync( './distr' );
+// try {
+fse.emptyDirSync( './distr' );
+// } catch ( err ) {
+// console.log( err );
+// }
+
+// process.exit( 0 );
+
+// fs.mkdirSync( './distr' );
 fs.mkdirSync( './distr/html' );
 
 const htmlDir = fs.readdirSync( 'html' );
@@ -24,9 +28,17 @@ htmlDir.forEach( htmlFile => {
 function update( path, fileName ) {
 	let text = fs.readFileSync( './' + path + fileName, { encoding: 'utf8' } );
 
-	const src = text.match( /(?<=src=")(.+?)(?=")/g ).filter( el => ( el.includes( '../js/' ) || el.includes( 'images' ) ) );
+	const src =
+		// fileName === 'index.html'
+		// ? text.match( /(?<=src=")(.+?)(?=")/g ).filter( el => ( el.includes( 'js/' ) || el.includes( 'images' ) ) )
+		// : text.match( /(?<=src=")(.+?)(?=")/g ).filter( el => ( el.includes( '../js/' ) || el.includes( 'images' ) ) )
+		text.match( /(?<=src=")(.+?)(?=")/g ).filter( el => !el.includes( 'cdn.jsdelivr' ) );
 
-	const href = text.match( /(?<=href=")(.+?)(?=")/g ).filter( el => ( el.includes( '../css/' ) || el.includes( 'html' ) ) );
+	const href =
+		// fileName === 'index.html'
+		// ? text.match( /(?<=href=")(.+?)(?=")/g ).filter( el => ( el.includes( 'css/' ) || el.includes( 'html' ) ) )
+		// : text.match( /(?<=href=")(.+?)(?=")/g ).filter( el => ( el.includes( '../css/' ) || el.includes( 'html' ) ) )
+		text.match( /(?<=href=")(.+?)(?=")/g ).filter( el => !el.includes( 'cdn.jsdelivr' ) );
 
 	const repl = [ ...src, ...href ];
 
