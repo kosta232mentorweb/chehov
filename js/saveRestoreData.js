@@ -1,10 +1,24 @@
+// function getDomPath( el ) {
+// 	return el.name;
+// }
+
 const htmlSuffix = location.pathname.split( '/' ).slice( -1 )[ 0 ];
 
 function saveInputs() {
-	const store = [ ...document.forms[ 0 ]?.querySelectorAll( 'input[type="text"], textarea' ) ].reduce( ( acc, el ) => {
-		acc[ getDomPath( el ) ] = el.value;
+	const store0 = [ ...document.forms[ 0 ].querySelectorAll( 'input[type="radio"]' ) ].reduce( ( acc, el ) => {
+		acc[ el.name + el.value ] = el.checked;
 		return acc;
 	}, {} );
+	const store1 = [ ...document.forms[ 0 ].querySelectorAll( 'input[type="text"], textarea' ) ].reduce( ( acc, el ) => {
+		acc[ el.name ] = el.value;
+		return acc;
+	}, {} );
+	const store2 = [ ...document.forms[ 0 ].querySelectorAll( 'input[type="checkbox"]' ) ].reduce( ( acc, el ) => {
+		acc[ el.name ] = el.checked;
+		return acc;
+	}, {} );
+
+	const store = { ...store0, ...store1, ...store2 };
 
 	// console.log( store );
 
@@ -13,17 +27,48 @@ function saveInputs() {
 
 let store = {};
 
-const storeString = localStorage.getItem( 'inputsValues' + htmlSuffix );
-if ( storeString ) store = JSON.parse( storeString );
+function loadInputs() {
 
-console.log( store );
+	const storeString = localStorage.getItem( 'inputsValues' + htmlSuffix );
+	if ( storeString ) store = JSON.parse( storeString );
 
-document.forms[ 0 ]?.querySelectorAll( 'input[type="text"], textarea' ).forEach( el => {
-	el.value = store[ getDomPath( el ) ] ?? '';
+	console.log( 'store', store );
+	// console.log( document.forms[ 0 ].querySelectorAll( 'input[type="text"], textarea, input[type="checkbox"]' ) );
 
-	el.addEventListener( 'input', event => {
-		saveInputs();
-	} );
-} );
+	setTimeout( () => {
 
-// console.log( store );
+		document.forms[ 0 ].querySelectorAll( 'input[type="radio"]' ).forEach( el => {
+			// console.log( el.value );
+			// console.log( el.checked );
+			el.checked = store[ el.name + el.value ] ?? '';
+
+			el.addEventListener( 'input', event => {
+				saveInputs();
+			} );
+		} );
+
+		document.forms[ 0 ].querySelectorAll( 'input[type="text"], textarea' ).forEach( el => {
+			console.log( el.value );
+			console.log( el.checked );
+			el.value = store[ el.name ] ?? '';
+
+			el.addEventListener( 'input', event => {
+				saveInputs();
+			} );
+		} );
+
+		document.forms[ 0 ].querySelectorAll( 'input[type="checkbox"]' ).forEach( el => {
+			// console.log( el.value );
+			// console.log( el.checked );
+			el.checked = store[ el.name ] ?? '';
+
+			el.addEventListener( 'input', event => {
+				saveInputs();
+			} );
+		} );
+
+	}, 0 );
+
+}
+
+loadInputs();
