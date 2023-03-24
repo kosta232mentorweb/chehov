@@ -48,8 +48,8 @@ function loadInputs() {
 		} );
 
 		document.forms[ 0 ].querySelectorAll( 'input[type="text"], textarea' ).forEach( el => {
-			console.log( el.value );
-			console.log( el.checked );
+			// console.log( el.value );
+			// console.log( el.checked );
 			el.value = store[ el.name ] ?? '';
 
 			el.addEventListener( 'input', event => {

@@ -121,24 +121,28 @@ function changeTask( delta ) {
 }
 
 if ( ![ 'index.html', '' ].includes( location.pathname.split( '/' ).at( -1 ) ) ) {
+	const prevNextContainer = document.createElement( 'div' );
+	prevNextContainer.classList.add( 'prevNextContainer' );
+	prevNextContainer
+
 	const prevTask = document.createElement( 'div' );
 	prevTask.innerHTML = `
-	    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>
+	    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>
 		 <span class="longPrevNextCaption">предыдущее задание</span>
 		 <span class="shortPrevNextCaption">предыдущее</span>
 	`;
 	prevTask.classList.add( 'prevTask' );
-	// document.querySelector( '.chehov-main-container' ).append( prevTask );
-	document.body.append( prevTask );
+	document.querySelector( '.chehov-main-container .row .col-12' ).append( prevNextContainer );
+	prevNextContainer.append( prevTask );
 	prevTask.addEventListener( 'click', event => changeTask( -1 ) );
 
 	const nextTask = document.createElement( 'div' );
 	nextTask.innerHTML = `
-	   <span class="longPrevNextCaption">следующее задание</span>
-	   <span class="shortPrevNextCaption">следующее</span>
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8L4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>	
+	<span class="longPrevNextCaption">следующее задание</span>
+	<span class="shortPrevNextCaption">следующее</span>
+	<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8L4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>	
 	`;
 	nextTask.classList.add( 'nextTask' );
-	document.body.append( nextTask );
+	prevNextContainer.append( nextTask );
 	nextTask.addEventListener( 'click', event => changeTask( 1 ) );
 }
