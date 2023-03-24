@@ -1,8 +1,6 @@
 console.log( 'offcanvas-body' );
 
-document.querySelector( '.offcanvas-body' ).innerHTML = `
-
-<label class="form-label" for="BookAASKey">Ваш персональный ключ:</label>
+document.querySelector( '.offcanvas-body' ).innerHTML = `<label class="form-label" for="BookAASKey">Ваш персональный ключ:</label>
 <div class="mb-3 input-group">
 	<input class="form-control" type="password" id="BookAASKey" placeholder="ваш ключ" autocomplete="off"
 		aria-label="Ваш персональный ключ" aria-describedby="BookAASKeyGlaz">
@@ -19,10 +17,23 @@ document.querySelector( '.offcanvas-body' ).innerHTML = `
 
 
 <p>
-	Задания можно распечатать на принтере. Страница адаптируется для печати на бумаге формата А4 и,
-	например, вместо ссылок появятся QR-коды. Для распечатки чистого задания нажмите кнопку <span id="makePrint">ПЕЧАТЬ
+	Задания можно распечатать на принтере. Страница адаптируется для печати на бумаге формата А4,
+	вместо ссылок печатаются QR-коды, скрываются ненужные кнопки и панели. Для распечатки чистого задания нажмите кнопку
+	<span id="makePrint">ПЕЧАТЬ
 		ЧИСТОГО ЗАДАНИЯ</span>.
+
 </p>
+<p>
+	Для распечатки заполненного задания нажмите кнопку <span id="makePrintWithValues">ПЕЧАТЬ ЗАПОЛНЕННОГО
+		ЗАДАНИЯ</span>. На данном этапе разработки этот функционал выключен. Если он вам необходим, напишите на email
+	bookaas232@gmail.com.
+
+</p>
+<p>
+	Для очистки (сброса) формы нажмите кнопку <span id="clearForm">ОЧИСТКА ВСЕЙ ФОРМЫ</span>.
+
+</p>
+
 <img src="../images/chatbooklogo-black.svg" width="80" alt="BOOKaaS logo" />
 <p>Серия основана в 2020 году К. Г. Страусовым.</p>
 <p>Ответственный за литературную и методическую часть С. C. Бородич</p>
@@ -60,6 +71,4 @@ document.querySelector( '.offcanvas-body' ).innerHTML = `
 <!-- <form class="d-flex mt-3" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-success" type="submit">Search</button>
-                 </form> -->
-
-`;
+                 </form> -->`;

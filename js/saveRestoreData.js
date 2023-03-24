@@ -16,7 +16,7 @@ let store = {};
 const storeString = localStorage.getItem( 'inputsValues' + htmlSuffix );
 if ( storeString ) store = JSON.parse( storeString );
 
-// console.log( store );
+console.log( store );
 
 document.forms[ 0 ]?.querySelectorAll( 'input[type="text"], textarea' ).forEach( el => {
 	el.value = store[ getDomPath( el ) ] ?? '';

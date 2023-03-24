@@ -7,6 +7,23 @@ document.querySelector( '#makePrint' ).addEventListener( 'click', event => {
 	location.reload();
 } );
 
+// document.querySelector( '#makePrintWithValues' ).addEventListener( 'click', event => {
+// 	document.forms[ 0 ].reset();
+// 	window.print();
+// 	// alert( 'printed' );
+// 	// location.reload();
+// } );
+
+document.querySelector( '#clearForm' ).addEventListener( 'click', event => {
+	if ( confirm( 'Точно сбросить форму?' ) ) {
+		document.forms[ 0 ].reset();
+	}
+} );
+
+
+
+
+// prev-next buttons
 
 tasksList = [
 	'OB-1.html',

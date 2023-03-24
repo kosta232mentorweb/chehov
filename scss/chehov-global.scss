@@ -362,17 +362,24 @@ legend {
 	color: white;
 }
 
-#makePrint {
+#makePrint,
+#makePrintWithValues,
+#clearForm {
 	cursor: pointer;
 	display: inline-flex;
-	// background-color: #916c4f;
-	// color: white;
+	background-color: #916c4f;
+	color: white;
 	border-radius: 6px;
 	padding: 4px 10px;
 	font-weight: bold;
 	// position: relative;
 	margin-top: 8px;
 	margin-bottom: 8px;
+}
+
+#makePrintWithValues {
+	opacity: 0.35;
+	cursor: inherit;
 }
 
 .offcanvas-body {
