@@ -40,7 +40,8 @@ function loadInputs() {
 		document.forms[ 0 ].querySelectorAll( 'input[type="radio"]' ).forEach( el => {
 			// console.log( el.value );
 			// console.log( el.checked );
-			el.checked = store[ el.name + el.value ] ?? '';
+			if ( el.disabled || el.readOnly ) return;
+			el.checked = store[ el.name + el.value ] ?? false;
 
 			el.addEventListener( 'input', event => {
 				saveInputs();
@@ -50,7 +51,8 @@ function loadInputs() {
 		document.forms[ 0 ].querySelectorAll( 'input[type="text"], textarea' ).forEach( el => {
 			// console.log( el.value );
 			// console.log( el.checked );
-			el.value = store[ el.name ] ?? '';
+			if ( el.disabled || el.readOnly ) return;
+			if ( store[ el.name ] !== undefined ) el.value = store[ el.name ];
 
 			el.addEventListener( 'input', event => {
 				saveInputs();
@@ -60,7 +62,8 @@ function loadInputs() {
 		document.forms[ 0 ].querySelectorAll( 'input[type="checkbox"]' ).forEach( el => {
 			// console.log( el.value );
 			// console.log( el.checked );
-			el.checked = store[ el.name ] ?? '';
+			if ( el.disabled || el.readOnly ) return;
+			el.checked = store[ el.name ] ?? false;
 
 			el.addEventListener( 'input', event => {
 				saveInputs();

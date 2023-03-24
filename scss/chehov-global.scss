@@ -244,6 +244,16 @@ body {
 	&:hover {
 		// background-color: rgb(236, 236, 236);
 	}
+
+	p {
+		text-indent: 1.5rem;
+		margin-top: 0;
+		margin-bottom: 0;
+
+		&:first-of-type {
+			text-indent: inherit;
+		}
+	}
 }
 
 .answer {
@@ -353,6 +363,10 @@ legend {
 	background-color: #5CA395 !important;
 }
 
+:root {
+	--bg-ira13: #5CA395;
+}
+
 .bg-ira14 {
 	background-color: #A35C6A !important;
 }
@@ -402,13 +416,22 @@ legend {
 	grid-gap: 24px;
 	position: fixed;
 	bottom: 0;
-	transition: all 1s;
+	transition: all 0.6s;
 	// width: 100vw;
 	left: 0;
 	right: 0;
 	background-color: #916c4f;
 	color: #fff;
 
+	opacity: 0.3;
+
+	@media print {
+		display: none;
+	}
+
+	&:hover {
+		opacity: 1;
+	}
 
 	.prevTask,
 	.nextTask {
@@ -423,7 +446,7 @@ legend {
 		align-items: center;
 		justify-content: center;
 		color: white;
-		opacity: 0.2;
+		// opacity: 0.2;
 		cursor: pointer;
 		// font-weight: bold;
 		font-weight: 100;
@@ -450,13 +473,20 @@ legend {
 			opacity: 1;
 		}
 
-		@media print {
-			display: none;
-		}
 
-		&:hover {
-			opacity: 1;
-		}
 	}
 
+}
+
+input[type="checkbox"],
+.form-select {
+	border-color: #5CA39588;
+
+	&:focus {
+		box-shadow: 0 0 0 0.25rem #5CA39544;
+	}
+
+	&:checked {
+		background-color: #5CA395;
+	}
 }

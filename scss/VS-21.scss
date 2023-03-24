@@ -1,83 +1,71 @@
 @import "variables/variables";
 
 .answerForm {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 
 
-    .caption {
-        position: relative;
+	.caption {
+		position: relative;
 
-        &:before {
-            position: absolute;
-            top: 3px;
-            left: 6px;
-            font-weight: bold;
-            color: #aaa;
-            font-size: 70%;
-        }
-    }
+		&:before {
+			position: absolute;
+			top: 3px;
+			left: 6px;
+			font-weight: bold;
+			color: #aaa;
+			font-size: 70%;
+		}
+	}
 
-    .personas {
-        &:before {
-            content: 'Прототип героя';
-        }
+	.personas {
+		&:before {
+			content: 'Прототип героя';
+		}
 
-        flex-basis: 30%;
-    }
+		flex-basis: 30%;
+	}
 
-    .characteristic {
-        &:before {
-            content: 'Как появлялся образ героя';
-        }
+	.characteristic {
+		&:before {
+			content: 'Как появлялся образ героя';
+		}
 
-        flex-basis: 70%;
-    }
-
-
-    @media (max-width: $tabletWidth) {
-
-        .personas {
-            flex-basis: 100%;
-				margin-top: 24px;
-        }
-
-        .characteristic {
-            flex-basis: 100%;
-        }
-    }
-
-    @media print {
-
-        .personas {
-            flex-basis: 30%;
-        }
-
-        .characteristic {
-            flex-basis: 70%;
-        }
-
-        textarea {
-            height: 3.7cm;
-        }
-    }
-
-    textarea {
-        width: 100%;
-        padding-top: 20px;
-		  padding-left: 6px;
-    }
-}
+		flex-basis: 70%;
+	}
 
 
+	@media (max-width: $tabletWidth) {
 
-p {
-	text-indent: 1.5rem;
-	margin-top: 0;
-	margin-bottom: 0;
+		.personas {
+			flex-basis: 100%;
+			margin-top: 24px;
+		}
 
-	&:first-of-type {
-		text-indent: inherit;
+		.characteristic {
+			flex-basis: 100%;
+		}
+	}
+
+	@media print {
+
+		.personas {
+			flex-basis: 30%;
+		}
+
+		.characteristic {
+			flex-basis: 70%;
+		}
+
+		textarea {
+			height: 3.7cm;
+		}
+	}
+
+	textarea {
+		width: 100%;
+		padding-top: 20px;
+		padding-left: 6px;
 	}
 }
