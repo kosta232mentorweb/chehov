@@ -411,7 +411,7 @@ legend {
 	// padding: 6px 24px;
 	box-shadow: 0 -0.5rem 1rem rgb(0 0 0 / 10%), inset 0 -1px 0 rgb(255 255 255 / 15%);
 	height: 32px;
-	background-color: #fff;
+	// background-color: #fff;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 24px;
@@ -421,21 +421,26 @@ legend {
 	// width: 100vw;
 	left: 0;
 	right: 0;
-	background-color: #916c4f;
-	color: #fff;
+	background-color: #ded3ca;
+	background-color: #f0f0e8;
+	color: #00000099;
 
-	opacity: 0.3;
+	// opacity: 0.3;
 
 	@media print {
 		display: none;
 	}
 
 	&:hover {
-		opacity: 1;
+		// opacity: 1;
+		color: #fff;
+		background-color: #916c4f;
 	}
 
 	@media (max-width: 640px) {
-		opacity: 1;
+		background-color: #916c4f;
+		color: #fff;
+		// opacity: 1;
 	}
 
 	.prevTask,
@@ -450,19 +455,19 @@ legend {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		color: white;
+		// color: white;
 		// opacity: 0.2;
 		cursor: pointer;
 		// font-weight: bold;
 		font-weight: 100;
 		// font-size: 160%;
-		transition: all 0.7s;
+		// transition: all 0.7s;
 
 		span.shortPrevNextCaption {
 			display: none;
 		}
 
-		@media (max-width:1200px) {
+		@media (max-width:900px) {
 			// width: 40vw;
 
 			span.longPrevNextCaption {
