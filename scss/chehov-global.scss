@@ -1,4 +1,8 @@
 // Main SCSS-file for the Chehov tasks
+:root {
+	color-scheme: only light;
+}
+
 
 
 
@@ -385,7 +389,7 @@ legend {
 .nextTask {
 	position: fixed;
 	z-index: 1;
-	width: 64px;
+	width: 540px;
 	height: 48px;
 	border-radius: 4px;
 	background-color: #916c4f;
@@ -398,8 +402,25 @@ legend {
 	cursor: pointer;
 	// font-weight: bold;
 	font-weight: 100;
-	font-size: 160%;
+	// font-size: 160%;
 	transition: all 0.7s;
+
+	span.shortPrevNextCaption {
+		display: none;
+	}
+
+	@media (max-width:1200px) {
+		width: 40vw;
+
+		span.longPrevNextCaption {
+			display: none;
+		}
+
+		span.shortPrevNextCaption {
+			display: inherit;
+		}
+	}
+
 
 	@media print {
 		display: none;
