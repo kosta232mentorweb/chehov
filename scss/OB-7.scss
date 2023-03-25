@@ -1,6 +1,30 @@
-[name="chehov-form-ob-7"] > div:first-child {
-	@media (max-width:480px) {
-		
-		margin-top: 1.5rem;
+[name="chehov-form-ob-7"] {
+
+	@media print {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		max-height: 13cm;
 	}
+
+	// * {
+	// 	@media print {
+	// 		font-size: 80%;
+
+	// 		input {
+	// 			display: inline;
+	// 		}
+	// 	}
+	// }
+
+	>div {
+		@media print {
+			flex-basis: 49%;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+
+
 }
