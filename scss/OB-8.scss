@@ -1,57 +1,129 @@
 .letter {
-    background-image: url('../images/letter.png');
-    background-size: 100% auto;
-    border: 1px solid black;
-    margin-bottom: 5%;
-    padding: 3%;
-    
-}
-.manuscript {
-    font-size: large;
-    font-family: cursive;
- 
-}
-.right{
-    text-align: right;
+	background-image: url('../images/letter.png');
+	background-size: 100% auto;
+	border: 1px solid black;
+	margin-bottom: 5%;
+	padding: 3%;
 
 }
-.link{
-    margin-top: -5%;
+
+.manuscript {
+	font-size: large;
+	font-family: cursive;
+
 }
+
+.right {
+	text-align: right;
+
+}
+
+.link {
+	margin-top: -5%;
+}
+
 table {
-    width: 100%;
-    border-radius: 12px;
-  
-    th,
-    td {
-       border: 1px solid gray;
-       padding: 8px;
-       // text-align: center;
-    }
-  
-    tr {
-       height: 250px;
-       page-break-inside: avoid;
-    }
-  
-    td {
-       width: 10%;
-    }
-  
-    thead>tr {
-       height: 50px;
-    }
-  
-    thead>tr>th,
-    tbody>tr>td {
-       width: 100px;
-    }
-  }
-  
-  
-  
-  .container.chehov-main-container fieldset {
-    border-radius: 12px;
-    background-color: #fffdca;
-    border: none !important;
-  }
+	width: 100%;
+	border-radius: 12px;
+
+	th,
+	td {
+		border: 1px solid gray;
+		padding: 8px;
+		// text-align: center;
+	}
+
+	tr {
+		height: 250px;
+		page-break-inside: avoid;
+	}
+
+	td {
+		width: 10%;
+	}
+
+	thead>tr {
+		height: 50px;
+	}
+
+	thead>tr>th,
+	tbody>tr>td {
+		width: 100px;
+	}
+}
+
+
+
+.container.chehov-main-container fieldset {
+	border-radius: 12px;
+	background-color: #fffdca;
+	border: none !important;
+}
+
+
+.pic {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 20px;
+	opacity: 1;
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+	opacity: .5;
+}
+
+.pic-1 {
+	background-image: url(../images/OB-10/format_color_text_baseline_nv700_20dp.png);
+}
+
+.pic-2 {
+	background-image: url(../images/OB-10/attach_file_baseline_nv700_20dp.png);
+}
+
+.pic-3 {
+	background-image: url(../images/OB-10/link_baseline_nv700_20dp.png);
+}
+
+.pic-4 {
+	background-image: url(../images/OB-10/mood_baseline_nv700_20dp.png);
+}
+
+.pic-5 {
+	background-image: url(../images/OB-10/drive_baseline_nv700_20dp.png);
+}
+
+.pic-6 {
+	background-image: url(../images/OB-10/image_baseline_nv700_20dp.png);
+}
+
+.pic-7 {
+	background-image: url(../images/OB-10/lock_clock_baseline_nv700_20dp.png);
+}
+
+.pic-8 {
+	background-image: url(../images/OB-10/ink_pen_baseline_nv700_20dp.png);
+}
+
+.mail-container {
+	display: flex;
+}
+
+.answer-ob-10-container {
+	display: flex;
+}
+
+.mail-text span {
+	opacity: 0.5;
+}
+
+textarea {
+	@media print {
+		height: 9cm !important;
+	}
+}
+
+.mail-container {
+	@media print {
+		font-size: 90%;
+	}
+}

@@ -8,17 +8,20 @@ document.forms[ 0 ].querySelectorAll( 'input[type="text"]' )
 
 
 document.forms[ 0 ].querySelectorAll( 'input[type="text"]' )
-	.forEach( el =>
+	.forEach( el => {
+		el.addEventListener( 'click', event => el.select() );
+
 		el.addEventListener( 'input', event => {
 			event.target.value = event.target.value.slice( -1 )?.toUpperCase() ?? '';
+			console.log( event );
 
 			saveInputs();
 
 		} )
-	);
+	} );
 
 
-
+let crossWordText = {};
 
 document.forms[ 0 ].addEventListener( 'submit', event => {
 	event.preventDefault();
@@ -56,21 +59,23 @@ document.forms[ 0 ].addEventListener( 'submit', event => {
 
 	console.log( resWords );
 
-	const formData = new FormData();
-	formData.append( 'words', JSON.stringify( resWords ) );
+	crossWordText = resWords;
+
+	// const formData = new FormData();
+	// formData.append( 'words', JSON.stringify( resWords ) );
 
 	// console.log( formData );
 	// console.log( [ ...new URLSearchParams( formData ).entries() ] );
 	// console.log( new URLSearchParams( formData ).toString() );
 
-	fetch( 'http://activepads.com:8082/formDetector?' + new URLSearchParams( formData ).toString(), {
-		headers: {
-			"Content-Type": "application/x-www-form-urlencoded",
-		},
-		method: "get",
-	} )
-		.then( data => data.text() )
-		.then( data => console.log( data ) );
+	// fetch( 'http://activepads.com:8082/formDetector?' + new URLSearchParams( formData ).toString(), {
+	// 	headers: {
+	// 		"Content-Type": "application/x-www-form-urlencoded",
+	// 	},
+	// 	method: "get",
+	// } )
+	// 	.then( data => data.text() )
+	// 	.then( data => console.log( data ) );
 
 } );
 

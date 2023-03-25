@@ -10,7 +10,7 @@ function saveInputs() {
 		return acc;
 	}, {} );
 	const store1 = [ ...document.forms[ 0 ].querySelectorAll( 'input[type="text"], textarea' ) ].reduce( ( acc, el ) => {
-		acc[ el.name ] = el.value;
+		acc[ el.name + ( htmlSuffix === 'VS-1.html' ? el.className.replaceAll( ' ', '_' ) : '' ) ] = el.value;
 		return acc;
 	}, {} );
 	const store2 = [ ...document.forms[ 0 ].querySelectorAll( 'input[type="checkbox"]' ) ].reduce( ( acc, el ) => {
@@ -20,7 +20,7 @@ function saveInputs() {
 
 	const store = { ...store0, ...store1, ...store2 };
 
-	// console.log( store );
+	console.log( store );
 
 	localStorage.setItem( 'inputsValues' + htmlSuffix, JSON.stringify( store ) );
 }
@@ -53,6 +53,11 @@ function loadInputs() {
 			// console.log( el.checked );
 			if ( el.disabled || el.readOnly ) return;
 			if ( store[ el.name ] !== undefined ) el.value = store[ el.name ];
+			if ( htmlSuffix === 'VS-1.html' ) {
+				if ( store[ ( htmlSuffix === 'VS-1.html' ? el.className.replaceAll( ' ', '_' ) : '' ) ] !== undefined )
+					el.value = store[ ( htmlSuffix === 'VS-1.html' ? el.className.replaceAll( ' ', '_' ) : '' ) ];
+
+			}
 
 			el.addEventListener( 'input', event => {
 				saveInputs();

@@ -1,5 +1,20 @@
-.bigForPrint {
-    @media print {
-        height: 4сm;
-    }
+[name="chehov-form-vs-3"] {
+	>div {
+		margin-top: 2rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 24px;
+
+		@media (max-width:640px) {
+			grid-template-columns: 1fr;
+			grid-template-rows: auto auto;
+			grid-gap: 0;
+		}
+
+		.printOnly {
+			>div {
+				// margin-left: 3cm;
+			}
+		}
+	}
 }

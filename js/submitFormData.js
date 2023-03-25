@@ -13,7 +13,12 @@ document.querySelector( 'form' ).addEventListener( 'submit', event => {
 
 		let formData = new FormData( document.forms[ 0 ] );
 		formData.append( 'userId', document.querySelector( '#BookAASKey' ).value );
-		formData.append( 'from', location.pathname.split( '/' ).at( -1 ) );
+		const from = location.pathname.split( '/' ).at( -1 );
+		formData.append( 'from', from );
+
+		if ( from === 'VS-1.html' ) {
+			formData.append( 'crossWordText', crossWordText );
+		}
 
 		fetch( baseURL + '/storeChehovData', {
 			method: 'POST',
