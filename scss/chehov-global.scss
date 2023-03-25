@@ -413,21 +413,21 @@ legend {
 }
 
 .prevNextContainer {
-	// padding: 6px 24px;
+	padding: 6px 24px;
 	box-shadow: 0 -0.5rem 1rem rgb(0 0 0 / 10%), inset 0 -1px 0 rgb(255 255 255 / 15%);
-	height: 32px;
+	height: 44px;
 	// background-color: #fff;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 24px;
 	position: fixed;
 	bottom: 0;
-	transition: all 0.6s;
+	// transition: all 0.6s;
 	// width: 100vw;
 	left: 0;
 	right: 0;
 	background-color: #ded3ca;
-	background-color: #f0f0e8;
+	background-color: #fff;
 	color: #000000cc;
 
 	// opacity: 0.3;
@@ -438,24 +438,20 @@ legend {
 
 	&:hover {
 		// opacity: 1;
-		color: #fff;
-		background-color: #916c4f;
+		// color: #fff;
+		// background-color: #916c4f;
 	}
 
-	@media (max-width: 640px) {
-		background-color: #916c4f;
-		color: #fff;
-		// opacity: 1;
-	}
+
 
 	.prevTask,
 	.nextTask {
+		background-color: #f0f0e8;
 		// position: fixed;
 		// z-index: 1;
 		// width: 540px;
 		height: 32px;
 		border-radius: 4px;
-		// background-color: #916c4f;
 		// bottom: 8px;
 		display: flex;
 		align-items: center;
@@ -466,7 +462,7 @@ legend {
 		// font-weight: bold;
 		font-weight: 100;
 		// font-size: 160%;
-		// transition: all 0.7s;
+		transition: all 0.7s;
 
 		span.shortPrevNextCaption {
 			display: none;
@@ -484,7 +480,17 @@ legend {
 			}
 		}
 
+		&:hover {
+			background-color: #916c4f;
+			color: white;
 
+		}
+
+		// @media (max-width: 640px) {
+		// 	background-color: #916c4f;
+		// 	color: #fff;
+		// 	// opacity: 1;
+		// }
 
 	}
 
