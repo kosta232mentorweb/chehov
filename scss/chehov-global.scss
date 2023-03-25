@@ -308,13 +308,17 @@ input[type="submit"] {
 .speechBubblesWrapper {
 	display: flex;
 	flex-direction: column;
+
+	overflow-x: clip;
+
 }
 
 
 legend {
 	font-size: 110%;
 	line-height: 1.25;
-	margin-bottom: 0.5rem;
+	margin-bottom: 1rem;
+	word-spacing: 3px;
 }
 
 .r-stretch {
