@@ -313,7 +313,8 @@ input[type="submit"] {
 
 legend {
 	font-size: 110%;
-	line-height: 1.1;
+	line-height: 1.25;
+	margin-bottom: 0.5rem;
 }
 
 .r-stretch {
@@ -485,6 +486,7 @@ legend {
 
 }
 
+.form-check-input,
 input[type="checkbox"],
 .form-select {
 	border-color: #5CA39588;
