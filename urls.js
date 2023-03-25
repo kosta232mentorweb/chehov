@@ -3,7 +3,39 @@ const fse = require( 'fs-extra' );
 
 const UglifyJS = require( "uglify-js" );
 
+
+const autoprefixer = require( 'autoprefixer' );
+const postcss = require( 'postcss' );
+
+var CleanCSS = require( 'clean-css' );
+const cleanCSSoptions = {};
+
 console.log( 'start' );
+
+
+
+
+const getFilelistRecursively = ( ( targetpath, depth = -1 ) => {
+	let result = [];
+	let dirs = fs.readdirSync( targetpath );
+	dirs.forEach( file => {
+		let filepath = targetpath + "/" + file;
+		if ( fs.lstatSync( filepath ).isDirectory() ) {
+			if ( depth == 0 ) return result;
+			result = result.concat( getFilelistRecursively( filepath, depth - 1 ) );
+		} else {
+			result.push( filepath );
+		}
+	} );
+	return result;
+} );
+// console.log( getFilelistRecursively( "./distr", 10 ) );
+
+// process.exit( 0 );
+
+
+
+
 // try {
 fse.emptyDirSync( './distr' );
 // } catch ( err ) {
@@ -93,7 +125,8 @@ ncp( './js', './distr/js', function ( err ) {
 
 
 setTimeout( () => {
-	const jsFiles = fs.readdirSync( './distr/js' );
+	// const jsFiles = fs.readdirSync( './distr/js' );
+	const jsFiles = getFilelistRecursively( "./distr/js" );
 	console.log( jsFiles );
 
 	jsFiles.forEach( jsFile => {
@@ -102,13 +135,42 @@ setTimeout( () => {
 
 		if ( jsFile.slice( -2 ) !== 'js' ) return;
 
-		const text = fs.readFileSync( './distr/js/' + jsFile, { encoding: 'utf8' } );
+		// const text = fs.readFileSync( './distr/js/' + jsFile, { encoding: 'utf8' } );
+		const text = fs.readFileSync( jsFile, { encoding: 'utf8' } );
 
 		const uText = UglifyJS.minify( text );
 
-		fs.writeFileSync( './distr/js/' + jsFile, uText.code );
+		// fs.writeFileSync( './distr/js/' + jsFile, uText.code );
+		fs.writeFileSync( jsFile, uText.code );
 
 	} );
 
 
-}, 1000 )
+	// const cssFiles = fs.readdirSync( './distr/css' );
+	// console.log( cssFiles );
+
+	// cssFiles.forEach( async cssFile => {
+	// 	console.log( '------------------------------------------------' );
+	// 	console.log( cssFile );
+
+	// 	if ( cssFile.slice( -3 ) !== 'css' ) return;
+
+	// 	const text = fs.readFileSync( './distr/css/' + cssFile, { encoding: 'utf8' } );
+
+	// 	postcss( [ autoprefixer ] ).process( text ).then( result => {
+	// 		result.warnings().forEach( warn => {
+	// 			console.warn( warn.toString() )
+	// 		} )
+	// 		// console.log( result.css )
+	// 		// const uText = UglifyJS.minify( result.css )
+	// 		const uText = new CleanCSS( cleanCSSoptions ).minify( result.css );
+	// 		fs.writeFileSync( './distr/css/' + cssFile, uText.styles );
+	// 	} )
+
+
+	// } );
+
+
+}, 1000 );
+
+

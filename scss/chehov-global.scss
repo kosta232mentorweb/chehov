@@ -503,3 +503,8 @@ input[type="checkbox"],
 		background-color: #5CA395;
 	}
 }
+
+html {
+	user-select: none;
+	-webkit-user-select: none;
+}

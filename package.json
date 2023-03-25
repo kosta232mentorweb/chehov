@@ -4,7 +4,7 @@
 	"description": "Chehov A P zadanija",
 	"main": "index.js",
 	"scripts": {
-		"scss": "sass --watch scss:css",
+		"scss": "sass --watch scss:css --style=compressed",
 		"urls": "node urls",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
@@ -18,10 +18,20 @@
 	"bugs": {
 		"url": "https://github.com/kosta232mentorweb/chehov/issues"
 	},
+	"browserslist": [
+		"last 10 version",
+		"> 10%",
+		"not dead"
+	],
 	"homepage": "https://github.com/kosta232mentorweb/chehov#readme",
 	"dependencies": {
+		"autoprefixer": "^10.4.14",
 		"fs-extra": "^11.1.1",
 		"ncp": "^2.0.0",
+		"postcss": "^8.4.21",
 		"uglify-js": "^3.17.4"
+	},
+	"devDependencies": {
+		"clean-css": "^5.3.2"
 	}
 }
