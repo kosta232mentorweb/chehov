@@ -1,13 +1,19 @@
 .inst {
 	display: grid;
-	grid-template-columns: repeat(50px 100px 50px 50px 50px 100px);
-	grid-template-rows: repeat(5, 100px);
+	grid-template-columns: 1fr 2fr 1fr 1fr 1fr 2fr;
+	grid-template-rows: 60px 100px;
+
+	width: 620px;
 
 	.instMenu {
 		grid-column-start: 1;
 		grid-column-end: 2;
 		grid-row-start: 1;
 		grid-row-end: 7;
+		background-image: url(../images/instMenu.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
 	}
 
 	.psevdoAvatar {
@@ -22,7 +28,7 @@
 	}
 
 	.instName {
-		grid-column-start: 4;
+		grid-column-start: 3;
 		grid-column-end: 5;
 		grid-row-start: 1;
 		grid-row-end: 2;
@@ -43,7 +49,7 @@
 	}
 
 	.instMinuPup {
-		grid-column-start: 4;
+		grid-column-start: 3;
 		grid-column-end: 6;
 		grid-row-start: 2;
 		grid-row-end: 4;
@@ -63,6 +69,7 @@
 		grid-column-end: 7;
 		grid-row-start: 5;
 		grid-row-end: 6;
+		opacity: 0.3;
 	}
 
 
