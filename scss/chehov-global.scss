@@ -104,7 +104,7 @@ body {
 		}
 	}
 
-	@for $i from 0 to 40 {
+	@for $i from 0 to 41 {
 		.avatar-#{$i} {
 			background-image: url(../images/persons/#{$i}-dop.png?kkey=#{ random(1000000)
 		}),
