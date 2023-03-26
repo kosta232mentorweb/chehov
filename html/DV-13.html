@@ -133,19 +133,25 @@
 						<span class="avatarCircle"></span>
 						<span class="avatar avatar-20"></span>
 						<span class="speechAuthor">Я</span>
-						Сейчас отвечу на вопрос:
+						Сейчас <span class="screenOnly">кликну по</span> <span class="printOnly">укажу на</span> карте:
 					</div>
 				</div>
 				<!-- Основная форма. Внимание на имя с префиксом -->
 				<form name="chehov-form-dv-13">
 					<div class="image-container">
-						<img src="../images/DV-13/map.png" width="100%" alt="Карта мира" usemap="#selectCountry">
+						<div class="imgWrapper position-relative">
+							<img width="100%" id="map" src="../images/DV-13/map.png" alt="DV-13">
+						</div>
 					</div>
-					<input type="text" class="form-control mt-3 screenOnly" readonly
-						value="Примерные координаты на карте: (50, 100)">
-					<textarea name="coordinates-dv-13" class="form-control mt-3" rows="10"
-						placeholder="Объясните свой выбор"></textarea>
-					<input type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100 mt-3">
+					<div class="mt-3 screenOnly">
+						<label for="coords-1" class="form-label">Здесь:</label>
+						<input class="form-control" type="text" id="coords-1" name="coords-1" value="Координаты (X, Y)"
+							readonly>
+					</div>
+
+					<textarea name="answer-dv-13" class="form-control mt-3" rows="10" placeholder="Объясните свой выбор"
+						required></textarea>
+					<input disabled type="submit" value="Отправить результаты" class="btn btn-primary screenOnly w-100 mt-3">
 				</form>
 			</div>
 		</div>
@@ -163,6 +169,8 @@
 
 	<script src="../js/submitFormData.js"></script>
 	<script src="../js/print.js"></script>
+	<script src="../js/DV-13/dv-13.js"></script>
+
 </body>
 
 </html>
