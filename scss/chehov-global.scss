@@ -514,3 +514,12 @@ html {
 	user-select: none;
 	-webkit-user-select: none;
 }
+
+
+@media print {
+	@for $i from 0 to 30 {
+		.ph-#{$i}cm {
+			height: #{$i}cm;
+		}
+	}
+}
