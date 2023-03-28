@@ -1,8 +1,19 @@
-#DV-30{
-    width: 100%;
+#DV-30 {
+	width: 100%;
 }
 
-.areaMargin{
-    margin-top: 0.5rem;
-	 margin-bottom: 0.5rem;
+.areaMargin {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.center-image {
+	align-self: center;
+	width: 40%;
+	margin-bottom: 60px;
+	border-radius: 12px;
+
+	@media (max-width:420px) {
+		width: 80%;
+	}
 }

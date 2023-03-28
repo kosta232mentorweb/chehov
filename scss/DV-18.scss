@@ -1,126 +1,131 @@
 .twitter-header {
-    height: 60px;
-    background-color: #0080ff;
-    position: relative;
-    margin-bottom: 60px;
+	height: 60px;
+	background-color: #0080ff;
+	position: relative;
+	margin-bottom: 60px;
 
 
 
-    .speechBubble {
-        position: absolute;
-        top: 30px;
-        left: 20px;
-    }
+	.speechBubble {
+		position: absolute;
+		top: 30px;
+		left: 20px;
+	}
 
-    p {
-        position: absolute;
-        top: 80px;
-        right: 20px;
-        font-weight: 700;
-        border: 1px solid black;
-        border-radius: 1rem;
-        padding: 5px;
-    }
+	p {
+		position: absolute;
+		top: 80px;
+		right: 20px;
+		font-weight: 700;
+		border: 1px solid black;
+		border-radius: 1rem;
+		padding: 5px;
+	}
 }
 
 .twitter-header:before {
-    background-image: url(../images/DV-18/Twitter-Logo.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50%;
-    width: 100%;
-    height: 80%;
-    content: '';
-    position: absolute;
-    margin-top: 3px;
+	background-image: url(../images/DV-18/Twitter-Logo.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 50%;
+	width: 100%;
+	height: 80%;
+	content: '';
+	position: absolute;
+	margin-top: 3px;
 }
+
 @media screen and (max-width:420px) {
-    .twitter-header:before {
-        height: 50%;
-        margin-top: 15px;
-    }
+	.twitter-header:before {
+		height: 50%;
+		margin-top: 15px;
+	}
 }
 
 .twitter-main {
-    margin-left: 22px;
+	margin-left: 22px;
 
-    .name-Astrov {
-        font-weight: 700;
-        font-size: 20px;
-        margin: 0;
-    }
+	.name-Astrov {
+		font-weight: 700;
+		font-size: 20px;
+		margin: 0;
+	}
 
-    .nickname-Astrov {
-        opacity: 0.7;
-        font-weight: 500;
-    }
+	.nickname-Astrov {
+		opacity: 0.7;
+		font-weight: 500;
+	}
 
-    .registration-Astrov {
-        opacity: 0.7;
+	.registration-Astrov {
+		opacity: 0.7;
 
-        span {
-            display: inline-block;
-            background-image: url(../images/calendar.png);
-            width: 20px;
-            height: 20px;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    }
+		span {
+			display: inline-block;
+			background-image: url(../images/calendar.png);
+			width: 20px;
+			height: 20px;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	}
 
-    .twits {
-        display: flex;
-        justify-content: space-between;
+	.twits {
+		display: flex;
+		justify-content: space-between;
 
-        p {
-            font-size: 20px;
-            font-weight: 500;
-        }
+		p {
+			font-size: 20px;
+			font-weight: 500;
+		}
 
-        @media screen and (max-width:480px) {
-            p {
-                font-size: 14px;
-            }
-        }
+		@media screen and (max-width:480px) {
+			p {
+				font-size: 14px;
+			}
+		}
 
-        :nth-child(2) {
-            font-weight: 700;
-            border-bottom: 4px solid #0080ff;
-        }
-    }
+		:nth-child(2) {
+			font-weight: 700;
+			border-bottom: 4px solid #0080ff;
+		}
+	}
 }
 
 .answers-Astrov {
-    .answer-Astrov {
-        page-break-inside: avoid;
-        box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
-        padding-bottom: 20px;
+	.answer-Astrov {
+		page-break-inside: avoid;
+		box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+		padding-bottom: 20px;
 
-        .answer-header {
-            display: flex;
+		.answer-header {
+			display: flex;
 
-            p {
-                opacity: 0.7;
-                font-weight: 500;
-            }
-        }
+			p {
+				opacity: 0.7;
+				font-weight: 500;
+			}
+		}
 
-        .answer-footer {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 10px;
+		.answer-footer {
+			display: flex;
+			justify-content: space-around;
+			margin-top: 10px;
 
-            svg {
-                width: 20px;
-                opacity: 0.7;
-            }
-        }
-    }
+			svg {
+				width: 20px;
+				opacity: 0.7;
+			}
+		}
+	}
 
 }
 
 @media print {
-    textarea {
-        height: 8cm;
-    }
+	textarea {
+		height: 8cm;
+	}
+}
+
+.avatar-ilonMask {
+	background-image: url(../images/DV-18/Elon_Musk_Royal_Society_\(crop2\).png);
 }
