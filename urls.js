@@ -170,6 +170,28 @@ setTimeout( () => {
 
 	// } );
 
+	setTimeout( () => {
+		console.log( 'Очистка zadanija в dist chatbook2' );
+		fse.emptyDirSync( 'c:\\Users\\Kanstantsin\\Projects\\chatbook2\\dist\\zadanija' );
+
+
+		console.log( 'copy distr' );
+		ncp( './distr', 'c:\\Users\\Kanstantsin\\Projects\\chatbook2\\dist\\zadanija\\', function ( err ) {
+			if ( err ) {
+				return console.error( err );
+			}
+			console.log( 'done!' );
+		} );
+
+		console.log( 'copy images' );
+		ncp( './images', 'c:\\Users\\Kanstantsin\\Projects\\chatbook2\\dist\\zadanija\\images', function ( err ) {
+			if ( err ) {
+				return console.error( err );
+			}
+			console.log( 'done!' );
+		} );
+
+	}, 2000 );
 
 }, 1000 );
 
