@@ -16,6 +16,10 @@ document.querySelector( 'form' ).addEventListener( 'submit', event => {
 		const from = location.pathname.split( '/' ).at( -1 );
 		formData.append( 'from', from );
 
+		// const files = [ ...document.forms[ 0 ].querySelectorAll( 'input[type="file"]' ) ];
+
+		// files.forEach( el => console.log( el.files ) );
+
 		if ( from === 'VS-1.html' ) {
 			formData.append( 'crossWordText', crossWordText );
 		}
