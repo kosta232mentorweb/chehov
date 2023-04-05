@@ -173,6 +173,7 @@ setTimeout( () => {
 	setTimeout( () => {
 		console.log( 'Очистка zadanija в dist chatbook2' );
 		fse.emptyDirSync( 'c:\\Users\\Kanstantsin\\Projects\\chatbook2\\dist\\zadanija' );
+		fse.emptyDirSync( 'c:\\Users\\Kanstantsin\\Projects\\chatbook2\\public\\zadanija' );
 
 
 		console.log( 'copy distr' );
@@ -182,9 +183,21 @@ setTimeout( () => {
 			}
 			console.log( 'done!' );
 		} );
+		ncp( './distr', 'c:\\Users\\Kanstantsin\\Projects\\chatbook2\\public\\zadanija\\', function ( err ) {
+			if ( err ) {
+				return console.error( err );
+			}
+			console.log( 'done!' );
+		} );
 
 		console.log( 'copy images' );
 		ncp( './images', 'c:\\Users\\Kanstantsin\\Projects\\chatbook2\\dist\\zadanija\\images', function ( err ) {
+			if ( err ) {
+				return console.error( err );
+			}
+			console.log( 'done!' );
+		} );
+		ncp( './images', 'c:\\Users\\Kanstantsin\\Projects\\chatbook2\\public\\zadanija\\images', function ( err ) {
 			if ( err ) {
 				return console.error( err );
 			}
