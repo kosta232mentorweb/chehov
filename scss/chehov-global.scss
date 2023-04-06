@@ -528,3 +528,143 @@ html {
 	width: 100%;
 	overflow-x: auto;
 }
+
+
+// like Animations
+
+.evgeniyLikeAnimation {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	right: 0;
+	top: 0;
+	height: 100vh;
+	width: 100vw;
+	z-index: 10000;
+	padding-top: 150px;
+	animation: wrapperOpacity 2s;
+	background-color: #fffe;
+
+
+	.likeChatBookLogo {
+		background-image: url(../images/chatbooklogo-black.svg);
+		height: 15%;
+		width: 100%;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		animation: likeChat 4s ease;
+		opacity: 1;
+		font-size: large;
+		font-weight: bold;
+	}
+
+	.likeText {
+		color: #5CA395;
+		height: 10%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		animation: jump 2s infinite;
+		margin-top: 70px;
+		font-size: 24pt;
+		font-weight: bold;
+	}
+
+	.likeHand {
+		background-image: url(../images/like.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 50%;
+		width: 120%;
+		animation: like 1s cubic-bezier(0.1, 0.1, 0.3, 0.5);
+		animation-timing-function: ease-out;
+		transform-origin: 100% 0;
+		margin-top: 30px;
+
+	}
+
+	@keyframes like {
+
+		0% {
+			transform: rotate(90deg);
+			margin-left: 80%;
+		}
+
+		70% {
+			transform: rotate(0);
+			margin-left: 0;
+		}
+
+
+		70% {
+			transform: translateY(0%) rotate(0);
+			padding-bottom: 7px;
+		}
+
+		80% {
+			transform: translateY(-10%);
+		}
+
+		90% {
+			transform: translateY(0%) rotate(0);
+			padding-bottom: 8px;
+		}
+
+		95% {
+			transform: translateY(-7%);
+		}
+
+		97% {
+			transform: translateY(0%);
+			padding-bottom: 9px;
+		}
+
+		99% {
+			transform: translateY(-3%);
+		}
+
+		100% {
+			transform: translateY(0);
+			padding-bottom: 9px;
+		}
+
+
+	}
+
+	@keyframes likeChat {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@keyframes jump {
+		0% {
+			transform: translateY(0);
+		}
+
+		50% {
+			transform: translateY(-20px);
+		}
+
+		100% {
+			transform: translateY(0);
+		}
+	}
+
+	@keyframes wrapperOpacity {
+		0% {
+			background-color: initial;
+		}
+
+		100% {
+			background-color: #fffe;
+		}
+	}
+
+}

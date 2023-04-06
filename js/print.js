@@ -146,3 +146,39 @@ if ( ![ 'index.html', '' ].includes( location.pathname.split( '/' ).at( -1 ) ) )
 	prevNextContainer.append( nextTask );
 	nextTask.addEventListener( 'click', event => changeTask( 1 ) );
 }
+
+
+
+document.addEventListener( "keypress", event => {
+
+	console.log( event.shiftKey, event.ctrlKey, event.altKey );
+
+	if ( ( event.code === "KeyQ" ) && ( event.shiftKey ) && ( event.ctrlKey ) ) {
+
+		if ( document.querySelectorAll( '.evgeniyLikeAnimation' ).length ) {
+			document.querySelectorAll( '.evgeniyLikeAnimation' ).forEach( el => el.remove() );
+		}
+
+		const likeDiv = document.createElement( "div" );
+		document.body.prepend( likeDiv );
+
+		const likeChatBookLogo = document.createElement( "div" );
+		likeDiv.append( likeChatBookLogo );
+
+		const likeText = document.createElement( "div" );
+		likeDiv.append( likeText );
+
+		const likeHand = document.createElement( "div" );
+		likeDiv.append( likeHand );
+
+		likeDiv.classList.add( "evgeniyLikeAnimation" );
+		likeChatBookLogo.classList.add( "likeChatBookLogo" );
+		likeText.classList.add( "likeText" );
+		likeHand.classList.add( "likeHand" );
+		likeText.classList.add( "text-center" );
+
+		likeText.innerHTML = "ПОДЕЛИСЬ!\nche.bookaas.com";
+	}
+} );
+
+
