@@ -3,6 +3,7 @@
 // }
 
 const htmlSuffix = location.pathname.split( '/' ).slice( -1 )[ 0 ];
+const htmlSuffixCrosswords = [ 'VS-1.html', 'FEST-VS-1.html' ]
 
 function saveInputs() {
 	const store0 = [ ...document.forms[ 0 ].querySelectorAll( 'input[type="radio"]' ) ].reduce( ( acc, el ) => {
@@ -10,7 +11,7 @@ function saveInputs() {
 		return acc;
 	}, {} );
 	const store1 = [ ...document.forms[ 0 ].querySelectorAll( 'input[type="text"], textarea' ) ].reduce( ( acc, el ) => {
-		acc[ el.name + ( htmlSuffix === 'VS-1.html' ? el.className.replaceAll( ' ', '_' ) : '' ) ] = el.value;
+		acc[ el.name + ( htmlSuffixCrosswords.includes( htmlSuffix ) ? el.className.replaceAll( ' ', '_' ) : '' ) ] = el.value;
 		return acc;
 	}, {} );
 	const store2 = [ ...document.forms[ 0 ].querySelectorAll( 'input[type="checkbox"]' ) ].reduce( ( acc, el ) => {
@@ -53,9 +54,9 @@ function loadInputs() {
 			// console.log( el.checked );
 			if ( el.disabled || el.readOnly ) return;
 			if ( store[ el.name ] !== undefined ) el.value = store[ el.name ];
-			if ( htmlSuffix === 'VS-1.html' ) {
-				if ( store[ ( htmlSuffix === 'VS-1.html' ? el.className.replaceAll( ' ', '_' ) : '' ) ] !== undefined )
-					el.value = store[ ( htmlSuffix === 'VS-1.html' ? el.className.replaceAll( ' ', '_' ) : '' ) ];
+			if ( htmlSuffixCrosswords.includes( htmlSuffix ) ) {
+				if ( store[ ( htmlSuffixCrosswords.includes( htmlSuffix ) ? el.className.replaceAll( ' ', '_' ) : '' ) ] !== undefined )
+					el.value = store[ ( htmlSuffixCrosswords.includes( htmlSuffix ) ? el.className.replaceAll( ' ', '_' ) : '' ) ];
 
 			}
 

@@ -2,7 +2,7 @@ console.log( 'submit form script' );
 
 const chehovFormElement = document.forms[ 0 ];
 
-const baseURL = location.hostname === 'learn.bookaas.com' || location.hostname === 'che.bookaas.com'
+const baseURL = location.hostname.includes( 'bookaas.com' )
 	? 'https://che-server.bookaas.com'
 	: 'http://localhost:3009';
 
@@ -20,7 +20,7 @@ document.querySelector( 'form' ).addEventListener( 'submit', event => {
 
 		// files.forEach( el => console.log( el.files ) );
 
-		if ( from === 'VS-1.html' ) {
+		if ( [ 'VS-1.html', 'FEST-VS-1.html' ].includes( from ) ) {
 			formData.append( 'crossWordText', crossWordText );
 		}
 

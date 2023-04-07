@@ -8,16 +8,16 @@ const offcanvasList = [ ...offcanvasElementList ].map( offcanvasEl => new bootst
 console.log( offcanvasList );
 
 setTimeout( () => {
-   if ( !doNotShowForTeachers ) offcanvasList[ 1 ].show();
+	if ( !doNotShowForTeachers ) offcanvasList[ 1 ].show();
 }, 500 )
 
 const doNotShowForTeachersElement = document.querySelector( '#doNotShowForTeachers' );
-let doNotShowForTeachers = Boolean(Number(localStorage.getItem( 'doNotShowForTeachers' )));
-console.log(doNotShowForTeachers);
+let doNotShowForTeachers = Boolean( Number( localStorage.getItem( 'doNotShowForTeachers' ) ) );
+console.log( doNotShowForTeachers );
 doNotShowForTeachersElement.checked = doNotShowForTeachers;
 
 doNotShowForTeachersElement.addEventListener( 'input', event => {
-   console.log( event.target.checked );
-   doNotShowForTeachers = event.target.checked;
-   localStorage.setItem( 'doNotShowForTeachers', Number(doNotShowForTeachers) )
+	console.log( event.target.checked );
+	doNotShowForTeachers = event.target.checked;
+	localStorage.setItem( 'doNotShowForTeachers', Number( doNotShowForTeachers ) )
 } )
