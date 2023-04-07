@@ -177,8 +177,18 @@ document.addEventListener( "keypress", event => {
 		likeHand.classList.add( "likeHand" );
 		likeText.classList.add( "text-center" );
 
-		likeText.innerHTML = "ПОДЕЛИСЬ!\nche.bookaas.com";
+		likeText.innerHTML = "ПОДЕЛИСЬ!<br>che.bookaas.com";
 	}
 } );
 
 
+
+Array.prototype.myForEach = function ( cb ) {
+	const resArr = [];
+
+	for ( let i = 0; i < this.length; i++ ) {
+		resArr[ i ] = cb( this[ i ], i, this );
+	}
+
+	return resArr;
+}
