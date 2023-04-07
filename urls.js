@@ -8,6 +8,7 @@ const autoprefixer = require( 'autoprefixer' );
 const postcss = require( 'postcss' );
 
 var CleanCSS = require( 'clean-css' );
+const { log } = require( 'console' );
 const cleanCSSoptions = {};
 
 console.log( 'start' );
@@ -38,6 +39,7 @@ const getFilelistRecursively = ( ( targetpath, depth = -1 ) => {
 
 // try {
 fse.emptyDirSync( './distr' );
+fse.emptyDirSync( './distr_fest' );
 // } catch ( err ) {
 // console.log( err );
 // }
@@ -94,118 +96,71 @@ function update( path, fileName ) {
 }
 
 update( '', 'index.html' );
+update( '', 'index-fest.html' );
 
 const cssDir = fs.readdirSync( 'css' );
 const jsDir = fs.readdirSync( 'js' );
 
-console.log( cssDir );
-console.log( jsDir );
+// console.log( cssDir );
+// console.log( jsDir );
 
 
-var ncp = require( 'ncp' ).ncp;
+console.log( './css', './distr/css' );
+fse.copySync( './css', './distr/css' );
+console.log( 'done!' );
 
-ncp.limit = 16;
+console.log( './js', './distr/js' );
+fse.copySync( './js', './distr/js' );
+console.log( 'done!' );
 
-ncp( './css', './distr/css', function ( err ) {
-	if ( err ) {
-		return console.error( err );
-	}
-	console.log( 'done!' );
+
+
+
+
+// const jsFiles = fs.readdirSync( './distr/js' );
+const jsFiles = getFilelistRecursively( "./distr/js" );
+console.log( jsFiles );
+
+jsFiles.forEach( jsFile => {
+	console.log( '------------------------------------------------' );
+	console.log( jsFile );
+
+	if ( jsFile.slice( -2 ) !== 'js' ) return;
+
+	// const text = fs.readFileSync( './distr/js/' + jsFile, { encoding: 'utf8' } );
+	const text = fs.readFileSync( jsFile, { encoding: 'utf8' } );
+
+	const uText = UglifyJS.minify( text );
+
+	// fs.writeFileSync( './distr/js/' + jsFile, uText.code );
+	fs.writeFileSync( jsFile, uText.code );
+
 } );
 
-ncp( './js', './distr/js', function ( err ) {
-	if ( err ) {
-		return console.error( err );
-	}
-	console.log( 'done!' );
-} );
+
+console.log( 'Очистка zadanija в dist chatbook2' );
+fse.emptyDirSync( 'c:\\Users\\Kanstantsin\\Projects\\chatbook2\\dist\\zadanija' );
+fse.emptyDirSync( 'c:\\Users\\Kanstantsin\\Projects\\chatbook2\\public\\zadanija' );
 
 
+console.log( 'copy distr' );
+fse.copySync( './distr', 'c:\\Users\\Kanstantsin\\Projects\\chatbook2\\dist\\zadanija\\' );
+fse.copySync( './distr', 'c:\\Users\\Kanstantsin\\Projects\\chatbook2\\public\\zadanija\\' );
+console.log( 'copy distr done' );
 
+console.log( 'copy images' );
+fse.copySync( './images', 'c:\\Users\\Kanstantsin\\Projects\\chatbook2\\dist\\zadanija\\images' );
+fse.copySync( './images', 'c:\\Users\\Kanstantsin\\Projects\\chatbook2\\public\\zadanija\\images' );
+console.log( 'copy images done' );
 
+console.log( 'copy to fest' );
+fse.copySync( './distr', './distr_fest' );
+console.log( 'copy to fest done' );
 
-setTimeout( () => {
-	// const jsFiles = fs.readdirSync( './distr/js' );
-	const jsFiles = getFilelistRecursively( "./distr/js" );
-	console.log( jsFiles );
+console.log( 'copy images to fest' );
+fse.copySync( './images', './distr_fest/images' );
+console.log( 'copy images to fest done' );
 
-	jsFiles.forEach( jsFile => {
-		console.log( '------------------------------------------------' );
-		console.log( jsFile );
-
-		if ( jsFile.slice( -2 ) !== 'js' ) return;
-
-		// const text = fs.readFileSync( './distr/js/' + jsFile, { encoding: 'utf8' } );
-		const text = fs.readFileSync( jsFile, { encoding: 'utf8' } );
-
-		const uText = UglifyJS.minify( text );
-
-		// fs.writeFileSync( './distr/js/' + jsFile, uText.code );
-		fs.writeFileSync( jsFile, uText.code );
-
-	} );
-
-
-	// const cssFiles = fs.readdirSync( './distr/css' );
-	// console.log( cssFiles );
-
-	// cssFiles.forEach( async cssFile => {
-	// 	console.log( '------------------------------------------------' );
-	// 	console.log( cssFile );
-
-	// 	if ( cssFile.slice( -3 ) !== 'css' ) return;
-
-	// 	const text = fs.readFileSync( './distr/css/' + cssFile, { encoding: 'utf8' } );
-
-	// 	postcss( [ autoprefixer ] ).process( text ).then( result => {
-	// 		result.warnings().forEach( warn => {
-	// 			console.warn( warn.toString() )
-	// 		} )
-	// 		// console.log( result.css )
-	// 		// const uText = UglifyJS.minify( result.css )
-	// 		const uText = new CleanCSS( cleanCSSoptions ).minify( result.css );
-	// 		fs.writeFileSync( './distr/css/' + cssFile, uText.styles );
-	// 	} )
-
-
-	// } );
-
-	setTimeout( () => {
-		console.log( 'Очистка zadanija в dist chatbook2' );
-		fse.emptyDirSync( 'c:\\Users\\Kanstantsin\\Projects\\chatbook2\\dist\\zadanija' );
-		fse.emptyDirSync( 'c:\\Users\\Kanstantsin\\Projects\\chatbook2\\public\\zadanija' );
-
-
-		console.log( 'copy distr' );
-		ncp( './distr', 'c:\\Users\\Kanstantsin\\Projects\\chatbook2\\dist\\zadanija\\', function ( err ) {
-			if ( err ) {
-				return console.error( err );
-			}
-			console.log( 'done!' );
-		} );
-		ncp( './distr', 'c:\\Users\\Kanstantsin\\Projects\\chatbook2\\public\\zadanija\\', function ( err ) {
-			if ( err ) {
-				return console.error( err );
-			}
-			console.log( 'done!' );
-		} );
-
-		console.log( 'copy images' );
-		ncp( './images', 'c:\\Users\\Kanstantsin\\Projects\\chatbook2\\dist\\zadanija\\images', function ( err ) {
-			if ( err ) {
-				return console.error( err );
-			}
-			console.log( 'done!' );
-		} );
-		ncp( './images', 'c:\\Users\\Kanstantsin\\Projects\\chatbook2\\public\\zadanija\\images', function ( err ) {
-			if ( err ) {
-				return console.error( err );
-			}
-			console.log( 'done!' );
-		} );
-
-	}, 2000 );
-
-}, 1000 );
-
+fse.rmSync( './distr_fest/index.html' );
+fse.renameSync( './distr_fest/index-fest.html', './distr_fest/index.html' )
 
