@@ -275,13 +275,20 @@ body {
 .chehov-navbar {
 	// background-color: #ae937e !important; // #916c4fbb !important;
 	background-color: #916c4f !important;
+
+	&.fest {
+		background-color: #8EA35C !important;
+	}
+
 	// background-color: red !important;
-	box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(255 255 255 / 15%);
+	box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%),
+	inset 0 -1px 0 rgb(255 255 255 / 15%);
 
 	.container-fluid {
 		max-width: 640px;
 	}
 }
+
 
 input[type="submit"] {
 	background-color: #916c4f !important;
