@@ -18,8 +18,12 @@ function saveInputs() {
 		acc[ el.name ] = el.checked;
 		return acc;
 	}, {} );
+	const store3 = [ ...document.forms[ 0 ].querySelectorAll( 'select' ) ].reduce( ( acc, el ) => {
+		acc[ el.name ] = el.value;
+		return acc;
+	}, {} );
 
-	const store = { ...store0, ...store1, ...store2 };
+	const store = { ...store0, ...store1, ...store2, ...store3 };
 
 	console.log( store );
 
@@ -70,6 +74,15 @@ function loadInputs() {
 			// console.log( el.checked );
 			if ( el.disabled || el.readOnly ) return;
 			el.checked = store[ el.name ] ?? false;
+
+			el.addEventListener( 'input', event => {
+				saveInputs();
+			} );
+		} );
+
+		document.forms[ 0 ].querySelectorAll( 'select' ).forEach( el => {
+			if ( el.disabled || el.readOnly ) return;
+			if ( store[ el.name ] ) el.value = store[ el.name ];
 
 			el.addEventListener( 'input', event => {
 				saveInputs();
